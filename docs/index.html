@@ -2099,7 +2099,8 @@ const icons={
 function icon(n){return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">'+(icons[n]||icons.file)+'</svg>'}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function cleanURL(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
-const services=['전체','방문진료','장애인 돌봄','공동체 돌봄','방문요양','방문간호','주거복지','생활지원','건강관리','의료지원','디지털 교육','지역복지'];
+const hospitalEscortService = '병원동행';
+const services=['전체',hospitalEscortService,'방문진료','장애인 돌봄','공동체 돌봄','방문요양','방문간호','주거복지','생활지원','건강관리','의료지원','디지털 교육','지역복지'];
 const districts=['전체 지역','중구','동구','서구','남구','북구','수성구','달서구','달성군','군위군'];
 const photoLicense='https://www.kogl.or.kr/info/license.do';
 const photoData={
@@ -2940,7 +2941,9 @@ function organizationCard(org) {
   const route = 'member/'+org.id;
   const campaign = campaignFor(org);
   const label = org.isLocal ? '등록 시연' : photo?.sourceLabel ? '기관 활동 사진' : '분야 참고 사례';
-  const tags = `<div class="tags org-card-tags"><span class="tag blue">${esc(org.service)}</span>${org.district?`<span class="tag">${esc(org.district)}</span>`:''}</div>`;
+  const escortTag = org.service!==hospitalEscortService&&matchesDirectoryService(org,hospitalEscortService)
+    ? `<span class="tag blue">${hospitalEscortService}</span>` : '';
+  const tags = `<div class="tags org-card-tags"><span class="tag blue">${esc(org.service)}</span>${escortTag}${org.district?`<span class="tag">${esc(org.district)}</span>`:''}</div>`;
   return `<article class="org-card">
     <div class="org-card-main">
       ${photo?`<div class="org-card-photo${photo.cardRatio?' org-card-photo-original':''}"${photo.cardRatio?` style="--card-photo-ratio:${photo.cardRatio}"`:''}>
@@ -3478,10 +3481,14 @@ function home(){return `<section class="hero"><div class="wrap">${homeHero()}<fo
     ${feedSection('home-events','교육·행사',items('event'),eventRow,{kind:'events',initial:2})}
   </div></div><section class="wrap" style="padding-bottom:20px"><div class="band"><div><h2>회원사 활동소식 등록</h2></div><span class="band-illustration" aria-hidden="true">ON.</span><button class="btn dark" data-action="post">소식 등록 ${icon('arrow')}</button></div></section>`}
 function directoryServices(){
-  return ['전체',...new Set(directoryMembers().map(member=>member.service))];
+  return [...new Set(['전체',hospitalEscortService,...directoryMembers().map(member=>member.service)])];
+}
+function matchesDirectoryService(member, service){
+  return service==='전체'||member.service===service||
+    (service===hospitalEscortService&&member.items?.includes(hospitalEscortService));
 }
 function homeMembers(){
-  const entries = directoryMembers().filter(member=>homeService==='전체'||member.service===homeService);
+  const entries = directoryMembers().filter(member=>matchesDirectoryService(member,homeService));
   return `<div id="home-members">${feedSection('home-member','대구 통합돌봄 참여기관',entries,organizationCard,{
     layout:'cards',kind:'members',before:chips(directoryServices(),homeService,'home-service'),
     emptyText:'표시할 회원사가 없습니다.'
@@ -3490,7 +3497,7 @@ function homeMembers(){
 function matchingMembers(){
   const query = memberQuery.trim();
   const matches = directoryMembers().filter(member=>
-    (memberFilter==='전체'||member.service===memberFilter)&&
+    matchesDirectoryService(member,memberFilter)&&
     (memberDistrict==='전체 지역'||member.district===memberDistrict)&&
     matchesSearch(query,[member.name,member.desc,member.service,member.district,'대구광역시',campaignFor(member)?.title,...member.items])
   );
