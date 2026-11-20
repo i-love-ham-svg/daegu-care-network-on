@@ -41,7 +41,7 @@ def fit_font(draw,lines,initial,width,minimum):
     return font(size)
 
 manifest={}; report=[]; samples=[]
-for route in DATA['routes']:
+for route in DATA['canonicalRoutes']:
     recipe=RECIPES[route]
     photo=DATA['photos'][recipe['photo']]
     assert not photo.get('illustrative') and photo.get('license') not in [3,4],route
@@ -84,8 +84,9 @@ for route in DATA['routes']:
         if channel=='band':heading_y=round(h*.57)
         if len(title)==3: heading_y-=round(lineheight*.45)
         category_y=heading_y-round(58*scale)
-        category=recipe['category']+(' · 참고 사례' if recipe.get('reference') else '')
-        d.text((margin,category_y),category,font=font(25*scale),fill='#a4f0d3',stroke_width=1,stroke_fill='#173746')
+        category=recipe.get('referenceLabel') or recipe['category']+(' · 분야 참고사진' if recipe.get('reference') else '')
+        category_font=fit_font(d,[category],29*scale,w-2*margin,19*scale)
+        d.text((margin,category_y),category,font=category_font,fill='#a4f0d3',stroke_width=1,stroke_fill='#173746')
         for i,line in enumerate(title):
             text_color='#a4f0d3' if i==len(title)-1 and len(title)>1 and channel!='band' else 'white'
             d.text((margin,heading_y+i*lineheight),line,font=heading,fill=text_color,stroke_width=max(1,round(scale*1.5)),stroke_fill='#10233b')

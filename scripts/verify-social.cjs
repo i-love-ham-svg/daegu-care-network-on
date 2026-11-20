@@ -9,6 +9,52 @@ const manifest=JSON.parse(fs.readFileSync(path.join(root,'src/social-manifest.js
 const audit=JSON.parse(fs.readFileSync(path.join(root,'output/verification/social/pages-audit.json'),'utf8'));
 const catalog=require('./social-catalog.cjs')();
 const r=runtime('const onSocialThumbnails = '+JSON.stringify(manifest)+';');
+const jsonRun=code=>JSON.parse(r.run('JSON.stringify('+code+')'));
+const expectedAliases={
+  'gallery/field-launch':'detail/daegu-declaration',
+  'gallery/field-agreement':'detail/daegu-agreement',
+  'gallery/field-conference':'detail/daegu-national-conference',
+  'gallery/field-seminar':'detail/daegu-seminar',
+  'gallery/field-naeiln':'detail/daegu-naeiln-visit',
+  'gallery/field-garden':'detail/daegu-garden-visit',
+  'detail/event-daegu-health-symposium':'detail/daegu-health-symposium',
+  'detail/event-daegu-university-symposium':'detail/daegu-university-symposium',
+  'detail/event-daegu-national-conference':'detail/daegu-national-conference',
+  'detail/event-daegu-seminar':'detail/daegu-seminar'
+};
+assert.deepEqual(catalog.aliases,expectedAliases,'Only records of the same actual case may share a cover');
+const canonicalRoute=route=>catalog.aliases[route]||route;
+assert.equal(new Set(catalog.routes).size,catalog.routes.length,'Repeated physical route');
+assert.deepEqual([...catalog.canonicalRoutes].sort(),[...new Set(catalog.routes.map(canonicalRoute))].sort(),'Canonical route catalog');
+assert.deepEqual(Object.keys(manifest).sort(),[...catalog.canonicalRoutes].sort(),'Exactly one cover set per independent sharing content');
+for(const [alias,target] of Object.entries(expectedAliases)){
+  assert.ok(catalog.routes.includes(alias)&&catalog.routes.includes(target),'Missing physical case view: '+alias);
+  assert.ok(!catalog.aliases[target],'Alias must resolve directly to a canonical story: '+alias);
+  assert.equal(r.run(`canonicalShareRoute(${JSON.stringify(alias)})`),target,alias);
+  const story=jsonRun(`findItem(${JSON.stringify(target.split('/')[1])})`);
+  assert.ok(story?.verified&&!story.isLocal,'Alias target must be a verified historical record: '+alias);
+  if(alias.startsWith('gallery/')){
+    const key=alias.split('/')[1];
+    assert.equal(story.photoKey,key,'Gallery must show the exact photograph recorded by the story: '+alias);
+    assert.equal(manifest[target].photo,key,'Historical cover must use its own recorded photograph: '+alias);
+    assert.equal(r.run(`onPublicPagePath(${JSON.stringify(alias)})`),'/gallery/'+key+'.html','Original gallery URL preserved');
+    assert.deepEqual(jsonRun(`onPagePhotoKeys(${JSON.stringify(alias)},null)`),[key],'Gallery still displays its original photograph');
+    const gallery=r.run(`galleryPage(${JSON.stringify(key)})`);
+    const original=jsonRun(`onPreviewPhoto(${JSON.stringify(key)})`);
+    assert.ok(gallery.includes(original.primary.file)||gallery.includes(original.original.file),'Original gallery photograph remains visible: '+alias);
+  }else{
+    const event=jsonRun(`findItem(${JSON.stringify(alias.split('/')[1])})`);
+    assert.ok(event?.past&&event.type==='event','Only a copied historical event may alias a story: '+alias);
+    assert.equal(event.storyId,story.id,'Event belongs to the same source story: '+alias);
+    for(const field of ['title','date','body','photoKey','source'])assert.equal(event[field],story[field],alias+' changed '+field);
+    assert.notEqual(r.run(`onPublicPagePath(${JSON.stringify(alias)})`),r.run(`onPublicPagePath(${JSON.stringify(target)})`),'Historical event view remains accessible');
+  }
+  assert.deepEqual(jsonRun(`shareTarget(${JSON.stringify(alias)})`),jsonRun(`shareTarget(${JSON.stringify(target)})`),'Share target resolves to the same case: '+alias);
+  const aliasSeo=jsonRun(`onSeoPage(${JSON.stringify(alias)})`),targetSeo=jsonRun(`onSeoPage(${JSON.stringify(target)})`);
+  for(const field of ['title','description','url'])assert.equal(aliasSeo[field],targetSeo[field],alias+' canonical '+field);
+  for(const [channel] of catalog.channels)assert.deepEqual(jsonRun(`socialCover(${JSON.stringify(alias)},${JSON.stringify(channel)})`),jsonRun(`socialCover(${JSON.stringify(target)},${JSON.stringify(channel)})`),alias+'/'+channel+' cover');
+  for(const channel of ['facebook','kakao','linkedin','x'])assert.equal(r.run(`socialShareAddress(${JSON.stringify(alias)},${JSON.stringify(channel)})`),r.run(`socialShareAddress(${JSON.stringify(target)},${JSON.stringify(channel)})`),alias+'/'+channel+' share URL');
+}
 const meta=(html,name)=>html.match(new RegExp('<meta (?:property|name)="'+name+'" content="([^"]*)"'))?.[1];
 const publicFile=(url)=>path.join(docs,new URL(url,'https://daegu-care.oconia.co.kr').pathname);
 const images=new Set();
@@ -17,7 +63,7 @@ for(const page of audit.generated){
   const html=fs.readFileSync(path.join(docs,page.path),'utf8');
   assert.equal((html.match(/property="og:image"/g)||[]).length,1,page.path);
   assert.equal(meta(html,'og:image'),page.image,page.path);
-  assert.equal(meta(html,'twitter:image'),manifest[page.route].images.x.url,page.path);
+  assert.equal(meta(html,'twitter:image'),manifest[canonicalRoute(page.route)].images.x.url,page.path);
   assert.ok(meta(html,'og:title')&&meta(html,'og:description'),page.path);
   assert.ok(html.includes('<link rel="canonical" href="'+page.canonical+'">'),page.path);
   assert.ok(!meta(html,'og:url').includes('#/'),page.path);
@@ -77,4 +123,4 @@ let removed=0;
 for(const file of unused)if(!published.has('docs/media/social/'+file)){fs.unlinkSync(path.join(docs,'media/social',file));removed++}
 const keepAssets=new Set([`site-${audit.version}.js`,`site-${audit.version}.css`]);
 for(const file of fs.readdirSync(path.join(docs,'assets')))if(/^site-[a-f0-9]{12}\.(js|css)$/.test(file)&&!keepAssets.has(file)&&!published.has('docs/assets/'+file))fs.unlinkSync(path.join(docs,'assets',file));
-console.log(JSON.stringify({passed:true,routes:Object.keys(manifest).length,pages:audit.pages,images:images.size,privateRoutes:'excluded',confirmedOrganizations:7,hospitalEscort:4,unusedBuildFilesRemoved:removed,publishedAssetURLsPreserved:published.size}));
+console.log(JSON.stringify({passed:true,routes:Object.keys(manifest).length,physicalRoutes:catalog.routes.length,sameCaseAliases:Object.keys(catalog.aliases).length,pages:audit.pages,images:images.size,privateRoutes:'excluded',confirmedOrganizations:7,hospitalEscort:4,unusedBuildFilesRemoved:removed,publishedAssetURLsPreserved:published.size}));

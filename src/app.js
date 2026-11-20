@@ -11,11 +11,27 @@ const onShareChannels = [
   ['youtube','유튜브','09_YouTube_1280x720.jpg',1280,720]
 ];
 
+const onShareAliases = {
+  "gallery/field-launch": "detail/daegu-declaration",
+  "gallery/field-agreement": "detail/daegu-agreement",
+  "gallery/field-conference": "detail/daegu-national-conference",
+  "gallery/field-seminar": "detail/daegu-seminar",
+  "gallery/field-naeiln": "detail/daegu-naeiln-visit",
+  "gallery/field-garden": "detail/daegu-garden-visit",
+  "detail/event-daegu-health-symposium": "detail/daegu-health-symposium",
+  "detail/event-daegu-university-symposium": "detail/daegu-university-symposium",
+  "detail/event-daegu-national-conference": "detail/daegu-national-conference",
+  "detail/event-daegu-seminar": "detail/daegu-seminar"
+};
+function canonicalShareRoute(route){ return onShareAliases[route]||(route==='demo'?'members':route); }
+
 function shareImage(file) { return offlineShare?.[file] || '/media/share/'+file; }
 function socialCover(route,channel='facebook') {
+  route=canonicalShareRoute(route);
   return onSocialThumbnails[route]?.images[channel] || onSocialThumbnails[route]?.images.facebook;
 }
 function socialShareAddress(route,channel) {
+  route=canonicalShareRoute(route);
   const asset=socialCover(route,channel),canonical=onPublicPagePath(route);
   if(!asset||!canonical)return '';
   const revision=asset.file.split('/').pop().split('-').pop().replace(/\.jpg$/,'');
@@ -40,7 +56,7 @@ function sharePath(path) {
   return 'share/'+path.split('/').map(encodeURIComponent).join('/')+'.html';
 }
 function shareTarget(path) {
-  const route=path==='demo'?'members':path;
+  const route=canonicalShareRoute(path);
   const meta=onSeoPage(route);
   return meta?{title:meta.title,url:meta.url}:null;
 }
@@ -90,7 +106,7 @@ function sharePreview(path, channel='facebook') {
   }
   const row = onShareChannels.find(([key])=>key===channel)||onShareChannels[0];
   const [key,,file,w,h] = row;
-  const route=path==='demo'?'members':path;
+  const route=canonicalShareRoute(path);
   const directUpload = ['naver','band','instagram-feed','instagram-story','youtube'].includes(key);
   const canonicalPath=onPublicPagePath(route);
   const address = ['facebook','kakao','linkedin','x'].includes(key)?socialShareAddress(route,key):target.url;
@@ -271,7 +287,7 @@ function galleryImage(photo,eager=false) {
 }
 
 function galleryShareRoute(photo) {
-  if (photo.key&&!photoData[photo.key].illustrative) return 'gallery/'+photo.key;
+  if (photo.key&&!photoData[photo.key].illustrative&&photoData[photo.key].gallery!==false) return 'gallery/'+photo.key;
   return photo.story?'detail/'+photo.story.id:'';
 }
 function contentShareButton(route,title) {
@@ -1322,7 +1338,7 @@ function onPublicPagePath(route) {
   const [area,id,extra]=route.split('/');
   if (!id||extra||!/^[a-z0-9-]+$/.test(id)) return '';
   if (area==='member'&&organizations.some(org=>org.id===id)) return '/members/'+id+'.html';
-  if (area==='gallery'&&Object.hasOwn(photoData,id)&&!photoData[id].illustrative) return '/gallery/'+id+'.html';
+  if (area==='gallery'&&Object.hasOwn(photoData,id)&&!photoData[id].illustrative&&photoData[id].gallery!==false) return '/gallery/'+id+'.html';
   if (area==='detail') {
     const item=findItem(id);
     if (item?.type&&!item.isLocal&&contentRoutes[item.type]) return '/'+contentRoutes[item.type]+'/'+id+'.html';
@@ -1397,6 +1413,7 @@ function onPreviewPhoto(key) {
 }
 
 function onSeoPage(route) {
+  route=canonicalShareRoute(route);
   const canonicalPath=onPublicPagePath(route);
   if (!canonicalPath) return null;
   const [area,id]=route.split('/');
@@ -2515,10 +2532,58 @@ function documentedAbout() {
   </div>`;
 }
 
+for(const [key,photo] of Object.entries(onContentCasePhotos)){
+  photoData[key]=photo;
+  onImagePreviews[photo.file]={original:[photo.file,photo.width,photo.height,photo.file.endsWith('.png')?'image/png':'image/jpeg']};
+}
+
 const news=members.map((member,index)=>({
   id:'n'+(index+1),type:'news',memberId:member.id,title:member.story[0],org:member.name,
   category:member.story[1],body:member.story[2],tone:member.tone
 }));
+const onExampleEditorial = {
+  "n1": {
+    "title": "의료사랑방에서 함께하는 한 끼",
+    "photoKey": "with-34-2",
+    "body": "의료사랑방에서 함께하는 한 끼에 관한 화면 구성 예시입니다.\n\n사진은 의료사랑방 현장에서 어르신들이 식사하는 모습\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n2": {
+    "title": "의료현장에서 배우는 건강 돌봄",
+    "photoKey": "example-n2",
+    "body": "의료현장에서 배우는 건강 돌봄에 관한 화면 구성 예시입니다.\n\n사진은 의료현장 실습에 참여한 의대생과 주민들\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n3": {
+    "title": "청소·정리로 살피는 집안 안전",
+    "photoKey": "example-n3",
+    "body": "청소·정리로 살피는 집안 안전에 관한 화면 구성 예시입니다.\n\n사진은 가사지원 후 정돈된 주방\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n4": {
+    "title": "이웃에게 전하는 한 끼",
+    "photoKey": "example-n4",
+    "body": "이웃에게 전하는 한 끼에 관한 화면 구성 예시입니다.\n\n사진은 생선까스 식단 포장\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n5": {
+    "title": "의자에 앉아 함께하는 생활운동",
+    "photoKey": "example-n5",
+    "body": "의자에 앉아 함께하는 생활운동에 관한 화면 구성 예시입니다.\n\n사진은 250416 （사진1） 지난해 건강돌봄 소모임에서 어르신들이 건강증진 체험 활동을 하고 있다.\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n6": {
+    "title": "퇴원 후 돌봄을 잇는 지역 정보",
+    "photoKey": "example-n6",
+    "body": "퇴원 후 돌봄을 잇는 지역 정보에 관한 화면 구성 예시입니다.\n\n사진은 260319 （사진1） 퇴원환자 지역사회 연계 체계 구축을 위한 업무협약 기념촬영\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n7": {
+    "title": "스마트폰으로 찍은 나의 인생사진",
+    "photoKey": "digital-photo-example",
+    "body": "스마트폰으로 찍은 나의 인생사진에 관한 화면 구성 예시입니다.\n\n사진은 김포시 스마트폰 교육 참가자들이 직접 촬영한 인물사진을 펼쳐 보이는 실제 교육 현장입니다.\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  },
+  "n8": {
+    "title": "가족과 함께하는 자연 체험",
+    "photoKey": "example-n8",
+    "body": "가족과 함께하는 자연 체험에 관한 화면 구성 예시입니다.\n\n사진은 250121 （사진1） 아이들과 그 가족들이 딸기농장에서 딸기따기 체험을 하고 있다\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
+  }
+};
+for(const item of news)Object.assign(item,onExampleEditorial[item.id]||{});
 const policies=[
  {id:'p1',type:'policy',photoKey:'policy-p1',title:'지역사회 통합돌봄 제도, 한눈에 보기',org:'보건복지부',category:'제도 안내',date:'2026.11.11 확인',url:'https://www.mohw.go.kr/menu.es?mid=a60100000000',body:'지역사회 통합돌봄은 일상생활에 어려움이 있는 사람이 살던 곳에서 지낼 수 있도록 의료·요양·돌봄 서비스를 연결하는 제도입니다.\n\n의료·요양 등 지역 돌봄의 통합지원에 관한 법률과 관련 하위법령은 2026년 3월 27일 시행되었습니다.\n\n보건복지부 공식 안내에서 제도의 목적, 대상자와 지원절차를 확인할 수 있습니다. 이 게시물은 공식 자료를 요약한 정보입니다.'},
  {id:'p2',type:'policy',photoKey:'policy-p2',title:'대구지역 통합돌봄 서비스 정보 확인',org:'보건복지부 · 대구광역시',category:'지역 정보',date:'2026.11.11 확인',url:'https://www.mohw.go.kr/board.es?mid=a60603000000&bid=0077',body:'보건복지부 통합돌봄 전용 누리집의 「지방정부 서비스 메뉴판 → 대구광역시」에서 지역별 서비스 안내를 확인할 수 있습니다.\n\n대구지역 안내를 모으는 게시판의 초기 연결 자료입니다. 실제 이용 가능 여부와 상세 조건은 각 안내의 담당 기관에 확인해야 합니다.'},
@@ -2729,7 +2794,7 @@ function newsCard(n) {
   const key=storyPhotoKey(n), route='detail/'+n.id;
   const cover=n.photos?.length?galleryImage(storyPhotos(n)[0]):n.image?`<img src="${esc(n.image)}" alt="${esc(n.title)}" loading="lazy">`:key?referencePhoto(key):newsArt(n.style);
   return `<article class="on-news-tile"><a class="news-card" href="#/${esc(route)}">
-    <div class="news-cover" style="--tone:${n.tone||'#e3ecf9'}">${cover}${key&&photoData[key].illustrative?'<span class="on-news-image-label">AI 참고 이미지</span>':''}<span class="tag on-news-category">${esc(n.category)}</span></div>
+    <div class="news-cover" style="--tone:${n.tone||'#e3ecf9'}">${cover}${key&&(photoData[key].illustrative||photoData[key].relatedReference)?'<span class="on-news-image-label">'+(photoData[key].relatedReference?'관련 사례사진':'AI 참고 이미지')+'</span>':''}<span class="tag on-news-category">${esc(n.category)}</span></div>
     <div class="on-news-copy">${n.verified?'':`<span class="tag demo">${n.isLocal?'등록 시연':'예시 소식'}</span>`}
       <h3>${esc(n.title)}</h3><div class="news-meta">${esc(n.org)}${n.date?' · '+esc(n.date):''}</div>
     </div>

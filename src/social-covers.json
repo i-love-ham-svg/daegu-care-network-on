@@ -39,15 +39,15 @@
     "reference": false
   },
   "news": {
-    "photo": "with-35-2",
+    "photo": "dasahappy-224315795545-3",
     "headline": [
       "돌봄 현장에서 온",
       "오늘의 이야기"
     ],
     "subtitle": "대구 통합돌봄 활동소식",
     "category": "대구 통합돌봄",
-    "photoNote": "팔현습지를 걸으며 건강활동에 참여하는 조합원들",
-    "credit": "위드의료복지사회적협동조합",
+    "photoNote": "돌봄 제공인력이 함께하는 꽃바구니 실습",
+    "credit": "사회적협동조합 모두행복센터",
     "caseKind": "기관 실제 활동",
     "reference": false
   },
@@ -140,7 +140,8 @@
     "photoNote": "어르신의 병원 이동을 돕는 동행",
     "credit": "사회적협동조합 모두행복센터",
     "caseKind": "분야 참고 사례",
-    "reference": true
+    "reference": true,
+    "referenceLabel": "분야 참고사진 · 모두행복센터 병원동행"
   },
   "member/woorihamkke": {
     "photo": "with-34-4",
@@ -153,7 +154,8 @@
     "photoNote": "접수대에서 어르신과 눈높이를 맞추어 상태를 확인하는 활동",
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "분야 참고 사례",
-    "reference": true
+    "reference": true,
+    "referenceLabel": "분야 참고사진 · 위드 의료사랑방"
   },
   "member/with-medical": {
     "photo": "with-34-6",
@@ -169,17 +171,18 @@
     "reference": false
   },
   "member/welfare-design": {
-    "photo": "field-seminar",
+    "photo": "guro215281-2",
     "headline": [
       "사회복지디자인연구소",
       "청년의 자립을 함께"
     ],
     "subtitle": "자립준비청년 지원 분야",
     "category": "참여기관",
-    "photoNote": "대구경북 의료사회복지사 세미나",
-    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
-    "caseKind": "직접 자료 사진",
-    "reference": false
+    "photoNote": "250205 사진2） 2024 청년도전지원사업 ＇아무튼, 기대＇에서 버크만 검사 프로그램을 진행하고 있다.",
+    "credit": "서울 구로구청",
+    "caseKind": "청년 자립 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "분야 참고사진 · 서울 구로구 청년교육"
   },
   "member/daegu-care": {
     "photo": "dgcare1-223802349837-12",
@@ -195,17 +198,18 @@
     "reference": false
   },
   "member/naeiln": {
-    "photo": "field-naeiln",
+    "photo": "guro229467-1",
     "headline": [
       "내일앤",
       "일할 기회를 넓히는 돌봄"
     ],
     "subtitle": "장애인 직업재활 · 직업훈련",
     "category": "참여기관",
-    "photoNote": "내일앤 보호작업장·주간활동 공간 방문",
-    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
-    "caseKind": "직접 자료 사진",
-    "reference": false
+    "photoNote": "260204 （사진1） 구로 청년도전지원사업 참여자 교육 모습",
+    "credit": "서울 구로구청",
+    "caseKind": "직업훈련 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "분야 참고사진 · 서울 구로구 진로교육"
   },
   "member/modoo-happy": {
     "photo": "dasahappy-224315829543-6",
@@ -221,224 +225,236 @@
     "reference": false
   },
   "detail/daegu-declaration": {
-    "photo": "with-36-1",
+    "photo": "field-launch",
     "headline": [
       "대구 통합돌봄",
       "네트워크 출범 선언"
     ],
     "subtitle": "대구광역 통합돌봄 네트워크 출범 선언",
     "category": "네트워크 활동",
-    "photoNote": "생애구술기록 어부바 사업 참가자들의 대구수목원 방문",
-    "credit": "위드의료복지사회적협동조합",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "대구광역 통합돌봄 네트워크 발대식에서 참여자들이 함께 찍은 사진",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+    "caseKind": "해당 활동 실제사진",
+    "reference": false
   },
   "detail/daegu-care-pilot": {
     "photo": "with-33-3",
     "headline": [
-      "대구 통합돌봄 시범사업",
-      "4개 기관이 함께합니다"
+      "자료로 읽는",
+      "대구 돌봄 시범사업"
     ],
-    "subtitle": "대구 지역통합돌봄 시범사업에 4개 기관 참여",
+    "subtitle": "4개 기관의 통합돌봄 사업 기록",
     "category": "시범사업",
     "photoNote": "접수·진료 현장에서 어르신을 만나는 의대생 실습",
     "credit": "위드의료복지사회적협동조합",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "관련 실제 사례사진 · 해당 사업 현장 아님",
+    "reference": true,
+    "referenceLabel": "관련 사례사진 · 위드 의료현장 실습"
   },
   "detail/daegu-agreement": {
-    "photo": "guro237156-1",
+    "photo": "field-agreement",
     "headline": [
       "대구의 돌봄을 위해",
       "15개 기관이 손잡다"
     ],
     "subtitle": "복현어울림센터에서 15개 기관 업무협약",
     "category": "네트워크 활동",
-    "photoNote": "260818 （사진1） 장인홍 구로구청장（왼쪽 두 번째）이 10일 통합돌봄 특화사업 업무협약을 체결한 뒤 제공기관 관계자들과 기념촬영을 하고 있다.",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "복현어울림센터 업무협약식에서 협약서를 들어 보이는 참여기관 관계자들",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+    "caseKind": "해당 활동 실제사진",
+    "reference": false
   },
   "detail/daegu-health-symposium": {
-    "photo": "guro218106-2",
+    "photo": "with-34-1",
     "headline": [
-      "의료와 마을돌봄",
-      "함께 그리는 건강공동체"
+      "자료로 읽는",
+      "의료와 마을돌봄"
     ],
-    "subtitle": "대구가톨릭대 심포지엄에서 의료와 마을돌봄 논의",
+    "subtitle": "대구가톨릭대 심포지엄 논의 기록",
     "category": "교육·포럼",
-    "photoNote": "250416 （사진2） 지난해 건강돌봄 소모임에서 어르신들이 건강증진 교육을 듣고 있다.",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "의료사랑방 차량과 청도 대천리 경로당 진입로",
+    "credit": "위드의료복지사회적협동조합",
+    "caseKind": "관련 실제 사례사진 · 심포지엄 현장 아님",
+    "reference": true,
+    "referenceLabel": "관련 사례사진 · 위드 의료사랑방"
   },
   "detail/daegu-university-symposium": {
-    "photo": "with-37-1",
+    "photo": "with-35-2",
     "headline": [
-      "기관 세 곳이 전하는",
+      "자료로 읽는",
       "지역 돌봄 사례"
     ],
-    "subtitle": "영남대 심포지엄에서 기관 세 곳의 돌봄 사례 발표",
+    "subtitle": "영남대 심포지엄 기관 발표 기록",
     "category": "교육·포럼",
-    "photoNote": "생애구술기록 출판기념회 발표 현장",
+    "photoNote": "팔현습지를 걸으며 건강활동에 참여하는 조합원들",
     "credit": "위드의료복지사회적협동조합",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "관련 실제 사례사진 · 심포지엄 현장 아님",
+    "reference": true,
+    "referenceLabel": "관련 사례사진 · 위드 건강소모임"
   },
   "detail/daegu-national-conference": {
-    "photo": "guro204649-3",
+    "photo": "field-conference",
     "headline": [
       "전국의 돌봄 현장에",
       "대구의 경험을 전하다"
     ],
     "subtitle": "통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표",
     "category": "네트워크 활동",
-    "photoNote": "240603 （사진2） 지난해 개최된 구로구공익활동박람회 현장 모습1",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "통합돌봄 광역 네트워크 전국대회 참가자들의 단체 사진",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+    "caseKind": "해당 활동 실제사진",
+    "reference": false
   },
   "detail/daegu-seminar": {
-    "photo": "dasahappy-224283510997-2",
+    "photo": "field-seminar",
     "headline": [
       "의료사회복지사와",
       "통합돌봄 과제를 묻다"
     ],
     "subtitle": "대구경북 의료사회복지사와 통합돌봄 과제 논의",
     "category": "교육·포럼",
-    "photoNote": "돌봄 종사자 치매전문교육",
-    "credit": "사회적협동조합 모두행복센터",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+    "caseKind": "해당 활동 실제사진",
+    "reference": false
   },
   "detail/daegu-naeiln-visit": {
-    "photo": "guro229467-2",
+    "photo": "field-naeiln",
     "headline": [
       "내일앤을 찾아서",
       "직업재활 현장을 만나다"
     ],
     "subtitle": "내일앤 보호작업장과 주간활동 공간 방문",
     "category": "현장 방문",
-    "photoNote": "260204 （사진2） ‘2025년 구로 청년도전지원사업 체육대회’ 현장",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "내일앤 발달장애인 주간활동 공간을 방문한 관계자들",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
+    "caseKind": "해당 활동 실제사진",
+    "reference": false
   },
   "detail/daegu-garden-visit": {
-    "photo": "guro109354-2",
+    "photo": "field-garden",
     "headline": [
       "함께 가꾸는 텃밭",
       "어르신의 일상을 잇다"
     ],
     "subtitle": "복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문",
     "category": "현장 방문",
-    "photoNote": "구로구 치매안심센터, ‘행복한 농부’ 프로그램 마련 2（손수건 천연 염색 활동）",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "복현어울림센터 어르신 텃밭 가꾸기 사업 설명 현장",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
+    "caseKind": "해당 활동 실제사진",
+    "reference": false
   },
   "detail/n1": {
     "photo": "with-34-2",
     "headline": [
-      "가정 방문에서 살피는",
-      "어르신의 하루"
+      "의료사랑방에서",
+      "함께하는 한 끼"
     ],
-    "subtitle": "온마을 방문요양 · 콘텐츠 예시",
+    "subtitle": "지역 의료·돌봄 분야 참고 사례",
     "category": "콘텐츠 예시",
     "photoNote": "의료사랑방 현장에서 어르신들이 식사하는 모습",
     "credit": "위드의료복지사회적협동조합",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 위드의료복지사회적협동조합"
   },
   "detail/n2": {
-    "photo": "with-33-1",
+    "photo": "example-n2",
     "headline": [
-      "가정에서 혈압 기록을 함께",
-      "살피는 법"
+      "의료현장에서 배우는",
+      "건강 돌봄"
     ],
-    "subtitle": "이음 방문간호 · 콘텐츠 예시",
+    "subtitle": "위드 의대생 의료현장 실습 사례",
     "category": "콘텐츠 예시",
     "photoNote": "의료현장 실습에 참여한 의대생과 주민들",
     "credit": "위드의료복지사회적협동조합",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 위드의료복지사회적협동조합"
   },
   "detail/n3": {
-    "photo": "dasahappy-224315829543-8",
+    "photo": "example-n3",
     "headline": [
-      "넘어지기 쉬운 집 안 동선",
-      "살피기"
+      "청소·정리로 살피는",
+      "집안 안전"
     ],
-    "subtitle": "다정한 주거연구소 · 콘텐츠 예시",
+    "subtitle": "모두행복센터 가사지원 참고 사례",
     "category": "콘텐츠 예시",
     "photoNote": "가사지원 후 정돈된 주방",
     "credit": "사회적협동조합 모두행복센터",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 사회적협동조합 모두행복센터"
   },
   "detail/n4": {
-    "photo": "dgcare1-223802349837-3",
+    "photo": "example-n4",
     "headline": [
-      "이웃에게 전할 도시락 준비"
+      "이웃에게 전하는",
+      "한 끼"
     ],
-    "subtitle": "한끼이음 · 콘텐츠 예시",
+    "subtitle": "대구돌봄 식사지원 참고 사례",
     "category": "콘텐츠 예시",
     "photoNote": "생선까스 식단 포장",
     "credit": "대구돌봄사회적협동조합",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 대구돌봄사회적협동조합"
   },
   "detail/n5": {
-    "photo": "guro218106-1",
+    "photo": "example-n5",
     "headline": [
       "의자에 앉아 함께하는",
       "생활운동"
     ],
-    "subtitle": "늘봄 건강파트너 · 콘텐츠 예시",
+    "subtitle": "구로구 건강돌봄 소모임 실제 활동",
     "category": "콘텐츠 예시",
     "photoNote": "250416 （사진1） 지난해 건강돌봄 소모임에서 어르신들이 건강증진 체험 활동을 하고 있다.",
     "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 서울 구로구청"
   },
   "detail/n6": {
-    "photo": "guro231379-1",
+    "photo": "example-n6",
     "headline": [
-      "퇴원 후 집에서의 생활",
-      "준비하기"
+      "퇴원 후 돌봄을 잇는",
+      "지역 정보"
     ],
-    "subtitle": "우리동네 의료지원 · 콘텐츠 예시",
+    "subtitle": "구로구 퇴원환자 연계 협약 사례",
     "category": "콘텐츠 예시",
     "photoNote": "260319 （사진1） 퇴원환자 지역사회 연계 체계 구축을 위한 업무협약 기념촬영",
     "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 서울 구로구청"
   },
   "detail/n7": {
-    "photo": "guro189872-1",
+    "photo": "digital-photo-example",
     "headline": [
-      "스마트폰으로 가족과",
-      "영상통화 연습"
+      "스마트폰으로 찍은",
+      "나의 인생사진"
     ],
-    "subtitle": "온디지털 배움터 · 콘텐츠 예시",
+    "subtitle": "김포시 스마트폰 활용교육 실제 사례",
     "category": "콘텐츠 예시",
-    "photoNote": "230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "photoNote": "김포시 스마트폰 교육 참가자들이 직접 촬영한 인물사진을 펼쳐 보이는 실제 교육 현장입니다.",
+    "credit": "김포시 뉴스포털",
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 김포시 뉴스포털"
   },
   "detail/n8": {
-    "photo": "guro214168-1",
+    "photo": "example-n8",
     "headline": [
-      "함께 심고 가꾸는 동네",
-      "화분"
+      "가족과 함께하는",
+      "자연 체험"
     ],
-    "subtitle": "이웃정원 복지모임 · 콘텐츠 예시",
+    "subtitle": "구로구 가족 딸기농장 체험 사례",
     "category": "콘텐츠 예시",
     "photoNote": "250121 （사진1） 아이들과 그 가족들이 딸기농장에서 딸기따기 체험을 하고 있다",
     "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
+    "caseKind": "예시 소식 · 분야 참고사진",
+    "reference": true,
+    "referenceLabel": "실제 분야 사례 · 서울 구로구청"
   },
   "detail/p1": {
     "photo": "guro229745-1",
@@ -480,15 +496,15 @@
     "reference": true
   },
   "detail/p4": {
-    "photo": "with-34-1",
+    "photo": "guro189872-1",
     "headline": [
       "통합돌봄 신청",
       "어디서 시작할까요?"
     ],
     "subtitle": "신청과 이용 절차 · 공식 안내",
     "category": "제도 안내",
-    "photoNote": "의료사랑방 차량과 청도 대천리 경로당 진입로",
-    "credit": "위드의료복지사회적협동조합",
+    "photoNote": "230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）",
+    "credit": "서울 구로구청",
     "caseKind": "분야 참고 사례",
     "reference": true
   },
@@ -543,58 +559,6 @@
     "caseKind": "분야 참고 사례",
     "reference": true
   },
-  "detail/event-daegu-health-symposium": {
-    "photo": "guro222834-2",
-    "headline": [
-      "의료와 마을돌봄",
-      "함께 그리는 건강공동체"
-    ],
-    "subtitle": "대구가톨릭대 심포지엄에서 의료와 마을돌봄 논의",
-    "category": "교육·포럼",
-    "photoNote": "250805 （사진2） 병원을 찾은 아이들이 의료진의 직업에 대해 이야기를 듣고 있다.",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
-  },
-  "detail/event-daegu-university-symposium": {
-    "photo": "guro237156-2",
-    "headline": [
-      "기관 세 곳이 전하는",
-      "지역 돌봄 사례"
-    ],
-    "subtitle": "영남대 심포지엄에서 기관 세 곳의 돌봄 사례 발표",
-    "category": "교육·포럼",
-    "photoNote": "260818 （사진2） 장인홍 구로구청장（가운데）이 10일 구로구청 소통홀에서 열린 통합돌봄 특화사업 업무협약식에서 제공기관 관계자들과 이야기를 나누고 있다.",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
-  },
-  "detail/event-daegu-national-conference": {
-    "photo": "guro221745-3",
-    "headline": [
-      "전국의 돌봄 현장에",
-      "대구의 경험을 전하다"
-    ],
-    "subtitle": "통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표",
-    "category": "네트워크 활동",
-    "photoNote": "250715 （사진3） 제78호 구로히어로즈 명예의 전당 헌액식에서 단체 기념촬영을 하고 있다",
-    "credit": "서울 구로구청",
-    "caseKind": "분야 참고 사례",
-    "reference": true
-  },
-  "detail/event-daegu-seminar": {
-    "photo": "dasahappy-224315795545-3",
-    "headline": [
-      "의료사회복지사와",
-      "통합돌봄 과제를 묻다"
-    ],
-    "subtitle": "대구경북 의료사회복지사와 통합돌봄 과제 논의",
-    "category": "교육·포럼",
-    "photoNote": "돌봄 제공인력이 함께하는 꽃바구니 실습",
-    "credit": "사회적협동조합 모두행복센터",
-    "caseKind": "분야 참고 사례",
-    "reference": true
-  },
   "detail/r1": {
     "photo": "guro221745-4",
     "headline": [
@@ -635,9 +599,10 @@
     "reference": true
   },
   "gallery/m1": {
-    "photo": "with-34-3",
+    "photo": "m1",
     "headline": [
-      "어르신 방문요양"
+      "의료사랑방에서",
+      "어르신을 만나다"
     ],
     "subtitle": "원문 사진은 링크에서 확인하세요",
     "category": "현장 사진",
@@ -696,9 +661,10 @@
     "reference": false
   },
   "gallery/m6": {
-    "photo": "with-33-4",
+    "photo": "m6",
     "headline": [
-      "가정 방문 건강관리"
+      "혈압 측정과 상담",
+      "위드 의료현장 실습"
     ],
     "subtitle": "원문 사진은 링크에서 확인하세요",
     "category": "현장 사진",
@@ -708,17 +674,17 @@
     "reference": true
   },
   "gallery/m7": {
-    "photo": "guro215281-2",
+    "photo": "m7",
     "headline": [
-      "서울 어디나지원단 디지털",
-      "교육"
+      "어르신 스마트폰 수업",
+      "배우며 넓어지는 일상"
     ],
-    "subtitle": "원문 사진은 링크에서 확인하세요",
+    "subtitle": "울산 동구 노동자지원센터 실제 교육",
     "category": "현장 사진",
-    "photoNote": "250205 사진2） 2024 청년도전지원사업 ＇아무튼, 기대＇에서 버크만 검사 프로그램을 진행하고 있다.",
-    "credit": "서울 구로구청",
-    "caseKind": "사진 원문 · 참고 표지",
-    "reference": true
+    "photoNote": "울산 동구 노동자지원센터의 어르신 스마트폰 활용법 수업. 어르신들이 탁자에 스마트폰을 놓고 강사의 설명을 듣고 있다.",
+    "credit": "울산광역시 동구",
+    "caseKind": "해당 교육 실제사진",
+    "reference": false
   },
   "gallery/m8": {
     "photo": "m8",
@@ -733,87 +699,11 @@
     "caseKind": "직접 자료 사진",
     "reference": false
   },
-  "gallery/field-agreement": {
-    "photo": "field-agreement",
-    "headline": [
-      "복현어울림센터 업무협약식"
-    ],
-    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
-    "category": "현장 사진",
-    "photoNote": "복현어울림센터 업무협약식",
-    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
-    "caseKind": "직접 자료 사진",
-    "reference": false
-  },
-  "gallery/field-launch": {
-    "photo": "field-launch",
-    "headline": [
-      "대구광역 통합돌봄 네트워크",
-      "발대식 현장"
-    ],
-    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
-    "category": "현장 사진",
-    "photoNote": "대구광역 통합돌봄 네트워크 발대식 현장",
-    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
-    "caseKind": "직접 자료 사진",
-    "reference": false
-  },
-  "gallery/field-conference": {
-    "photo": "field-conference",
-    "headline": [
-      "통합돌봄 광역 네트워크",
-      "전국대회"
-    ],
-    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
-    "category": "현장 사진",
-    "photoNote": "통합돌봄 광역 네트워크 전국대회",
-    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
-    "caseKind": "직접 자료 사진",
-    "reference": false
-  },
-  "gallery/field-seminar": {
-    "photo": "with-37-2",
-    "headline": [
-      "대구경북 의료사회복지사",
-      "세미나"
-    ],
-    "subtitle": "원문 사진은 링크에서 확인하세요",
-    "category": "현장 사진",
-    "photoNote": "출판기념회 객석에 앉은 참가자들",
-    "credit": "위드의료복지사회적협동조합",
-    "caseKind": "사진 원문 · 참고 표지",
-    "reference": true
-  },
-  "gallery/field-naeiln": {
-    "photo": "guro229467-1",
-    "headline": [
-      "내일앤 보호작업장·주간활동",
-      "공간 방문"
-    ],
-    "subtitle": "원문 사진은 링크에서 확인하세요",
-    "category": "현장 사진",
-    "photoNote": "260204 （사진1） 구로 청년도전지원사업 참여자 교육 모습",
-    "credit": "서울 구로구청",
-    "caseKind": "사진 원문 · 참고 표지",
-    "reference": true
-  },
-  "gallery/field-garden": {
-    "photo": "field-garden",
-    "headline": [
-      "복현 어르신 힐링 텃밭",
-      "가꾸기"
-    ],
-    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
-    "category": "현장 사진",
-    "photoNote": "복현 어르신 힐링 텃밭 가꾸기",
-    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
-    "caseKind": "직접 자료 사진",
-    "reference": false
-  },
   "gallery/sector-home-health": {
-    "photo": "with-33-2",
+    "photo": "sector-home-health",
     "headline": [
-      "가정 방문 건강관리"
+      "의료진과 어르신",
+      "가까이에서 나누는 상담"
     ],
     "subtitle": "원문 사진은 링크에서 확인하세요",
     "category": "현장 사진",

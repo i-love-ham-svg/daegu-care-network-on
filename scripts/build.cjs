@@ -9,7 +9,7 @@ const recipes=JSON.parse(fs.readFileSync(path.join(root,'src/social-covers.json'
 const sourceAudit=JSON.parse(fs.readFileSync(path.join(root,'output/verification/social/uniqueness-audit.json'),'utf8'));
 const auditedSources=new Map(sourceAudit.sourceAudit.map(entry=>[entry.route,entry.raw]));
 const sourceHashes=new Map(),renderHashes=new Map();
-for(const route of catalog.routes){
+for(const route of catalog.canonicalRoutes){
   const entry=manifest[route],recipe=recipes[route];
   if(!entry||!recipe)throw new Error('Missing content cover: '+route);
   for(const key of Object.keys(recipe))if(JSON.stringify(entry[key])!==JSON.stringify(recipe[key]))throw new Error('Regenerate changed cover: '+route+'/'+key);
@@ -25,36 +25,50 @@ for(const route of catalog.routes){
   }
 }
 const app=fs.readFileSync(path.join(root,'src/app.js'),'utf8').replace(/\r\n/g,'\n');
+const contentPhotos=JSON.parse(fs.readFileSync(path.join(root,'src/content-photos.json'),'utf8'));
 const css=fs.readFileSync(path.join(root,'src/styles.css'),'utf8').replace(/\r\n/g,'\n').trimEnd()+'\n';
-const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)).digest('hex').slice(0,12);
+const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)).digest('hex').slice(0,12);
 const r=runtime('const onSocialThumbnails = '+JSON.stringify(manifest)+';');
 const shell=fs.readFileSync(path.join(root,'src/shell.html'),'utf8').replaceAll('{{VERSION}}',version);
 fs.mkdirSync(path.join(docs,'assets'),{recursive:true});
-fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
+fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
 fs.writeFileSync(path.join(docs,`assets/site-${version}.css`),css);
 const generated=[];
-function page(route,channel='facebook',legacy=false,versioned=false) {
-  if(!manifest[route])throw new Error('Missing cover: '+route);
+function page(route,channel='facebook',legacy=false,versioned=false,outputOverride='') {
+  const canonicalRoute=catalog.aliases[route]||route;
+  if(!manifest[canonicalRoute])throw new Error('Missing cover: '+route);
   const meta=r.run(`onSeoPage(${JSON.stringify(route)})`);
   if(!meta)throw new Error('Missing metadata: '+route);
-  const canonical=new URL(meta.url).pathname;
+  const canonical=r.run(`onPublicPagePath(${JSON.stringify(route)})`);
   const relative=canonical==='/'?'/index.html':canonical;
-  const publicPath=versioned?new URL(r.run(`socialShareAddress(${JSON.stringify(route)},${JSON.stringify(channel)})`)).pathname:legacy?'/share/'+channel+'.html':channel==='facebook'?relative:'/share/'+channel+relative;
-  if(channel!=='facebook'||legacy||versioned){meta.socialCover=manifest[route].images[channel];meta.shareURL=new URL(publicPath,meta.url).href;}
+  const publicPath=outputOverride||(versioned?new URL(r.run(`socialShareAddress(${JSON.stringify(route)},${JSON.stringify(channel)})`)).pathname:legacy?'/share/'+channel+'.html':channel==='facebook'?relative:'/share/'+channel+relative);
+  const sharePage=publicPath.startsWith('/share/');
+  if(sharePage){meta.socialCover=manifest[canonicalRoute].images[channel];meta.shareURL=new URL(publicPath,meta.url).href;}
   const tags='<meta id="on-metadata" name="on-site-version" content="1.19">\n'+r.run(`seoTags(${JSON.stringify(meta)})`)+'\n<!-- on-metadata:end -->';
-  const html=shell.replace('{{METADATA}}',tags).replace('<html lang="ko">',`<html lang="ko" data-on-route="${route}" data-share-channel="${channel==='facebook'&&!versioned?'':channel}">`);
+  const html=shell.replace('{{METADATA}}',tags).replace('<html lang="ko">',`<html lang="ko" data-on-route="${route}" data-share-channel="${sharePage?channel:''}">`);
   const target=path.join(docs,publicPath);
   fs.mkdirSync(path.dirname(target),{recursive:true});
   fs.writeFileSync(target,html);
-  generated.push({route,channel,path:publicPath,canonical:meta.url,image:meta.socialCover.url});
+  generated.push({route,canonicalRoute,channel,path:publicPath,canonical:meta.url,image:meta.socialCover.url});
 }
 for(const route of catalog.routes){
   for(const channel of ['facebook','kakao','linkedin','x'])page(route,channel);
+}
+for(const route of catalog.canonicalRoutes){
   for(const channel of ['facebook','kakao','linkedin','x'])page(route,channel,false,true);
 }
 for(const [channel] of catalog.channels)if(channel!=='facebook')page('home',channel,true);
+// Existing shared URLs keep working and receive corrected metadata and application.
+const currentPaths=new Set(generated.map(entry=>entry.path));
+for(const file of fs.readdirSync(path.join(docs,'share'),{recursive:true})){
+  const relative='/share/'+file.replaceAll(path.sep,'/');
+  if(!/^\/share\/(facebook|kakao|linkedin|x)\/[a-f0-9]{10}\/.*\.html$/.test(relative)||currentPaths.has(relative))continue;
+  const html=fs.readFileSync(path.join(docs,relative),'utf8');
+  const route=html.match(/data-on-route="([^"]+)"/)?.[1],channel=relative.split('/')[2];
+  if(catalog.routes.includes(route))page(route,channel,false,true,relative);
+}
 fs.copyFileSync(path.join(docs,'media',manifest.home.images.facebook.file),path.join(docs,'proposal-preview.jpg'));
-const report={version,pages:generated.length,routes:catalog.routes.length,images:Object.keys(manifest).length*catalog.channels.length,generated};
+const report={version,pages:generated.length,routes:catalog.routes.length,canonicalContents:catalog.canonicalRoutes.length,aliases:catalog.aliases,images:Object.keys(manifest).length*catalog.channels.length,generated};
 fs.mkdirSync(path.join(root,'output/verification/social'),{recursive:true});
 fs.writeFileSync(path.join(root,'output/verification/social/pages-audit.json'),JSON.stringify(report,null,2));
 console.log(JSON.stringify({version,pages:generated.length,routes:catalog.routes.length,images:report.images}));

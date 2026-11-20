@@ -4,15 +4,15 @@ const runtime = require('./runtime.cjs');
 module.exports = function catalog() {
   const r = runtime('const onSocialThumbnails = {};');
   const data = JSON.parse(r.run(`JSON.stringify({
-    sections:onPublicSections,photos:photoData,imagePreviews:onImagePreviews,organizations,channels:onShareChannels,
+    sections:onPublicSections,photos:photoData,imagePreviews:onImagePreviews,organizations,channels:onShareChannels,aliases:onShareAliases,
     items:[...items('news'),...items('policy'),...items('event'),...items('resource')],
     routes:[...Object.keys(onPublicSections),...organizations.map(x=>'member/'+x.id),
       ...['news','policy','event','resource'].flatMap(type=>items(type).map(x=>'detail/'+x.id)),
-      ...Object.keys(photoData).filter(key=>!photoData[key].illustrative).map(key=>'gallery/'+key)]
+      ...Object.keys(photoData).filter(key=>!photoData[key].illustrative&&photoData[key].gallery!==false).map(key=>'gallery/'+key)]
   })`));
   const extraPath=path.join(__dirname,'../src/social-photos.json');
   const socialPhotos=fs.existsSync(extraPath)?JSON.parse(fs.readFileSync(extraPath,'utf8')):{};
-  return {...data,photos:{...data.photos,...socialPhotos}};
+  return {...data,canonicalRoutes:[...new Set(data.routes.map(route=>data.aliases[route]||route))],photos:{...data.photos,...socialPhotos}};
 };
 if (require.main === module) {
   const data = module.exports();

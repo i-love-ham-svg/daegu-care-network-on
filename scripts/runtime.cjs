@@ -10,6 +10,7 @@ module.exports = function runtime(extra = '', saved = {}) {
     localStorage:{getItem(key){return saved[key]??null},setItem(){}},URL,Intl,structuredClone,console,
     setTimeout(){},clearTimeout(){},requestAnimationFrame(){}});
   const source = fs.readFileSync(path.join(__dirname,'../src/app.js'),'utf8').replace(/render\(\);\s*$/, '');
-  vm.runInContext(extra+'\n'+source, context, {timeout:5000});
+  const contentPhotos=JSON.parse(fs.readFileSync(path.join(__dirname,'../src/content-photos.json'),'utf8'));
+  vm.runInContext('const onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\n'+extra+'\n'+source, context, {timeout:5000});
   return {context,run(code){return vm.runInContext(code,context,{timeout:5000})}};
 };
