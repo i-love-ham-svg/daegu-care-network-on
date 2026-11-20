@@ -3,16 +3,19 @@ const fs=require('node:fs');
 const path=require('node:path');
 const runtime=require('./runtime.cjs');
 const manifest=JSON.parse(fs.readFileSync(path.join(__dirname,'../src/social-manifest.json')));
+const service=JSON.parse(fs.readFileSync(path.join(__dirname,'../src/service-share-config.json')));
 const results=[];
 function fixture(){
   const r=runtime('const onSocialThumbnails='+JSON.stringify(manifest)+';globalThis.__clicks=[];document.addEventListener=(type,fn)=>{if(type==="click")__clicks.push(fn)};');
-  const calls=[],dialogs=[],toasts=[];
+  const calls=[],dialogs=[],toasts=[],records=[];
+  r.context.crypto=require('node:crypto').webcrypto;
+  r.context.fetch=(url,options)=>{records.push({url,options});return Promise.resolve({ok:true});};
   r.context.__recordDialog=(...args)=>dialogs.push(args);
   r.context.__recordToast=text=>toasts.push(text);
   r.run('openModal=(...args)=>__recordDialog(...args);toast=text=>__recordToast(text);activeRoute="members";');
   r.context.navigator.share=data=>{calls.push(data);return Promise.resolve();};
   r.context.navigator.canShare=()=>true;
-  return {r,calls,dialogs,toasts};
+  return {r,calls,dialogs,toasts,records};
 }
 async function check(label,fn){await fn();results.push({label,passed:true});}
 (async()=>{
@@ -22,7 +25,8 @@ async function check(label,fn){await fn();results.push({label,passed:true});}
     for(const route of require('./social-catalog.cjs')().routes){
       const before=calls.length,action=r.run(`shareContent(${JSON.stringify(route)})`);
       assert.equal(calls.length,before+1,'Native share must run before the first await: '+route);
-      assert.match(calls.at(-1).url,/^https:\/\/daegu-care\.oconia\.co\.kr\/share\/facebook\//);
+      if(route==='home')assert.ok(calls.at(-1).url.startsWith(service.baseURL));
+      else assert.match(calls.at(-1).url,/^https:\/\/daegu-care\.oconia\.co\.kr\/share\/facebook\//);
       assert.ok(calls.at(-1).title);
       assert.deepEqual(Object.keys(calls.at(-1)).sort(),['title','url'],'Default sharing must send a link, never an image attachment');
       assert.equal(dialogs.length,0);
@@ -45,6 +49,11 @@ async function check(label,fn){await fn();results.push({label,passed:true});}
     for(const route of require('./social-catalog.cjs')().canonicalRoutes){
       await r.run(`shareContent(${JSON.stringify(route)})`);
       const url=new URL(calls.at(-1).url);
+      if(route==='home'){
+        assert.ok(url.href.startsWith(service.baseURL));
+        assert.match(calls.at(-1).title,/돌봄이 필요한 순간/);
+        continue; // Dynamic representative OG cards are covered by the server's SQLite tests.
+      }
       assert.equal(url.origin,'https://daegu-care.oconia.co.kr');
       assert.ok(url.pathname.endsWith('.html'),'Share a page URL instead of a photograph URL');
       const metadata=readMetadata(fs.readFileSync(path.join(__dirname,'../docs',decodeURIComponent(url.pathname)),'utf8'));
@@ -77,10 +86,64 @@ async function check(label,fn){await fn();results.push({label,passed:true});}
     assert.deepEqual(Object.keys(calls[0]).sort(),['title','url']);
   });
   await check('cancellation remains silent and a later click can share again',async()=>{
-    const {r,calls,dialogs,toasts}=fixture();
+    const {r,calls,dialogs,toasts,records}=fixture();
     r.context.navigator.share=data=>{calls.push(data);return Promise.reject({name:'AbortError'});};
     await r.run('shareContent("home")');await r.run('shareContent("home")');
     assert.equal(calls.length,2);assert.equal(dialogs.length,0);assert.equal(toasts.length,0);
+    assert.equal(records.length,0,'Cancelled app selection must not POST a share registration');
+  });
+  await check('representative sharing registers the same UUID only after native handoff and does not await its server',async()=>{
+    const {r,calls,records}=fixture();let finish;
+    r.context.navigator.share=data=>{calls.push(data);return new Promise(resolve=>{finish=resolve;});};
+    const action=r.run('shareContent("home")');
+    assert.equal(calls.length,1);assert.equal(records.length,0);
+    const token=new URL(calls[0].url).pathname.split('/').filter(Boolean).at(-1);
+    assert.match(token,/^[0-9a-f-]{36}$/);
+    finish();await action;
+    assert.equal(records.length,1);
+    assert.equal(records[0].url,service.recordEndpoint);
+    assert.equal(JSON.parse(records[0].options.body).token,token);
+    assert.equal(records[0].options.keepalive,true);
+    assert.equal(records[0].options.credentials,'omit');
+  });
+  await check('the header represents the service on institution pages and clients create independent links',async()=>{
+    const first=fixture(),second=fixture();
+    const shell=fs.readFileSync(path.join(__dirname,'../src/shell.html'),'utf8');
+    assert.match(shell,/<button[^>]*id="header-share"[^>]*data-route-share="home"/);
+    for(const test of [first,second]){
+      test.r.run('activeRoute="member/with-medical";');
+      const header={dataset:{action:'share',routeShare:'home'}};
+      test.r.context.__clickEvent={target:{closest:s=>s==='[data-action],[data-route]'?header:null},button:0,preventDefault(){}};
+      test.r.run('__clicks.forEach(handler=>handler(__clickEvent))');
+      assert.ok(test.calls[0].url.startsWith(service.baseURL));
+      await Promise.resolve();
+    }
+    assert.notEqual(first.calls[0].url,second.calls[0].url);
+  });
+  await check('older secure browsers can mint a version-4 token and registration failures do not change native sharing',async()=>{
+    const {r,calls,dialogs}=fixture(),crypto=require('node:crypto').webcrypto;
+    r.context.crypto={getRandomValues:bytes=>crypto.getRandomValues(bytes)};
+    r.context.fetch=()=>Promise.reject(Error('Offline registration'));
+    await r.run('shareContent("home")');await Promise.resolve();
+    assert.match(calls[0].url,/\/[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\/$/);
+    assert.equal(dialogs.length,0);
+  });
+  await check('opening the representative fallback does not register; copying its prepared link registers that same token',async()=>{
+    const {r,dialogs,records}=fixture();
+    r.context.navigator.share=undefined;
+    await r.run('shareContent("home")');
+    assert.equal(records.length,0);assert.equal(dialogs.length,1);
+    assert.equal(dialogs[0][1],service.title);
+    const address=dialogs[0][2].match(/id="share-url"[^>]*value="([^"]+)"/)?.[1];
+    assert.ok(address?.startsWith(service.baseURL));
+    assert.ok(!dialogs[0][2].includes('data-action="share-image"'));
+    const field={value:address};
+    r.context.document.querySelector=selector=>selector==='#share-url'?field:null;
+    r.context.navigator.clipboard={writeText:async text=>assert.equal(text,address)};
+    r.run('closeModal=()=>{};');
+    await r.run('copyShareLink()');
+    assert.equal(records.length,1);
+    assert.ok(address.includes(JSON.parse(records[0].options.body).token));
   });
   await check('rapid taps open one picker until the pending operation ends',async()=>{
     const {r,calls}=fixture();let finish;

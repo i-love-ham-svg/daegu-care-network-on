@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const {execFileSync}=require('node:child_process');
+require('./sync-service-share.cjs')();
 const runtime = require('./runtime.cjs');
 const catalog = require('./social-catalog.cjs')();
 const root=path.join(__dirname,'..'),docs=path.join(root,'docs');
@@ -29,8 +30,9 @@ const app=fs.readFileSync(path.join(root,'src/app.js'),'utf8').replace(/\r\n/g,'
 const contentPhotos=JSON.parse(fs.readFileSync(path.join(root,'src/content-photos.json'),'utf8'));
 const researchedNews=JSON.parse(fs.readFileSync(path.join(root,'src/researched-news.json'),'utf8'));
 const release=JSON.parse(fs.readFileSync(path.join(root,'src/release-content.json'),'utf8'));
+const serviceShare=JSON.parse(fs.readFileSync(path.join(root,'src/service-share-config.json'),'utf8'));
 const css=fs.readFileSync(path.join(root,'src/styles.css'),'utf8').replace(/\r\n/g,'\n').trimEnd()+'\n';
-const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)+JSON.stringify(researchedNews)+JSON.stringify(release)).digest('hex').slice(0,12);
+const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)+JSON.stringify(researchedNews)+JSON.stringify(release)+JSON.stringify(serviceShare)).digest('hex').slice(0,12);
 const r=runtime('const onSocialThumbnails = '+JSON.stringify(manifest)+';');
 for(const organization of catalog.organizations){
   if(!r.run(`Boolean(campaignFor(organizations.find(x=>x.id===${JSON.stringify(organization.id)})))`)){
@@ -39,7 +41,7 @@ for(const organization of catalog.organizations){
 }
 const shell=fs.readFileSync(path.join(root,'src/shell.html'),'utf8').replaceAll('{{VERSION}}',version);
 fs.mkdirSync(path.join(docs,'assets'),{recursive:true});
-fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onReleaseContent = '+JSON.stringify(release)+';\nconst onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onResearchedNews = '+JSON.stringify(researchedNews)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
+fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onServiceShareConfig = '+JSON.stringify(serviceShare)+';\nconst onReleaseContent = '+JSON.stringify(release)+';\nconst onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onResearchedNews = '+JSON.stringify(researchedNews)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
 fs.writeFileSync(path.join(docs,`assets/site-${version}.css`),css);
 const generated=[];
 function page(route,channel='facebook',legacy=false,versioned=false,outputOverride='') {

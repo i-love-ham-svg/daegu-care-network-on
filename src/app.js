@@ -67,20 +67,48 @@ function localShareItem(path) {
 }
 function canPreviewShare(path) {return Boolean(shareTarget(path)||localShareItem(path));}
 let nativeSharePending=false;
-function shareFallback(path) {
+function representativeShareToken() {
+  const provider=globalThis.crypto;
+  if(provider?.randomUUID) return provider.randomUUID();
+  if(!provider?.getRandomValues) return '';
+  const bytes=provider.getRandomValues(new Uint8Array(16));
+  bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;
+  const hex=[...bytes].map(byte=>byte.toString(16).padStart(2,'0')).join('');
+  return [hex.slice(0,8),hex.slice(8,12),hex.slice(12,16),hex.slice(16,20),hex.slice(20)].join('-');
+}
+function publicShareData(path,channel='facebook') {
   const target=shareTarget(path);
-  if(!target) return;
-  const url=socialShareAddress(path,'facebook')||target.url;
+  if(!target) return null;
+  if(canonicalShareRoute(path)==='home'&&onServiceShareConfig.enabled) {
+    const token=representativeShareToken();
+    if(token) return {title:onServiceShareConfig.title,url:new URL(token+'/',onServiceShareConfig.baseURL).href};
+  }
+  return {title:target.title,url:socialShareAddress(path,channel)||target.url};
+}
+function recordRepresentativeShare(address) {
+  if(!onServiceShareConfig.enabled||typeof fetch!=='function') return;
+  try {
+    const base=new URL(onServiceShareConfig.baseURL),url=new URL(address);
+    if(url.origin!==base.origin||!url.pathname.startsWith(base.pathname)) return;
+    const token=url.pathname.slice(base.pathname.length).replace(/\/$/,'');
+    if(!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(token)) return;
+    return Promise.resolve(fetch(onServiceShareConfig.recordEndpoint,{method:'POST',mode:'cors',credentials:'omit',headers:{'Content-Type':'application/json'},body:JSON.stringify({token}),keepalive:true})).catch(()=>{});
+  } catch {}
+}
+function shareFallback(path,prepared=publicShareData(path)) {
+  const target=shareTarget(path);
+  if(!target||!prepared) return;
+  const url=prepared.url;
   const channels=[
     ['페이스북','https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url)],
-    ['X','https://twitter.com/intent/tweet?text='+encodeURIComponent(target.title)+'&url='+encodeURIComponent(url)],
-    ['네이버','https://share.naver.com/web/shareView?url='+encodeURIComponent(url)+'&title='+encodeURIComponent(target.title)],
-    ['밴드','https://band.us/plugin/share?body='+encodeURIComponent(target.title+'\n'+url)]
+    ['X','https://twitter.com/intent/tweet?text='+encodeURIComponent(prepared.title)+'&url='+encodeURIComponent(url)],
+    ['네이버','https://share.naver.com/web/shareView?url='+encodeURIComponent(url)+'&title='+encodeURIComponent(prepared.title)],
+    ['밴드','https://band.us/plugin/share?body='+encodeURIComponent(prepared.title+'\n'+url)]
   ];
-  openModal('공유하기',target.title,`<div class="on-share-apps">${channels.map(([label,address])=>`<a class="btn" href="${esc(address)}" target="_blank" rel="noopener noreferrer">${label}</a>`).join('')}</div>
+  openModal('공유하기',prepared.title,`<div class="on-share-apps">${channels.map(([label,address])=>`<a class="btn" href="${esc(address)}" data-on-action="record-service-share" data-share-url="${esc(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`).join('')}</div>
     <div class="field"><label for="share-url">공유 링크</label><input class="share-input" id="share-url" type="url" readonly value="${esc(url)}"></div>
     <p id="share-feedback" class="smalltext muted" role="status" hidden></p>
-    <div class="form-actions"><button type="button" class="btn" data-action="share-image" data-route-share="${esc(path)}">이미지 저장</button><button type="button" class="btn primary" data-action="copy-share-link">${icon('link')} 링크 복사</button></div>`);
+    <div class="form-actions">${canonicalShareRoute(path)!=='home'?`<button type="button" class="btn" data-action="share-image" data-route-share="${esc(path)}">이미지 저장</button>`:''}<button type="button" class="btn primary" data-action="copy-share-link">${icon('link')} 링크 복사</button></div>`);
 }
 async function shareContent(path=activeRoute) {
   const target=shareTarget(path);
@@ -90,16 +118,16 @@ async function shareContent(path=activeRoute) {
     return;
   }
   if(nativeSharePending) return;
-  if(typeof navigator.share!=='function') return shareFallback(path);
-  const url=socialShareAddress(path,'facebook')||target.url;
-  const data={title:target.title,url};
+  const data=publicShareData(path);
+  if(typeof navigator.share!=='function') return shareFallback(path,data);
   nativeSharePending=true;
   try {
     // Share the page URL so apps can build a clickable card from its OG cover.
     // Attaching files makes some apps send a standalone photo and discard the link.
     await navigator.share(data);
+    recordRepresentativeShare(data.url);
   } catch(error) {
-    if(error.name!=='AbortError') shareFallback(path);
+    if(error.name!=='AbortError') shareFallback(path,data);
   } finally {nativeSharePending=false;}
 }
 async function localSharePreview(path,local,channel) {
@@ -134,6 +162,7 @@ async function localSharePreview(path,local,channel) {
   } catch(error) {openModal('공유 이미지',local.name||local.title,'<p>이미지를 만들 수 없습니다. 활동 사진과 제목을 확인해 주세요.</p>');}
 }
 function sharePreview(path, channel='facebook') {
+  if(canonicalShareRoute(path)==='home'&&onServiceShareConfig.enabled) return shareFallback(path);
   const target = shareTarget(path);
   const local = localShareItem(path);
   if (!target) {
@@ -171,6 +200,7 @@ async function systemShare() {
   try {
     const path=$('#share-channel')?.dataset.path||activeRoute;
     await navigator.share({url,title:shareTarget(path)?.title||siteName});
+    recordRepresentativeShare(url);
   } catch (error) {
     if (error.name!=='AbortError') toast('공유 링크를 복사해 보내세요.');
   }
@@ -649,6 +679,7 @@ function onFeatureClick(event) {
   if (!target) return;
   const {onAction,id,scope,index}=target.dataset;
   if (onAction==='system-share') systemShare();
+  if (onAction==='record-service-share') recordRepresentativeShare(target.dataset.shareUrl);
   if (onAction==='project-review') reviewProject(target.closest('form'),target.dataset.decision);
   if (onAction==='gallery') onGallery(scope,id,Number(index));
   if (onAction==='edit-affiliation'&&demoAccount) openOnAffiliation(demoAccount.provider,'',true);
@@ -3241,6 +3272,7 @@ async function copyShareLink() {
   if (!field) return;
   try {
     await navigator.clipboard.writeText(field.value);
+    recordRepresentativeShare(field.value);
     closeModal();
     toast('공유 링크를 복사했습니다.');
     return;
@@ -3253,6 +3285,7 @@ async function copyShareLink() {
   let copied = false;
   try { copied = document.execCommand('copy'); } catch {}
   if (copied) {
+    recordRepresentativeShare(field.value);
     closeModal();
     toast('공유 링크를 복사했습니다.');
   } else {

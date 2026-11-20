@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "title": "돌봄이 필요한 순간, 우리 동네가 함께합니다 | 대구 통합돌봄네트워크 ON",
+  "baseURL": "https://renewal.oconia.co.kr/share/daegu-care/",
+  "recordEndpoint": "https://renewal.oconia.co.kr/api/daegu-care/service-shares",
+  "statusEndpoint": "https://renewal.oconia.co.kr/api/daegu-care/service-share-status",
+  "countDefinition": "unique-representative-links-allocated"
+}
