@@ -586,4 +586,6 @@ a.list-row,a.news-card{color:inherit}
 .on-gallery-detail img{display:block;max-width:100%;height:auto;margin:auto}
 .on-policy-answer{font-size:clamp(16px,2.1vw,19px);font-weight:650;margin:17px 0 9px;line-height:1.65;color:var(--navy)}
 .detail-main .bodytext p+p{margin-top:13px}
+.case-photo-link,.case-photo-link img{display:block;width:100%;height:auto}
+.on-share-source{margin:-7px 0 16px;line-height:1.6}
 .detail-main .detail-meta a{text-decoration:underline;text-underline-offset:2px}

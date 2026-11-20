@@ -1,16 +1,17 @@
 """Render actual field photographs with editorial type; never invent case imagery."""
 from pathlib import Path
-import hashlib, json, math, sys
+import hashlib, json, math, sys, subprocess
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'output/work/catalog.json').read_text(encoding='utf-8'))
 RECIPES=json.loads((ROOT/'src/social-covers.json').read_text(encoding='utf-8'))
+subprocess.run([sys.executable,str(ROOT/'scripts/verify-unique.py'),'--source-only'],check=True)
 DEST=ROOT/'docs/media/social'
 DEST.mkdir(parents=True,exist_ok=True)
 FONT='C:/Windows/Fonts/malgunbd.ttf'
 REGULAR='C:/Windows/Fonts/malgun.ttf'
-RENDER_VERSION=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()[:12]
+RENDER_VERSION=hashlib.sha256(Path(__file__).read_bytes().replace(b'\r\n',b'\n')).hexdigest()[:12]
 SIZES=[('facebook',1200,630),('kakao',800,400),('linkedin',1200,627),('x',1200,600),('naver',1080,1080),('band',1080,1080),('instagram-feed',1080,1350),('instagram-story',1080,1920),('youtube',1280,720)]
 
 # Materialize the existing article image variants as well as the social covers.
@@ -48,26 +49,20 @@ for route in DATA['routes']:
     title=recipe['headline']
     assert 1<=len(title)<=3,route
     slug=route.replace('/','--')
-    entry={**recipe,'images':{}}
+    entry={**recipe,'background':{k:photo.get(k,'') for k in ['file','caption','title','publisher','source','owner','width','height']},'images':{}}
     for channel,w,h in SIZES:
-        # Landscape preserves the scene. Vertical formats show the whole source
-        # photograph over a soft extension of that same photograph.
+        # Each canvas is an actual case photograph, with a central title safe area.
         scale=w/1200
-        if h/w>1.1:
-            im=ImageOps.fit(original,(w,h),centering=(.5,.45)).filter(ImageFilter.GaussianBlur(24))
-            im=Image.blend(im,Image.new('RGB',(w,h),'#11253d'),.32)
-            scene=ImageOps.fit(original,(w,round(w*.72)),centering=(.5,.4))
-            im.paste(scene,(0,round(h*.25-w*.11)))
-        else:
-            im=ImageOps.fit(original,(w,h),centering=(.5,.40))
+        focus=recipe.get('focus',[.5,.40])
+        im=ImageOps.fit(original,(w,h),centering=tuple(focus))
         overlay=Image.new('RGBA',(w,h))
         od=ImageDraw.Draw(overlay)
         for y in range(h):
             ratio=y/h
             if h/w>1.1:
-                alpha=round(225*max(0,min(1,(ratio-.36)/.35)))
+                alpha=round(230*max(0,min(1,(ratio-.30)/.48)))
             else:
-                alpha=round(232*max(0,min(1,(ratio-.35)/.60)))
+                alpha=round(238*max(0,min(1,(ratio-.26)/.62)))
             od.line((0,y,w,y),fill=(7,23,43,alpha))
         # A subtle upper gradient keeps branding readable without a solid panel.
         for y in range(round(h*.25)):
@@ -77,27 +72,29 @@ for route in DATA['routes']:
         d=ImageDraw.Draw(im)
         margin=round(w*.052)
         portrait=h/w>1.1
-        top=round(h*.235) if h/w>1.6 else round(h*.06)
+        top=round(h*.27) if h/w>1.6 else round(h*.06)
         brand_font=font(23*scale)
         d.text((margin,top),'ON  대구 통합돌봄네트워크',font=brand_font,fill='white',stroke_width=1,stroke_fill='#18314d')
         # Main message remains inside the central square for story/reel crops.
-        initial=96*scale if portrait else 64*scale
+        initial=96*scale if portrait else (64 if len(title)==3 else 76)*scale
         minimum=48*scale if portrait else 44*scale
         heading=fit_font(d,title,initial,w-2*margin,minimum)
-        lineheight=round(heading.size*1.35)
-        heading_y=round(h*.53) if portrait else round(h*.48)
+        lineheight=round(heading.size*1.25)
+        heading_y=round(h*.50) if portrait else round(h*.43)
+        if channel=='band':heading_y=round(h*.57)
         if len(title)==3: heading_y-=round(lineheight*.45)
         category_y=heading_y-round(58*scale)
-        category=recipe['category']
+        category=recipe['category']+(' · 참고 사례' if recipe.get('reference') else '')
         d.text((margin,category_y),category,font=font(25*scale),fill='#a4f0d3',stroke_width=1,stroke_fill='#173746')
         for i,line in enumerate(title):
-            d.text((margin,heading_y+i*lineheight),line,font=heading,fill='white',stroke_width=max(1,round(scale*1.5)),stroke_fill='#10233b')
+            text_color='#a4f0d3' if i==len(title)-1 and len(title)>1 and channel!='band' else 'white'
+            d.text((margin,heading_y+i*lineheight),line,font=heading,fill=text_color,stroke_width=max(1,round(scale*1.5)),stroke_fill='#10233b')
         subtitle_y=heading_y+len(title)*lineheight+round(20*scale)
         subtitle_font=fit_font(d,[recipe['subtitle']],30*scale,w-2*margin,18*scale)
         d.text((margin,subtitle_y),recipe['subtitle'],font=subtitle_font,fill='#e5edf8',stroke_width=1,stroke_fill='#10233b')
         note_y=max(subtitle_y+round(53*scale),round(h*.91 if not portrait else h*.76))
         short_credit=recipe['credit'].replace('대구광역 통합돌봄 네트워크 경과보고','통합돌봄 경과보고').replace('달구벌사회적협동조합연합회 2025년 활동보고','연합회 2025 활동보고')
-        footer=recipe['photoNote'].replace(' · 기관 직접 활동사진 아님','')+' · 사진: '+short_credit
+        footer=recipe.get('caseKind','실제 활동사진')+' · 사진: '+short_credit
         note_font=fit_font(d,[footer],19*scale,w-2*margin,10*scale)
         note_height=note_font.size*1.5
         if note_y+note_height>h-margin*.35:

@@ -15,6 +15,12 @@ function shareImage(file) { return offlineShare?.[file] || '/media/share/'+file;
 function socialCover(route,channel='facebook') {
   return onSocialThumbnails[route]?.images[channel] || onSocialThumbnails[route]?.images.facebook;
 }
+function socialShareAddress(route,channel) {
+  const asset=socialCover(route,channel),canonical=onPublicPagePath(route);
+  if(!asset||!canonical)return '';
+  const revision=asset.file.split('/').pop().split('-').pop().replace(/\.jpg$/,'');
+  return new URL('/share/'+channel+'/'+revision+(canonical==='/'?'/index.html':canonical),siteBaseURL).href;
+}
 function shareMeta(path) {
   const [route,id] = path.split('/');
   if (route==='home') return {title:siteName};
@@ -87,9 +93,9 @@ function sharePreview(path, channel='facebook') {
   const route=path==='demo'?'members':path;
   const directUpload = ['naver','band','instagram-feed','instagram-story','youtube'].includes(key);
   const canonicalPath=onPublicPagePath(route);
-  const address = ['kakao','linkedin','x'].includes(key)
-    ? new URL('/share/'+key+(canonicalPath==='/'?'/index.html':canonicalPath),siteBaseURL).href : target.url;
+  const address = ['facebook','kakao','linkedin','x'].includes(key)?socialShareAddress(route,key):target.url;
   const cover = socialCover(route,key);
+  const provenance=onSocialThumbnails[route];
   const image = cover ? '/media/'+cover.file : '';
   const width = cover?.width||w, height = cover?.height||h;
   const filename = cover ? cover.file.split('/').slice(-2).join('-') : file;
@@ -99,6 +105,7 @@ function sharePreview(path, channel='facebook') {
     <label class="field">공유 채널<select id="share-channel" data-path="${esc(path)}">${onShareChannels.map(([value,label])=>`<option value="${value}" ${key===value?'selected':''}>${label}</option>`).join('')}</select></label>
     ${image?`<figure class="on-share-figure"><img src="${esc(image)}" alt="${esc(cover?.alt||target.title+' 공유 이미지')}">
       <figcaption><span>${width} × ${height} px</span><a class="link" href="${esc(image)}" download="${esc(filename)}">${saveLabel}</a></figcaption></figure>`:''}
+    ${provenance?`<p class="smalltext muted on-share-source">${esc(provenance.caseKind||'실제 사례 사진')} · ${provenance.background?.source?`<a class="link" href="${esc(cleanURL(provenance.background.source))}" target="_blank" rel="noopener noreferrer">사진 출처</a>`:esc(provenance.credit)}</p>`:''}
     ${directUpload?'<p class="muted smalltext">JPG를 저장해 게시물에 첨부하세요.</p>':''}<div class="field"><label for="share-url">공유 링크</label><input class="share-input" id="share-url" type="url" readonly value="${esc(address)}"></div>
     <p id="share-feedback" class="smalltext muted" role="status" hidden></p>
     <div class="form-actions"><button type="button" class="btn" data-action="copy-share-link">${icon('link')} 링크 복사</button>
@@ -1654,7 +1661,7 @@ const organizationReferences={
   "with-medical": "m5",
   "daegu-care": "m4",
   "welfare-design": "field-seminar",
-  "naeiln": "sector-disability-activity",
+  "naeiln": "field-naeiln",
   "byeolbom": "sector-community-library",
   "modoo-happy": "m3"
 };
@@ -2150,11 +2157,11 @@ const organizations = [
     id:'daegu-dounuri', name:'사회적협동조합 대구도우누리', service:'병원동행', district:'수성구', icon:'medical',
     aliases:['대구도우누리'],
     desc:'혼자 병원을 방문하기 어려운 이웃의 이동과 진료 동행을 지원합니다.',
-    body:'병원동행 분야로 플랫폼 참여가 확정된 기관입니다. 공식 안내에서는 병원동행매니저가 이동 지원부터 진료 동행까지 함께하는 서비스와 방문요양, 복지용구, 통합돌봄 및 가사돌봄을 소개합니다.',
+    body:'병원동행 분야로 플랫폼 참여가 확정된 기관입니다. 공식 안내에서는 예약·일정 관리, 접수·수납 보조, 진료 동행, 처방전·약 수령과 귀가 동행을 소개합니다. 방문요양·가족요양, 복지용구, 통합돌봄과 가사돌봄 사업도 안내합니다.',
     items:['병원동행','이동지원'],
     url:'https://linktr.ee/dgdounuri_official', urlLabel:'공식 채널',
     facts:[['참여 확인',participationDate],['주요 분야','병원동행·이동지원'],['소재지','대구 수성구 범안로16길 5 1층']],
-    sources:[participationReport,'대구도우누리 공식 채널','대구도우누리 공식 홈페이지 주요사업 안내']
+    sources:[participationReport,'대구도우누리 공식 채널','병원동행 안내: https://www.dgdounuri.kr/36']
   },
   {
     id:'woorihamkke', name:'우리함께통합돌봄사회적협동조합', service:'방문요양', district:'동구', icon:'heart',
@@ -2171,11 +2178,11 @@ const organizations = [
     id:'with-medical', name:'위드의료복지사회적협동조합', service:'의료', district:'서구', icon:'medical',
     aliases:['위드의료사회적협동조합'],
     desc:'방문진료와 방문운동을 통해 일상 가까이에서 돌봄을 지원합니다.',
-    body:'네트워크 참가현황에는 방문진료와 방문운동을 하는 서비스 제공기관으로 소개되어 있습니다. 지역통합돌봄 시범사업에 방문진료 분야로 참여했고, 영남대학교와 대구가톨릭대학교 심포지엄에서 의료 영역의 돌봄 사례를 공유했습니다.',
+    body:'방문진료와 방문운동으로 지역 주민의 건강을 돌봅니다. 공식 홈페이지에는 의료사랑방, 의대생 의료현장 실습, 건강동아리 등 실제 활동이 게시되어 있습니다. 기존 네트워크 자료에는 지역통합돌봄 시범사업의 방문진료 참여와 의료 영역의 돌봄 사례 발표가 기록되어 있습니다.',
     items:['의료','방문진료','방문운동'],
     url:'https://www.withmedcoop.com/', urlLabel:'홈페이지',
     facts:[['참여 확인',participationDate],['소재지','대구 서구 통학로32길 8 2층'],['시범사업','방문진료 · 2025년 10월~2026년 1월']],
-    sources:[participationReport,'위드의료복지사회적협동조합 공식 홈페이지',networkReport+' 2~4쪽']
+    sources:[participationReport,'위드 공식 의료사랑방 활동: https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=34&theme_type=main1',networkReport+' 2~4쪽']
   },
   {
     id:'welfare-design', name:'사회복지디자인연구소사회적협동조합', service:'자립준비청년', icon:'people',
@@ -2191,30 +2198,30 @@ const organizations = [
   {
     id:'daegu-care', name:'대구돌봄사회적협동조합', service:'생활지원', icon:'meal',
     desc:'아동·노인·청중년층의 일상에 필요한 돌봄을 지원합니다.',
-    body:'아동, 노인, 청중년층을 위한 돌봄 분야로 플랫폼 참여가 확정된 기관입니다. 기관별 서비스와 활동소식은 공식 블로그에서 확인할 수 있습니다.',
-    items:['아동 돌봄','노인 돌봄','청중년층 돌봄'],
+    body:'아동, 노인, 청중년층을 위한 돌봄 분야로 플랫폼 참여가 확정된 기관입니다. 공식 블로그의 일상돌봄 안내에서는 가사지원, 식사지원, 병원동행, 안부확인과 정서지원을 소개합니다. 식사영양관리 게시글에는 실제 조리·포장과 전달 사례가 기록되어 있습니다.',
+    items:['아동 돌봄','노인 돌봄','청중년층 돌봄','일상돌봄','가사지원','식사지원','병원동행'],
     url:'https://blog.naver.com/dgcare1', urlLabel:'공식 블로그',
     facts:[['참여 확인',participationDate],['주요 대상','아동·노인·청중년층'],['시범사업','식사지원 · 2025년 10월~2026년 1월']],
-    sources:[participationReport,'대구돌봄사회적협동조합 공식 블로그',networkReport+' 2·4쪽', associationReport+' 2쪽']
+    sources:[participationReport,'일상돌봄 공식 안내(2026.07.14): https://blog.naver.com/dgcare1/224346356301','실제 식사영양관리 사례: https://blog.naver.com/dgcare1/223802349837',networkReport+' 2·4쪽', associationReport+' 2쪽']
   },
   {
     id:'naeiln', name:'내일앤사회적협동조합', service:'장애인 직업재활', district:'달성군', icon:'people',
     desc:'장애인의 직업재활과 지역사회 자립을 지원합니다.',
-    body:'장애직업재활 분야로 플랫폼 참여가 확정된 기관입니다. 더봄 장애인직업재활시설을 운영하며 중증장애인이 자신의 능력을 발휘하고 지역사회와 함께 생활하도록 지원합니다.',
-    items:['장애인 직업재활','직업훈련'],
+    body:'장애직업재활 분야로 플랫폼 참여가 확정된 기관입니다. 더봄 장애인직업재활시설을 운영하며 보호환경에서 직업훈련과 교육을 제공합니다. 공식 홈페이지에서는 환경위생용품 제작, 소독·청소, 냉난방기 종합세척과 판촉물·기념품 제작 사업을 안내합니다.',
+    items:['장애인 직업재활','직업훈련','환경위생용품 제작','소독·청소'],
     url:'https://www.naeiland.org/', urlLabel:'홈페이지',
     facts:[['참여 확인',participationDate],['소재지','대구 달성군 옥포읍 돌미로 85 301호'],['운영 시설','더봄 장애인직업재활시설']],
     photo:'field-naeiln',
-    sources:[participationReport,'내일앤사회적협동조합 홈페이지',networkReport+' 4쪽', associationReport+' 4쪽']
+    sources:[participationReport,'내일앤사회적협동조합 공식 홈페이지','직업재활 안내: https://thebom.clickn.co.kr/pages/job',networkReport+' 4쪽', associationReport+' 4쪽']
   },
   {
     id:'modoo-happy', name:'사회적협동조합 모두행복센터', service:'방문요양', icon:'heart',
-    desc:'방문요양과 방문목욕으로 어르신의 생활을 지원합니다.',
-    body:'방문요양, 방문목욕 분야로 플랫폼 참여가 확정된 기관입니다. 서비스 안내와 기관의 활동소식은 공식 블로그에서 확인할 수 있습니다.',
-    items:['방문요양','방문목욕'],
+    desc:'방문요양·방문목욕과 일상돌봄으로 생활을 지원합니다.',
+    body:'방문요양과 방문목욕은 참여 동의 자료에서 확인한 분야입니다. 공식 블로그에서는 일상돌봄과 가사·간병 방문지원, 가정방문 후 생활지원과 병원동행의 실제 사례를 확인했습니다. 서비스별 이용 가능 여부는 기관에 확인할 수 있습니다.',
+    items:['방문요양','방문목욕','일상돌봄','가사·간병 지원','병원동행'],
     url:'https://blog.naver.com/dasahappy', urlLabel:'공식 블로그',
     facts:[['참여 확인',participationDate],['주요 분야','방문요양·방문목욕']],
-    sources:[participationReport,'사회적협동조합 모두행복센터 공식 블로그',networkReport+' 2·4쪽']
+    sources:[participationReport,'병원동행 실제 사례(2026.05.14): https://blog.naver.com/dasahappy/224285448077','가정방문 지원 사례(2026.06.14): https://blog.naver.com/dasahappy/224315829543',networkReport+' 2·4쪽']
   }
 ];
 const archivedOrganizations = [
@@ -2345,7 +2352,20 @@ function documentedPhoto(key, eager=false, showIcon=true) {
     <figcaption>${esc(photo.title)}<small>사진 출처 · ${esc(photo.sourceLabel)}</small></figcaption>
   </figure>`;
 }
+function organizationOwnCase(org) {
+  const photo=onSocialThumbnails['member/'+org.id]?.background;
+  return photo?.owner===org.id?photo:null;
+}
+function organizationCaseImage(photo,eager=false) {
+  return `<img src="/media/${esc(photo.file)}" width="${photo.width}" height="${photo.height}" alt="${esc(photo.caption)}" ${eager?'':'loading="lazy"'} decoding="async">`;
+}
 function organizationReferenceFigure(org, eager=true) {
+  const ownCase=organizationOwnCase(org);
+  if(ownCase) return `<figure class="documented-photo org-reference">
+    <a class="case-photo-link" href="/media/${esc(ownCase.file)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(org.name)} 실제 활동 사진 보기">${organizationCaseImage(ownCase,eager)}</a>
+    <figcaption><span class="org-reference-label">기관 실제 활동사진</span><strong>${esc(ownCase.caption)}</strong>
+      <a href="${esc(cleanURL(ownCase.source))}" target="_blank" rel="noopener noreferrer">${esc(ownCase.publisher)} 원문 보기</a></figcaption>
+  </figure>`;
   const key = organizationReferences[org.id];
   const photo = photoData[key];
   if (photo.sourceLabel) return documentedPhoto(key,eager).replace('class="documented-photo"','class="documented-photo org-reference"');
@@ -2361,17 +2381,18 @@ function organizationReferenceFigure(org, eager=true) {
 }
 function organizationCard(org) {
   const photoKey = organizationReferences[org.id] || (photoData[org.id] ? org.id : '');
-  const photo = photoData[photoKey];
+  const ownCase=organizationOwnCase(org);
+  const photo = ownCase||photoData[photoKey];
   const route = 'member/'+org.id;
   const campaign = campaignFor(org);
-  const label = org.isLocal ? '등록 시연' : photo?.sourceLabel ? '기관 활동 사진' : '분야 참고 사례';
+  const label = org.isLocal ? '등록 시연' : ownCase||photo?.sourceLabel ? '기관 활동 사진' : '분야 참고 사례';
   const escortTag = org.service!==hospitalEscortService&&matchesDirectoryService(org,hospitalEscortService)
     ? `<span class="tag blue">${hospitalEscortService}</span>` : '';
   const tags = `<div class="tags org-card-tags"><span class="tag blue">${esc(org.service)}</span>${escortTag}${org.district?`<span class="tag">${esc(org.district)}</span>`:''}</div>`;
   return `<article class="org-card">
     <div class="org-card-main">
       ${photo?`<div class="org-card-photo${photo.cardRatio?' org-card-photo-original':''}"${photo.cardRatio?` style="--card-photo-ratio:${photo.cardRatio}"`:''}>
-        ${referencePhoto(photoKey)}
+        ${ownCase?organizationCaseImage(ownCase):referencePhoto(photoKey)}
         ${tags}
         <div class="org-card-overlay"><span class="org-card-reference-label">${label}</span><p>${esc(org.desc)}</p></div>
       </div>`:`<div class="org-card-photo org-card-no-photo"><span class="avatar" style="--tone:#e3edf9;--color:#537cb0">${icon(org.icon)}</span></div>`}
@@ -2386,12 +2407,16 @@ function organizationCard(org) {
     ${campaign?`<div class="org-card-actions">${campaignButton(org)}</div>`:''}
   </article>`;
 }
+function organizationSource(source) {
+  const match=source.match(/https?:\/\/\S+/);
+  return match?esc(source.slice(0,match.index).replace(/:\s*$/,''))+` <a class="link" href="${esc(cleanURL(match[0]))}" target="_blank" rel="noopener noreferrer">원문 보기</a>`:esc(source);
+}
 function organizationInfo(org) {
   return `<h2>기관 소개</h2><p class="campaign-prose">${esc(org.body)}</p>
     ${org.url?`<a class="btn" href="${esc(cleanURL(org.url))}" target="_blank" rel="noopener noreferrer">${esc(org.urlLabel||'홈페이지')}</a>`:'<p class="smalltext muted">홈페이지 미등록</p>'}
     ${org.facts.length?`<dl class="org-facts">${org.facts.map(([term,value])=>`<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>`:''}
     ${org.extra?`<h3>${esc(org.extraTitle)}</h3><ul>${org.extra.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`:''}
-    <details class="org-source-details"><summary>확인 자료</summary><ul>${org.sources.map(source=>`<li>${esc(source)}</li>`).join('')}</ul></details>`;
+    <details class="org-source-details"><summary>확인 자료</summary><ul>${org.sources.map(source=>`<li>${organizationSource(source)}</li>`).join('')}</ul></details>`;
 }
 function organizationProfile(org) {
   return pageHead(org.name,org.desc)+`<div class="wrap page-content on-form-width">

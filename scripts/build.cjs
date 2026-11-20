@@ -5,6 +5,25 @@ const runtime = require('./runtime.cjs');
 const catalog = require('./social-catalog.cjs')();
 const root=path.join(__dirname,'..'),docs=path.join(root,'docs');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'src/social-manifest.json'),'utf8'));
+const recipes=JSON.parse(fs.readFileSync(path.join(root,'src/social-covers.json'),'utf8'));
+const sourceAudit=JSON.parse(fs.readFileSync(path.join(root,'output/verification/social/uniqueness-audit.json'),'utf8'));
+const auditedSources=new Map(sourceAudit.sourceAudit.map(entry=>[entry.route,entry.raw]));
+const sourceHashes=new Map(),renderHashes=new Map();
+for(const route of catalog.routes){
+  const entry=manifest[route],recipe=recipes[route];
+  if(!entry||!recipe)throw new Error('Missing content cover: '+route);
+  for(const key of Object.keys(recipe))if(JSON.stringify(entry[key])!==JSON.stringify(recipe[key]))throw new Error('Regenerate changed cover: '+route+'/'+key);
+  const photo=catalog.photos[entry.photo];
+  const digest=crypto.createHash('sha256').update(fs.readFileSync(path.join(docs,'media',photo.file))).digest('hex');
+  if(auditedSources.get(route)!==digest)throw new Error('Source photo changed; run metadata/uniqueness checks: '+route);
+  if(sourceHashes.has(digest))throw new Error('Repeated source photograph: '+sourceHashes.get(digest)+' / '+route);
+  sourceHashes.set(digest,route);
+  for(const [channel,image] of Object.entries(entry.images)){
+    const hash=crypto.createHash('sha256').update(fs.readFileSync(path.join(docs,'media',image.file))).digest('hex');
+    if(renderHashes.has(hash))throw new Error('Repeated thumbnail: '+renderHashes.get(hash)+' / '+route+'/'+channel);
+    renderHashes.set(hash,route+'/'+channel);
+  }
+}
 const app=fs.readFileSync(path.join(root,'src/app.js'),'utf8').replace(/\r\n/g,'\n');
 const css=fs.readFileSync(path.join(root,'src/styles.css'),'utf8').replace(/\r\n/g,'\n').trimEnd()+'\n';
 const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)).digest('hex').slice(0,12);
@@ -14,16 +33,16 @@ fs.mkdirSync(path.join(docs,'assets'),{recursive:true});
 fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
 fs.writeFileSync(path.join(docs,`assets/site-${version}.css`),css);
 const generated=[];
-function page(route,channel='facebook',legacy=false) {
+function page(route,channel='facebook',legacy=false,versioned=false) {
   if(!manifest[route])throw new Error('Missing cover: '+route);
   const meta=r.run(`onSeoPage(${JSON.stringify(route)})`);
   if(!meta)throw new Error('Missing metadata: '+route);
   const canonical=new URL(meta.url).pathname;
   const relative=canonical==='/'?'/index.html':canonical;
-  const publicPath=legacy?'/share/'+channel+'.html':channel==='facebook'?relative:'/share/'+channel+relative;
-  if(channel!=='facebook'||legacy){meta.socialCover=manifest[route].images[channel];meta.shareURL=new URL(publicPath,meta.url).href;}
+  const publicPath=versioned?new URL(r.run(`socialShareAddress(${JSON.stringify(route)},${JSON.stringify(channel)})`)).pathname:legacy?'/share/'+channel+'.html':channel==='facebook'?relative:'/share/'+channel+relative;
+  if(channel!=='facebook'||legacy||versioned){meta.socialCover=manifest[route].images[channel];meta.shareURL=new URL(publicPath,meta.url).href;}
   const tags='<meta id="on-metadata" name="on-site-version" content="1.19">\n'+r.run(`seoTags(${JSON.stringify(meta)})`)+'\n<!-- on-metadata:end -->';
-  const html=shell.replace('{{METADATA}}',tags).replace('<html lang="ko">',`<html lang="ko" data-on-route="${route}" data-share-channel="${channel==='facebook'?'':channel}">`);
+  const html=shell.replace('{{METADATA}}',tags).replace('<html lang="ko">',`<html lang="ko" data-on-route="${route}" data-share-channel="${channel==='facebook'&&!versioned?'':channel}">`);
   const target=path.join(docs,publicPath);
   fs.mkdirSync(path.dirname(target),{recursive:true});
   fs.writeFileSync(target,html);
@@ -31,6 +50,7 @@ function page(route,channel='facebook',legacy=false) {
 }
 for(const route of catalog.routes){
   for(const channel of ['facebook','kakao','linkedin','x'])page(route,channel);
+  for(const channel of ['facebook','kakao','linkedin','x'])page(route,channel,false,true);
 }
 for(const [channel] of catalog.channels)if(channel!=='facebook')page('home',channel,true);
 fs.copyFileSync(path.join(docs,'media',manifest.home.images.facebook.file),path.join(docs,'proposal-preview.jpg'));

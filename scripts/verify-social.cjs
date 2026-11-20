@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const {execFileSync}=require('node:child_process');
 const runtime = require('./runtime.cjs');
 const root=path.join(__dirname,'..'),docs=path.join(root,'docs');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'src/social-manifest.json'),'utf8'));
@@ -38,6 +39,11 @@ for(const [route,entry] of Object.entries(manifest)){
     images.add(asset.file);
   }
   const target=r.run(`shareTarget(${JSON.stringify(route)})`);
+  for(const channel of ['facebook','kakao','linkedin','x']){
+    const share=r.run(`socialShareAddress(${JSON.stringify(route)},${JSON.stringify(channel)})`);
+    assert.ok(new URL(share).pathname.startsWith('/share/'+channel+'/'),share);
+    assert.ok(fs.existsSync(publicFile(share)),share);
+  }
   const seo=r.run(`onSeoPage(${JSON.stringify(route)})`);
   for(const photo of seo.photos)for(const asset of [photo.original,photo.primary,...photo.variants])if(!fs.existsSync(publicFile(asset.url)))missingPhotoVariants.add(asset.file);
   assert.equal(new URL(target.url).hash,'',route);
@@ -46,7 +52,7 @@ for(const [route,entry] of Object.entries(manifest)){
 assert.deepEqual([...missingPhotoVariants],[],'Missing source photo variants');
 for(const route of ['my','admin','admin-gifts','project-apply/private','detail/local-private','member/private'])assert.equal(r.run(`shareTarget(${JSON.stringify(route)})`),null,route);
 assert.equal(r.run('organizations.length'),7);
-assert.deepEqual(JSON.parse(r.run(`JSON.stringify(directoryMembers().filter(x=>matchesDirectoryService(x,'병원동행')).map(x=>x.id))`)),['daegu-dounuri','woorihamkke']);
+assert.deepEqual(JSON.parse(r.run(`JSON.stringify(directoryMembers().filter(x=>matchesDirectoryService(x,'병원동행')).map(x=>x.id))`)),['daegu-dounuri','woorihamkke','daegu-care','modoo-happy']);
 assert.ok(r.run(`allMembers().some(x=>x.id==='daegu-medical')&&allMembers().some(x=>x.id==='byeolbom')`));
 assert.equal(r.run(`DBKEY`),'daegu-care-on-demo-v1');
 const existing={posts:[{id:'existing-news',type:'news',isLocal:true,status:'approved',org:'사회복지디자인연구소 사회적협동조합',title:'기존 활동 기록'}],applications:[],gifts:[{id:'existing-gift',memberId:'daegu-medical',amount:12000}],projects:[],affiliations:[],launch:[]};
@@ -60,8 +66,15 @@ assert.ok(css.includes('[data-action="share"].icon-btn:active')&&css.includes('b
 const app=fs.readFileSync(path.join(root,'src/app.js'),'utf8');
 new vm.Script('const onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
 const unused=fs.readdirSync(path.join(docs,'media/social')).filter(x=>x.endsWith('.jpg')&&!images.has('social/'+x));
-// These files are build products from this task, inside its dedicated directory.
-for(const file of unused)fs.unlinkSync(path.join(docs,'media/social',file));
+// Published image/script URLs may still be referenced by cached SNS messages.
+const published=new Set(execFileSync('git',['ls-tree','-r','--name-only','HEAD','--','docs/media/social','docs/assets'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean));
+for(const relative of published){
+  const destination=path.resolve(root,relative);
+  if(!destination.startsWith(path.resolve(docs)+path.sep))throw new Error('Invalid published asset path');
+  if(!fs.existsSync(destination))fs.writeFileSync(destination,execFileSync('git',['show','HEAD:'+relative],{cwd:root,maxBuffer:5*1024*1024}));
+}
+let removed=0;
+for(const file of unused)if(!published.has('docs/media/social/'+file)){fs.unlinkSync(path.join(docs,'media/social',file));removed++}
 const keepAssets=new Set([`site-${audit.version}.js`,`site-${audit.version}.css`]);
-for(const file of fs.readdirSync(path.join(docs,'assets')))if(/^site-[a-f0-9]{12}\.(js|css)$/.test(file)&&!keepAssets.has(file))fs.unlinkSync(path.join(docs,'assets',file));
-console.log(JSON.stringify({passed:true,routes:Object.keys(manifest).length,pages:audit.pages,images:images.size,privateRoutes:'excluded',confirmedOrganizations:7,hospitalEscort:2,unusedBuildFilesRemoved:unused.length}));
+for(const file of fs.readdirSync(path.join(docs,'assets')))if(/^site-[a-f0-9]{12}\.(js|css)$/.test(file)&&!keepAssets.has(file)&&!published.has('docs/assets/'+file))fs.unlinkSync(path.join(docs,'assets',file));
+console.log(JSON.stringify({passed:true,routes:Object.keys(manifest).length,pages:audit.pages,images:images.size,privateRoutes:'excluded',confirmedOrganizations:7,hospitalEscort:4,unusedBuildFilesRemoved:removed,publishedAssetURLsPreserved:published.size}));

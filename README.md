@@ -6,7 +6,9 @@
 
 ## SNS 썸네일
 
-공유 가능한 모든 화면은 `src/social-covers.json`에 개별 제목, 사진, 출처를 가진다. 실사진을 배경으로 핵심 제목을 크게 표시하며, AI 이미지나 단색 로고 이미지를 공유 썸네일로 사용하지 않는다. 다른 지역·분야의 사진을 참고할 때는 그 맥락을 표시한다. 변경 금지 사진은 가공하지 않는다. 기관 자체 사진을 확보하면 해당 기관의 사진으로 교체한다.
+공유 가능한 모든 화면은 `src/social-covers.json`에 개별 제목, 사진, 출처를 가진다. 서로 다른 콘텐츠에는 서로 다른 원본 사진을 배정한다. 같은 사진의 파일명·해상도·크롭·문구만 바꾸어 별개의 사진으로 세지 않는다. 원본과 완성 이미지의 해시 및 이미지 유사도를 검사한다. 같은 콘텐츠의 SNS 규격 변환은 해당 사례의 일관성을 유지하되, 동일 규격인 네이버·밴드도 별도 구도로 구성한다.
+
+실사진을 배경으로 핵심 제목을 크게 표시하며, AI 이미지나 단색 로고 이미지를 공유 썸네일로 사용하지 않는다. 다른 지역·기관의 사진을 참고할 때는 이미지와 공유 창에 그 맥락을 표시한다. 변경 금지 사진은 가공하지 않는다. 사진 원문 페이지의 표지가 다른 실제 참고 사례일 때는 참고 표지임과 원문 사진 링크를 명시한다. 기관 자체 사진을 확보하면 해당 기관의 사진으로 교체한다. 추가 원본과 출처는 `src/social-photos.json`에서 관리하며, 사진을 추가해도 공개 콘텐츠 수가 자동으로 늘어나지 않는다.
 
 공통·카카오톡·링크드인·X·네이버·밴드·인스타그램 피드·스토리/릴스·유튜브의 9가지 규격을 생성한다. 채널별 이미지는 각 콘텐츠의 공유 창에서 저장할 수 있다. 공개 콘텐츠에는 해시 없는 HTML 주소와 정적인 OG/Twitter 메타 태그를 제공한다. 카카오톡·링크드인·X에는 해당 규격 이미지를 담은 별도 공유 페이지도 제공한다. 인스타그램과 유튜브는 저장한 JPG를 게시물 작성 시 첨부한다.
 
@@ -18,20 +20,25 @@ Node.js와 Pillow가 설치된 Python을 사용한다. Codex의 번들 런타임
 
 ```text
 node scripts/social-catalog.cjs
+python scripts/sanitize-photo-metadata.py
+python scripts/verify-unique.py --source-only
 python scripts/render-social.py
 node scripts/build.cjs
 node scripts/verify-social.cjs
+python scripts/verify-images.py
+python scripts/verify-unique.py
 node scripts/preview.cjs
 ```
 
-새 콘텐츠 추가 시 `src/social-covers.json`에 제목과 실사진을 먼저 등록한다. 사진 원본은 `docs/media`에 보관하고 앱의 `photoData`에도 출처와 이용 조건을 등록한다. 새 이미지를 생성한 뒤 빌드·검증한다. 점검 결과와 전체 비교 이미지는 `output/verification/social`에 저장한다.
+새 콘텐츠 추가 시 `src/social-covers.json`에 제목과 실사진을 먼저 등록한다. 사진 원본은 `docs/media`에 보관하고 `src/social-photos.json`에 출처와 이용 조건을 등록한다. 숨은 위치정보는 사진 픽셀을 보존하면서 제거한다. 새 이미지를 생성한 뒤 빌드·검증한다. 원본 중복이나 미검수 변경, 동일 썸네일은 빌드에서 차단한다. 점검 결과와 9개 채널 전체 비교 이미지·검수표는 `output/verification/social`에 저장한다.
 
-공유 플랫폼이 이전 미리보기를 캐시할 수 있으므로 새 썸네일에는 내용에 따른 파일명을 사용한다. 이미 전송된 SNS 메시지의 캐시 교체와 실제 SNS 게시물 업로드는 별도의 플랫폼 작업이다.
+공유 플랫폼이 이전 미리보기를 캐시할 수 있으므로 새 썸네일에는 내용에 따른 파일명을 사용하며, 공유 창의 링크도 해당 이미지 버전의 공개 페이지로 연결한다. 기존 공개 주소와 공유 주소는 유지한다. 이미 전송된 SNS 메시지의 캐시 교체와 실제 SNS 게시물 업로드는 별도의 플랫폼 작업이다.
 
 ## 참고한 디자인 자료
 
 - [YouTube 공식 썸네일 및 제목 팁](https://support.google.com/youtube/answer/12340300?hl=ko): 정확한 주제, 읽기 쉬운 글자, 단순한 구성.
 - [아임웹의 릴스 크리에이터 사례](https://stibee.com/api/v1.0/emails/share/EwfjcJzoQPuy_Lt7WAVVj_HbCuxTuho): 헤로키·독나이프·드브르베의 실제 사진과 짧은 메시지 조합.
 - [푸르메재단의 당사자 콘텐츠 사례](https://purme.org/board/story/7788), [굿네이버스 포토에세이](https://www.goodneighbors.kr/2024/photoessay.gn): 실제 경험과 사람을 중심으로 주제를 전하는 표지.
+- [세바시의 사진·주제·큰 제목 구성](https://www.sebasiland.com/sebasi/courses/1800384331400194): 한눈에 읽히는 제목 크기와 대비를 참고하되, 서비스 표지는 실제 사례 사진으로 구성했다.
 
 외부 사례의 이미지를 복제하지 않고, 기존 사용자 제공 현장 사진과 출처가 확인된 실제 사례 사진으로 구현했다.
