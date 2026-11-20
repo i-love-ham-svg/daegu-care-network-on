@@ -130,32 +130,32 @@
     "reference": true
   },
   "member/daegu-dounuri": {
-    "photo": "dasahappy-224285448077-5",
+    "photo": "org-daegu-dounuri",
     "headline": [
       "대구도우누리",
       "병원 가는 길을 함께"
     ],
     "subtitle": "병원동행 · 이동지원",
-    "category": "참여기관",
-    "photoNote": "어르신의 병원 이동을 돕는 동행",
-    "credit": "사회적협동조합 모두행복센터",
-    "caseKind": "분야 참고 사례",
-    "reference": true,
-    "referenceLabel": "분야 참고사진 · 모두행복센터 병원동행"
+    "category": "기관 실제 활동 · 영양식 기탁",
+    "photoNote": "2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영.",
+    "credit": "대구 수성구청 행복수성뉴스",
+    "caseKind": "기관 실제 활동 · 영양식 기탁",
+    "reference": false,
+    "portraitFit": "contain"
   },
   "member/woorihamkke": {
-    "photo": "with-34-4",
+    "photo": "org-woorihamkke",
     "headline": [
       "우리함께통합돌봄",
       "일상에 필요한 돌봄"
     ],
     "subtitle": "장기요양 · 일상돌봄 · 병원동행",
-    "category": "참여기관",
-    "photoNote": "접수대에서 어르신과 눈높이를 맞추어 상태를 확인하는 활동",
-    "credit": "위드의료복지사회적협동조합",
-    "caseKind": "분야 참고 사례",
+    "category": "관련 네트워크 실제 활동",
+    "photoNote": "2026년 3월 11일 대구생활문화센터 어울림홀에서 열린 대구광역 통합돌봄 네트워크 발대식에서 참가자 여섯 명이 선언문을 낭독하는 모습입니다.",
+    "credit": "도근환 공개 활동 페이지",
+    "caseKind": "관련 네트워크 발대식 · 2026.03.11",
     "reference": true,
-    "referenceLabel": "분야 참고사진 · 위드 의료사랑방"
+    "portraitFit": "contain"
   },
   "member/with-medical": {
     "photo": "with-34-6",
@@ -171,18 +171,18 @@
     "reference": false
   },
   "member/welfare-design": {
-    "photo": "guro215281-2",
+    "photo": "org-welfare-design",
     "headline": [
       "사회복지디자인연구소",
       "청년의 자립을 함께"
     ],
     "subtitle": "자립준비청년 지원 분야",
-    "category": "참여기관",
-    "photoNote": "250205 사진2） 2024 청년도전지원사업 ＇아무튼, 기대＇에서 버크만 검사 프로그램을 진행하고 있다.",
-    "credit": "서울 구로구청",
-    "caseKind": "청년 자립 분야 참고사진",
-    "reference": true,
-    "referenceLabel": "분야 참고사진 · 서울 구로구 청년교육"
+    "category": "기관 실제 활동 · 조합원 워크숍",
+    "photoNote": "사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습.",
+    "credit": "대구시민공익활동지원센터 · 사회복지디자인연구소 사협 참여후기",
+    "caseKind": "기관 실제 활동 · 조합원 워크숍",
+    "reference": false,
+    "portraitFit": "contain"
   },
   "member/daegu-care": {
     "photo": "dgcare1-223802349837-12",
@@ -198,18 +198,18 @@
     "reference": false
   },
   "member/naeiln": {
-    "photo": "guro229467-1",
+    "photo": "org-naeiln",
     "headline": [
       "내일앤",
       "일할 기회를 넓히는 돌봄"
     ],
     "subtitle": "장애인 직업재활 · 직업훈련",
-    "category": "참여기관",
-    "photoNote": "260204 （사진1） 구로 청년도전지원사업 참여자 교육 모습",
-    "credit": "서울 구로구청",
-    "caseKind": "직업훈련 분야 참고사진",
-    "reference": true,
-    "referenceLabel": "분야 참고사진 · 서울 구로구 진로교육"
+    "category": "기관 실제 활동 · 더봄 나눔",
+    "photoNote": "2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장.",
+    "credit": "법무부 대구소년원 · 경상매일신문 재게시",
+    "caseKind": "기관 실제 활동 · 더봄 나눔",
+    "reference": false,
+    "portraitFit": "contain"
   },
   "member/modoo-happy": {
     "photo": "dasahappy-224315829543-6",
@@ -735,5 +735,36 @@
     "credit": "김포시 뉴스포털",
     "caseKind": "직접 자료 사진",
     "reference": false
+  },
+  "detail/suseong-nutrition-sharing": {
+    "photo": "news-suseong-nutrition",
+    "headline": [
+      "통합돌봄 이웃에게",
+      "영양식과 마음을 전하다"
+    ],
+    "subtitle": "대구도우누리 등 3개 기관·단체의 나눔",
+    "category": "수성구 돌봄 소식",
+    "photoNote": "같은 기탁 행사에 참여한 대구재가요양기관연합회 수성지회 관계자들의 기념촬영. 대구도우누리·다정실버주간보호센터도 함께 나눔에 참여했습니다.",
+    "credit": "대구 수성구청 행복수성뉴스",
+    "caseKind": "해당 기탁 행사 실제사진",
+    "reference": false,
+    "portraitFit": "contain"
+  },
+  "detail/sdl-geochang-workshop": {
+    "photo": "news-sdl-workshop",
+    "headline": [
+      "쉼과 대화 속에서",
+      "다시 생각하는 돌봄"
+    ],
+    "subtitle": "사회복지디자인연구소 거창 조합원 워크숍",
+    "category": "기관 활동 · 조합원 워크숍",
+    "photoNote": "사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다.",
+    "credit": "대구시민공익활동지원센터",
+    "caseKind": "해당 워크숍 실제사진",
+    "reference": false,
+    "focus": [
+      0.5,
+      0.45
+    ]
   }
 }

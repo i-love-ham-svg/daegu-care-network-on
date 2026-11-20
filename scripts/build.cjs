@@ -1,6 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const {execFileSync}=require('node:child_process');
 const runtime = require('./runtime.cjs');
 const catalog = require('./social-catalog.cjs')();
 const root=path.join(__dirname,'..'),docs=path.join(root,'docs');
@@ -26,12 +27,13 @@ for(const route of catalog.canonicalRoutes){
 }
 const app=fs.readFileSync(path.join(root,'src/app.js'),'utf8').replace(/\r\n/g,'\n');
 const contentPhotos=JSON.parse(fs.readFileSync(path.join(root,'src/content-photos.json'),'utf8'));
+const researchedNews=JSON.parse(fs.readFileSync(path.join(root,'src/researched-news.json'),'utf8'));
 const css=fs.readFileSync(path.join(root,'src/styles.css'),'utf8').replace(/\r\n/g,'\n').trimEnd()+'\n';
-const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)).digest('hex').slice(0,12);
+const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)+JSON.stringify(researchedNews)).digest('hex').slice(0,12);
 const r=runtime('const onSocialThumbnails = '+JSON.stringify(manifest)+';');
 const shell=fs.readFileSync(path.join(root,'src/shell.html'),'utf8').replaceAll('{{VERSION}}',version);
 fs.mkdirSync(path.join(docs,'assets'),{recursive:true});
-fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
+fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onResearchedNews = '+JSON.stringify(researchedNews)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
 fs.writeFileSync(path.join(docs,`assets/site-${version}.css`),css);
 const generated=[];
 function page(route,channel='facebook',legacy=false,versioned=false,outputOverride='') {
@@ -60,12 +62,16 @@ for(const route of catalog.canonicalRoutes){
 for(const [channel] of catalog.channels)if(channel!=='facebook')page('home',channel,true);
 // Existing shared URLs keep working and receive corrected metadata and application.
 const currentPaths=new Set(generated.map(entry=>entry.path));
+const publishedSharePages=new Set(execFileSync('git',['ls-tree','-r','--name-only','HEAD','--','docs/share'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/));
 for(const file of fs.readdirSync(path.join(docs,'share'),{recursive:true})){
   const relative='/share/'+file.replaceAll(path.sep,'/');
   if(!/^\/share\/(facebook|kakao|linkedin|x)\/[a-f0-9]{10}\/.*\.html$/.test(relative)||currentPaths.has(relative))continue;
   const html=fs.readFileSync(path.join(docs,relative),'utf8');
   const route=html.match(/data-on-route="([^"]+)"/)?.[1],channel=relative.split('/')[2];
-  if(catalog.routes.includes(route))page(route,channel,false,true,relative);
+  if(catalog.routes.includes(route)){
+    if(!publishedSharePages.has('docs'+relative)&&html.includes('id="on-metadata"')){fs.unlinkSync(path.join(docs,relative));continue;}
+    page(route,channel,false,true,relative);
+  }
 }
 fs.copyFileSync(path.join(docs,'media',manifest.home.images.facebook.file),path.join(docs,'proposal-preview.jpg'));
 const report={version,pages:generated.length,routes:catalog.routes.length,canonicalContents:catalog.canonicalRoutes.length,aliases:catalog.aliases,images:Object.keys(manifest).length*catalog.channels.length,generated};

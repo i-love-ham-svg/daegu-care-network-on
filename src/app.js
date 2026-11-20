@@ -1459,7 +1459,7 @@ function onSeoPage(route) {
   const article=indexable&&(item?.type==='policy'||item?.type==='news');
   if (article) {
     const source=cleanURL(item.url)||item.source;
-    const published=item.type==='news'&&/^\d{4}\.\d{2}\.\d{2}$/.test(item.date||'')?item.date.replaceAll('.','-'):'';
+    const published=item.type==='news'?(item.publishedDate||(/^\d{4}\.\d{2}\.\d{2}$/.test(item.date||'')?item.date.replaceAll('.','-'):'')):'';
     const image=mainPhoto?[...new Set([mainPhoto.primary,...mainPhoto.variants].map(asset=>asset.url))]:[];
     graph.push({'@type':'Article','@id':url+'#article',headline:title,description,inLanguage:'ko-KR',
       mainEntityOfPage:{'@id':url},publisher,...(image.length?{image}:{}),
@@ -2178,7 +2178,7 @@ const organizations = [
     items:['병원동행','이동지원'],
     url:'https://linktr.ee/dgdounuri_official', urlLabel:'공식 채널',
     facts:[['참여 확인',participationDate],['주요 분야','병원동행·이동지원'],['소재지','대구 수성구 범안로16길 5 1층']],
-    sources:[participationReport,'대구도우누리 공식 채널','병원동행 안내: https://www.dgdounuri.kr/36']
+    sources:[participationReport,'대구도우누리 공식 채널','병원동행 안내: https://www.dgdounuri.kr/36','수성구 영양식 기탁 활동: '+"https://www.suseong.kr/news/index.do?menu_id=00031461&menu_link=%2Ffront%2Fnews%2FselectIcmsArticle.do%3Farticle_id%3DARTICLE_00019243",'공동체 밥집 한끼라면: https://www.dgdounuri.kr/39']
   },
   {
     id:'woorihamkke', name:'우리함께통합돌봄사회적협동조합', service:'방문요양', district:'동구', icon:'heart',
@@ -2205,12 +2205,12 @@ const organizations = [
     id:'welfare-design', name:'사회복지디자인연구소사회적협동조합', service:'자립준비청년', icon:'people',
     aliases:['사회복지디자인연구소 사회적협동조합'],
     desc:'자립준비청년의 지역사회 생활과 자립을 지원합니다.',
-    body:'자립준비청년 분야로 플랫폼 참여가 확정된 기관입니다. 기관의 활동과 소식은 공식 카페에서 확인할 수 있습니다.',
+    body:'자립준비청년 분야로 플랫폼 참여가 확정된 기관입니다. 대구시민공익활동지원센터에 조합원 워크숍 후기가 공개되어 있으며, 거창에서 쉼과 대화를 나누고 일상과 통합돌봄을 돌아본 활동을 확인할 수 있습니다.',
     items:['자립준비청년'],
     url:'https://cafe.daum.net/SDL2023', urlLabel:'공식 카페',
     facts:[['참여 확인',participationDate],['주요 분야','자립준비청년']],
     photo:'field-seminar',
-    sources:[participationReport]
+    sources:[participationReport,'조합원 워크숍 참여후기: https://www.dgpublic.org/web/jhboard/view.php?id=active1&no=4054']
   },
   {
     id:'daegu-care', name:'대구돌봄사회적협동조합', service:'생활지원', icon:'meal',
@@ -2224,12 +2224,12 @@ const organizations = [
   {
     id:'naeiln', name:'내일앤사회적협동조합', service:'장애인 직업재활', district:'달성군', icon:'people',
     desc:'장애인의 직업재활과 지역사회 자립을 지원합니다.',
-    body:'장애직업재활 분야로 플랫폼 참여가 확정된 기관입니다. 더봄 장애인직업재활시설을 운영하며 보호환경에서 직업훈련과 교육을 제공합니다. 공식 홈페이지에서는 환경위생용품 제작, 소독·청소, 냉난방기 종합세척과 판촉물·기념품 제작 사업을 안내합니다.',
+    body:'장애직업재활 분야로 플랫폼 참여가 확정된 기관입니다. 더봄 장애인직업재활시설을 운영하며 보호환경에서 직업훈련과 교육을 제공합니다. 공식 홈페이지에서는 환경위생용품 제작, 소독·청소, 냉난방기 종합세척과 판촉물·기념품 제작 사업을 안내합니다. 법무부가 공개한 언론보도에는 2025년 5월 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 활동도 소개되어 있습니다.',
     items:['장애인 직업재활','직업훈련','환경위생용품 제작','소독·청소'],
     url:'https://www.naeiland.org/', urlLabel:'홈페이지',
     facts:[['참여 확인',participationDate],['소재지','대구 달성군 옥포읍 돌미로 85 301호'],['운영 시설','더봄 장애인직업재활시설']],
     photo:'field-naeiln',
-    sources:[participationReport,'내일앤사회적협동조합 공식 홈페이지','직업재활 안내: https://thebom.clickn.co.kr/pages/job',networkReport+' 4쪽', associationReport+' 4쪽']
+    sources:[participationReport,'내일앤사회적협동조합 공식 홈페이지','직업재활 안내: https://thebom.clickn.co.kr/pages/job','더봄 나눔 언론보도: https://www.cppb.go.kr/cppb/596/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGY3BwYiUyRjMzJTJGNTk1ODY3JTJGYXJ0Y2xWaWV3LmRvJTNG','더봄 개소식 영상: https://www.youtube.com/watch?v=93piMxXQ14M',networkReport+' 4쪽', associationReport+' 4쪽']
   },
   {
     id:'modoo-happy', name:'사회적협동조합 모두행복센터', service:'방문요양', icon:'heart',
@@ -2370,17 +2370,19 @@ function documentedPhoto(key, eager=false, showIcon=true) {
   </figure>`;
 }
 function organizationOwnCase(org) {
+  const primary=photoData['org-'+org.id];
+  if(primary?.owner===org.id)return primary;
   const photo=onSocialThumbnails['member/'+org.id]?.background;
   return photo?.owner===org.id?photo:null;
 }
 function organizationCaseImage(photo,eager=false) {
-  return `<img src="/media/${esc(photo.file)}" width="${photo.width}" height="${photo.height}" alt="${esc(photo.caption)}" ${eager?'':'loading="lazy"'} decoding="async">`;
+  return `<img src="/media/${esc(photo.displayFile||photo.file)}" width="${photo.displayWidth||photo.width}" height="${photo.displayHeight||photo.height}" alt="${esc(photo.caption)}" ${eager?'':'loading="lazy"'} decoding="async">`;
 }
 function organizationReferenceFigure(org, eager=true) {
   const ownCase=organizationOwnCase(org);
   if(ownCase) return `<figure class="documented-photo org-reference">
     <a class="case-photo-link" href="/media/${esc(ownCase.file)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(org.name)} 실제 활동 사진 보기">${organizationCaseImage(ownCase,eager)}</a>
-    <figcaption><span class="org-reference-label">기관 실제 활동사진</span><strong>${esc(ownCase.caption)}</strong>
+    <figcaption><span class="org-reference-label">${esc(ownCase.contextLabel||'기관 실제 활동사진')}</span><strong>${esc(ownCase.caption)}</strong>
       <a href="${esc(cleanURL(ownCase.source))}" target="_blank" rel="noopener noreferrer">${esc(ownCase.publisher)} 원문 보기</a></figcaption>
   </figure>`;
   const key = organizationReferences[org.id];
@@ -2389,7 +2391,7 @@ function organizationReferenceFigure(org, eager=true) {
   return `<figure class="documented-photo org-reference">
     <button type="button" data-action="photo" data-id="${key}" aria-label="${esc(photo.title)} 참고 사진 확대" aria-haspopup="dialog">${referencePhoto(key,eager)}<span>${icon('search')}</span></button>
     <figcaption>
-      <span class="org-reference-label">분야 참고 사례</span>
+      <span class="org-reference-label">${esc(photo.contextLabel||'분야 참고 사례')}</span>
       <strong>${esc(photo.title)}</strong>
       <small>${esc(photo.caption)}</small>
       <a href="${esc(photo.source)}" target="_blank" rel="noopener noreferrer">${esc(photo.publisher)} 원문 보기 ${icon('external')}</a>
@@ -2402,7 +2404,7 @@ function organizationCard(org) {
   const photo = ownCase||photoData[photoKey];
   const route = 'member/'+org.id;
   const campaign = campaignFor(org);
-  const label = org.isLocal ? '등록 시연' : ownCase||photo?.sourceLabel ? '기관 활동 사진' : '분야 참고 사례';
+  const label = org.isLocal ? '등록 시연' : photo?.contextLabel || (ownCase||photo?.sourceLabel ? '기관 활동 사진' : '분야 참고 사례');
   const escortTag = org.service!==hospitalEscortService&&matchesDirectoryService(org,hospitalEscortService)
     ? `<span class="tag blue">${hospitalEscortService}</span>` : '';
   const tags = `<div class="tags org-card-tags"><span class="tag blue">${esc(org.service)}</span>${escortTag}${org.district?`<span class="tag">${esc(org.district)}</span>`:''}</div>`;
@@ -2535,6 +2537,11 @@ function documentedAbout() {
 for(const [key,photo] of Object.entries(onContentCasePhotos)){
   photoData[key]=photo;
   onImagePreviews[photo.file]={original:[photo.file,photo.width,photo.height,photo.file.endsWith('.png')?'image/png':'image/jpeg']};
+  if(photo.displayFile)onImagePreviews[photo.file].wide=[photo.displayFile,photo.displayWidth,photo.displayHeight,'image/jpeg'];
+}
+documentedNews.unshift(...onResearchedNews);
+for(const org of organizations){
+  if(photoData['org-'+org.id])organizationReferences[org.id]='org-'+org.id;
 }
 
 const news=members.map((member,index)=>({
@@ -2756,16 +2763,17 @@ function photoSource(key){
 }
 function referencePhoto(key,eager=false){
   const photo=photoData[key];
-  const src=offlinePhotoData?.[key]||'/media/'+photo.file;
+  const src=offlinePhotoData?.[key]||'/media/'+(photo.displayFile||photo.file);
   const preserveOriginal=photo.license===3||photo.license===4;
-  const [,width,height]=onImagePreviews[photo.file].original;
+  const [,width,height]=photo.displayFile?onImagePreviews[photo.file].wide:onImagePreviews[photo.file].original;
   return `<img src="${esc(src)}" width="${width}" height="${height}" alt="${esc(photo.caption)}" class="${preserveOriginal?'reference-original':''}" style="--photo-y:${photo.y||50}%" ${eager?'':'loading="lazy"'} decoding="async">`;
 }
 function photoCredit(key){
   const photo=photoData[key];
   if(photo.illustrative) return `<div class="photo-credit"><span class="photo-caption">${esc(photo.caption)}</span><span>분야 참고 이미지 · AI 생성</span></div>`;
-  if(photo.sourceLabel) return `<div class="photo-credit"><span class="photo-caption">${esc(photo.caption)}</span><span>사진 출처 · ${esc(photo.sourceLabel)}</span></div>`;
-  return `<div class="photo-credit"><span class="photo-caption">${esc(photo.caption)}</span><span>사진 출처 · ${esc(photo.publisher)}</span><a href="${photoSource(key)}" target="_blank" rel="noopener noreferrer">원문 보기 ${icon('external')}</a><a href="${photoLicense}" target="_blank" rel="noopener noreferrer">공공누리 제${photo.license}유형</a></div>`;
+  if(photo.sourceLabel) return `<div class="photo-credit"><span class="photo-caption">${esc(photo.caption)}</span><span>사진 출처 · ${esc(photo.sourceLabel)}</span>${photo.source?`<a href="${esc(cleanURL(photo.source))}" target="_blank" rel="noopener noreferrer">원문 보기</a>`:''}${photo.licenseURL?`<a href="${esc(cleanURL(photo.licenseURL))}" target="_blank" rel="noopener noreferrer">이용 조건</a>`:''}</div>`;
+  const licenseLink=photo.licenseURL?`<a href="${esc(cleanURL(photo.licenseURL))}" target="_blank" rel="noopener noreferrer">이용 조건</a>`:[1,2,3,4].includes(photo.license)?`<a href="${photoLicense}" target="_blank" rel="noopener noreferrer">공공누리 제${photo.license}유형</a>`:'';
+  return `<div class="photo-credit"><span class="photo-caption">${esc(photo.caption)}</span><span>사진 출처 · ${esc(photo.publisher)}</span><a href="${esc(cleanURL(photoSource(key)))}" target="_blank" rel="noopener noreferrer">원문 보기 ${icon('external')}</a>${licenseLink}</div>`;
 }
 function detailPhoto(key){
   return `<button class="detail-photo-button" data-action="photo" data-id="${key}" aria-label="참고 사진 크게 보기">${referencePhoto(key)}</button>${photoCredit(key)}`;

@@ -98,6 +98,16 @@ for(const [route,entry] of Object.entries(manifest)){
 assert.deepEqual([...missingPhotoVariants],[],'Missing source photo variants');
 for(const route of ['my','admin','admin-gifts','project-apply/private','detail/local-private','member/private'])assert.equal(r.run(`shareTarget(${JSON.stringify(route)})`),null,route);
 assert.equal(r.run('organizations.length'),7);
+for(const org of jsonRun('organizations')){
+  const card=r.run(`organizationCard(organizations.find(x=>x.id===${JSON.stringify(org.id)}))`);
+  assert.ok(card.includes('<img '),'Every confirmed institution must show a verified case photograph: '+org.id);
+  assert.ok(!card.includes('org-card-no-photo'),'No empty institution photo block: '+org.id);
+}
+for(const id of ['suseong-nutrition-sharing','sdl-geochang-workshop']){
+  const story=jsonRun(`findItem(${JSON.stringify(id)})`);
+  assert.ok(story?.verified&&story.url?.startsWith('https://'),'Researched activity must retain its source: '+id);
+  assert.ok(jsonRun(`newsForMember(organizations.find(x=>x.id===${JSON.stringify(story.memberId)}))`).some(x=>x.id===id),'Activity visible in its institution profile: '+id);
+}
 assert.deepEqual(JSON.parse(r.run(`JSON.stringify(directoryMembers().filter(x=>matchesDirectoryService(x,'병원동행')).map(x=>x.id))`)),['daegu-dounuri','woorihamkke','daegu-care','modoo-happy']);
 assert.ok(r.run(`allMembers().some(x=>x.id==='daegu-medical')&&allMembers().some(x=>x.id==='byeolbom')`));
 assert.equal(r.run(`DBKEY`),'daegu-care-on-demo-v1');

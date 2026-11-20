@@ -55,6 +55,12 @@ for route in DATA['canonicalRoutes']:
         scale=w/1200
         focus=recipe.get('focus',[.5,.40])
         im=ImageOps.fit(original,(w,h),centering=tuple(focus))
+        if recipe.get('portraitFit')=='contain' and h/w>1.1:
+            # Keep the entire actual photograph visible in tall layouts.
+            im=im.filter(ImageFilter.GaussianBlur(round(w*.018)))
+            fitted=ImageOps.contain(original,(w,round(h*.60)))
+            photo_top=round(h*(.17 if h/w>1.6 else .10))
+            im.paste(fitted,((w-fitted.width)//2,photo_top))
         overlay=Image.new('RGBA',(w,h))
         od=ImageDraw.Draw(overlay)
         for y in range(h):
