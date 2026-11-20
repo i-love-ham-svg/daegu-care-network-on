@@ -34,6 +34,7 @@ python scripts/render-social.py
 node scripts/build.cjs
 node scripts/verify-social.cjs
 node scripts/verify-giving.cjs
+node scripts/verify-sharing.cjs
 node scripts/verify-content.cjs
 python scripts/verify-images.py
 python scripts/verify-unique.py
@@ -44,6 +45,8 @@ node scripts/preview.cjs
 새 콘텐츠 추가 시 `src/social-covers.json`에 제목과 실사진을 먼저 등록한다. 같은 사례의 다른 화면이면 기존 소식의 공유 연결을 사용한다. 사진 원본은 `docs/media`에 보관하고 `src/social-photos.json`에 출처와 이용 조건을 등록한다. 숨은 위치정보는 사진 픽셀을 보존하면서 제거한다. 새 이미지를 생성한 뒤 빌드·검증한다. 원본 중복이나 미검수 변경, 동일 썸네일은 빌드에서 차단한다. 점검 결과와 9개 채널 전체 비교 이미지·검수표는 `output/verification/social`에 저장한다. 검수표는 독립 공유 콘텐츠별로 표지를 보여주고, 같은 사례로 연결되는 사진·일정 화면을 별도로 나열한다.
 
 공유 플랫폼이 이전 미리보기를 캐시할 수 있으므로 새 썸네일에는 내용에 따른 파일명을 사용하며, 공유 창의 링크도 해당 이미지 버전의 공개 페이지로 연결한다. 기존 공개 주소와 공유 주소는 유지한다. 이미 전송된 SNS 메시지의 캐시 교체와 실제 SNS 게시물 업로드는 별도의 플랫폼 작업이다.
+
+공유 아이콘은 모두의기부 리뉴얼과 같이 클릭 즉시 시스템 앱 선택창을 호출한다. 화면에 보이는 콘텐츠의 실제 표지 JPEG를 미리 준비하며 준비된 경우 이미지 1장과 제목·공개 링크를 함께 전달한다. 이미지 준비 중이거나 파일 공유를 지원하지 않으면 링크를 즉시 전달한다. 클릭 처리 중에는 다운로드나 별도 설정창을 기다리지 않는다. 취소하면 원래 화면을 유지하며, 시스템 공유 미지원·차단 환경에는 웹 공유와 링크 복사를 제공한다. 이미지 설정은 이 대체 메뉴의 ‘이미지 저장’에서만 연다.
 
 ## 참고한 디자인 자료
 

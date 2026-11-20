@@ -66,6 +66,77 @@ function localShareItem(path) {
   return item?.isLocal?item:null;
 }
 function canPreviewShare(path) {return Boolean(shareTarget(path)||localShareItem(path));}
+const nativeShareFiles=new Map(),nativeShareLoads=new Map();
+let nativeShareObserver=null,nativeSharePending=false;
+function warmShareFile(path) {
+  if(typeof navigator.share!=='function'||typeof navigator.canShare!=='function'||typeof File!=='function') return;
+  const route=canonicalShareRoute(path),cover=socialCover(route);
+  if(!shareTarget(route)||!cover) return;
+  if(nativeShareFiles.has(route)) return;
+  if(nativeShareLoads.has(route)) return nativeShareLoads.get(route);
+  const task=fetch('/media/'+cover.file).then(response=>{
+    if(!response.ok) throw new Error('Share image unavailable');
+    return response.blob();
+  }).then(blob=>{
+    const file=new File([blob],cover.file.split('/').pop(),{type:cover.type||blob.type});
+    if(!navigator.canShare({files:[file]})) return;
+    if(nativeShareFiles.size>=24) nativeShareFiles.delete(nativeShareFiles.keys().next().value);
+    nativeShareFiles.set(route,file);
+  }).catch(()=>{}).finally(()=>nativeShareLoads.delete(route));
+  nativeShareLoads.set(route,task);
+  return task;
+}
+function prepareNativeShares() {
+  if(typeof navigator.share!=='function'||typeof navigator.canShare!=='function') return;
+  warmShareFile(activeRoute);
+  if(typeof IntersectionObserver!=='function') return;
+  if(!nativeShareObserver) nativeShareObserver=new IntersectionObserver(entries=>{
+    for(const entry of entries) if(entry.isIntersecting) {
+      nativeShareObserver.unobserve(entry.target);
+      warmShareFile(entry.target.dataset.routeShare||activeRoute);
+    }
+  },{rootMargin:'180px'});
+  nativeShareObserver.disconnect();
+  $$('[data-action="share"]').forEach(button=>nativeShareObserver.observe(button));
+}
+function shareFallback(path) {
+  const target=shareTarget(path);
+  if(!target) return;
+  const url=socialShareAddress(path,'facebook')||target.url;
+  const channels=[
+    ['페이스북','https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url)],
+    ['X','https://twitter.com/intent/tweet?text='+encodeURIComponent(target.title)+'&url='+encodeURIComponent(url)],
+    ['네이버','https://share.naver.com/web/shareView?url='+encodeURIComponent(url)+'&title='+encodeURIComponent(target.title)],
+    ['밴드','https://band.us/plugin/share?body='+encodeURIComponent(target.title+'\n'+url)]
+  ];
+  openModal('공유하기',target.title,`<div class="on-share-apps">${channels.map(([label,address])=>`<a class="btn" href="${esc(address)}" target="_blank" rel="noopener noreferrer">${label}</a>`).join('')}</div>
+    <div class="field"><label for="share-url">공유 링크</label><input class="share-input" id="share-url" type="url" readonly value="${esc(url)}"></div>
+    <p id="share-feedback" class="smalltext muted" role="status" hidden></p>
+    <div class="form-actions"><button type="button" class="btn" data-action="share-image" data-route-share="${esc(path)}">이미지 저장</button><button type="button" class="btn primary" data-action="copy-share-link">${icon('link')} 링크 복사</button></div>`);
+}
+async function shareContent(path=activeRoute) {
+  const target=shareTarget(path);
+  if(!target) {
+    const local=localShareItem(path);
+    if(local) return localSharePreview(path,local,'facebook');
+    return;
+  }
+  if(nativeSharePending) return;
+  if(typeof navigator.share!=='function') return shareFallback(path);
+  const url=socialShareAddress(path,'facebook')||target.url;
+  let data={title:target.title,url};
+  const file=nativeShareFiles.get(canonicalShareRoute(path));
+  try {
+    if(file&&navigator.canShare?.({files:[file]})) data={title:target.title,text:target.title+'\n'+url,files:[file]};
+  } catch {}
+  nativeSharePending=true;
+  try {
+    // Call in the click's activation. Image downloads happen before the click.
+    await navigator.share(data);
+  } catch(error) {
+    if(error.name!=='AbortError') shareFallback(path);
+  } finally {nativeSharePending=false;}
+}
 async function localSharePreview(path,local,channel) {
   const row=onShareChannels.find(([key])=>key===channel)||onShareChannels[0];
   const [key,,file,width,height]=row;
@@ -2859,6 +2930,7 @@ function refreshFeeds() {
     syncFeed(feed);
     feedObserver?.observe(feed);
   });
+  prepareNativeShares();
 }
 function selectFeedLayout(button,layout) {
   if(!Object.hasOwn(layoutOptions,layout)) return;
@@ -3226,7 +3298,7 @@ async function copyShareLink() {
 }
 function saveBlob(content,name,type){const blob=new Blob([content],{type}),url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),5000)}
 function download(id){const x=resources.find(x=>x.id===id)||db.posts.find(x=>x.id===id);if(!x)return;if(x.url){window.open(cleanURL(x.url),'_blank','noopener,noreferrer');return}if(x.download==='members'){saveBlob('\uFEFF기관명,주요분야,주요사업및서비스,활동지역,홈페이지,블로그,담당자명(내부관리),업무연락처(내부관리),공개범위확인\r\n,,,,,,,,\r\n','회원사_기본정보_취합양식.csv','text/csv;charset=utf-8')}else if(x.download==='guide'){saveBlob('대구 통합돌봄네트워크 ON\n회원사 활동소식 작성 가이드\n\n'+x.body,'회원사_활동소식_작성가이드.txt','text/plain;charset=utf-8')}else if(x.file){const a=document.createElement('a');a.href=x.file.data;a.download=x.file.name;a.click()}else if(x.image){const a=document.createElement('a');a.href=x.image;a.download='등록_이미지.png';a.click()}else{saveBlob(x.title+'\n\n'+x.body,x.title.replace(/[\\/:*?"<>|]/g,'_')+'.txt','text/plain;charset=utf-8')}}
-document.addEventListener('click',e=>{if(navigateOnClick(e))return;if(e.target.closest('.skip')){e.preventDefault();$('#main').focus();$('#main').scrollIntoView();return}const t=e.target.closest('[data-action],[data-route]');if(!t)return;if(t.dataset.route){go(t.dataset.route);return}const a=t.dataset.action,v=t.dataset.value,id=t.dataset.id;if(a==='menu')toggleMenu(t.getAttribute('aria-expanded')!=='true');else if(a==='search'){openModal('통합검색','',`<form id="modal-search"><div class="searchbox"><input name="q" required type="search" placeholder="검색어를 입력해 주세요" aria-label="통합검색 키워드"><button aria-label="검색">${icon('search')}</button></div></form>`)}else if(a==='join')joinModal();else if(a==='post')postModal(t.dataset.type||'news');else if(a==='close')closeModal();else if(a==='photo')showPhoto(id);else if(a==='uploaded-photo')showUploadedPhoto(id);else if(a==='campaign-give')beginGiving(id);else if(a==='account'){if(demoAccount)go('my');else signInDialog()}else if(a==='sign-in-provider')openOnAffiliation(v,id);else if(a==='sign-in-back'){const origin=lastFocus;signInDialog(id);lastFocus=origin}else if(a==='sign-out')signOut();else if(a==='campaign-jump')jumpToCampaignSection(id);else if(a==='feed-layout')selectFeedLayout(t,v);else if(a==='feed-more')extendFeed(t);else if(a==='home-service'){homeService=v;feedLimits.delete('home-member');$('#home-members').outerHTML=publicLinks(homeMembers());refreshFeeds();$('[data-action="home-service"][aria-pressed="true"]')?.focus({preventScroll:true})}else if(a==='member-service'){memberFilter=v;setChip(a,v);updateMemberResults()}else if(a==='news-category'){newsFilter=v;feedLimits.delete('news-directory');renderPreserve()}else if(a==='policy-category'){policyFilter=v;feedLimits.delete('policy-directory');renderPreserve()}else if(a==='clear-filters'){memberFilter='전체';memberDistrict='전체 지역';memberQuery='';$('#member-q').value='';$('#district').value=memberDistrict;setChip('member-service',memberFilter);updateMemberResults();$('#member-q').focus({preventScroll:true})}else if(a==='share')sharePreview(t.dataset.routeShare||activeRoute);else if(a==='copy-share-link')copyShareLink();else if(a==='print')window.print();else if(a==='download')download(id);else if(a==='external'){const x=findItem(id);if(x?.url)window.open(cleanURL(x.url),'_blank','noopener,noreferrer')}else if(a==='template')download('r1');else if(a==='admin-filter'){adminFilter={'확인 대기':'pending','승인 완료':'approved','반려':'rejected','전체':'all'}[v];renderPreserve()}else if(a==='review')review(id);else if(a==='approve')approve(id,'approved');else if(a==='reject')approve(id,'rejected');else if(a==='reset')openModal('시연 데이터를 초기화할까요?','이 브라우저에서 등록한 회원사·사업·소속 신청, 게시물, 후원 거래와 공개 준비 기록이 삭제됩니다. 기본 예시 콘텐츠는 유지됩니다.',`<div class="form-actions"><button class="btn" data-action="close">취소</button><button class="btn dark" data-action="confirm-reset">초기화</button></div>`);else if(a==='confirm-reset'){const old=db;db=structuredClone(initial);if(!persist()){db=old;return}closeModal();render();toast('브라우저의 시연 데이터를 초기화했습니다.')}});
+document.addEventListener('click',e=>{if(navigateOnClick(e))return;if(e.target.closest('.skip')){e.preventDefault();$('#main').focus();$('#main').scrollIntoView();return}const t=e.target.closest('[data-action],[data-route]');if(!t)return;if(t.dataset.route){go(t.dataset.route);return}const a=t.dataset.action,v=t.dataset.value,id=t.dataset.id;if(a==='menu')toggleMenu(t.getAttribute('aria-expanded')!=='true');else if(a==='search'){openModal('통합검색','',`<form id="modal-search"><div class="searchbox"><input name="q" required type="search" placeholder="검색어를 입력해 주세요" aria-label="통합검색 키워드"><button aria-label="검색">${icon('search')}</button></div></form>`)}else if(a==='join')joinModal();else if(a==='post')postModal(t.dataset.type||'news');else if(a==='close')closeModal();else if(a==='photo')showPhoto(id);else if(a==='uploaded-photo')showUploadedPhoto(id);else if(a==='campaign-give')beginGiving(id);else if(a==='account'){if(demoAccount)go('my');else signInDialog()}else if(a==='sign-in-provider')openOnAffiliation(v,id);else if(a==='sign-in-back'){const origin=lastFocus;signInDialog(id);lastFocus=origin}else if(a==='sign-out')signOut();else if(a==='campaign-jump')jumpToCampaignSection(id);else if(a==='feed-layout')selectFeedLayout(t,v);else if(a==='feed-more')extendFeed(t);else if(a==='home-service'){homeService=v;feedLimits.delete('home-member');$('#home-members').outerHTML=publicLinks(homeMembers());refreshFeeds();$('[data-action="home-service"][aria-pressed="true"]')?.focus({preventScroll:true})}else if(a==='member-service'){memberFilter=v;setChip(a,v);updateMemberResults()}else if(a==='news-category'){newsFilter=v;feedLimits.delete('news-directory');renderPreserve()}else if(a==='policy-category'){policyFilter=v;feedLimits.delete('policy-directory');renderPreserve()}else if(a==='clear-filters'){memberFilter='전체';memberDistrict='전체 지역';memberQuery='';$('#member-q').value='';$('#district').value=memberDistrict;setChip('member-service',memberFilter);updateMemberResults();$('#member-q').focus({preventScroll:true})}else if(a==='share')shareContent(t.dataset.routeShare||activeRoute);else if(a==='share-image')sharePreview(t.dataset.routeShare||activeRoute);else if(a==='copy-share-link')copyShareLink();else if(a==='print')window.print();else if(a==='download')download(id);else if(a==='external'){const x=findItem(id);if(x?.url)window.open(cleanURL(x.url),'_blank','noopener,noreferrer')}else if(a==='template')download('r1');else if(a==='admin-filter'){adminFilter={'확인 대기':'pending','승인 완료':'approved','반려':'rejected','전체':'all'}[v];renderPreserve()}else if(a==='review')review(id);else if(a==='approve')approve(id,'approved');else if(a==='reject')approve(id,'rejected');else if(a==='reset')openModal('시연 데이터를 초기화할까요?','이 브라우저에서 등록한 회원사·사업·소속 신청, 게시물, 후원 거래와 공개 준비 기록이 삭제됩니다. 기본 예시 콘텐츠는 유지됩니다.',`<div class="form-actions"><button class="btn" data-action="close">취소</button><button class="btn dark" data-action="confirm-reset">초기화</button></div>`);else if(a==='confirm-reset'){const old=db;db=structuredClone(initial);if(!persist()){db=old;return}closeModal();render();toast('브라우저의 시연 데이터를 초기화했습니다.')}});
 function renderPreserve(){const y=window.scrollY;render();requestAnimationFrame(()=>window.scrollTo({top:y,behavior:'instant'}))}
 document.addEventListener('input',e=>{if(e.target.id==='member-q'){memberQuery=e.target.value;updateMemberResults()}});
 document.addEventListener('change',e=>{if(e.target.id==='district'){memberDistrict=e.target.value;updateMemberResults()}else if(e.target.id==='sort'){sort=e.target.value;updateMemberResults()}else if(e.target.name==='preset'&&e.target.form?.id==='campaign-gift-form')updateGiftAmountOption(e.target.form);else if(e.target.id==='post-type')updatePostFields(e.target.value);else if(e.target.id==='post-file'){const input=e.target;const f=input.files[0];uploadImage='';uploadFile=null;$('#upload-preview').innerHTML='';if(!f)return;if(f.size>4*1024*1024){toast('첨부파일은 최대 4MB까지 등록할 수 있습니다.');e.target.value='';return}const isImage=['image/png','image/jpeg','image/webp'].includes(f.type);const reader=new FileReader();reader.onload=()=>{if($('#post-file')!==input||input.files[0]!==f)return;if(isImage){uploadImage=reader.result;$('#upload-preview').innerHTML=`<img class="attached-image" src="${esc(uploadImage)}" alt="첨부 이미지 미리보기">`}else{uploadFile={name:f.name,data:reader.result};$('#upload-preview').textContent=f.name+' · 첨부됨'}};reader.onerror=()=>toast('파일을 읽을 수 없습니다. 다시 선택해 주세요.');reader.readAsDataURL(f)}});
