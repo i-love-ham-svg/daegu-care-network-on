@@ -11,7 +11,6 @@ function fixture(){
   r.context.__recordToast=text=>toasts.push(text);
   r.run('openModal=(...args)=>__recordDialog(...args);toast=text=>__recordToast(text);activeRoute="members";');
   r.context.navigator.share=data=>{calls.push(data);return Promise.resolve();};
-  r.context.File=File;
   r.context.navigator.canShare=()=>true;
   return {r,calls,dialogs,toasts};
 }
@@ -25,6 +24,7 @@ async function check(label,fn){await fn();results.push({label,passed:true});}
       assert.equal(calls.length,before+1,'Native share must run before the first await: '+route);
       assert.match(calls.at(-1).url,/^https:\/\/daegu-care\.oconia\.co\.kr\/share\/facebook\//);
       assert.ok(calls.at(-1).title);
+      assert.deepEqual(Object.keys(calls.at(-1)).sort(),['title','url'],'Default sharing must send a link, never an image attachment');
       assert.equal(dialogs.length,0);
       await action;
     }
@@ -40,41 +40,41 @@ async function check(label,fn){await fn();results.push({label,passed:true});}
     assert.equal(dialogs.length,0);
     await Promise.resolve();
   });
-  await check('a ready actual thumbnail is shared as one JPEG with its own title and public link',async()=>{
-    const {r,calls}=fixture();
-    const route='member/daegu-dounuri',image=manifest[route].images.facebook;
-    r.context.fetch=async url=>{
-      assert.equal(url,'/media/'+image.file);
-      return {ok:true,blob:async()=>new Blob([fs.readFileSync(path.join(__dirname,'../docs/media',image.file))],{type:'image/jpeg'})};
-    };
-    await r.run(`warmShareFile(${JSON.stringify(route)})`);
-    await r.run(`shareContent(${JSON.stringify(route)})`);
-    assert.equal(calls[0].files.length,1);
-    assert.equal(calls[0].files[0].type,'image/jpeg');
-    assert.ok(calls[0].files[0].size>1000);
-    assert.match(calls[0].text,/대구도우누리/);
-    assert.ok(calls[0].text.includes(r.run(`socialShareAddress(${JSON.stringify(route)},'facebook')`)));
-    assert.equal(calls[0].url,undefined,'Use image and text together, as in the renewal site');
-  });
-  await check('an unfinished image download does not delay the app picker',async()=>{
-    const {r,calls}=fixture();let finish;
-    r.context.fetch=()=>new Promise(resolve=>{finish=resolve;});
-    const warm=r.run('warmShareFile("home")');
-    const action=r.run('shareContent("home")');
-    assert.equal(calls.length,1);
-    assert.ok(calls[0].url);
-    await action;
-    finish({ok:false});await warm;
-  });
-  await check('image download failure and unsupported file sharing preserve immediate link sharing',async()=>{
-    for(const imageSupported of [false,true]){
-      const {r,calls}=fixture();
-      r.context.navigator.canShare=()=>imageSupported;
-      r.context.fetch=async()=>({ok:!imageSupported,blob:async()=>new Blob(['image'],{type:'image/jpeg'})});
-      await r.run('warmShareFile("home")');
-      await r.run('shareContent("home")');
-      assert.ok(calls[0].url);assert.equal(calls[0].files,undefined);
+  await check('every shared link exposes its own thumbnail, title, description and clickable canonical destination',async()=>{
+    const {r,calls}=fixture(),{readMetadata}=require('./verify-http.cjs');
+    for(const route of require('./social-catalog.cjs')().canonicalRoutes){
+      await r.run(`shareContent(${JSON.stringify(route)})`);
+      const url=new URL(calls.at(-1).url);
+      assert.equal(url.origin,'https://daegu-care.oconia.co.kr');
+      assert.ok(url.pathname.endsWith('.html'),'Share a page URL instead of a photograph URL');
+      const metadata=readMetadata(fs.readFileSync(path.join(__dirname,'../docs',decodeURIComponent(url.pathname)),'utf8'));
+      assert.equal(metadata.meta.get('og:image')?.[0],manifest[route].images.facebook.url);
+      assert.ok(metadata.meta.get('og:title')?.[0]);
+      assert.ok(metadata.meta.get('og:description')?.[0]);
+      assert.equal(metadata.canonical[0],JSON.parse(r.run(`JSON.stringify(shareTarget(${JSON.stringify(route)}).url)`)));
     }
+  });
+  await check('file-capable mobile browsers still share a URL without querying or downloading attachments',async()=>{
+    const {r,calls}=fixture();
+    r.context.navigator.canShare=()=>{throw Error('File capability must not change link sharing');};
+    r.context.fetch=()=>{throw Error('Default sharing must not download an image');};
+    for(const route of ['home','member/daegu-dounuri','detail/n1']){
+      await r.run(`shareContent(${JSON.stringify(route)})`);
+      assert.deepEqual(Object.keys(calls.at(-1)).sort(),['title','url']);
+      assert.ok(calls.at(-1).url);
+    }
+  });
+  await check('sharing from image tools still sends the selected content link rather than an image file',async()=>{
+    const {r,calls}=fixture();
+    const route='member/daegu-dounuri';
+    const url=r.run(`socialShareAddress(${JSON.stringify(route)},'kakao')`);
+    const nodes={'#share-url':{value:url},'#share-channel':{dataset:{path:route}}};
+    r.context.document.querySelector=selector=>nodes[selector];
+    await r.run('systemShare()');
+    assert.equal(calls.length,1);
+    assert.equal(calls[0].url,url);
+    assert.match(calls[0].title,/대구도우누리/);
+    assert.deepEqual(Object.keys(calls[0]).sort(),['title','url']);
   });
   await check('cancellation remains silent and a later click can share again',async()=>{
     const {r,calls,dialogs,toasts}=fixture();

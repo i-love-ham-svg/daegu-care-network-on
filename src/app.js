@@ -66,39 +66,7 @@ function localShareItem(path) {
   return item?.isLocal?item:null;
 }
 function canPreviewShare(path) {return Boolean(shareTarget(path)||localShareItem(path));}
-const nativeShareFiles=new Map(),nativeShareLoads=new Map();
-let nativeShareObserver=null,nativeSharePending=false;
-function warmShareFile(path) {
-  if(typeof navigator.share!=='function'||typeof navigator.canShare!=='function'||typeof File!=='function') return;
-  const route=canonicalShareRoute(path),cover=socialCover(route);
-  if(!shareTarget(route)||!cover) return;
-  if(nativeShareFiles.has(route)) return;
-  if(nativeShareLoads.has(route)) return nativeShareLoads.get(route);
-  const task=fetch('/media/'+cover.file).then(response=>{
-    if(!response.ok) throw new Error('Share image unavailable');
-    return response.blob();
-  }).then(blob=>{
-    const file=new File([blob],cover.file.split('/').pop(),{type:cover.type||blob.type});
-    if(!navigator.canShare({files:[file]})) return;
-    if(nativeShareFiles.size>=24) nativeShareFiles.delete(nativeShareFiles.keys().next().value);
-    nativeShareFiles.set(route,file);
-  }).catch(()=>{}).finally(()=>nativeShareLoads.delete(route));
-  nativeShareLoads.set(route,task);
-  return task;
-}
-function prepareNativeShares() {
-  if(typeof navigator.share!=='function'||typeof navigator.canShare!=='function') return;
-  warmShareFile(activeRoute);
-  if(typeof IntersectionObserver!=='function') return;
-  if(!nativeShareObserver) nativeShareObserver=new IntersectionObserver(entries=>{
-    for(const entry of entries) if(entry.isIntersecting) {
-      nativeShareObserver.unobserve(entry.target);
-      warmShareFile(entry.target.dataset.routeShare||activeRoute);
-    }
-  },{rootMargin:'180px'});
-  nativeShareObserver.disconnect();
-  $$('[data-action="share"]').forEach(button=>nativeShareObserver.observe(button));
-}
+let nativeSharePending=false;
 function shareFallback(path) {
   const target=shareTarget(path);
   if(!target) return;
@@ -124,14 +92,11 @@ async function shareContent(path=activeRoute) {
   if(nativeSharePending) return;
   if(typeof navigator.share!=='function') return shareFallback(path);
   const url=socialShareAddress(path,'facebook')||target.url;
-  let data={title:target.title,url};
-  const file=nativeShareFiles.get(canonicalShareRoute(path));
-  try {
-    if(file&&navigator.canShare?.({files:[file]})) data={title:target.title,text:target.title+'\n'+url,files:[file]};
-  } catch {}
+  const data={title:target.title,url};
   nativeSharePending=true;
   try {
-    // Call in the click's activation. Image downloads happen before the click.
+    // Share the page URL so apps can build a clickable card from its OG cover.
+    // Attaching files makes some apps send a standalone photo and discard the link.
     await navigator.share(data);
   } catch(error) {
     if(error.name!=='AbortError') shareFallback(path);
@@ -204,7 +169,8 @@ async function systemShare() {
   const url = $('#share-url')?.value;
   if (!url) return;
   try {
-    await navigator.share({url,title:$('#dialog-title').textContent});
+    const path=$('#share-channel')?.dataset.path||activeRoute;
+    await navigator.share({url,title:shareTarget(path)?.title||siteName});
   } catch (error) {
     if (error.name!=='AbortError') toast('공유 링크를 복사해 보내세요.');
   }
@@ -2930,7 +2896,6 @@ function refreshFeeds() {
     syncFeed(feed);
     feedObserver?.observe(feed);
   });
-  prepareNativeShares();
 }
 function selectFeedLayout(button,layout) {
   if(!Object.hasOwn(layoutOptions,layout)) return;
