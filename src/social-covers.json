@@ -1,0 +1,717 @@
+{
+  "home": {
+    "photo": "field-launch",
+    "headline": [
+      "대구 통합돌봄",
+      "필요한 돌봄을 한곳에"
+    ],
+    "subtitle": "기관 · 활동 · 정책을 연결합니다",
+    "category": "대구 통합돌봄 ON",
+    "photoNote": "네트워크 발대식 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "about": {
+    "photo": "field-agreement",
+    "headline": [
+      "대구의 돌봄",
+      "함께 만드는 연결"
+    ],
+    "subtitle": "통합돌봄 네트워크 소개",
+    "category": "대구 통합돌봄",
+    "photoNote": "네트워크 업무협약 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "members": {
+    "photo": "field-agreement",
+    "headline": [
+      "대구의 돌봄기관",
+      "7곳을 만나보세요"
+    ],
+    "subtitle": "병원동행 · 요양 · 의료 · 생활돌봄",
+    "category": "대구 통합돌봄",
+    "photoNote": "네트워크 업무협약 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "news": {
+    "photo": "field-conference",
+    "headline": [
+      "돌봄 현장에서 온",
+      "오늘의 이야기"
+    ],
+    "subtitle": "대구 통합돌봄 활동소식",
+    "category": "대구 통합돌봄",
+    "photoNote": "통합돌봄 광역 네트워크 전국대회",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "policy": {
+    "photo": "field-seminar",
+    "headline": [
+      "통합돌봄 정책",
+      "필요한 정보만 한눈에"
+    ],
+    "subtitle": "제도 · 신청 · 공식 자료 안내",
+    "category": "대구 통합돌봄",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "events": {
+    "photo": "field-seminar",
+    "headline": [
+      "배우고 나누는",
+      "통합돌봄 현장"
+    ],
+    "subtitle": "교육 · 행사 · 포럼 기록",
+    "category": "대구 통합돌봄",
+    "photoNote": "의료사회복지사 세미나 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "resources": {
+    "photo": "field-seminar",
+    "headline": [
+      "돌봄 실무에 필요한",
+      "자료를 한곳에"
+    ],
+    "subtitle": "공식 자료 · 운영서식 · 작성 가이드",
+    "category": "대구 통합돌봄",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "giving-guide": {
+    "photo": "field-garden",
+    "headline": [
+      "지역의 돌봄에",
+      "마음을 더하는 방법"
+    ],
+    "subtitle": "일시후원 · 정기후원 안내 · 시연",
+    "category": "대구 통합돌봄",
+    "photoNote": "복현어울림센터 텃밭 사업 방문 현장",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "projects": {
+    "photo": "field-garden",
+    "headline": [
+      "우리 지역의 돌봄",
+      "함께 응원할 사업"
+    ],
+    "subtitle": "돌봄사업과 후원 안내 · 시연",
+    "category": "대구 통합돌봄",
+    "photoNote": "네트워크 현장 참고",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "proposal": {
+    "photo": "field-agreement",
+    "headline": [
+      "대구 통합돌봄 ON",
+      "플랫폼 운영안"
+    ],
+    "subtitle": "기관과 시민을 잇는 온라인 돌봄 네트워크",
+    "category": "대구 통합돌봄",
+    "photoNote": "네트워크 업무협약 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "member/daegu-dounuri": {
+    "photo": "field-agreement",
+    "headline": [
+      "병원 가는 길",
+      "함께하는 동행"
+    ],
+    "subtitle": "대구도우누리 · 병원동행",
+    "category": "참여기관",
+    "photoNote": "네트워크 현장 참고 · 기관 직접 활동사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "member/woorihamkke": {
+    "photo": "field-agreement",
+    "headline": [
+      "요양부터 병원동행까지",
+      "일상에 필요한 돌봄"
+    ],
+    "subtitle": "우리함께통합돌봄사회적협동조합",
+    "category": "참여기관",
+    "photoNote": "네트워크 현장 참고 · 기관 직접 활동사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "member/with-medical": {
+    "photo": "m2",
+    "headline": [
+      "동네에서 만나는",
+      "의료와 건강돌봄"
+    ],
+    "subtitle": "위드의료복지사회적협동조합",
+    "category": "참여기관",
+    "photoNote": "분야 참고 사례 · 서울 강남구 방문건강관리 현장",
+    "credit": "서울 강남구청"
+  },
+  "member/welfare-design": {
+    "photo": "field-seminar",
+    "headline": [
+      "자립을 준비하는 청년",
+      "지역이 함께합니다"
+    ],
+    "subtitle": "사회복지디자인연구소사회적협동조합",
+    "category": "참여기관",
+    "photoNote": "사회복지디자인연구소 통합돌봄 강의 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "member/daegu-care": {
+    "photo": "m4",
+    "headline": [
+      "아동부터 노인까지",
+      "대구의 생활돌봄"
+    ],
+    "subtitle": "대구돌봄사회적협동조합",
+    "category": "참여기관",
+    "photoNote": "분야 참고 사례 · 서울 구로구 식사지원 현장",
+    "credit": "서울 구로구청"
+  },
+  "member/naeiln": {
+    "photo": "field-naeiln",
+    "headline": [
+      "일할 기회를 넓히는",
+      "장애인 직업재활"
+    ],
+    "subtitle": "내일앤사회적협동조합",
+    "category": "참여기관",
+    "photoNote": "내일앤 보호작업장·주간활동 공간 방문 현장",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "member/modoo-happy": {
+    "photo": "m2",
+    "headline": [
+      "익숙한 집에서",
+      "방문요양 · 방문목욕"
+    ],
+    "subtitle": "사회적협동조합 모두행복센터",
+    "category": "참여기관",
+    "photoNote": "분야 참고 사례 · 서울 강남구 가정방문 현장",
+    "credit": "서울 강남구청"
+  },
+  "detail/daegu-declaration": {
+    "photo": "field-launch",
+    "headline": [
+      "대구 통합돌봄",
+      "네트워크 출범 선언"
+    ],
+    "subtitle": "대구광역 통합돌봄 네트워크 출범 선언",
+    "category": "네트워크 활동",
+    "photoNote": "대구광역 통합돌봄 네트워크 발대식 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-care-pilot": {
+    "photo": "field-agreement",
+    "headline": [
+      "대구 통합돌봄 시범사업",
+      "4개 기관이 함께합니다"
+    ],
+    "subtitle": "대구 지역통합돌봄 시범사업에 4개 기관 참여",
+    "category": "시범사업",
+    "photoNote": "통합돌봄 네트워크 현장 참고 · 해당 행사 직접 사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-agreement": {
+    "photo": "field-agreement",
+    "headline": [
+      "대구의 돌봄을 위해",
+      "15개 기관이 손잡다"
+    ],
+    "subtitle": "복현어울림센터에서 15개 기관 업무협약",
+    "category": "네트워크 활동",
+    "photoNote": "복현어울림센터 업무협약식",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-health-symposium": {
+    "photo": "field-seminar",
+    "headline": [
+      "의료와 마을돌봄",
+      "함께 그리는 건강공동체"
+    ],
+    "subtitle": "대구가톨릭대 심포지엄에서 의료와 마을돌봄 논의",
+    "category": "교육·포럼",
+    "photoNote": "통합돌봄 네트워크 현장 참고 · 해당 행사 직접 사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-university-symposium": {
+    "photo": "field-seminar",
+    "headline": [
+      "기관 세 곳이 전하는",
+      "지역 돌봄 사례"
+    ],
+    "subtitle": "영남대 심포지엄에서 기관 세 곳의 돌봄 사례 발표",
+    "category": "교육·포럼",
+    "photoNote": "통합돌봄 네트워크 현장 참고 · 해당 행사 직접 사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-national-conference": {
+    "photo": "field-conference",
+    "headline": [
+      "전국의 돌봄 현장에",
+      "대구의 경험을 전하다"
+    ],
+    "subtitle": "통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표",
+    "category": "네트워크 활동",
+    "photoNote": "통합돌봄 광역 네트워크 전국대회",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-seminar": {
+    "photo": "field-seminar",
+    "headline": [
+      "의료사회복지사와",
+      "통합돌봄 과제를 묻다"
+    ],
+    "subtitle": "대구경북 의료사회복지사와 통합돌봄 과제 논의",
+    "category": "교육·포럼",
+    "photoNote": "대구경북 의료사회복지사 세미나",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/daegu-naeiln-visit": {
+    "photo": "field-naeiln",
+    "headline": [
+      "내일앤을 찾아서",
+      "직업재활 현장을 만나다"
+    ],
+    "subtitle": "내일앤 보호작업장과 주간활동 공간 방문",
+    "category": "현장 방문",
+    "photoNote": "내일앤 보호작업장·주간활동 공간 방문",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "detail/daegu-garden-visit": {
+    "photo": "field-garden",
+    "headline": [
+      "함께 가꾸는 텃밭",
+      "어르신의 일상을 잇다"
+    ],
+    "subtitle": "복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문",
+    "category": "현장 방문",
+    "photoNote": "복현 어르신 힐링 텃밭 가꾸기",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "detail/n1": {
+    "photo": "m2",
+    "headline": [
+      "가정 방문에서 살피는",
+      "어르신의 하루"
+    ],
+    "subtitle": "온마을 방문요양 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 강남구청"
+  },
+  "detail/n2": {
+    "photo": "m2",
+    "headline": [
+      "가정에서 혈압 기록을 함께",
+      "살피는 법"
+    ],
+    "subtitle": "이음 방문간호 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 강남구청"
+  },
+  "detail/n3": {
+    "photo": "m3",
+    "headline": [
+      "넘어지기 쉬운 집 안 동선",
+      "살피기"
+    ],
+    "subtitle": "다정한 주거연구소 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 구로구청"
+  },
+  "detail/n4": {
+    "photo": "m4",
+    "headline": [
+      "이웃에게 전할 도시락 준비"
+    ],
+    "subtitle": "한끼이음 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 구로구청"
+  },
+  "detail/n5": {
+    "photo": "m5",
+    "headline": [
+      "의자에 앉아 함께하는",
+      "생활운동"
+    ],
+    "subtitle": "늘봄 건강파트너 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 구로구청"
+  },
+  "detail/n6": {
+    "photo": "m2",
+    "headline": [
+      "퇴원 후 집에서의 생활",
+      "준비하기"
+    ],
+    "subtitle": "우리동네 의료지원 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 강남구청"
+  },
+  "detail/n7": {
+    "photo": "field-seminar",
+    "headline": [
+      "스마트폰으로 가족과",
+      "영상통화 연습"
+    ],
+    "subtitle": "온디지털 배움터 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/n8": {
+    "photo": "m8",
+    "headline": [
+      "함께 심고 가꾸는 동네",
+      "화분"
+    ],
+    "subtitle": "이웃정원 복지모임 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "서울 구로구청"
+  },
+  "detail/p1": {
+    "photo": "field-seminar",
+    "headline": [
+      "통합돌봄 제도",
+      "한눈에 보기"
+    ],
+    "subtitle": "보건복지부 공식 안내",
+    "category": "제도 안내",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/p2": {
+    "photo": "field-garden",
+    "headline": [
+      "대구의 돌봄 서비스",
+      "어디서 확인할까요?"
+    ],
+    "subtitle": "대구지역 통합돌봄 서비스 정보",
+    "category": "지역 정보",
+    "photoNote": "네트워크 현장 참고",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "detail/p3": {
+    "photo": "field-seminar",
+    "headline": [
+      "정책부터 교육까지",
+      "공식 자료 모아보기"
+    ],
+    "subtitle": "보건복지부 통합돌봄 자료 안내",
+    "category": "정책자료",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/p4": {
+    "photo": "field-seminar",
+    "headline": [
+      "통합돌봄 신청",
+      "어디서 시작할까요?"
+    ],
+    "subtitle": "신청과 이용 절차 · 공식 안내",
+    "category": "제도 안내",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/p5": {
+    "photo": "field-seminar",
+    "headline": [
+      "돌봄통합지원법",
+      "원문으로 확인하세요"
+    ],
+    "subtitle": "국가법령정보센터 공식 법령",
+    "category": "정책자료",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/p6": {
+    "photo": "field-conference",
+    "headline": [
+      "우리 지역 돌봄 정보",
+      "시·도별로 찾아보기"
+    ],
+    "subtitle": "보건복지부 서비스 메뉴판",
+    "category": "지역 정보",
+    "photoNote": "통합돌봄 전국대회 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/e1": {
+    "photo": "field-seminar",
+    "headline": [
+      "회원사 담당자를 위한",
+      "플랫폼 이용 안내"
+    ],
+    "subtitle": "사무국 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/e2": {
+    "photo": "field-seminar",
+    "headline": [
+      "통합돌봄 현장 이야기 나눔"
+    ],
+    "subtitle": "운영위원회 · 콘텐츠 예시",
+    "category": "콘텐츠 예시",
+    "photoNote": "실제 활동 사례 · 서비스 설명용 참고 사진",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/event-daegu-health-symposium": {
+    "photo": "field-seminar",
+    "headline": [
+      "의료와 마을돌봄",
+      "함께 그리는 건강공동체"
+    ],
+    "subtitle": "대구가톨릭대 심포지엄에서 의료와 마을돌봄 논의",
+    "category": "교육·포럼",
+    "photoNote": "통합돌봄 네트워크 현장 참고 · 해당 행사 직접 사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/event-daegu-university-symposium": {
+    "photo": "field-seminar",
+    "headline": [
+      "기관 세 곳이 전하는",
+      "지역 돌봄 사례"
+    ],
+    "subtitle": "영남대 심포지엄에서 기관 세 곳의 돌봄 사례 발표",
+    "category": "교육·포럼",
+    "photoNote": "통합돌봄 네트워크 현장 참고 · 해당 행사 직접 사진 아님",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/event-daegu-national-conference": {
+    "photo": "field-conference",
+    "headline": [
+      "전국의 돌봄 현장에",
+      "대구의 경험을 전하다"
+    ],
+    "subtitle": "통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표",
+    "category": "네트워크 활동",
+    "photoNote": "통합돌봄 광역 네트워크 전국대회",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/event-daegu-seminar": {
+    "photo": "field-seminar",
+    "headline": [
+      "의료사회복지사와",
+      "통합돌봄 과제를 묻다"
+    ],
+    "subtitle": "대구경북 의료사회복지사와 통합돌봄 과제 논의",
+    "category": "교육·포럼",
+    "photoNote": "대구경북 의료사회복지사 세미나",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/r1": {
+    "photo": "field-agreement",
+    "headline": [
+      "회원사 기본정보",
+      "이 양식으로 정리하세요"
+    ],
+    "subtitle": "기관정보 취합용 CSV 서식",
+    "category": "운영서식",
+    "photoNote": "네트워크 업무협약 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/r2": {
+    "photo": "field-seminar",
+    "headline": [
+      "우리 기관 활동소식",
+      "이렇게 작성하세요"
+    ],
+    "subtitle": "사진과 이야기로 전하는 돌봄 현장",
+    "category": "이용안내",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "detail/r3": {
+    "photo": "field-seminar",
+    "headline": [
+      "보건복지부 통합돌봄",
+      "공식 자료실 안내"
+    ],
+    "subtitle": "정책자료 · 교육자료 원문 확인",
+    "category": "정책자료",
+    "photoNote": "통합돌봄 교육 현장 참고",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/m1": {
+    "photo": "field-seminar",
+    "headline": [
+      "어르신 방문요양"
+    ],
+    "subtitle": "실제 활동 사진 · 서울시 내 손안에 서울 · 윤혜숙",
+    "category": "현장 사진",
+    "photoNote": "통합돌봄 교육 현장 참고 · 원본 사진은 링크에서 확인",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/m2": {
+    "photo": "m2",
+    "headline": [
+      "서울 강남구 방문건강관리",
+      "현장"
+    ],
+    "subtitle": "실제 활동 사진 · 서울 강남구청",
+    "category": "현장 사진",
+    "photoNote": "서울 강남구 방문건강관리 현장",
+    "credit": "서울 강남구청"
+  },
+  "gallery/m3": {
+    "photo": "m3",
+    "headline": [
+      "가정 내 생활환경 지원"
+    ],
+    "subtitle": "실제 활동 사진 · 서울 구로구청",
+    "category": "현장 사진",
+    "photoNote": "가정 내 생활환경 지원",
+    "credit": "서울 구로구청"
+  },
+  "gallery/m4": {
+    "photo": "m4",
+    "headline": [
+      "이웃을 위한 식사지원"
+    ],
+    "subtitle": "실제 활동 사진 · 서울 구로구청",
+    "category": "현장 사진",
+    "photoNote": "이웃을 위한 식사지원",
+    "credit": "서울 구로구청"
+  },
+  "gallery/m5": {
+    "photo": "m5",
+    "headline": [
+      "어르신 생활운동"
+    ],
+    "subtitle": "실제 활동 사진 · 서울 구로구청",
+    "category": "현장 사진",
+    "photoNote": "어르신 생활운동",
+    "credit": "서울 구로구청"
+  },
+  "gallery/m6": {
+    "photo": "m6",
+    "headline": [
+      "가정 방문 건강관리"
+    ],
+    "subtitle": "실제 활동 사진 · 서울 강남구청",
+    "category": "현장 사진",
+    "photoNote": "가정 방문 건강관리",
+    "credit": "서울 강남구청"
+  },
+  "gallery/m7": {
+    "photo": "field-seminar",
+    "headline": [
+      "서울 어디나지원단 디지털",
+      "교육"
+    ],
+    "subtitle": "실제 활동 사진 · 서울시 내 손안에 서울 · 문청야",
+    "category": "현장 사진",
+    "photoNote": "통합돌봄 교육 현장 참고 · 원본 사진은 링크에서 확인",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/m8": {
+    "photo": "m8",
+    "headline": [
+      "서울 구로구 치매안심센터",
+      "‘행복한 농부’"
+    ],
+    "subtitle": "실제 활동 사진 · 서울 구로구청",
+    "category": "현장 사진",
+    "photoNote": "서울 구로구 치매안심센터 ‘행복한 농부’",
+    "credit": "서울 구로구청"
+  },
+  "gallery/field-agreement": {
+    "photo": "field-agreement",
+    "headline": [
+      "복현어울림센터 업무협약식"
+    ],
+    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
+    "category": "현장 사진",
+    "photoNote": "복현어울림센터 업무협약식",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/field-launch": {
+    "photo": "field-launch",
+    "headline": [
+      "대구광역 통합돌봄 네트워크",
+      "발대식 현장"
+    ],
+    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
+    "category": "현장 사진",
+    "photoNote": "대구광역 통합돌봄 네트워크 발대식 현장",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/field-conference": {
+    "photo": "field-conference",
+    "headline": [
+      "통합돌봄 광역 네트워크",
+      "전국대회"
+    ],
+    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
+    "category": "현장 사진",
+    "photoNote": "통합돌봄 광역 네트워크 전국대회",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/field-seminar": {
+    "photo": "field-seminar",
+    "headline": [
+      "대구경북 의료사회복지사",
+      "세미나"
+    ],
+    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
+    "category": "현장 사진",
+    "photoNote": "대구경북 의료사회복지사 세미나",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/field-naeiln": {
+    "photo": "field-naeiln",
+    "headline": [
+      "내일앤 보호작업장·주간활동",
+      "공간 방문"
+    ],
+    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
+    "category": "현장 사진",
+    "photoNote": "내일앤 보호작업장·주간활동 공간 방문",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "gallery/field-garden": {
+    "photo": "field-garden",
+    "headline": [
+      "복현 어르신 힐링 텃밭",
+      "가꾸기"
+    ],
+    "subtitle": "실제 활동 사진 · 대구 통합돌봄 네트워크",
+    "category": "현장 사진",
+    "photoNote": "복현 어르신 힐링 텃밭 가꾸기",
+    "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽"
+  },
+  "gallery/sector-home-health": {
+    "photo": "field-seminar",
+    "headline": [
+      "가정 방문 건강관리"
+    ],
+    "subtitle": "실제 활동 사진 · 서울시 내 손안에 서울",
+    "category": "현장 사진",
+    "photoNote": "통합돌봄 교육 현장 참고 · 원본 사진은 링크에서 확인",
+    "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽"
+  },
+  "gallery/sector-disability-activity": {
+    "photo": "sector-disability-activity",
+    "headline": [
+      "발달장애인 문화활동"
+    ],
+    "subtitle": "실제 활동 사진 · 김포시 뉴스포털",
+    "category": "현장 사진",
+    "photoNote": "발달장애인 문화활동",
+    "credit": "김포시 뉴스포털"
+  },
+  "gallery/sector-community-library": {
+    "photo": "sector-community-library",
+    "headline": [
+      "마을 작은도서관"
+    ],
+    "subtitle": "실제 활동 사진 · 김포시 뉴스포털",
+    "category": "현장 사진",
+    "photoNote": "마을 작은도서관",
+    "credit": "김포시 뉴스포털"
+  }
+}
