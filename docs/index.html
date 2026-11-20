@@ -833,7 +833,8 @@ function reviewProject(form,decision) {
 
 
 function newsForMember(member) {
-  return publishedNews().filter(story=>story.memberId===member.id||story.members?.includes(member.id)||(!story.memberId&&story.org===member.name));
+  return publishedNews().filter(story=>story.memberId===member.id||story.members?.includes(member.id)||
+    (!story.memberId&&(story.org===member.name||member.aliases?.includes(story.org))));
 }
 function storyPhotos(story) {
   if (story.photos?.length) return story.photos.map(src=>({src,story}));
@@ -1135,7 +1136,7 @@ function adminGifts() {
 function onGivingSummary() {
   const orgs=directoryMembers();
   const totals=[...orgs,...publishedProjects()].filter(campaignFor).map(campaignTotals);
-  const stats=[['참여기관',orgs.length+'곳'],['누적 후원금',money(totals.reduce((sum,t)=>sum+t.raised,0))],['후원 건수',campaignAmountFormat.format(totals.reduce((sum,t)=>sum+t.count,0))+'건']];
+  const stats=[['참여 확정기관',organizations.length+'곳'],['누적 후원금',money(totals.reduce((sum,t)=>sum+t.raised,0))],['후원 건수',campaignAmountFormat.format(totals.reduce((sum,t)=>sum+t.count,0))+'건']];
   return `<section class="on-summary" aria-label="전체 후원 현황"><div class="wrap on-summary-inner">
     <h2>전체 후원 현황 <small>시연</small></h2>
     <dl>${stats.map(([label,value])=>`<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl><a class="link" href="#/giving-guide">후원 안내 ${icon('arrow')}</a>
@@ -2100,7 +2101,7 @@ function icon(n){return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function cleanURL(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 const hospitalEscortService = '병원동행';
-const services=['전체',hospitalEscortService,'방문진료','장애인 돌봄','공동체 돌봄','방문요양','방문간호','주거복지','생활지원','건강관리','의료지원','디지털 교육','지역복지'];
+const services=['전체',hospitalEscortService,'방문진료','의료','장애인 돌봄','장애인 직업재활','자립준비청년','공동체 돌봄','방문요양','방문목욕','장기요양','일상돌봄','방문간호','주거복지','생활지원','건강관리','의료지원','디지털 교육','지역복지'];
 const districts=['전체 지역','중구','동구','서구','남구','북구','수성구','달서구','달성군','군위군'];
 const photoLicense='https://www.kogl.or.kr/info/license.do';
 const photoData={
@@ -2433,17 +2434,17 @@ const organizationCampaigns = {
     result:'전달한 식사 수와 지원 가구 수를 활동소식으로 공유합니다.'
   },
   'welfare-design': {
-    title:'일상에 필요한 도움을 연결합니다',
-    lead:'가사와 외출, 정서적 돌봄이 필요한 주민이 자신의 상황에 맞는 지원을 찾을 수 있도록 돕습니다.',
-    need:'가사나 외출에서 시작된 어려움이 정서적 부담으로 이어지기도 합니다. 생활 여건과 필요한 도움을 상담하고, 가사 지원과 외출 동행, 심리 지원을 상황에 맞게 연결합니다.',
-    audience:'가사·외출·정서 지원이 필요한 대구 주민',
+    title:'자립을 준비하는 청년의 일상을 함께합니다',
+    lead:'자립준비청년이 지역에서 필요한 정보를 찾고 생활 기반을 마련할 수 있도록 돕는 모금 시연입니다.',
+    need:'자립을 준비하는 과정에서 생활 정보와 지속적인 관계가 필요합니다. 청년의 상황을 함께 살피고 생활 준비와 지역 자원 이용을 지원하는 사업 예시입니다.',
+    audience:'자립을 준비하는 청년',
     goal:3000000, raised:780000, count:27,
     uses:[
-      ['일상생활 지원', '가사와 필수 외출을 돕는 방문 지원', 45],
-      ['정서 지원', '상담과 심리 지원 프로그램 운영', 35],
+      ['생활 준비', '자립에 필요한 생활 정보와 준비 물품', 45],
+      ['청년 지원', '상담과 멘토링 프로그램 운영', 35],
       ['서비스 연결', '필요한 복지 자원 안내와 이용 절차 지원', 20]
     ],
-    result:'생활지원과 상담의 참여 건수를 집계해 활동소식으로 공유합니다.'
+    result:'청년 지원과 상담의 참여 현황을 개인정보 없이 공유합니다.'
   },
   naeiln: {
     title:'배움과 일로 넓어지는 하루',
@@ -2472,17 +2473,17 @@ const organizationCampaigns = {
     result:'진행한 모임 횟수와 프로그램 활동 내용을 공유합니다.'
   },
   'modoo-happy': {
-    title:'병원 가는 길, 함께 걷습니다',
-    lead:'혼자 병원을 오가기 어려운 주민에게 동행과 일상생활 지원을 연결해 필요한 진료를 이어갈 수 있도록 돕습니다.',
-    need:'이동과 접수, 진료 후 귀가가 한 사람에게는 여러 단계의 부담이 될 수 있습니다. 병원 방문에 필요한 과정을 함께하고, 집에서 이어갈 돌봄과 생활지원도 살핍니다.',
-    audience:'병원 방문과 일상생활에 도움이 필요한 어르신과 주민',
+    title:'익숙한 집에서 이어지는 요양과 목욕 돌봄',
+    lead:'방문요양과 방문목욕이 필요한 어르신의 일상생활을 지원하는 모금 시연입니다.',
+    need:'집에서 생활하는 어르신에게는 일상생활과 위생 관리에 필요한 도움이 중요합니다. 방문요양과 방문목욕으로 익숙한 생활을 이어가도록 지원하는 사업 예시입니다.',
+    audience:'방문요양과 방문목욕 지원이 필요한 어르신',
     goal:4000000, raised:1240000, count:41,
     uses:[
-      ['병원 동행', '진료 일정에 맞춘 동행 인력과 이동 지원', 50],
-      ['가정 돌봄', '가사와 간병에 필요한 기본 물품과 방문 지원', 35],
+      ['방문요양', '일상생활을 돕는 방문 지원', 50],
+      ['방문목욕', '위생 관리에 필요한 소모품과 목욕 지원', 35],
       ['이용 안내', '지역 돌봄 서비스와 후속 일정 안내', 15]
     ],
-    result:'병원 동행과 가정 돌봄의 지원 건수를 집계해 공유합니다.'
+    result:'방문요양과 방문목욕의 지원 현황을 개인정보 없이 공유합니다.'
   }
 };
 
@@ -2744,17 +2745,81 @@ function readJoinCampaign(values) {
 
 const networkReport = '대구광역 통합돌봄 네트워크 경과보고';
 const associationReport = '달구벌사회적협동조합연합회 2025년 활동보고';
+const participationReport = '통합돌봄 플랫폼 동의 기관 · 2026.11.20';
+const participationDate = '2026.11.20';
 const organizations = [
   {
+    id:'daegu-dounuri', name:'사회적협동조합 대구도우누리', service:'병원동행', district:'수성구', icon:'medical',
+    aliases:['대구도우누리'],
+    desc:'혼자 병원을 방문하기 어려운 이웃의 이동과 진료 동행을 지원합니다.',
+    body:'병원동행 분야로 플랫폼 참여가 확정된 기관입니다. 공식 안내에서는 병원동행매니저가 이동 지원부터 진료 동행까지 함께하는 서비스와 방문요양, 복지용구, 통합돌봄 및 가사돌봄을 소개합니다.',
+    items:['병원동행','이동지원'],
+    url:'https://linktr.ee/dgdounuri_official', urlLabel:'공식 채널',
+    facts:[['참여 확인',participationDate],['주요 분야','병원동행·이동지원'],['소재지','대구 수성구 범안로16길 5 1층']],
+    sources:[participationReport,'대구도우누리 공식 채널','대구도우누리 공식 홈페이지 주요사업 안내']
+  },
+  {
     id:'woorihamkke', name:'우리함께통합돌봄사회적협동조합', service:'방문요양', district:'동구', icon:'heart',
-    desc:'집에서 생활하는 어르신을 위한 방문요양과 가사지원.',
-    body:'보건의료, 요양, 일상생활 돌봄을 연계해 노인과 장애인 등 일상에 도움이 필요한 주민을 지원하는 것을 설립 목적으로 합니다. 네트워크 참가현황에는 노인장기요양 방문요양과 가사지원 기관으로 소개되어 있습니다.',
-    items:['노인장기요양 방문요양','가사지원'],
-    facts:[['설립인가','2025년 5월 1일 · 보건복지부'],['주사무소','대구광역시 동구 신암동']],
+    desc:'장기요양과 일상돌봄, 병원동행으로 생활을 지원합니다.',
+    body:'장기요양, 일상돌봄, 병원동행 분야로 플랫폼 참여가 확정된 기관입니다. 보건의료, 요양과 일상생활 돌봄을 연계해 지역 주민의 생활을 지원합니다.',
+    items:['장기요양','방문요양','일상돌봄','병원동행'],
+    url:'',
+    facts:[['참여 확인',participationDate],['설립인가','2025년 5월 1일 · 보건복지부'],['주사무소','대구광역시 동구 신암동']],
     extraTitle:'등기상 주요 사업',
     extra:['통합돌봄 전문인력 양성 교육','재가장기요양','중·장년층 일상생활 돌봄','가사·간병 방문지원','장애인 돌봄','긴급돌봄'],
-    sources:['사회적협동조합 설립인가증', '등기사항전부증명서 1쪽', networkReport+' 4쪽']
+    sources:[participationReport,'사회적협동조합 설립인가증', '등기사항전부증명서 1쪽', networkReport+' 4쪽']
   },
+  {
+    id:'with-medical', name:'위드의료복지사회적협동조합', service:'의료', district:'서구', icon:'medical',
+    aliases:['위드의료사회적협동조합'],
+    desc:'방문진료와 방문운동을 통해 일상 가까이에서 돌봄을 지원합니다.',
+    body:'네트워크 참가현황에는 방문진료와 방문운동을 하는 서비스 제공기관으로 소개되어 있습니다. 지역통합돌봄 시범사업에 방문진료 분야로 참여했고, 영남대학교와 대구가톨릭대학교 심포지엄에서 의료 영역의 돌봄 사례를 공유했습니다.',
+    items:['의료','방문진료','방문운동'],
+    url:'https://www.withmedcoop.com/', urlLabel:'홈페이지',
+    facts:[['참여 확인',participationDate],['소재지','대구 서구 통학로32길 8 2층'],['시범사업','방문진료 · 2025년 10월~2026년 1월']],
+    sources:[participationReport,'위드의료복지사회적협동조합 공식 홈페이지',networkReport+' 2~4쪽']
+  },
+  {
+    id:'welfare-design', name:'사회복지디자인연구소사회적협동조합', service:'자립준비청년', icon:'people',
+    aliases:['사회복지디자인연구소 사회적협동조합'],
+    desc:'자립준비청년의 지역사회 생활과 자립을 지원합니다.',
+    body:'자립준비청년 분야로 플랫폼 참여가 확정된 기관입니다. 기관의 활동과 소식은 공식 카페에서 확인할 수 있습니다.',
+    items:['자립준비청년'],
+    url:'https://cafe.daum.net/SDL2023', urlLabel:'공식 카페',
+    facts:[['참여 확인',participationDate],['주요 분야','자립준비청년']],
+    photo:'field-seminar',
+    sources:[participationReport]
+  },
+  {
+    id:'daegu-care', name:'대구돌봄사회적협동조합', service:'생활지원', icon:'meal',
+    desc:'아동·노인·청중년층의 일상에 필요한 돌봄을 지원합니다.',
+    body:'아동, 노인, 청중년층을 위한 돌봄 분야로 플랫폼 참여가 확정된 기관입니다. 기관별 서비스와 활동소식은 공식 블로그에서 확인할 수 있습니다.',
+    items:['아동 돌봄','노인 돌봄','청중년층 돌봄'],
+    url:'https://blog.naver.com/dgcare1', urlLabel:'공식 블로그',
+    facts:[['참여 확인',participationDate],['주요 대상','아동·노인·청중년층'],['시범사업','식사지원 · 2025년 10월~2026년 1월']],
+    sources:[participationReport,'대구돌봄사회적협동조합 공식 블로그',networkReport+' 2·4쪽', associationReport+' 2쪽']
+  },
+  {
+    id:'naeiln', name:'내일앤사회적협동조합', service:'장애인 직업재활', district:'달성군', icon:'people',
+    desc:'장애인의 직업재활과 지역사회 자립을 지원합니다.',
+    body:'장애직업재활 분야로 플랫폼 참여가 확정된 기관입니다. 더봄 장애인직업재활시설을 운영하며 중증장애인이 자신의 능력을 발휘하고 지역사회와 함께 생활하도록 지원합니다.',
+    items:['장애인 직업재활','직업훈련'],
+    url:'https://www.naeiland.org/', urlLabel:'홈페이지',
+    facts:[['참여 확인',participationDate],['소재지','대구 달성군 옥포읍 돌미로 85 301호'],['운영 시설','더봄 장애인직업재활시설']],
+    photo:'field-naeiln',
+    sources:[participationReport,'내일앤사회적협동조합 홈페이지',networkReport+' 4쪽', associationReport+' 4쪽']
+  },
+  {
+    id:'modoo-happy', name:'사회적협동조합 모두행복센터', service:'방문요양', icon:'heart',
+    desc:'방문요양과 방문목욕으로 어르신의 생활을 지원합니다.',
+    body:'방문요양, 방문목욕 분야로 플랫폼 참여가 확정된 기관입니다. 서비스 안내와 기관의 활동소식은 공식 블로그에서 확인할 수 있습니다.',
+    items:['방문요양','방문목욕'],
+    url:'https://blog.naver.com/dasahappy', urlLabel:'공식 블로그',
+    facts:[['참여 확인',participationDate],['주요 분야','방문요양·방문목욕']],
+    sources:[participationReport,'사회적협동조합 모두행복센터 공식 블로그',networkReport+' 2·4쪽']
+  }
+];
+const archivedOrganizations = [
   {
     id:'daegu-medical', name:'대구의료복지사회적협동조합', service:'방문진료', icon:'medical',
     desc:'방문진료와 재택의료를 통해 지역 안에서 건강을 돌봅니다.',
@@ -2764,53 +2829,11 @@ const organizations = [
     sources:[networkReport+' 2·4쪽', associationReport+' 2·3쪽']
   },
   {
-    id:'with-medical', name:'위드의료복지사회적협동조합', service:'방문진료', icon:'medical',
-    desc:'방문진료와 방문운동을 통해 일상 가까이에서 돌봄을 지원합니다.',
-    body:'네트워크 참가현황에는 방문진료와 방문운동을 하는 서비스 제공기관으로 소개되어 있습니다. 지역통합돌봄 시범사업에 방문진료 분야로 참여했고, 영남대학교와 대구가톨릭대학교 심포지엄에서 의료 영역의 돌봄 사례를 공유했습니다.',
-    items:['노인장기요양','방문진료','방문운동'],
-    facts:[['시범사업','방문진료 · 2025년 10월~2026년 1월'],['네트워크 협력','보건의료 분야']],
-    sources:[networkReport+' 2~4쪽']
-  },
-  {
-    id:'daegu-care', name:'대구돌봄사회적협동조합', service:'생활지원', icon:'meal',
-    desc:'식사, 가사, 방문목욕 등 일상에서 필요한 돌봄을 지원합니다.',
-    body:'네트워크 참가현황에는 재택의료센터, 노인장기요양, 일상돌봄 서비스 제공기관으로 소개되어 있습니다. 대구 지역통합돌봄 모델발굴 시범사업에는 식사지원 분야로 참여했습니다.',
-    items:['식사지원','가사지원','방문목욕','병원동행','노인장기요양'],
-    facts:[['시범사업','식사지원 · 2025년 10월~2026년 1월'],['네트워크 협력','일상돌봄 분야']],
-    sources:[networkReport+' 2·4쪽', associationReport+' 2쪽']
-  },
-  {
-    id:'welfare-design', name:'사회복지디자인연구소 사회적협동조합', service:'생활지원', icon:'people',
-    desc:'일상돌봄과 심리지원, 청년 자립 지원을 연결합니다.',
-    body:'가사와 병원동행 등 일상돌봄, 심리지원, 자립준비청년 및 청년 느린학습자 멘토링을 수행하는 기관으로 참가현황에 기록되어 있습니다. 대구 지역통합돌봄 시범사업에서는 가사지원 분야에 참여했고, 지역 통합돌봄 교육에도 참여했습니다.',
-    items:['가사지원','병원동행','심리지원','자립준비청년·청년 느린학습자 멘토링'],
-    facts:[['시범사업','가사지원 · 2025년 10월~2026년 1월']],
-    photo:'field-seminar',
-    sources:[networkReport+' 1~4쪽', associationReport+' 2쪽']
-  },
-  {
-    id:'naeiln', name:'내일앤사회적협동조합', service:'장애인 돌봄', district:'달성군', icon:'people',
-    desc:'발달장애인의 주간활동과 직업재활을 지원합니다.',
-    body:'네트워크 참가현황에는 발달장애인 주간활동과 직업재활시설을 운영하는 서비스 제공기관으로 소개되어 있습니다. 달구벌사회적협동조합연합회는 2025년 6월 달성군 옥포읍에 있는 보호작업장과 주간활동 공간을 방문했습니다.',
-    items:['발달장애인 주간활동','장애인 직업재활시설'],
-    facts:[['자료에서 확인한 활동 현장','대구 달성군 옥포읍']],
-    photo:'field-naeiln',
-    sources:[networkReport+' 4쪽', associationReport+' 4쪽']
-  },
-  {
     id:'byeolbom', name:'별봄사회적협동조합', service:'공동체 돌봄', icon:'home',
     desc:'발달장애인 주간활동과 마을공동체 돌봄을 연결합니다.',
     body:'네트워크 참가현황에는 발달장애인 주간활동, 마을공동체, 마을기업 분야에 참여하는 기관으로 소개되어 있습니다. 영남대학교 생활과학연구소 심포지엄에서 마을도서관을 중심으로 공동체 돌봄을 넓힌 사례를 발표했습니다.',
     items:['발달장애인 주간활동','마을공동체','마을기업'],
     facts:[['사례 발표','마을도서관에서 공동체 돌봄 확장 · 2025년 11월 18일']],
-    sources:[networkReport+' 2·4쪽']
-  },
-  {
-    id:'modoo-happy', name:'사회적협동조합 모두행복센터', service:'생활지원', icon:'heart',
-    desc:'일상생활 지원과 재가 돌봄으로 지역 주민의 생활을 돕습니다.',
-    body:'네트워크 참가현황에는 노인장기요양과 일상돌봄, 가사·간병 지원 분야의 서비스 제공기관으로 소개되어 있습니다. 영남대학교 생활과학연구소 심포지엄에서 일상돌봄에서 노인돌봄으로 역할을 확장한 사례를 공유했습니다.',
-    items:['노인장기요양','일상돌봄','가사지원','병원동행','가사·간병 지원'],
-    facts:[['사례 발표','일상돌봄과 노인돌봄에서 사회적협동조합의 역할 · 2025년 11월 18일']],
     sources:[networkReport+' 2·4쪽']
   }
 ];
@@ -2907,6 +2930,9 @@ const networkRoster = [
 function directoryMembers() {
   return [...organizations,...allMembers().filter(member=>member.isLocal)];
 }
+function participationNote() {
+  return `<p class="smalltext muted">참여 확정 ${organizations.length}개 기관 · ${participationDate} 기준</p>`;
+}
 function publishedNews() {
   return items('news').filter(story=>story.verified||story.isLocal);
 }
@@ -2962,8 +2988,24 @@ function organizationCard(org) {
     ${campaign?`<div class="org-card-actions">${campaignButton(org)}</div>`:''}
   </article>`;
 }
+function organizationInfo(org) {
+  return `<h2>기관 소개</h2><p class="campaign-prose">${esc(org.body)}</p>
+    ${org.url?`<a class="btn" href="${esc(cleanURL(org.url))}" target="_blank" rel="noopener noreferrer">${esc(org.urlLabel||'홈페이지')}</a>`:'<p class="smalltext muted">홈페이지 미등록</p>'}
+    ${org.facts.length?`<dl class="org-facts">${org.facts.map(([term,value])=>`<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>`:''}
+    ${org.extra?`<h3>${esc(org.extraTitle)}</h3><ul>${org.extra.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`:''}
+    <details class="org-source-details"><summary>확인 자료</summary><ul>${org.sources.map(source=>`<li>${esc(source)}</li>`).join('')}</ul></details>`;
+}
+function organizationProfile(org) {
+  return pageHead(org.name,org.desc)+`<div class="wrap page-content on-form-width">
+    <a class="backlink" href="#/members">회원사 목록</a>
+    <section class="campaign-panel org-source-panel">${organizationInfo(org)}
+      <h3>주요 활동 분야</h3><ul class="campaign-services">${org.items.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>
+    </section>${onMemberMedia(org,'news')}
+  </div>`;
+}
 function organizationDetail(org) {
   const campaign = campaignFor(org);
+  if (!campaign) return organizationProfile(org);
   const sections = [['campaign-about','사업 소개'],['campaign-budget','후원금 사용 계획'],
     ['campaign-updates','활동소식'],['campaign-gallery','사진']];
   return `<div class="campaign-page organization-page">
@@ -3006,10 +3048,7 @@ function organizationDetail(org) {
       </div>
       <aside class="org-detail-aside">
         <section class="campaign-panel org-source-panel">
-          <h2>기관 소개</h2><p class="campaign-prose">${esc(org.body)}</p>
-          ${org.facts.length?`<dl class="org-facts">${org.facts.map(([term,value])=>`<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>`:''}
-          ${org.extra?`<h3>${esc(org.extraTitle)}</h3><ul>${org.extra.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`:''}
-          <details class="org-source-details"><summary>확인 자료</summary><ul>${org.sources.map(source=>`<li>${esc(source)}</li>`).join('')}</ul></details>
+          ${organizationInfo(org)}
         </section>
       </aside>
     </div>
@@ -3033,9 +3072,14 @@ function documentedAbout() {
       </li>`).join('')}</ol>
       <p class="network-source">출처 · ${networkReport} 1~3·9~10쪽</p>
     </section>
-    <section class="body-block network-content-block"><h2>참여기관 현황</h2>
+    <section class="body-block network-content-block"><h2>플랫폼 참여 확정기관</h2>
+      ${participationNote()}
+      <div class="network-roster"><section><h3>참여기관 ${organizations.length}곳</h3><ul>${organizations.map(org=>`<li><a href="#/member/${org.id}">${esc(org.name)}</a></li>`).join('')}</ul></section></div>
+      <p class="network-source">출처 · ${participationReport}</p>
+    </section>
+    <section class="body-block network-content-block"><h2>네트워크 참가현황 기록</h2>
       <div class="network-roster">${networkRoster.map(([group,names])=>`<section><h3>${esc(group)}</h3><ul>${names.map(name=>{
-        const org=organizations.find(item=>item.name===name);
+        const org=[...organizations,...archivedOrganizations].find(item=>item.name===name||item.aliases?.includes(name));
         return org?`<li><a href="#/member/${org.id}">${esc(name)} ${icon('chevron')}</a></li>`:`<li>${esc(name)}</li>`;
       }).join('')}</ul></section>`).join('')}</div>
       <p class="network-source">출처 · ${networkReport} 4~5쪽의 참가현황</p>
@@ -3168,7 +3212,7 @@ function persist(message = '저장 공간이 부족합니다. 첨부파일 크�
 let homeService='전체',memberFilter='전체',memberDistrict='전체 지역',memberQuery='',sort='default',newsFilter='전체',policyFilter='전체',globalQuery='',adminFilter='pending';
 let uploadImage='',uploadFile=null,lastFocus=null,toastTimer,pendingGift='',activeRoute='',routeScroll=new Map(),modalCloseFn=null;
 function approved(type){return db.posts.filter(p=>p.status==='approved'&&p.type===type)}
-function allMembers(){return [...organizations,...members,...db.applications.filter(x=>x.status==='approved').map(x=>({...x,service:x.service||'생활지원',tone:'#e3edf9',color:'#537cb0',icon:'building',items:[x.service+' 분야 소개'],isLocal:true}))]}
+function allMembers(){return [...organizations,...archivedOrganizations,...members,...db.applications.filter(x=>x.status==='approved').map(x=>({...x,service:x.service||'생활지원',tone:'#e3edf9',color:'#537cb0',icon:'building',items:[x.service+' 분야 소개'],isLocal:true}))]}
 function items(type){return [...approved(type),...({news:[...documentedNews,...news],policy:policies,event:events,resource:resources}[type]||[])]}
 function findItem(id){return [...allMembers(),...items('news'),...items('policy'),...items('event'),...items('resource')].find(x=>x.id===id)}
 function toast(t){clearTimeout(toastTimer);$('#toast').textContent=t;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,3800)}
@@ -3484,13 +3528,12 @@ function directoryServices(){
   return [...new Set(['전체',hospitalEscortService,...directoryMembers().map(member=>member.service)])];
 }
 function matchesDirectoryService(member, service){
-  return service==='전체'||member.service===service||
-    (service===hospitalEscortService&&member.items?.includes(hospitalEscortService));
+  return service==='전체'||member.service===service||member.items?.includes(service);
 }
 function homeMembers(){
   const entries = directoryMembers().filter(member=>matchesDirectoryService(member,homeService));
   return `<div id="home-members">${feedSection('home-member','대구 통합돌봄 참여기관',entries,organizationCard,{
-    layout:'cards',kind:'members',before:chips(directoryServices(),homeService,'home-service'),
+    layout:'cards',kind:'members',before:participationNote()+chips(directoryServices(),homeService,'home-service'),
     emptyText:'표시할 회원사가 없습니다.'
   })}</div>`;
 }
@@ -3499,7 +3542,7 @@ function matchingMembers(){
   const matches = directoryMembers().filter(member=>
     matchesDirectoryService(member,memberFilter)&&
     (memberDistrict==='전체 지역'||member.district===memberDistrict)&&
-    matchesSearch(query,[member.name,member.desc,member.service,member.district,'대구광역시',campaignFor(member)?.title,...member.items])
+    matchesSearch(query,[member.name,...(member.aliases||[]),member.desc,member.service,member.district,'대구광역시',campaignFor(member)?.title,...member.items])
   );
   if(sort==='name') matches.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return matches;
@@ -3523,7 +3566,7 @@ function membersPage(){
   return pageHead('회원사','',
     `<div class="on-actions"><a class="btn" href="#/projects">돌봄사업</a><button class="btn" type="button" data-action="join">${icon('plus')} 회원사 등록</button></div>`)+
     `<div class="wrap page-content">
-      ${chips(directoryServices(),memberFilter,'member-service')}
+      ${participationNote()}${chips(directoryServices(),memberFilter,'member-service')}
       <form class="filters" id="member-filters" role="search" aria-label="회원사 검색">
         <div class="searchbox"><input id="member-q" value="${esc(memberQuery)}" placeholder="기관명 또는 활동 검색" type="search" aria-label="회원사 검색어"><button aria-label="회원사 검색">${icon('search')}</button></div>
         <select id="district" aria-label="지역 선택">${districts.map(value=>`<option ${value===memberDistrict?'selected':''}>${value}</option>`).join('')}</select>
@@ -3617,7 +3660,7 @@ function searchPage(q){
   ];
   const matches=q?groups.flatMap(([kind,entries,path])=>entries
     .filter(item=>matchesSearch(q,[item.name,item.title,item.desc,item.body,item.service,item.category,item.district,item.org,
-      item.owner,item.items?.join(' '),campaignFor(item)?.title,item.district?'대구광역시':'']))
+      item.owner,item.aliases?.join(' '),item.items?.join(' '),campaignFor(item)?.title,item.district?'대구광역시':'']))
     .map(item=>({item,kind,route:path?path(item):'detail/'+item.id}))):[];
   return pageHead('통합검색','')+`<div class="wrap page-content">
     <form id="global-search" class="filters" role="search" aria-label="통합검색">
