@@ -1,0 +1,2100 @@
+{
+  "version": 1,
+  "batchSize": 10,
+  "latestLimit": 10,
+  "title": "대구 통합돌봄네트워크 ON",
+  "description": "돌봄기관과 이웃을 잇고, 함께하는 일상을 만듭니다",
+  "headline": [
+    "돌봄이 필요한 순간",
+    "우리 동네가 함께합니다"
+  ],
+  "canonicalURL": "https://daegu-care.oconia.co.kr/",
+  "photos": [
+    {
+      "key": "org-daegu-dounuri",
+      "owner": "daegu-dounuri",
+      "institutionName": "사회적협동조합 대구도우누리",
+      "file": "cases/org-daegu-dounuri.jpg",
+      "originalFile": null,
+      "imageUrl": "https://www.suseong.kr/icms/file/getImage.do?atchFileId=FILE_00000144034YTID&fileSn=1",
+      "originalImageUrl": "https://www.suseong.kr/icms/file/getImage.do?atchFileId=FILE_00000144034YTID&fileSn=1",
+      "title": "대구도우누리의 통합돌봄 대상자 영양식 기탁",
+      "caption": "2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영.",
+      "credit": "대구 수성구청 행복수성뉴스",
+      "source": "https://www.suseong.kr/news/index.do?menu_id=00031461&menu_link=%2Ffront%2Fnews%2FselectIcmsArticle.do%3Farticle_id%3DARTICLE_00019243",
+      "sourceLabel": "대구 수성구청 · 2026.11.16",
+      "sourceDocument": null,
+      "publishedDate": "2026-11-16",
+      "activityDate": "2026-11-12",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-11-16T00:00:00.000Z",
+      "freshnessTimestamp": 1794787200000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": null,
+      "rightsContext": "Suseong-gu official article carries KOGL Type 2 and a photograph-rights exception. Photos are credited to Suseong-gu in accompanying press coverage. Separate image license not independently confirmed; retain source credit.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "c2f7d5ee772439c80ad09eb4154ba275e9585640a9760b48ca03790b2ceb9df8",
+      "sha256": "59e53f13dd3ec09bb64dd18713b7cfdf31efd34d4b8216cec5b5ecb41d577f5c",
+      "pixelSHA256": "c2f7d5ee772439c80ad09eb4154ba275e9585640a9760b48ca03790b2ceb9df8",
+      "width": 6000,
+      "height": 4000,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/c2f7d5ee772439c8-0492fa538f710206bdf9.jpg",
+      "posterFile": "service-share/c2f7d5ee772439c8-0492fa538f710206bdf9.jpg",
+      "posterSHA256": "f4336a56590caba625d1ccac0430fcdbc9c7055f8020dc796fb77d6286b1db45",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          354,
+          12,
+          846,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "dounuri-interview-37",
+      "owner": "daegu-dounuri",
+      "institutionName": "사회적협동조합 대구도우누리",
+      "file": "cases/release-dounuri-interview-37.jpg",
+      "originalFile": "output/work/release-research-a/dounuri-interview-37.jpg",
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNjExMTBfNDEg/MDAxNzk0MzAxOTMxNjkw.5APp0RtHYlv3tk7TbHrM_eJMOiSSCC9qEVqLf-LSD6Ig.yKCJwuxfXox2ReI0SrEZrwK9ChZfAj8PQlastE6nedcg.PNG/image37.png?type=w966",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNjExMTBfNDEg/MDAxNzk0MzAxOTMxNjkw.5APp0RtHYlv3tk7TbHrM_eJMOiSSCC9qEVqLf-LSD6Ig.yKCJwuxfXox2ReI0SrEZrwK9ChZfAj8PQlastE6nedcg.PNG/image37.png?type=w966",
+      "title": "대구도우누리 대표 인터뷰",
+      "caption": "기관명이 적힌 조끼를 입고 지역 돌봄과 서비스의 방향을 이야기하는 대구도우누리 대표의 인터뷰 장면.",
+      "credit": "더컴퍼니씨협동조합 · 두근두근 소셜 홍보 프로젝트",
+      "source": "https://blog.naver.com/thecompanyc/224471963501",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-11-10",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-11-10T00:00:00.000Z",
+      "freshnessTimestamp": 1794268800000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "ac50f578ce7988ce21ceae07b5d28ce4c93a45875ab06bed2b3b4fd8c9074afe",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "3385c0b448da96acbe00bed1a886f0b73caafbde9417053ba14169981c7f12c2",
+      "sha256": "36c51dfbd005f737abc6b4201b0dede08edd3282c929dc01563b5a2e9a0ba72d",
+      "pixelSHA256": "3385c0b448da96acbe00bed1a886f0b73caafbde9417053ba14169981c7f12c2",
+      "width": 818,
+      "height": 684,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/3385c0b448da96ac-fee16792af11c976e321.jpg",
+      "posterFile": "service-share/3385c0b448da96ac-fee16792af11c976e321.jpg",
+      "posterSHA256": "bd2ccac9bc5030a290ed842b9f53988618db095e50dda26169538be482aa6888",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          404,
+          12,
+          796,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-with-arboretum",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-36-1.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2610/e04e4ab46fb15453588441fc41231f4a_1792979377_216.JPG",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2610/e04e4ab46fb15453588441fc41231f4a_1792979377_216.JPG",
+      "title": "생애구술기록 프로젝트 어부바 사업 대구수목원 나들이",
+      "caption": "생애구술기록 어부바 사업 참가자들의 대구수목원 방문",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=36&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-10-26",
+      "activityDate": "2026-10-15",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-10-26T00:00:00.000Z",
+      "freshnessTimestamp": 1792972800000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "e7c20124a620b44c0a39746f62ae3da7681e9d7310e9070fd1cebeae3f6ae602",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "d75e965d92d08d9155f5d2efa9339e3ed8350cf4e165db9e7c3e43a599520563",
+      "sha256": "e7c20124a620b44c0a39746f62ae3da7681e9d7310e9070fd1cebeae3f6ae602",
+      "pixelSHA256": "d75e965d92d08d9155f5d2efa9339e3ed8350cf4e165db9e7c3e43a599520563",
+      "width": 4032,
+      "height": 3024,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/d75e965d92d08d91-6d7c48b39c51656e0bf2.jpg",
+      "posterFile": "service-share/d75e965d92d08d91-6d7c48b39c51656e0bf2.jpg",
+      "posterSHA256": "4f8092c8987ec3a7955684527a10296e70d3b20993222d7c6c47785db16494f0",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "care-pilot-reference",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-33-3.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118131_0693.JPG",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118131_0693.JPG",
+      "title": "위드 의료현장 실습",
+      "caption": "관련 실제 사례사진: 위드의 의료현장 실습. 이 사진은 대구 통합돌봄 시범사업의 현장 사진이 아닙니다.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=33&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-07-27",
+      "activityDate": "2026-07-21",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-07-27T00:00:00.000Z",
+      "freshnessTimestamp": 1785110400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "7ca2d95bcb31509eac6d88cb648b1de3c09284a807fb1ba9c365eac4f0703085",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "87152cc5f6c84c6d041c030d065dafcdf542624674d26ce1b986c4a625a068f3",
+      "sha256": "7ca2d95bcb31509eac6d88cb648b1de3c09284a807fb1ba9c365eac4f0703085",
+      "pixelSHA256": "87152cc5f6c84c6d041c030d065dafcdf542624674d26ce1b986c4a625a068f3",
+      "width": 4032,
+      "height": 3024,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/87152cc5f6c84c6d-f25395840703c351ccb6.jpg",
+      "posterFile": "service-share/87152cc5f6c84c6d-f25395840703c351ccb6.jpg",
+      "posterSHA256": "0834eda6b6a381bd00fb8bc53744b4a58e027f082e5c4ebd02d1853e3b01bc00",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-with-meal",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-34-2.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118590_3303.jpg",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118590_3303.jpg",
+      "title": "대구 운문댐 수자원 의료사랑방 시작",
+      "caption": "의료사랑방 현장에서 어르신들이 식사하는 모습",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=34&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-07-27",
+      "activityDate": "2026-07-25",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-07-27T00:00:00.000Z",
+      "freshnessTimestamp": 1785110400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "c66c655d0011512cee3be760100850a7257dff513454191fa1d3c4cf4076251e",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "a65703a649444014e3630ad64ff6dc74044e1164b6cad0645df81cf01921ed82",
+      "sha256": "07d11d863a4125675c5f28f3bd44d1fd73579046cf34a3cf95cb31c43539cca7",
+      "pixelSHA256": "a65703a649444014e3630ad64ff6dc74044e1164b6cad0645df81cf01921ed82",
+      "width": 5712,
+      "height": 4284,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/a65703a649444014-17ff0e674341f1d32a18.jpg",
+      "posterFile": "service-share/a65703a649444014-17ff0e674341f1d32a18.jpg",
+      "posterSHA256": "73b886990df99d3fe1ab983b71a1e346925f371344a03935629e587eeb63c862",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-with-practice",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-33-1.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118129_4994.JPG",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118129_4994.JPG",
+      "title": "대구가톨릭의대생 의료현장 실습",
+      "caption": "의료현장 실습에 참여한 의대생과 주민들",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=33&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-07-27",
+      "activityDate": "2026-07-21",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-07-27T00:00:00.000Z",
+      "freshnessTimestamp": 1785110400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "8606964979c86576e9c4dfe83d67a1fc6186db66b2f4cde312f446e60d453ecb",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "fae0a31dff1cba10c5cbc3ef04b8b3318d4a04dd841e3db4ab37d4902c6ca745",
+      "sha256": "8606964979c86576e9c4dfe83d67a1fc6186db66b2f4cde312f446e60d453ecb",
+      "pixelSHA256": "fae0a31dff1cba10c5cbc3ef04b8b3318d4a04dd841e3db4ab37d4902c6ca745",
+      "width": 4032,
+      "height": 3024,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/fae0a31dff1cba10-373ffa906522419bb1a1.jpg",
+      "posterFile": "service-share/fae0a31dff1cba10-373ffa906522419bb1a1.jpg",
+      "posterSHA256": "d4eae9862b58252ac61d0a9e0b529dfd9b215b96b16d90ff719a9f0d9aaa6249",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "health-forum-reference",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-34-1.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118588_9244.jpg",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118588_9244.jpg",
+      "title": "위드 의료사랑방",
+      "caption": "관련 실제 사례사진: 위드 의료사랑방 차량. 이 사진은 심포지엄 현장 사진이 아닙니다.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=34&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-07-27",
+      "activityDate": "2026-07-25",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-07-27T00:00:00.000Z",
+      "freshnessTimestamp": 1785110400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "1a1ffaecdcf16e4b44b43ed9d3568f8637a48471c23f791722b945deb14d5f21",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "45ad8b503a959a31b16d03a6981fb61a650f2694f0565994337af54c5fc9b3c2",
+      "sha256": "d649b1e873692395c2f6edc52cba287d453eb1675815e74ef3ade560721944fc",
+      "pixelSHA256": "45ad8b503a959a31b16d03a6981fb61a650f2694f0565994337af54c5fc9b3c2",
+      "width": 5712,
+      "height": 4284,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/45ad8b503a959a31-4a643db3ef82bc64b71f.jpg",
+      "posterFile": "service-share/45ad8b503a959a31-4a643db3ef82bc64b71f.jpg",
+      "posterSHA256": "68108e702605f043824de3202b37dc0320f066d91d97cd960a64c6fecb9fd7ab",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "org-with-medical",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-34-6.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118595_099.jpg",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2607/240e018635cae6391f9677e5a793a921_1785118595_099.jpg",
+      "title": "대구 운문댐 수자원 의료사랑방 시작",
+      "caption": "어르신의 혈압을 측정하는 위드 활동가",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=34&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-07-27",
+      "activityDate": "2026-07-25",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-07-27T00:00:00.000Z",
+      "freshnessTimestamp": 1785110400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "961fc1aca17ad561dcf95a97662f8eeb9710f0274502a9fba78d33ba834eef69",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "f131ac60b9de3dc05aa58c7051deb9cc62333402ebbac5644c245ce11664203c",
+      "sha256": "0076eae1d2866b7555b372db569b3153b39b7922c5b895d8e0a1be73e584eabf",
+      "pixelSHA256": "f131ac60b9de3dc05aa58c7051deb9cc62333402ebbac5644c245ce11664203c",
+      "width": 5712,
+      "height": 4284,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/f131ac60b9de3dc0-96e6bbb9e33a22e58d9c.jpg",
+      "posterFile": "service-share/f131ac60b9de3dc0-96e6bbb9e33a22e58d9c.jpg",
+      "posterSHA256": "a2d849fc411096c077193150a0558639740cb94407d9ad3a755ebaeb610c993b",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-happy-housekeeping",
+      "owner": "modoo-happy",
+      "institutionName": "사회적협동조합 모두행복센터",
+      "file": "cases/dasahappy-224315829543-8.jpg",
+      "originalFile": null,
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNjA2MTRfMjQz/MDAxNzgxNDQ0OTI3MTA3.9BZdohxEDlCeMv-RKD3oqQpIh_Sdb_qQ210ez9gZeYUg.ePf2Rn2uB6LpwgXBvPA_ud7UJovwMxFCN7OXQfVt_Hkg.JPEG/900_1776178367618.jpg?type=w773",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNjA2MTRfMjQz/MDAxNzgxNDQ0OTI3MTA3.9BZdohxEDlCeMv-RKD3oqQpIh_Sdb_qQ210ez9gZeYUg.ePf2Rn2uB6LpwgXBvPA_ud7UJovwMxFCN7OXQfVt_Hkg.JPEG/900_1776178367618.jpg?type=w773",
+      "title": "늘 감사드립니다",
+      "caption": "가사지원 후 정돈된 주방",
+      "credit": "사회적협동조합 모두행복센터",
+      "source": "https://blog.naver.com/PostView.naver?blogId=dasahappy&logNo=224315829543&redirect=Dlog",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-06-14",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-06-14T00:00:00.000Z",
+      "freshnessTimestamp": 1781395200000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "0676a5c8640e7dc502b5e8b0358fd61d34012edc8a75f69994e9570fcbbc3acb",
+      "rightsContext": "Official organization public blog; attribution should be retained. No explicit open reuse license was found, so this is not a claim of CC/KOGL licensing.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "50f2b61f4ff5966bd4eaa821c15f960381b9de8f60050f7dcb6948002423e696",
+      "sha256": "0676a5c8640e7dc502b5e8b0358fd61d34012edc8a75f69994e9570fcbbc3acb",
+      "pixelSHA256": "50f2b61f4ff5966bd4eaa821c15f960381b9de8f60050f7dcb6948002423e696",
+      "width": 773,
+      "height": 580,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/50f2b61f4ff5966b-84fd53157287f89a3985.jpg",
+      "posterFile": "service-share/50f2b61f4ff5966b-84fd53157287f89a3985.jpg",
+      "posterSHA256": "7ef82c66add3dd7e85b19b1e8b63b3814be1f120ea67f243223362d6ddcdeeeb",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "org-modoo-happy",
+      "owner": "modoo-happy",
+      "institutionName": "사회적협동조합 모두행복센터",
+      "file": "cases/dasahappy-224315829543-6.jpg",
+      "originalFile": null,
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNjA2MTRfMjY0/MDAxNzgxNDQ0OTI4MDY0.1FGriAHeJHI_1SnQIEscBTpQ5Xpe3LGaP34sRu_cGPcg.DFfgcB9DldP4KZTtyhzPEP9jVkovlVgKeYookkAHYPYg.JPEG/900_1776338605704.jpg?type=w773",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNjA2MTRfMjY0/MDAxNzgxNDQ0OTI4MDY0.1FGriAHeJHI_1SnQIEscBTpQ5Xpe3LGaP34sRu_cGPcg.DFfgcB9DldP4KZTtyhzPEP9jVkovlVgKeYookkAHYPYg.JPEG/900_1776338605704.jpg?type=w773",
+      "title": "늘 감사드립니다",
+      "caption": "가정방문 지원 후 정돈된 주거공간",
+      "credit": "사회적협동조합 모두행복센터",
+      "source": "https://blog.naver.com/PostView.naver?blogId=dasahappy&logNo=224315829543&redirect=Dlog",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-06-14",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-06-14T00:00:00.000Z",
+      "freshnessTimestamp": 1781395200000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "852205aaf09f8bf3c92c05c5a73fbd3ab68b46aadbd3c00f8d8066f5de8d2bc6",
+      "rightsContext": "Official organization public blog; attribution should be retained. No explicit open reuse license was found, so this is not a claim of CC/KOGL licensing.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "add223f556bbf3cfb7c4b4bbe651607ff060bf0fdeae733e93c75ab066775d4a",
+      "sha256": "852205aaf09f8bf3c92c05c5a73fbd3ab68b46aadbd3c00f8d8066f5de8d2bc6",
+      "pixelSHA256": "add223f556bbf3cfb7c4b4bbe651607ff060bf0fdeae733e93c75ab066775d4a",
+      "width": 773,
+      "height": 1031,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/add223f556bbf3cf-e3a9fe1a3afc21742f8a.jpg",
+      "posterFile": "service-share/add223f556bbf3cf-e3a9fe1a3afc21742f8a.jpg",
+      "posterSHA256": "5c523cd01b85e6ca248b2d5884369129a32afcc72e3f1124cb12e8dd6a75de7c",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          477,
+          12,
+          723,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "with-31-1",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/release-with-31-1.jpg",
+      "originalFile": "output/work/release-research-a/with-31-1.jpg",
+      "imageUrl": "https://withmedcoop.com/data/editor/2605/991811e85b84ef901284a3fdf88b6226_1779087925_9255.JPG",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2605/991811e85b84ef901284a3fdf88b6226_1779087925_9255.JPG",
+      "title": "위드 건강 강좌 시리즈 1탄 \"음식과 암 이야기\" 강좌 스케치",
+      "caption": "위드 건강강좌 음식과 암 이야기에서 강연하는 임재양 원장.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=31&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-05-18",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-05-18T00:00:00.000Z",
+      "freshnessTimestamp": 1779062400000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "09bb976398307ae92ffb9f5a9b8a553b58e834513bbe37df8abe25dabab7177c",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "f4dbab45ff04d1ce3b3f308be483df94a8d958af631c63c7408f24a1ff31a425",
+      "sha256": "8a360f2d18da214ba29052b7e5c616a5ba0959285f620fdef1869b4e950e0f4d",
+      "pixelSHA256": "f4dbab45ff04d1ce3b3f308be483df94a8d958af631c63c7408f24a1ff31a425",
+      "width": 2000,
+      "height": 1500,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/f4dbab45ff04d1ce-6d8dbb4e2dd123e24f86.jpg",
+      "posterFile": "service-share/f4dbab45ff04d1ce-6d8dbb4e2dd123e24f86.jpg",
+      "posterSHA256": "39b94a818a106a6482b322d8b8a803581ef836d9dc30895b15aca12850a48b65",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-happy-escort",
+      "owner": "modoo-happy",
+      "institutionName": "사회적협동조합 모두행복센터",
+      "file": "cases/dasahappy-224285448077-5.jpg",
+      "originalFile": null,
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNjA1MTRfMjgw/MDAxNzc4NzQxNDAzMzIw.N0TcArUXDqP2ZIPlySmcYpquLbZtOHMb8Tyr9CCVsuwg.2Sfrg5av4G6TtImgyifBze_BjM1Wl0uR5TtRaFYcjVog.JPEG/900_20250904_101726.jpg?type=w773",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNjA1MTRfMjgw/MDAxNzc4NzQxNDAzMzIw.N0TcArUXDqP2ZIPlySmcYpquLbZtOHMb8Tyr9CCVsuwg.2Sfrg5av4G6TtImgyifBze_BjM1Wl0uR5TtRaFYcjVog.JPEG/900_20250904_101726.jpg?type=w773",
+      "title": "병원동행",
+      "caption": "어르신의 병원 이동을 돕는 동행",
+      "credit": "사회적협동조합 모두행복센터",
+      "source": "https://blog.naver.com/PostView.naver?blogId=dasahappy&logNo=224285448077&redirect=Dlog",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-05-14",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-05-14T00:00:00.000Z",
+      "freshnessTimestamp": 1778716800000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "8cd5cae8f624e4d20320577a8c86fc0257845e5bdba76f199fe22d0a09ee0c33",
+      "rightsContext": "Official organization public blog; attribution should be retained. No explicit open reuse license was found, so this is not a claim of CC/KOGL licensing.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "1a1f651a1448fcfab1be9b651c665449415f7f186c9f6dda58b4b46371c99013",
+      "sha256": "8cd5cae8f624e4d20320577a8c86fc0257845e5bdba76f199fe22d0a09ee0c33",
+      "pixelSHA256": "1a1f651a1448fcfab1be9b651c665449415f7f186c9f6dda58b4b46371c99013",
+      "width": 773,
+      "height": 580,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1a1f651a1448fcfa-be2a1301d8263180cc96.jpg",
+      "posterFile": "service-share/1a1f651a1448fcfa-be2a1301d8263180cc96.jpg",
+      "posterSHA256": "c42113d0bb1b806504a4aab179d6ada3e823e916a57b56460a193a2a918e7b63",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "dounuri-beomeo-1",
+      "owner": "daegu-dounuri",
+      "institutionName": "사회적협동조합 대구도우누리",
+      "file": "cases/release-dounuri-beomeo-1.jpg",
+      "originalFile": "output/work/release-research-a/dounuri-beomeo-1.jpg",
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNjA0MDlfMjcw/MDAxNzc1NzE2NjUzMjEw.loLIz8_eNqlCDs2V4KT2X_Xp90S1lvZQPcy67XXVN7gg.mRanRSBI_zPYNh5kM0nQTFJPcf1UZDTAK8pFh9U5-4Qg.JPEG/KakaoTalk_20260407_110120974.jpg?type=w466",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNjA0MDlfMjcw/MDAxNzc1NzE2NjUzMjEw.loLIz8_eNqlCDs2V4KT2X_Xp90S1lvZQPcy67XXVN7gg.mRanRSBI_zPYNh5kM0nQTFJPcf1UZDTAK8pFh9U5-4Qg.JPEG/KakaoTalk_20260407_110120974.jpg?type=w466",
+      "title": "재가어르신 건강을 위한 의료·돌봄 업무협약",
+      "caption": "범어연합내과 재택의료센터와 대구도우누리·재가장기요양기관연합회 수성지회의 업무협약 기념촬영. 현수막에 대구도우누리 법인명이 보입니다.",
+      "credit": "범어연합내과 재택의료센터",
+      "source": "https://blog.naver.com/beomeo3535/224247435912",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-04-10",
+      "activityDate": "2026-04-03",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-04-10T00:00:00.000Z",
+      "freshnessTimestamp": 1775779200000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "01923af60770f6c6b5d2c8ffc0648f7f274a94e796d1859a296f9db483af2652",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "0e1aa514aaedf7d5ca8e9c02ed5e0527133e64afcd73d1ec5e51fee19fd26d1f",
+      "sha256": "b245ea3139fc174d6fe5a9255af01128394fd11a5a466eb8a9eec3a97c001472",
+      "pixelSHA256": "0e1aa514aaedf7d5ca8e9c02ed5e0527133e64afcd73d1ec5e51fee19fd26d1f",
+      "width": 466,
+      "height": 262,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/0e1aa514aaedf7d5-df9ef00cc4999642912f.jpg",
+      "posterFile": "service-share/0e1aa514aaedf7d5-df9ef00cc4999642912f.jpg",
+      "posterSHA256": "9d22bb6f3fc3ce66e99c4a84f95e39a40a4df1500bc61cab2a3e71a7bd171e8d",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          308,
+          12,
+          891,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "with-30-10",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/release-with-30-10.jpg",
+      "originalFile": "output/work/release-research-a/with-30-10.jpg",
+      "imageUrl": "https://withmedcoop.com/data/editor/2603/88e6a16a6d9bb18971ebc4d83934773b_1774855598_6063.jpg",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2603/88e6a16a6d9bb18971ebc4d83934773b_1774855598_6063.jpg",
+      "title": "사진으로 보는 제5차 위드의료복지사회적협동조합 총회",
+      "caption": "정기총회 자료를 들고 함께 기념촬영하는 위드 참석자들.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=30&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2026-03-30",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2026-03-30T00:00:00.000Z",
+      "freshnessTimestamp": 1774828800000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "92052e03efd05a0879a5f26235e473cdc44f3a4b512eb218b9741d66f51731cf",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "5203b9019cf18f0f9796164dfdbef16138e4e5d59d2441dba33748d5bc0cce2f",
+      "sha256": "ce609df69fea8ccdcadb1e850d35f63e4c62071aef9f22a179a2b2e4845b4652",
+      "pixelSHA256": "5203b9019cf18f0f9796164dfdbef16138e4e5d59d2441dba33748d5bc0cce2f",
+      "width": 1280,
+      "height": 761,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/5203b9019cf18f0f-22eec6bd81b0a0723954.jpg",
+      "posterFile": "service-share/5203b9019cf18f0f-22eec6bd81b0a0723954.jpg",
+      "posterSHA256": "b2750a0484d1f8d09e84e0fe6f0124877bf600100659ddaa0eb6f88488ff27ab",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          324,
+          12,
+          876,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "with-29-1",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/release-with-29-1.jpg",
+      "originalFile": "output/work/release-research-a/with-29-1.jpg",
+      "imageUrl": "https://www.withmedcoop.com/data/editor/2510/7ed8b6e7079aed603726246d427f2c78_1761801086_3029.jpg",
+      "originalImageUrl": "https://www.withmedcoop.com/data/editor/2510/7ed8b6e7079aed603726246d427f2c78_1761801086_3029.jpg",
+      "title": "2025년 대구시 사회적경제 통합돌봄 시범사업 단체 1위로 선정",
+      "caption": "대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=29&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2025-10-30",
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-10-30T00:00:00.000Z",
+      "freshnessTimestamp": 1761782400000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "eabd636f707c3d202f71a45b16755d5eaf8ca59021ad6cdd8266b37816017b3d",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "b015175cb6d1b570364e568052f2f7abcfd2f453b1d49622dfd33158178c2489",
+      "sha256": "ea7a96b4339755ee8ed32a80176f61626751dfb9c7997d33a96a4a069a764f2c",
+      "pixelSHA256": "b015175cb6d1b570364e568052f2f7abcfd2f453b1d49622dfd33158178c2489",
+      "width": 1280,
+      "height": 960,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/b015175cb6d1b570-7a15f5d15d548989f8c5.jpg",
+      "posterFile": "service-share/b015175cb6d1b570-7a15f5d15d548989f8c5.jpg",
+      "posterSHA256": "61d096ece1aa81b978d1283d7b17083fbc20e660ce02324dcbcc28c2950e09cb",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "news-sdl-workshop",
+      "owner": "welfare-design",
+      "institutionName": "사회복지디자인연구소사회적협동조합",
+      "file": "cases/news-sdl-workshop.jpg",
+      "originalFile": null,
+      "imageUrl": "https://www.dgpublic.org/bbs_img2/202509221134491927813341.jpg",
+      "originalImageUrl": "https://www.dgpublic.org/bbs_img2/202509221134491927813341.jpg",
+      "title": "거창에서 쉼과 돌봄을 돌아본 조합원 워크숍",
+      "caption": "사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다.",
+      "credit": "대구시민공익활동지원센터 · 사회복지디자인연구소 사협 참여후기",
+      "source": "https://www.dgpublic.org/web/jhboard/view.php?desc=desc&id=active1&no=4054&page=29&page_num=12&select_arrange=reg_date",
+      "sourceLabel": "대구시민공익활동지원센터",
+      "sourceDocument": null,
+      "publishedDate": "2025-08-30",
+      "activityDate": "2025",
+      "activityDatePrecision": "year",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-08-30T00:00:00.000Z",
+      "freshnessTimestamp": 1756512000000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "12cf57200d80544aa29c9f7a4da2e1b7f5dcb12624edb61107f3ecc57c0eef23",
+      "rightsContext": "CC BY-NC 4.0 on source footer; application mapping only, not KOGL.",
+      "licenseURL": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "1299b455a198df732bf8a5beb61fe435e1380ae929066d81e29103d63df9ecb7",
+      "sha256": "12cf57200d80544aa29c9f7a4da2e1b7f5dcb12624edb61107f3ecc57c0eef23",
+      "pixelSHA256": "1299b455a198df732bf8a5beb61fe435e1380ae929066d81e29103d63df9ecb7",
+      "width": 3024,
+      "height": 4032,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1299b455a198df73-454faa1a87efe1f1944d.jpg",
+      "posterFile": "service-share/1299b455a198df73-454faa1a87efe1f1944d.jpg",
+      "posterSHA256": "cb4fcad747467b35c23c0e3932f5585b67ac3896547ba5e26b040e3514b29372",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          477,
+          12,
+          723,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "org-welfare-design",
+      "owner": "welfare-design",
+      "institutionName": "사회복지디자인연구소사회적협동조합",
+      "file": "cases/org-welfare-design.jpg",
+      "originalFile": null,
+      "imageUrl": "https://www.dgpublic.org/bbs_img2/20250922113449221912254.jpg",
+      "originalImageUrl": "https://www.dgpublic.org/bbs_img2/20250922113449221912254.jpg",
+      "title": "공익활동을 충전하다: 사회복지디자인연구소 조합원 워크숍",
+      "caption": "사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습.",
+      "credit": "대구시민공익활동지원센터 · 사회복지디자인연구소 사협 참여후기",
+      "source": "https://www.dgpublic.org/web/jhboard/view.php?desc=desc&id=active1&no=4054&page=29&page_num=12&select_arrange=reg_date",
+      "sourceLabel": "대구시민공익활동지원센터",
+      "sourceDocument": null,
+      "publishedDate": "2025-08-30",
+      "activityDate": "2025",
+      "activityDatePrecision": "year",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-08-30T00:00:00.000Z",
+      "freshnessTimestamp": 1756512000000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "bf2ef92a1be7f88f8cd5063efc934da5ad3e5ecc1f3c5aa10c58d2efdcb1be66",
+      "rightsContext": "Source footer: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). license=2 is an application compatibility mapping; actual license is CC BY-NC 4.0, not KOGL.",
+      "licenseURL": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "c976dd38a4e6d45b45fbc3fa75e2303bb4220dacc3c81191e2e9adce4201e710",
+      "sha256": "bf2ef92a1be7f88f8cd5063efc934da5ad3e5ecc1f3c5aa10c58d2efdcb1be66",
+      "pixelSHA256": "c976dd38a4e6d45b45fbc3fa75e2303bb4220dacc3c81191e2e9adce4201e710",
+      "width": 3648,
+      "height": 2736,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/c976dd38a4e6d45b-8a55eaa539e8b2d1a514.jpg",
+      "posterFile": "service-share/c976dd38a4e6d45b-8a55eaa539e8b2d1a514.jpg",
+      "posterSHA256": "f66aab1e2873db51b4642426bc389f936d6516fd8e27e2a2c1caff15e865e6d0",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "with-27-3",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/release-with-27-3.jpg",
+      "originalFile": "output/work/release-research-a/with-27-3.jpg",
+      "imageUrl": "https://www.withmedcoop.com/data/editor/2507/2479332c5a26f1e5a0e1792888f8f499_1753422990_5183.jpg",
+      "originalImageUrl": "https://www.withmedcoop.com/data/editor/2507/2479332c5a26f1e5a0e1792888f8f499_1753422990_5183.jpg",
+      "title": "합천 수해지역 의료 봉사활동",
+      "caption": "합천 수해지역 의료지원 현장에서 어르신들을 안내하는 위드 활동가들.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=27&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2025-07-25",
+      "activityDate": "2025-07-23",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-07-25T00:00:00.000Z",
+      "freshnessTimestamp": 1753401600000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "b4cd542925545901192c7a57df60dca5fd4c07db8f5cf59c8b65145c491e114f",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "a0eb95bb32e6bff3a1d0c83bd94d07ff018486bd249489a61d17474d094d35ad",
+      "sha256": "a993c5a98ca3b6e503bf9587a5190afe607ebc10cac9376414269cb0a47147e2",
+      "pixelSHA256": "a0eb95bb32e6bff3a1d0c83bd94d07ff018486bd249489a61d17474d094d35ad",
+      "width": 2000,
+      "height": 1500,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/a0eb95bb32e6bff3-9d9a503e17679b3f6a58.jpg",
+      "posterFile": "service-share/a0eb95bb32e6bff3-9d9a503e17679b3f6a58.jpg",
+      "posterSHA256": "26438c3c42b215bfe668d33adb7033d43c9a620c10ab4a1c97799022557cfb5d",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "with-28-3",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/release-with-28-3.jpg",
+      "originalFile": "output/work/release-research-a/with-28-3.jpg",
+      "imageUrl": "https://www.withmedcoop.com/data/editor/2507/2479332c5a26f1e5a0e1792888f8f499_1753423636_0167.jpg",
+      "originalImageUrl": "https://www.withmedcoop.com/data/editor/2507/2479332c5a26f1e5a0e1792888f8f499_1753423636_0167.jpg",
+      "title": "위드 신규 조합원 환영회, 즐거운 시간을 가졌습니다.",
+      "caption": "제1회 위드 신규 조합원 환영회 참석자들의 기념촬영.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=28&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2025-07-25",
+      "activityDate": "2025-07-24",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-07-25T00:00:00.000Z",
+      "freshnessTimestamp": 1753401600000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "213fa1168e8a9c828dcf2d4cb31fd1bad5b7a7064b65e01bf10912c97a7535bd",
+      "rightsContext": "Public original institutional/partner article. No separate open reuse license confirmed; source credit retained.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "45e7728116b3a2b8b4692fdbce69e42918230a3de902f3b58bab748e87cc94d0",
+      "sha256": "f68c92b42564e7db5b2afe13f5ac1d835904bc99d79d79044a596a480865f963",
+      "pixelSHA256": "45e7728116b3a2b8b4692fdbce69e42918230a3de902f3b58bab748e87cc94d0",
+      "width": 2000,
+      "height": 1500,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/45e7728116b3a2b8-7af16e898bf4f597850a.jpg",
+      "posterFile": "service-share/45e7728116b3a2b8-7af16e898bf4f597850a.jpg",
+      "posterSHA256": "ea0d7e9a596d85e4d8423250ce2647d951005aad49c00309e9e2325864d1ac67",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "sdl-safety-2",
+      "owner": "welfare-design",
+      "institutionName": "사회복지디자인연구소사회적협동조합",
+      "file": "cases/release-sdl-safety-2.jpg",
+      "originalFile": null,
+      "imageUrl": "https://cdn.imweb.me/upload/S202212224d18039a87bb6/bd369a232c303.jpg",
+      "originalImageUrl": "https://cdn.imweb.me/upload/S202212224d18039a87bb6/bd369a232c303.jpg",
+      "title": "KNOW 재난! YES 안전! 찾아가는 안전교육",
+      "caption": "사회복지디자인연구소와 구미YMCA의 찾아가는 안전교육에서 강사가 설명하고 아동들이 듣는 실제 수업 모습.",
+      "credit": "구미YMCA",
+      "source": "https://gumiymca.or.kr/1911628715/?bmode=view&idx=165795609",
+      "sourceLabel": "구미YMCA",
+      "sourceDocument": null,
+      "publishedDate": "2025-06-20",
+      "activityDate": "2025-06-05",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-06-20T00:00:00.000Z",
+      "freshnessTimestamp": 1750377600000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": null,
+      "rightsContext": "Source publicly publishes the photograph. No open image reuse license independently confirmed; retain publisher/source credit and existing visible watermarks.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "1f051d2588cbab4858fc25fb729432a61ec37e57eac8f018cb68fa330f7dd995",
+      "sha256": "883a87fe16e27b58e1852e63d8178818fa47ab004b54a3f97906353b289af70b",
+      "pixelSHA256": "1f051d2588cbab4858fc25fb729432a61ec37e57eac8f018cb68fa330f7dd995",
+      "width": 1280,
+      "height": 720,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1f051d2588cbab48-0c10febb1a2e5f7f0aa6.jpg",
+      "posterFile": "service-share/1f051d2588cbab48-0c10febb1a2e5f7f0aa6.jpg",
+      "posterSHA256": "e1e405d423fd778022fded4f09f25fc8bca2cdcada33fda7f6b9869834ff1675",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          308,
+          12,
+          891,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "org-naeiln",
+      "owner": "naeiln",
+      "institutionName": "내일앤사회적협동조합",
+      "file": "cases/org-naeiln.jpg",
+      "originalFile": null,
+      "imageUrl": "https://www.cppb.go.kr/bbs/cppb/33/481883/download.do",
+      "originalImageUrl": "https://www.cppb.go.kr/bbs/cppb/33/481883/download.do",
+      "title": "더봄에서 함께 나눈 마들렌과 응원",
+      "caption": "2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장.",
+      "credit": "법무부 대구소년원 · 경상매일신문 재게시",
+      "source": "https://www.cppb.go.kr/cppb/596/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGY3BwYiUyRjMzJTJGNTk1ODY3JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "sourceLabel": "법무부 언론보도(경상매일신문 2025.06.01)",
+      "sourceDocument": null,
+      "publishedDate": "2025-06-05",
+      "activityDate": "2025-05-29",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-06-05T00:00:00.000Z",
+      "freshnessTimestamp": 1749081600000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "27c1430032ac8780d0bb4446fdac75febf21c52551d08d1b14c6fd0cbe99b537",
+      "rightsContext": "Official Ministry of Justice post marks KOGL Type 1. PDF is a republication of KSM News 2025-06-01; photo extracted without crop or retouch.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "87ca57290860c3991032506bac1660ce52487dc7276818f11d4f4d2e3a62c878",
+      "sha256": "27c1430032ac8780d0bb4446fdac75febf21c52551d08d1b14c6fd0cbe99b537",
+      "pixelSHA256": "87ca57290860c3991032506bac1660ce52487dc7276818f11d4f4d2e3a62c878",
+      "width": 606,
+      "height": 318,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/87ca57290860c399-be94f6a067b26e1f3961.jpg",
+      "posterFile": "service-share/87ca57290860c399-be94f6a067b26e1f3961.jpg",
+      "posterSHA256": "7129c248f8c1a16cdd3f9b24e71bbe11e1120376946ebd03aa91c42a4936ae50",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          287,
+          12,
+          912,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-dgcare-meals",
+      "owner": "daegu-care",
+      "institutionName": "대구돌봄사회적협동조합",
+      "file": "cases/dgcare1-223802349837-3.jpg",
+      "originalFile": null,
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNTAyMjhfNzYg/MDAxNzQwNzI2MzQ1OTY4.UMY2E1WiCchkkW7Ys-ns77glbO_4ymPTIpfIt6WG4Mwg.onf57hYu3jPsC7AQt8Ci6EVMNGnxsFopUlFPkiGiGwMg.JPEG/KakaoTalk_20250227_100326770.jpg?type=w386",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNTAyMjhfNzYg/MDAxNzQwNzI2MzQ1OTY4.UMY2E1WiCchkkW7Ys-ns77glbO_4ymPTIpfIt6WG4Mwg.onf57hYu3jPsC7AQt8Ci6EVMNGnxsFopUlFPkiGiGwMg.JPEG/KakaoTalk_20250227_100326770.jpg?type=w386",
+      "title": "대구돌봄센터 2월 27일 (8차) 식단",
+      "caption": "생선까스 식단 포장",
+      "credit": "대구돌봄사회적협동조합",
+      "source": "https://blog.naver.com/dgcare1/223802349837",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2025-03-19",
+      "activityDate": "2025-02-27",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-03-19T00:00:00.000Z",
+      "freshnessTimestamp": 1742342400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "be3fff00e36cc8d60e1e2132ce5fa553038f6e6cc57b462c6a0a84c310377c36",
+      "rightsContext": "Official organization public blog; attribution should be retained. No explicit open reuse license was found, so this is not a claim of CC/KOGL licensing.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "da4922c3ce575aaca42797c0a75085871148e39c6990eb3c18e72c1617f7e47a",
+      "sha256": "be3fff00e36cc8d60e1e2132ce5fa553038f6e6cc57b462c6a0a84c310377c36",
+      "pixelSHA256": "da4922c3ce575aaca42797c0a75085871148e39c6990eb3c18e72c1617f7e47a",
+      "width": 386,
+      "height": 515,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/da4922c3ce575aac-8be8deb720e4128c6db4.jpg",
+      "posterFile": "service-share/da4922c3ce575aac-8be8deb720e4128c6db4.jpg",
+      "posterSHA256": "c7ff5bdfa1f4f89ad770d520d4ff8fefb6de5194c81df3c4b246a1f1c6a85520",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          477,
+          12,
+          723,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "org-daegu-care",
+      "owner": "daegu-care",
+      "institutionName": "대구돌봄사회적협동조합",
+      "file": "cases/dgcare1-223802349837-12.jpg",
+      "originalFile": null,
+      "imageUrl": "https://postfiles.pstatic.net/MjAyNTAyMjhfMTY3/MDAxNzQwNzI2MzQ2MTE5.mBLpMXA2GlorN6G3cx1NTwoXfoC8uOM2PsGAtkHuz24g.qFHHNw2BH04V5jG8vr78JTbSZVENhhPb7Kk1EWrHCUUg.JPEG/KakaoTalk_20250227_100326770_02.jpg?type=w773",
+      "originalImageUrl": "https://postfiles.pstatic.net/MjAyNTAyMjhfMTY3/MDAxNzQwNzI2MzQ2MTE5.mBLpMXA2GlorN6G3cx1NTwoXfoC8uOM2PsGAtkHuz24g.qFHHNw2BH04V5jG8vr78JTbSZVENhhPb7Kk1EWrHCUUg.JPEG/KakaoTalk_20250227_100326770_02.jpg?type=w773",
+      "title": "대구돌봄센터 2월 27일 (8차) 식단",
+      "caption": "완성된 반찬 식단",
+      "credit": "대구돌봄사회적협동조합",
+      "source": "https://blog.naver.com/dgcare1/223802349837",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": "2025-03-19",
+      "activityDate": "2025-02-27",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2025-03-19T00:00:00.000Z",
+      "freshnessTimestamp": 1742342400000,
+      "dateEvidence": {
+        "publication": "same verified source article",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "cb4bcb3a41134b660e237e6e959f588706b5efc514f232ee78a11354ed79a1c2",
+      "rightsContext": "Official organization public blog; attribution should be retained. No explicit open reuse license was found, so this is not a claim of CC/KOGL licensing.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "cf073fd208d94ded308a35b63fc866dc777d07bc41173709a953addf6fd7dfe5",
+      "sha256": "cb4bcb3a41134b660e237e6e959f588706b5efc514f232ee78a11354ed79a1c2",
+      "pixelSHA256": "cf073fd208d94ded308a35b63fc866dc777d07bc41173709a953addf6fd7dfe5",
+      "width": 773,
+      "height": 1031,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/cf073fd208d94ded-da9d811522e054c95591.jpg",
+      "posterFile": "service-share/cf073fd208d94ded-da9d811522e054c95591.jpg",
+      "posterSHA256": "6c92d7508479b0acb884069693f5638a6998ef3808d3f4b7d241e4789abad16d",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          477,
+          12,
+          723,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "org-woorihamkke",
+      "owner": "woorihamkke",
+      "institutionName": "우리함께통합돌봄사회적협동조합",
+      "file": "cases/woori-founding-20241122.jpg",
+      "originalFile": "output/work/release-research-a/woori-founding-1.jpg",
+      "imageUrl": "https://cdn.yangpatv.kr/news/photo/202411/24640_32425_4137.jpg",
+      "originalImageUrl": "https://cdn.yangpatv.kr/news/photo/202411/24640_32425_4137.jpg",
+      "title": "우리함께통합돌봄사회적협동조합 창립총회",
+      "caption": "2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다.",
+      "credit": "양파티브이뉴스 · 장현준 기자",
+      "source": "https://www.yangpatv.kr/news/articleView.html?idxno=24640",
+      "sourceLabel": "양파티브이뉴스 · 2024.11.25",
+      "sourceDocument": null,
+      "publishedDate": "2024-11-25",
+      "activityDate": "2024-11-22",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2024-11-25T00:00:00.000Z",
+      "freshnessTimestamp": 1732492800000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": "0e98a2d29babb59e07abf1572a48ae4bd0f238c1e6f88cca724ce018734e084e",
+      "rightsContext": "Original news article states © 양파티브이뉴스 All rights reserved. No separate open image license observed. Keep original photograph intact with publisher credit and original-article link; no watermark/text removed.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "32bf0df46d3df281512e30429fd24f4302b317d058ad04220b678ec8068a028c",
+      "sha256": "444050d50a914f937117d66800f4c08bd9a0186f99ae546041b67558bf425714",
+      "pixelSHA256": "32bf0df46d3df281512e30429fd24f4302b317d058ad04220b678ec8068a028c",
+      "width": 600,
+      "height": 450,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/32bf0df46d3df281-e9366b2e2259dd797286.jpg",
+      "posterFile": "service-share/32bf0df46d3df281-e9366b2e2259dd797286.jpg",
+      "posterSHA256": "7990ce8229fbcc0dfc077a56e17731bc7a4529241a22922f3db4bf589174bd0d",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "sdl-agreement-1",
+      "owner": "welfare-design",
+      "institutionName": "사회복지디자인연구소사회적협동조합",
+      "file": "cases/release-sdl-agreement-1.jpg",
+      "originalFile": null,
+      "imageUrl": "https://kwelltimes.com/data/cheditor4/2307/d1232f3aa1990f2a16695988d9144cb4df12ea61.jpg",
+      "originalImageUrl": "https://kwelltimes.com/data/cheditor4/2307/d1232f3aa1990f2a16695988d9144cb4df12ea61.jpg",
+      "title": "경북대학교 사회복지학부와 상호협력을 위한 업무협약",
+      "caption": "2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진.",
+      "credit": "케이웰타임즈 · 이연주 책임기자",
+      "source": "https://kwelltimes.com/news/view.php?idx=953",
+      "sourceLabel": "케이웰타임즈 · 이연주 책임기자",
+      "sourceDocument": null,
+      "publishedDate": "2023-07-27",
+      "activityDate": "2023-07-26",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": "2023-07-27T00:00:00.000Z",
+      "freshnessTimestamp": 1690416000000,
+      "dateEvidence": {
+        "publication": "photo metadata",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": null,
+      "rightsContext": "Source publicly publishes the photograph. No open image reuse license independently confirmed; retain publisher/source credit and existing visible watermarks.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "3be7eb9d5e69582b8599367b26cd7f67b23f7536ee4a09e3a822289859b2161e",
+      "sha256": "e989dc3305326e0a3ea4d9396683a8261ac083d7434cf1c42c036cb24c9f9058",
+      "pixelSHA256": "3be7eb9d5e69582b8599367b26cd7f67b23f7536ee4a09e3a822289859b2161e",
+      "width": 650,
+      "height": 487,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/3be7eb9d5e69582b-f672d47bbb0fe31a61c6.jpg",
+      "posterFile": "service-share/3be7eb9d5e69582b-f672d47bbb0fe31a61c6.jpg",
+      "posterSHA256": "da1b22ba3002e828ecac9e525256f697220773d2ccce66c601bcb344293ec170",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          819,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "dgcare-training-1",
+      "owner": "daegu-care",
+      "institutionName": "대구돌봄사회적협동조합",
+      "file": "cases/release-dgcare-training-1.jpg",
+      "originalFile": null,
+      "imageUrl": "https://www.gccwo.org/files/attach/images/183/943/016/9606513f5e88969d138ff06746db50f6.jpg",
+      "originalImageUrl": "https://www.gccwo.org/files/attach/images/183/943/016/9606513f5e88969d138ff06746db50f6.jpg",
+      "title": "사회복지법인 외부추천이사 및 후보군 역량강화 교육",
+      "caption": "대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습.",
+      "credit": "경상북도사회복지협의회",
+      "source": "https://www.gccwo.org/index.php?document_srl=16943&listStyle=viewer&mid=gccwo_board_02&page=5",
+      "sourceLabel": "경상북도사회복지협의회",
+      "sourceDocument": null,
+      "publishedDate": null,
+      "activityDate": "2023-05-24",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": null,
+      "freshnessTimestamp": 0,
+      "dateEvidence": {
+        "publication": "unknown",
+        "activity": "photo metadata"
+      },
+      "sourceRawSHA256": null,
+      "rightsContext": "Source publicly publishes the photograph. No open image reuse license independently confirmed; retain publisher/source credit and existing visible watermarks.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "af81810224d7a3931bbf62a605178137b9e76cd43065726fab3a3ba3b82a6c3f",
+      "sha256": "cbd60e3989f27cf6305edcf75ba181b949052925825455f09f6f71b226b69e42",
+      "pixelSHA256": "af81810224d7a3931bbf62a605178137b9e76cd43065726fab3a3ba3b82a6c3f",
+      "width": 1400,
+      "height": 1050,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/af81810224d7a393-9dc727563f1ae1006d79.jpg",
+      "posterFile": "service-share/af81810224d7a393-9dc727563f1ae1006d79.jpg",
+      "posterSHA256": "fad19ec2b0bfeb9cfba2695794a0f422cdf4561d97b6ad17788bedd60f5fb2c4",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "field-naeiln",
+      "owner": "naeiln",
+      "institutionName": "내일앤사회적협동조합",
+      "file": "field-naeiln.webp",
+      "originalFile": null,
+      "imageUrl": "https://daegu-care.oconia.co.kr/media/field-naeiln.webp",
+      "originalImageUrl": null,
+      "title": "내일앤 보호작업장·주간활동 공간 방문",
+      "caption": "내일앤 발달장애인 주간활동 공간을 방문한 관계자들",
+      "credit": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
+      "source": null,
+      "sourceLabel": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
+      "sourceDocument": "달구벌사회적협동조합연합회 2025년 활동보고 4쪽",
+      "publishedDate": null,
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": null,
+      "freshnessTimestamp": 0,
+      "dateEvidence": {
+        "publication": "unknown",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": null,
+      "rightsContext": null,
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "21bd0722e3486b0998a6c1e463e3c8db41756515898861f2766dc2c61f22c20f",
+      "sha256": "8cb0db2a96a1b93dfc44de5b4c26db381a7fea5e3df69baaca53e9281fda2a7f",
+      "pixelSHA256": "21bd0722e3486b0998a6c1e463e3c8db41756515898861f2766dc2c61f22c20f",
+      "width": 1071,
+      "height": 803,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/21bd0722e3486b09-6a63e1a9811a0eae7cc2.jpg",
+      "posterFile": "service-share/21bd0722e3486b09-6a63e1a9811a0eae7cc2.jpg",
+      "posterSHA256": "e31e8077155c2e8957582ba41f731b03e3a16f77f8f0b5cd400904df5f849200",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "field-seminar",
+      "owner": "welfare-design",
+      "institutionName": "사회복지디자인연구소사회적협동조합",
+      "file": "field-seminar.webp",
+      "originalFile": null,
+      "imageUrl": "https://daegu-care.oconia.co.kr/media/field-seminar.webp",
+      "originalImageUrl": null,
+      "title": "대구경북 의료사회복지사 세미나",
+      "caption": "대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습",
+      "credit": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+      "source": null,
+      "sourceLabel": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+      "sourceDocument": "대구광역 통합돌봄 네트워크 경과보고 3쪽",
+      "publishedDate": null,
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": null,
+      "freshnessTimestamp": 0,
+      "dateEvidence": {
+        "publication": "unknown",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": null,
+      "rightsContext": null,
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "d40aa9dbafb25f55aee2ffa9b9e6d08e09e751ed4f1616971e4caeb4a1de1c4c",
+      "sha256": "b6a8b62270358e08c56718535835a09caf325d47c38f1aaf37660d24f4e853c2",
+      "pixelSHA256": "d40aa9dbafb25f55aee2ffa9b9e6d08e09e751ed4f1616971e4caeb4a1de1c4c",
+      "width": 1400,
+      "height": 1050,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/d40aa9dbafb25f55-25a6bd748b86cb2cfd2a.jpg",
+      "posterFile": "service-share/d40aa9dbafb25f55-25a6bd748b86cb2cfd2a.jpg",
+      "posterSHA256": "bec808bacd6785c9e54b9b1e6a9cd35b20e0470a791963e4eb1140fa2164f09c",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "case-with-book",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-37-1.png",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2610/c914f3c5af6a8839df3e3e5d4a069c19_1793257707_9248.PNG",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2610/c914f3c5af6a8839df3e3e5d4a069c19_1793257707_9248.PNG",
+      "title": "생애구술기록 출판기념회",
+      "caption": "생애구술기록 출판기념회 발표 현장",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=37&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": null,
+      "activityDate": "2026-10-29",
+      "activityDatePrecision": "day",
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": null,
+      "freshnessTimestamp": 0,
+      "dateEvidence": {
+        "publication": "unknown",
+        "activity": "same verified source article"
+      },
+      "sourceRawSHA256": "713f7e8af4bf6d3a290d9f1b08a5a621a09a89d35093224fd2eab0981137bd2a",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "fc76b812abb40b23b81a0b3ba814836e532632e003aa06830d06f50b6aabe66c",
+      "sha256": "713f7e8af4bf6d3a290d9f1b08a5a621a09a89d35093224fd2eab0981137bd2a",
+      "pixelSHA256": "fc76b812abb40b23b81a0b3ba814836e532632e003aa06830d06f50b6aabe66c",
+      "width": 2076,
+      "height": 1170,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/fc76b812abb40b23-2c1217d791b6ddbe1b71.jpg",
+      "posterFile": "service-share/fc76b812abb40b23-2c1217d791b6ddbe1b71.jpg",
+      "posterSHA256": "f15bbad51b5771665f136ae339518b43c3a07adf6b188a9b5343f232da3a6358",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          309,
+          12,
+          891,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    },
+    {
+      "key": "community-care-forum-reference",
+      "owner": "with-medical",
+      "institutionName": "위드의료복지사회적협동조합",
+      "file": "cases/with-35-2.jpg",
+      "originalFile": null,
+      "imageUrl": "https://withmedcoop.com/data/editor/2610/e04e4ab46fb15453588441fc41231f4a_1792979108_6915.jpg",
+      "originalImageUrl": "https://withmedcoop.com/data/editor/2610/e04e4ab46fb15453588441fc41231f4a_1792979108_6915.jpg",
+      "title": "위드 건강소모임",
+      "caption": "관련 실제 사례사진: 위드 건강소모임 야외활동. 이 사진은 심포지엄 현장 사진이 아닙니다.",
+      "credit": "위드의료복지사회적협동조합",
+      "source": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=35&theme_type=main1",
+      "sourceLabel": null,
+      "sourceDocument": null,
+      "publishedDate": null,
+      "activityDate": null,
+      "activityDatePrecision": null,
+      "updatedAt": null,
+      "ingestedAt": null,
+      "freshnessDate": null,
+      "freshnessTimestamp": 0,
+      "dateEvidence": {
+        "publication": "unknown",
+        "activity": "unknown"
+      },
+      "sourceRawSHA256": "c08cd92562f54f0d065aa3801ffe9abea496f1b09914dd16e3d1d172077268a5",
+      "rightsContext": "Official website publicly displays this image. Site footer states all rights reserved; no open reuse license observed. Attribution must name 위드의료복지사회적협동조합.",
+      "licenseURL": null,
+      "origin": "institution-gallery",
+      "exactOwnershipConfirmed": true,
+      "id": "e5ce7f5d1bca13b2afd19c86a5733202f98ca53d2851604d15a828a814016d59",
+      "sha256": "c08cd92562f54f0d065aa3801ffe9abea496f1b09914dd16e3d1d172077268a5",
+      "pixelSHA256": "e5ce7f5d1bca13b2afd19c86a5733202f98ca53d2851604d15a828a814016d59",
+      "width": 1280,
+      "height": 960,
+      "aliasKeys": [],
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/e5ce7f5d1bca13b2-42b91b74c01e469f8ec1.jpg",
+      "posterFile": "service-share/e5ce7f5d1bca13b2-42b91b74c01e469f8ec1.jpg",
+      "posterSHA256": "7f29c6b142281a46d01531f78501e2545267c4bbeb1adca4d8f4bfe035a46970",
+      "posterWidth": 1200,
+      "posterHeight": 630,
+      "layout": {
+        "sceneBox": [
+          381,
+          12,
+          818,
+          340
+        ],
+        "titleBoxes": [
+          [
+            47,
+            403,
+            545,
+            459
+          ],
+          [
+            47,
+            471,
+            659,
+            527
+          ]
+        ],
+        "headlineSize": 57,
+        "creditSize": 17,
+        "fullScenePreserved": true,
+        "textOverScene": false
+      }
+    }
+  ],
+  "latest": [
+    "c2f7d5ee772439c80ad09eb4154ba275e9585640a9760b48ca03790b2ceb9df8",
+    "3385c0b448da96acbe00bed1a886f0b73caafbde9417053ba14169981c7f12c2",
+    "d75e965d92d08d9155f5d2efa9339e3ed8350cf4e165db9e7c3e43a599520563",
+    "87152cc5f6c84c6d041c030d065dafcdf542624674d26ce1b986c4a625a068f3",
+    "a65703a649444014e3630ad64ff6dc74044e1164b6cad0645df81cf01921ed82",
+    "fae0a31dff1cba10c5cbc3ef04b8b3318d4a04dd841e3db4ab37d4902c6ca745",
+    "45ad8b503a959a31b16d03a6981fb61a650f2694f0565994337af54c5fc9b3c2",
+    "f131ac60b9de3dc05aa58c7051deb9cc62333402ebbac5644c245ce11664203c",
+    "50f2b61f4ff5966bd4eaa821c15f960381b9de8f60050f7dcb6948002423e696",
+    "add223f556bbf3cfb7c4b4bbe651607ff060bf0fdeae733e93c75ab066775d4a"
+  ],
+  "fallback": [
+    "c2f7d5ee772439c80ad09eb4154ba275e9585640a9760b48ca03790b2ceb9df8",
+    "3385c0b448da96acbe00bed1a886f0b73caafbde9417053ba14169981c7f12c2",
+    "d75e965d92d08d9155f5d2efa9339e3ed8350cf4e165db9e7c3e43a599520563",
+    "87152cc5f6c84c6d041c030d065dafcdf542624674d26ce1b986c4a625a068f3",
+    "a65703a649444014e3630ad64ff6dc74044e1164b6cad0645df81cf01921ed82",
+    "fae0a31dff1cba10c5cbc3ef04b8b3318d4a04dd841e3db4ab37d4902c6ca745",
+    "45ad8b503a959a31b16d03a6981fb61a650f2694f0565994337af54c5fc9b3c2",
+    "f131ac60b9de3dc05aa58c7051deb9cc62333402ebbac5644c245ce11664203c",
+    "50f2b61f4ff5966bd4eaa821c15f960381b9de8f60050f7dcb6948002423e696",
+    "add223f556bbf3cfb7c4b4bbe651607ff060bf0fdeae733e93c75ab066775d4a",
+    "f4dbab45ff04d1ce3b3f308be483df94a8d958af631c63c7408f24a1ff31a425",
+    "1a1f651a1448fcfab1be9b651c665449415f7f186c9f6dda58b4b46371c99013",
+    "0e1aa514aaedf7d5ca8e9c02ed5e0527133e64afcd73d1ec5e51fee19fd26d1f",
+    "5203b9019cf18f0f9796164dfdbef16138e4e5d59d2441dba33748d5bc0cce2f",
+    "b015175cb6d1b570364e568052f2f7abcfd2f453b1d49622dfd33158178c2489",
+    "1299b455a198df732bf8a5beb61fe435e1380ae929066d81e29103d63df9ecb7",
+    "c976dd38a4e6d45b45fbc3fa75e2303bb4220dacc3c81191e2e9adce4201e710",
+    "a0eb95bb32e6bff3a1d0c83bd94d07ff018486bd249489a61d17474d094d35ad",
+    "45e7728116b3a2b8b4692fdbce69e42918230a3de902f3b58bab748e87cc94d0",
+    "1f051d2588cbab4858fc25fb729432a61ec37e57eac8f018cb68fa330f7dd995",
+    "87ca57290860c3991032506bac1660ce52487dc7276818f11d4f4d2e3a62c878",
+    "da4922c3ce575aaca42797c0a75085871148e39c6990eb3c18e72c1617f7e47a",
+    "cf073fd208d94ded308a35b63fc866dc777d07bc41173709a953addf6fd7dfe5",
+    "32bf0df46d3df281512e30429fd24f4302b317d058ad04220b678ec8068a028c",
+    "3be7eb9d5e69582b8599367b26cd7f67b23f7536ee4a09e3a822289859b2161e",
+    "af81810224d7a3931bbf62a605178137b9e76cd43065726fab3a3ba3b82a6c3f",
+    "21bd0722e3486b0998a6c1e463e3c8db41756515898861f2766dc2c61f22c20f",
+    "d40aa9dbafb25f55aee2ffa9b9e6d08e09e751ed4f1616971e4caeb4a1de1c4c",
+    "fc76b812abb40b23b81a0b3ba814836e532632e003aa06830d06f50b6aabe66c",
+    "e5ce7f5d1bca13b2afd19c86a5733202f98ca53d2851604d15a828a814016d59"
+  ],
+  "ordering": "updatedAt, ingestedAt, publishedDate 중 확인된 첫 날짜를 내림차순으로 정렬합니다. 게시일이 확인되지 않으면 0을 보존하며 활동일을 게시일로 바꾸지 않습니다.",
+  "rendererVersion": "5a53d9d84890"
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "batchSize": 10,
+  "latestLimit": 10,
+  "title": "대구 통합돌봄네트워크 ON",
+  "headline": ["돌봄이 필요한 순간", "우리 동네가 함께합니다"],
+  "description": "돌봄기관과 이웃을 잇고, 함께하는 일상을 만듭니다",
+  "canonicalURL": "https://daegu-care.oconia.co.kr/",
+  "feedFile": null,
+  "ordering": "updatedAt, ingestedAt, publishedDate 중 확인된 첫 날짜를 내림차순으로 정렬합니다. 게시일이 확인되지 않으면 0을 보존하며 활동일을 게시일로 바꾸지 않습니다."
+}
