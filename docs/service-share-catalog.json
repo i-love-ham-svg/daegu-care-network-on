@@ -46,36 +46,44 @@
       "width": 6000,
       "height": 4000,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/c2f7d5ee772439c8-0492fa538f710206bdf9.jpg",
-      "posterFile": "service-share/c2f7d5ee772439c8-0492fa538f710206bdf9.jpg",
-      "posterSHA256": "f4336a56590caba625d1ccac0430fcdbc9c7055f8020dc796fb77d6286b1db45",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/c2f7d5ee772439c8-cf7d8a0e63e383e3aadb.jpg",
+      "posterFile": "service-share/c2f7d5ee772439c8-cf7d8a0e63e383e3aadb.jpg",
+      "posterSHA256": "8d38d71c45a4d3061189f6d19668d4ecf690a692b41bced5f2e50fea55fb2a15",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          354,
-          12,
-          846,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.3
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -114,36 +122,44 @@
       "width": 818,
       "height": 684,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/3385c0b448da96ac-fee16792af11c976e321.jpg",
-      "posterFile": "service-share/3385c0b448da96ac-fee16792af11c976e321.jpg",
-      "posterSHA256": "bd2ccac9bc5030a290ed842b9f53988618db095e50dda26169538be482aa6888",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/3385c0b448da96ac-4aa33b8c0d61b685a043.jpg",
+      "posterFile": "service-share/3385c0b448da96ac-4aa33b8c0d61b685a043.jpg",
+      "posterSHA256": "90f4ad65180b36e21857a33b6942323124e2d05062033a412e7a81662f6e6d0d",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          404,
-          12,
-          796,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.12
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            438,
+            486,
+            490
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            497,
+            586,
+            550
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 50,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -182,36 +198,44 @@
       "width": 4032,
       "height": 3024,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/d75e965d92d08d91-6d7c48b39c51656e0bf2.jpg",
-      "posterFile": "service-share/d75e965d92d08d91-6d7c48b39c51656e0bf2.jpg",
-      "posterSHA256": "4f8092c8987ec3a7955684527a10296e70d3b20993222d7c6c47785db16494f0",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/d75e965d92d08d91-893038a9a076e7811818.jpg",
+      "posterFile": "service-share/d75e965d92d08d91-893038a9a076e7811818.jpg",
+      "posterSHA256": "e86bb55243cf5784f42d3d3aed3d233e97b2989c4a5774f994941a5d326fd26f",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          1
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -250,36 +274,44 @@
       "width": 4032,
       "height": 3024,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/87152cc5f6c84c6d-f25395840703c351ccb6.jpg",
-      "posterFile": "service-share/87152cc5f6c84c6d-f25395840703c351ccb6.jpg",
-      "posterSHA256": "0834eda6b6a381bd00fb8bc53744b4a58e027f082e5c4ebd02d1853e3b01bc00",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/87152cc5f6c84c6d-1d582c8da388811b52a5.jpg",
+      "posterFile": "service-share/87152cc5f6c84c6d-1d582c8da388811b52a5.jpg",
+      "posterSHA256": "def94d6b02406c5c810c204933baf41279f953b9260d59effcf62f7a66822f15",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            680,
+            102,
+            1154,
+            158
           ],
           [
-            47,
-            471,
-            659,
-            527
+            572,
+            174,
+            1154,
+            230
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 54,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -318,36 +350,44 @@
       "width": 5712,
       "height": 4284,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/a65703a649444014-17ff0e674341f1d32a18.jpg",
-      "posterFile": "service-share/a65703a649444014-17ff0e674341f1d32a18.jpg",
-      "posterSHA256": "73b886990df99d3fe1ab983b71a1e346925f371344a03935629e587eeb63c862",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/a65703a649444014-0476e7cb4c94aa0149f3.jpg",
+      "posterFile": "service-share/a65703a649444014-0476e7cb4c94aa0149f3.jpg",
+      "posterSHA256": "9b08d349c22ed997cf1bc510191e7aa0a5da6311bb50a58a4e1124ad81d98a82",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.15
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -386,36 +426,44 @@
       "width": 4032,
       "height": 3024,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/fae0a31dff1cba10-373ffa906522419bb1a1.jpg",
-      "posterFile": "service-share/fae0a31dff1cba10-373ffa906522419bb1a1.jpg",
-      "posterSHA256": "d4eae9862b58252ac61d0a9e0b529dfd9b215b96b16d90ff719a9f0d9aaa6249",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/fae0a31dff1cba10-97f14d287cb4a4d2759d.jpg",
+      "posterFile": "service-share/fae0a31dff1cba10-97f14d287cb4a4d2759d.jpg",
+      "posterSHA256": "92babd2ef20b4610c8c43c23859fd37c87d1e6b8bd03c126e7d97f54bb570025",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.12
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            104,
+            572,
+            165
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            176,
+            692,
+            238
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -454,36 +502,44 @@
       "width": 5712,
       "height": 4284,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/45ad8b503a959a31-4a643db3ef82bc64b71f.jpg",
-      "posterFile": "service-share/45ad8b503a959a31-4a643db3ef82bc64b71f.jpg",
-      "posterSHA256": "68108e702605f043824de3202b37dc0320f066d91d97cd960a64c6fecb9fd7ab",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/45ad8b503a959a31-79150707e474b9776279.jpg",
+      "posterFile": "service-share/45ad8b503a959a31-79150707e474b9776279.jpg",
+      "posterSHA256": "cfe2283f990f176b91df6bb54d39325dbe81c44128d1c920bdf0e42d291a24dc",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -522,36 +578,44 @@
       "width": 5712,
       "height": 4284,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/f131ac60b9de3dc0-96e6bbb9e33a22e58d9c.jpg",
-      "posterFile": "service-share/f131ac60b9de3dc0-96e6bbb9e33a22e58d9c.jpg",
-      "posterSHA256": "a2d849fc411096c077193150a0558639740cb94407d9ad3a755ebaeb610c993b",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/f131ac60b9de3dc0-6c3e35f2686c1b669cb8.jpg",
+      "posterFile": "service-share/f131ac60b9de3dc0-6c3e35f2686c1b669cb8.jpg",
+      "posterSHA256": "a13de51c99b1e638906f8da8ac7a06dd96ecf249062f9b24dce9984f2910bc5c",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.2
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -590,36 +654,44 @@
       "width": 773,
       "height": 580,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/50f2b61f4ff5966b-84fd53157287f89a3985.jpg",
-      "posterFile": "service-share/50f2b61f4ff5966b-84fd53157287f89a3985.jpg",
-      "posterSHA256": "7ef82c66add3dd7e85b19b1e8b63b3814be1f120ea67f243223362d6ddcdeeeb",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/50f2b61f4ff5966b-13553a1cbd356e02ce10.jpg",
+      "posterFile": "service-share/50f2b61f4ff5966b-13553a1cbd356e02ce10.jpg",
+      "posterSHA256": "4bbae29673ce702bafc8869ab06155b4496964bbad44694ea8fe26f5738bec2c",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.45
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -658,36 +730,44 @@
       "width": 773,
       "height": 1031,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/add223f556bbf3cf-e3a9fe1a3afc21742f8a.jpg",
-      "posterFile": "service-share/add223f556bbf3cf-e3a9fe1a3afc21742f8a.jpg",
-      "posterSHA256": "5c523cd01b85e6ca248b2d5884369129a32afcc72e3f1124cb12e8dd6a75de7c",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/add223f556bbf3cf-af6570d14f62e25b8019.jpg",
+      "posterFile": "service-share/add223f556bbf3cf-af6570d14f62e25b8019.jpg",
+      "posterSHA256": "21f6379b0e79e90b34a3a85beecc98bd128fd39abe9ed5d3e2597f9a2c89bba9",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          477,
-          12,
-          723,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.35
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -726,36 +806,44 @@
       "width": 2000,
       "height": 1500,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/f4dbab45ff04d1ce-6d8dbb4e2dd123e24f86.jpg",
-      "posterFile": "service-share/f4dbab45ff04d1ce-6d8dbb4e2dd123e24f86.jpg",
-      "posterSHA256": "39b94a818a106a6482b322d8b8a803581ef836d9dc30895b15aca12850a48b65",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/f4dbab45ff04d1ce-2b41f6eba31a387e3467.jpg",
+      "posterFile": "service-share/f4dbab45ff04d1ce-2b41f6eba31a387e3467.jpg",
+      "posterSHA256": "0ad72183ba718954c377c2fceeca5dc8f722006b1ab1dc6efde11bba7a480e73",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -794,36 +882,44 @@
       "width": 773,
       "height": 580,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1a1f651a1448fcfa-be2a1301d8263180cc96.jpg",
-      "posterFile": "service-share/1a1f651a1448fcfa-be2a1301d8263180cc96.jpg",
-      "posterSHA256": "c42113d0bb1b806504a4aab179d6ada3e823e916a57b56460a193a2a918e7b63",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1a1f651a1448fcfa-c3e78cfa4589e3ecbf16.jpg",
+      "posterFile": "service-share/1a1f651a1448fcfa-c3e78cfa4589e3ecbf16.jpg",
+      "posterSHA256": "460ea92d585b8b99952cc00eee42d65346430d598be23456c65d991a38e5f59b",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.15
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -862,36 +958,44 @@
       "width": 466,
       "height": 262,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/0e1aa514aaedf7d5-df9ef00cc4999642912f.jpg",
-      "posterFile": "service-share/0e1aa514aaedf7d5-df9ef00cc4999642912f.jpg",
-      "posterSHA256": "9d22bb6f3fc3ce66e99c4a84f95e39a40a4df1500bc61cab2a3e71a7bd171e8d",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/0e1aa514aaedf7d5-0018bd1090510aba2d2c.jpg",
+      "posterFile": "service-share/0e1aa514aaedf7d5-0018bd1090510aba2d2c.jpg",
+      "posterSHA256": "8a1dc0a96f2e674d8c51fcf0415dc22769f50be435fb45b92b0a53223604ee4e",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          308,
-          12,
-          891,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.1
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            104,
+            572,
+            165
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            176,
+            692,
+            238
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -930,36 +1034,44 @@
       "width": 1280,
       "height": 761,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/5203b9019cf18f0f-22eec6bd81b0a0723954.jpg",
-      "posterFile": "service-share/5203b9019cf18f0f-22eec6bd81b0a0723954.jpg",
-      "posterSHA256": "b2750a0484d1f8d09e84e0fe6f0124877bf600100659ddaa0eb6f88488ff27ab",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/5203b9019cf18f0f-9a75cd030e97b4fcb79b.jpg",
+      "posterFile": "service-share/5203b9019cf18f0f-9a75cd030e97b4fcb79b.jpg",
+      "posterSHA256": "9d52f91a2dde1a435978759f77c265662cf7c35d3a67d65ac54d00b95825343c",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          324,
-          12,
-          876,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          1
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -998,36 +1110,44 @@
       "width": 1280,
       "height": 960,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/b015175cb6d1b570-7a15f5d15d548989f8c5.jpg",
-      "posterFile": "service-share/b015175cb6d1b570-7a15f5d15d548989f8c5.jpg",
-      "posterSHA256": "61d096ece1aa81b978d1283d7b17083fbc20e660ce02324dcbcc28c2950e09cb",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/b015175cb6d1b570-90789e8bf3e22f023e87.jpg",
+      "posterFile": "service-share/b015175cb6d1b570-90789e8bf3e22f023e87.jpg",
+      "posterSHA256": "8e3022ccc21771b384f76d44a5e22296ecaa3a30ea01e4c1405f812ffc0f61e6",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            104,
+            572,
+            165
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            176,
+            692,
+            238
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1066,36 +1186,44 @@
       "width": 3024,
       "height": 4032,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1299b455a198df73-454faa1a87efe1f1944d.jpg",
-      "posterFile": "service-share/1299b455a198df73-454faa1a87efe1f1944d.jpg",
-      "posterSHA256": "cb4fcad747467b35c23c0e3932f5585b67ac3896547ba5e26b040e3514b29372",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1299b455a198df73-73fb576a20e0a6924deb.jpg",
+      "posterFile": "service-share/1299b455a198df73-73fb576a20e0a6924deb.jpg",
+      "posterSHA256": "5b1f68c33606d7afbcf9b1ffdeccac819cfbf0e9bb979dee7ae9398b3cc79c47",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          477,
-          12,
-          723,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1134,36 +1262,44 @@
       "width": 3648,
       "height": 2736,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/c976dd38a4e6d45b-8a55eaa539e8b2d1a514.jpg",
-      "posterFile": "service-share/c976dd38a4e6d45b-8a55eaa539e8b2d1a514.jpg",
-      "posterSHA256": "f66aab1e2873db51b4642426bc389f936d6516fd8e27e2a2c1caff15e865e6d0",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/c976dd38a4e6d45b-4d2acddbff6154154d5d.jpg",
+      "posterFile": "service-share/c976dd38a4e6d45b-4d2acddbff6154154d5d.jpg",
+      "posterSHA256": "d7b70255156f461c6840b1b4ac427157632b0e65cdb47c4802e988b008b664a6",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.3
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            104,
+            572,
+            165
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            176,
+            692,
+            238
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1202,36 +1338,44 @@
       "width": 2000,
       "height": 1500,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/a0eb95bb32e6bff3-9d9a503e17679b3f6a58.jpg",
-      "posterFile": "service-share/a0eb95bb32e6bff3-9d9a503e17679b3f6a58.jpg",
-      "posterSHA256": "26438c3c42b215bfe668d33adb7033d43c9a620c10ab4a1c97799022557cfb5d",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/a0eb95bb32e6bff3-5f9b22c9cee80c520bb8.jpg",
+      "posterFile": "service-share/a0eb95bb32e6bff3-5f9b22c9cee80c520bb8.jpg",
+      "posterSHA256": "477d8178e9ef7746c183446fda06b2db03c149d1d0868a6dfe78a94db439b93f",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.15
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1270,36 +1414,44 @@
       "width": 2000,
       "height": 1500,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/45e7728116b3a2b8-7af16e898bf4f597850a.jpg",
-      "posterFile": "service-share/45e7728116b3a2b8-7af16e898bf4f597850a.jpg",
-      "posterSHA256": "ea0d7e9a596d85e4d8423250ce2647d951005aad49c00309e9e2325864d1ac67",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/45e7728116b3a2b8-4c58837190c523c9f6b9.jpg",
+      "posterFile": "service-share/45e7728116b3a2b8-4c58837190c523c9f6b9.jpg",
+      "posterSHA256": "01a08eafa05de7503896ab896d42e4138b4b4afc420e968c9d4c37c9c468fb13",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          1
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1338,36 +1490,44 @@
       "width": 1280,
       "height": 720,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1f051d2588cbab48-0c10febb1a2e5f7f0aa6.jpg",
-      "posterFile": "service-share/1f051d2588cbab48-0c10febb1a2e5f7f0aa6.jpg",
-      "posterSHA256": "e1e405d423fd778022fded4f09f25fc8bca2cdcada33fda7f6b9869834ff1675",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/1f051d2588cbab48-e15bb8dcf212f5f56895.jpg",
+      "posterFile": "service-share/1f051d2588cbab48-e15bb8dcf212f5f56895.jpg",
+      "posterSHA256": "7ff7f2414c1a898dfc039f56e8aa9aef81070554b45b2556d920d5d7ed203ca9",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          308,
-          12,
-          891,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.2
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1406,36 +1566,44 @@
       "width": 606,
       "height": 318,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/87ca57290860c399-be94f6a067b26e1f3961.jpg",
-      "posterFile": "service-share/87ca57290860c399-be94f6a067b26e1f3961.jpg",
-      "posterSHA256": "7129c248f8c1a16cdd3f9b24e71bbe11e1120376946ebd03aa91c42a4936ae50",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/87ca57290860c399-7b3fc87b9a334e24effc.jpg",
+      "posterFile": "service-share/87ca57290860c399-7b3fc87b9a334e24effc.jpg",
+      "posterSHA256": "ac1a50f10a5d8b34896d0f4f2c09ce325b3012f019313da2e9a6d08259d22fb5",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          287,
-          12,
-          912,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1474,36 +1642,44 @@
       "width": 386,
       "height": 515,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/da4922c3ce575aac-8be8deb720e4128c6db4.jpg",
-      "posterFile": "service-share/da4922c3ce575aac-8be8deb720e4128c6db4.jpg",
-      "posterSHA256": "c7ff5bdfa1f4f89ad770d520d4ff8fefb6de5194c81df3c4b246a1f1c6a85520",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/da4922c3ce575aac-7c96db47c568a24f8a79.jpg",
+      "posterFile": "service-share/da4922c3ce575aac-7c96db47c568a24f8a79.jpg",
+      "posterSHA256": "4e2d77a42c3ad5217401c47b98ecbaf41dd18b404cf49c1914c29ffcac7d807a",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          477,
-          12,
-          723,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.3
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1542,36 +1718,44 @@
       "width": 773,
       "height": 1031,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/cf073fd208d94ded-da9d811522e054c95591.jpg",
-      "posterFile": "service-share/cf073fd208d94ded-da9d811522e054c95591.jpg",
-      "posterSHA256": "6c92d7508479b0acb884069693f5638a6998ef3808d3f4b7d241e4789abad16d",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/cf073fd208d94ded-a45e59a0f0b6bbab4d2b.jpg",
+      "posterFile": "service-share/cf073fd208d94ded-a45e59a0f0b6bbab4d2b.jpg",
+      "posterSHA256": "c118a3f10a17a7c607ca48806def89f93fa6617ead6211ea7c617972167f0cfc",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          477,
-          12,
-          723,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.3
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1610,36 +1794,44 @@
       "width": 600,
       "height": 450,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/32bf0df46d3df281-e9366b2e2259dd797286.jpg",
-      "posterFile": "service-share/32bf0df46d3df281-e9366b2e2259dd797286.jpg",
-      "posterSHA256": "7990ce8229fbcc0dfc077a56e17731bc7a4529241a22922f3db4bf589174bd0d",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/32bf0df46d3df281-d9cdfa02a7b4e4e239d3.jpg",
+      "posterFile": "service-share/32bf0df46d3df281-d9cdfa02a7b4e4e239d3.jpg",
+      "posterSHA256": "ecbd05856807ec39671c6392d3789ec6c85747c097d27b5f775855030c25578c",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.7
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            104,
+            572,
+            165
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            176,
+            692,
+            238
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1678,36 +1870,44 @@
       "width": 650,
       "height": 487,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/3be7eb9d5e69582b-f672d47bbb0fe31a61c6.jpg",
-      "posterFile": "service-share/3be7eb9d5e69582b-f672d47bbb0fe31a61c6.jpg",
-      "posterSHA256": "da1b22ba3002e828ecac9e525256f697220773d2ccce66c601bcb344293ec170",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/3be7eb9d5e69582b-e12b76197efe8604e604.jpg",
+      "posterFile": "service-share/3be7eb9d5e69582b-e12b76197efe8604e604.jpg",
+      "posterSHA256": "e155cee74acad895af6ec26f2c1c6e2e6d19209833b62181fdac8c7aec62afed",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          819,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.35
+        ],
+        "textLayout": "top",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            104,
+            572,
+            165
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            176,
+            692,
+            238
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1746,36 +1946,44 @@
       "width": 1400,
       "height": 1050,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/af81810224d7a393-9dc727563f1ae1006d79.jpg",
-      "posterFile": "service-share/af81810224d7a393-9dc727563f1ae1006d79.jpg",
-      "posterSHA256": "fad19ec2b0bfeb9cfba2695794a0f422cdf4561d97b6ad17788bedd60f5fb2c4",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/af81810224d7a393-5287d73168dcdc6b6b0b.jpg",
+      "posterFile": "service-share/af81810224d7a393-5287d73168dcdc6b6b0b.jpg",
+      "posterSHA256": "b339f82218d20967341c57fb60ff9102306fbe30b60a33fb76baa962acede48d",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.2
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1814,36 +2022,44 @@
       "width": 1071,
       "height": 803,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/21bd0722e3486b09-6a63e1a9811a0eae7cc2.jpg",
-      "posterFile": "service-share/21bd0722e3486b09-6a63e1a9811a0eae7cc2.jpg",
-      "posterSHA256": "e31e8077155c2e8957582ba41f731b03e3a16f77f8f0b5cd400904df5f849200",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/21bd0722e3486b09-985448ec81cf2a87406d.jpg",
+      "posterFile": "service-share/21bd0722e3486b09-985448ec81cf2a87406d.jpg",
+      "posterSHA256": "ff63819ca3e4eda8c37ec255679c8718edad235373956d875a203860e87ff23d",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0.2
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1882,36 +2098,44 @@
       "width": 1400,
       "height": 1050,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/d40aa9dbafb25f55-25a6bd748b86cb2cfd2a.jpg",
-      "posterFile": "service-share/d40aa9dbafb25f55-25a6bd748b86cb2cfd2a.jpg",
-      "posterSHA256": "bec808bacd6785c9e54b9b1e6a9cd35b20e0470a791963e4eb1140fa2164f09c",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/d40aa9dbafb25f55-f7b9e8aa7240c7b134db.jpg",
+      "posterFile": "service-share/d40aa9dbafb25f55-f7b9e8aa7240c7b134db.jpg",
+      "posterSHA256": "ace1bb3ddb93eeb1a09b2debf45cbf1f69e17fa8c73934f8716f92843e79859a",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          1
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -1950,36 +2174,44 @@
       "width": 2076,
       "height": 1170,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/fc76b812abb40b23-2c1217d791b6ddbe1b71.jpg",
-      "posterFile": "service-share/fc76b812abb40b23-2c1217d791b6ddbe1b71.jpg",
-      "posterSHA256": "f15bbad51b5771665f136ae339518b43c3a07adf6b188a9b5343f232da3a6358",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/fc76b812abb40b23-fdd58be9b7fe108ea724.jpg",
+      "posterFile": "service-share/fc76b812abb40b23-fdd58be9b7fe108ea724.jpg",
+      "posterSHA256": "5df50393062aaffaf045a3b342c224cdd1151ee632962c57d8b4a6de2f1fdd2d",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          309,
-          12,
-          891,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          0
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     },
     {
@@ -2018,36 +2250,44 @@
       "width": 1280,
       "height": 960,
       "aliasKeys": [],
-      "poster": "https://daegu-care.oconia.co.kr/media/service-share/e5ce7f5d1bca13b2-42b91b74c01e469f8ec1.jpg",
-      "posterFile": "service-share/e5ce7f5d1bca13b2-42b91b74c01e469f8ec1.jpg",
-      "posterSHA256": "7f29c6b142281a46d01531f78501e2545267c4bbeb1adca4d8f4bfe035a46970",
+      "poster": "https://daegu-care.oconia.co.kr/media/service-share/e5ce7f5d1bca13b2-394db4428c10f3c9a02e.jpg",
+      "posterFile": "service-share/e5ce7f5d1bca13b2-394db4428c10f3c9a02e.jpg",
+      "posterSHA256": "60ecf763d5db9941233db2b9c75a24cba7ec6821cc57bf9e12da926b98a43041",
       "posterWidth": 1200,
       "posterHeight": 630,
       "layout": {
         "sceneBox": [
-          381,
-          12,
-          818,
-          340
+          0,
+          0,
+          1200,
+          630
         ],
+        "backgroundFit": "cover",
+        "fullBleedOriginalPhoto": true,
+        "focus": [
+          0.5,
+          1
+        ],
+        "textLayout": "bottom",
+        "insetPhoto": false,
+        "blurredBackground": false,
         "titleBoxes": [
           [
-            47,
-            403,
-            545,
-            459
+            46,
+            402,
+            572,
+            463
           ],
           [
-            47,
-            471,
-            659,
-            527
+            46,
+            474,
+            692,
+            536
           ]
         ],
-        "headlineSize": 57,
+        "headlineSize": 60,
         "creditSize": 17,
-        "fullScenePreserved": true,
-        "textOverScene": false
+        "textOverScene": true
       }
     }
   ],
@@ -2096,5 +2336,5 @@
     "e5ce7f5d1bca13b2afd19c86a5733202f98ca53d2851604d15a828a814016d59"
   ],
   "ordering": "updatedAt, ingestedAt, publishedDate 중 확인된 첫 날짜를 내림차순으로 정렬합니다. 게시일이 확인되지 않으면 0을 보존하며 활동일을 게시일로 바꾸지 않습니다.",
-  "rendererVersion": "5a53d9d84890"
+  "rendererVersion": "6ae3522e048f"
 }

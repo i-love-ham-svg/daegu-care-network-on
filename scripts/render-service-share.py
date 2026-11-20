@@ -1,13 +1,15 @@
-"""Compose service-value covers from verified real photographs, retaining the full scene."""
+"""Fill every poster with one actual photograph and overlay the service-value title."""
 from pathlib import Path
-from datetime import datetime, timezone
 import hashlib, json, math, sys
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
-from PIL import Image, ImageOps, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageOps, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 PROOF = ROOT / 'output/verification/service-share'
 DEST = ROOT / 'docs/media/service-share'
+PREVIEW = '--preview' in sys.argv
+if PREVIEW:
+    DEST = PROOF / 'preview'
 DATA = json.loads((PROOF / 'candidates.json').read_text(encoding='utf-8'))
 VALUES = DATA['values']
 WIDTH, HEIGHT = 1200, 630
@@ -52,41 +54,50 @@ def fit(draw, text, initial, minimum, max_width):
 
 
 def make_cover(photo, original):
-    # The full real scene stays unobscured in the upper area. The background is
-    # the same photograph; the value message occupies the lower image area.
-    base = ImageOps.fit(original, (WIDTH, HEIGHT)).filter(ImageFilter.GaussianBlur(24)).convert('RGBA')
+    # Exactly one source photograph fills the canvas, with no inset, copied
+    # background, blur or separate photograph panel. Each focal point is reviewed.
+    config = VALUES.get('photoLayouts', {}).get(photo['key'], {})
+    focus = tuple(config.get('focus', [.5, .35]))
+    assert len(focus) == 2 and all(0 <= x <= 1 for x in focus)
+    layout = config.get('textLayout', 'bottom')
+    assert layout in ['top', 'bottom']
+    base = ImageOps.fit(original, (WIDTH, HEIGHT), Image.Resampling.LANCZOS, centering=focus).convert('RGBA')
     shade = Image.new('RGBA', (WIDTH, HEIGHT))
     sd = ImageDraw.Draw(shade)
     for y in range(HEIGHT):
-        alpha = round(95 + 152 * min(1, max(0, (y - 200) / 270)))
+        if layout == 'top':
+            alpha = round(205 * max(0, min(1, (355 - y) / 220)))
+            alpha = max(alpha, round(210 * max(0, min(1, (y - 465) / 145))))
+        else:
+            alpha = round(218 * max(0, min(1, (y - 215) / 340)))
+            alpha = max(alpha, round(90 * max(0, 1 - y / 125)))
         sd.line((0, y, WIDTH, y), fill=(8, 29, 45, alpha))
     base = Image.alpha_composite(base, shade)
-    contained = ImageOps.contain(original, (WIDTH - 56, 328), Image.Resampling.LANCZOS)
-    scene_x = (WIDTH - contained.width) // 2
-    scene_y = 12 + (328 - contained.height) // 2
-    base.paste(contained.convert('RGBA'), (scene_x, scene_y))
     draw = ImageDraw.Draw(base)
     margin = 48
-    draw.text((margin, 351), VALUES['title'], font=font(23), fill='#a7f0d6')
-    heading_font = fit(draw, max(VALUES['headline'], key=len), 57, 48, WIDTH - 2 * margin)
+    draw.text((margin, 30), VALUES['title'], font=font(24), fill='white', stroke_width=1, stroke_fill='#173346')
+    heading_font = fit(draw, max(VALUES['headline'], key=len), config.get('headingSize', 60), 50, WIDTH - 2 * margin)
+    title_y = config.get('titleY', 92 if layout == 'top' else 390)
     boxes = []
     for i, text in enumerate(VALUES['headline']):
-        position = (margin, 390 + i * 68)
+        title_x = WIDTH - margin - draw.textlength(text, font=heading_font) if config.get('textAlign') == 'right' else margin
+        position = (round(title_x), title_y + i * config.get('lineHeight', 72))
         draw.text(position, text, font=heading_font, fill='white' if i == 0 else '#a7f0d6',
-                  stroke_width=1, stroke_fill='#132d41')
-        box = draw.textbbox(position, text, font=heading_font, stroke_width=1)
+                  stroke_width=2, stroke_fill='#132d41')
+        box = draw.textbbox(position, text, font=heading_font, stroke_width=2)
         assert box[0] >= 0 and box[2] <= WIDTH - 36
         boxes.append(list(box))
     description_font = fit(draw, VALUES['description'], 25, 20, WIDTH - 2 * margin)
-    draw.text((margin, 541), VALUES['description'], font=description_font, fill='#edf5fb')
+    draw.text((margin, config.get('descriptionY', 548)), VALUES['description'], font=description_font, fill='#edf5fb', stroke_width=1, stroke_fill='#132d41')
     footer = '실제 활동: ' + photo['institutionName'] + '  ·  사진: ' + photo['credit']
     credit_font = fit(draw, footer, 17, 12, WIDTH - 2 * margin)
     draw.text((margin, 593), footer, font=credit_font, fill='#c3d2df')
     assert draw.textbbox((margin, 593), footer, font=credit_font)[3] < HEIGHT - 10
-    return base.convert('RGB'), {'sceneBox': [scene_x, scene_y, scene_x + contained.width, scene_y + contained.height],
+    return base.convert('RGB'), {'sceneBox': [0, 0, WIDTH, HEIGHT], 'backgroundFit': 'cover',
+                                 'fullBleedOriginalPhoto': True, 'focus': list(focus), 'textLayout': layout,
+                                 'insetPhoto': False, 'blurredBackground': False,
                                  'titleBoxes': boxes, 'headlineSize': heading_font.size,
-                                 'creditSize': credit_font.size, 'fullScenePreserved': True,
-                                 'textOverScene': False}
+                                 'creditSize': credit_font.size, 'textOverScene': True}
 
 
 photos = []
@@ -152,7 +163,7 @@ manifest = {'version': 1, 'batchSize': VALUES['batchSize'], 'latestLimit': VALUE
             'canonicalURL': VALUES['canonicalURL'], 'photos': photos, 'latest': latest,
             'fallback': [p['id'] for p in photos], 'ordering': VALUES['ordering'],
             'rendererVersion': RENDERER[:12]}
-catalog_file = ROOT / 'docs/service-share-catalog.json'
+catalog_file = PROOF / 'preview-catalog.json' if PREVIEW else ROOT / 'docs/service-share-catalog.json'
 catalog_file.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 # Review every generated cover in panels, and retain complete 1200x630 samples.
@@ -165,7 +176,7 @@ for start in range(0, len(photos), 12):
     draw = ImageDraw.Draw(sheet)
     for index, p in enumerate(subset):
         x, y = index % columns * tile_w, index // columns * (tile_h + label_h)
-        with Image.open(ROOT / 'docs/media' / p['posterFile']) as im:
+        with Image.open(DEST / Path(p['posterFile']).name) as im:
             sheet.paste(im.resize((tile_w, tile_h), Image.Resampling.LANCZOS), (x, y))
         draw.text((x + 6, y + tile_h + 3), p['owner'] + ' · ' + p['key'], font=font(11, False), fill='#18314d')
         date_label = p['publishedDate'] or '게시일 미확인'
@@ -181,7 +192,8 @@ audit = {'passed': True, 'sourceCandidates': len(DATA['photos']), 'uniquePhotogr
                                              'publishedDate': p['publishedDate'], 'freshnessDate': p['freshnessDate']} for p in photos[:VALUES['latestLimit']]],
          'unknownPublicationDates': [p['key'] for p in photos if not p['publishedDate']],
          'datePolicy': VALUES['ordering'], 'generatedPosters': len(photos), 'posterDimensions': [WIDTH, HEIGHT],
-         'posterGPSMetadata': 0, 'fullScenesPreserved': True, 'textOverScene': False,
+         'posterGPSMetadata': 0, 'fullBleedOriginalPhotographs': True, 'textOverScene': True,
+         'insetPhotographs': 0, 'blurredBackgrounds': 0, 'preview': PREVIEW,
          'manifest': 'docs/service-share-catalog.json', 'contactSheets': panel_files,
          'existing603CoversModified': False, 'browserUIUsed': False}
 (PROOF / 'audit.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
