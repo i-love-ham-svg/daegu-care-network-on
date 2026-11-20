@@ -261,6 +261,10 @@ function storyPhotos(story) {
   return key?[{key,story}]:[];
 }
 function galleryPhotos(scope,id) {
+  if(scope==='related'){
+    const key=organizationReferences[id];
+    return key&&photoData[key]?.contextLabel?.includes('관련 네트워크')?[{key}]:[];
+  }
   if (scope==='story') {
     const story=findItem(id);
     return story?.type==='news'?storyPhotos(story):[];
@@ -273,10 +277,11 @@ function galleryPhotos(scope,id) {
   const key=organizationReferences[id]||(photoData[id]?id:'');
   const sources=[key,member.photo].filter(source=>source&&photoData[source]);
   const stories=newsForMember(member).flatMap(storyPhotos);
-  const photos=[...sources.map(key=>stories.find(photo=>photo.key===key)||{key}),...stories];
+  const photos=[...sources.map(key=>stories.find(photo=>photo.key===key)||{key}),...stories].filter(photo=>
+    photo.key?photoData[photo.key]?.owner===member.id:photo.story?.memberId===member.id&&(photo.story.verified||photo.story.isLocal));
   const seen=new Set();
   return photos.filter(photo=>{
-    const identity=photo.key||photo.src;
+    const identity=photo.key?photoData[photo.key].file:photo.src;
     if (seen.has(identity)) return false;
     seen.add(identity);
     return true;
@@ -348,9 +353,15 @@ function onNetworkGallery() {
 function onMemberMedia(member,kind) {
   if (kind==='news') {
     const stories=newsForMember(member);
+    if(!stories.length&&member.highlights?.length)return feedSection('member-source-'+member.id,'기관 활동 기록',member.highlights,record=>`<article class="campaign-panel"><span class="tag blue">기관 확인 자료</span><h3>${esc(record.title)}</h3><p class="smalltext muted">${esc(record.date)}</p><p>${esc(record.summary)}</p><a class="btn small" href="${esc(cleanURL(record.url))}" target="_blank" rel="noopener noreferrer">원문 보기</a></article>`,{kind:'news',layout:'list'});
     return feedSection('member-news-'+member.id,'활동소식',stories,newsCard,{kind:'news',layout:'list',emptyText:'등록된 활동소식이 없습니다.'});
   }
   const photos=galleryPhotos('member',member.id);
+  const primary=photoData[organizationReferences[member.id]];
+  if(!photos.length&&primary?.contextLabel?.includes('관련 네트워크')){
+    const related=[{key:organizationReferences[member.id]}];
+    return feedSection('member-related-'+member.id,'관련 네트워크 사진',related,(photo,index)=>galleryTile(photo,'related',member.id,index),{kind:'gallery',layout:'grid',initial:4});
+  }
   return feedSection('member-gallery-'+member.id,'현장 갤러리',photos,(photo,index)=>galleryTile(photo,'member',member.id,index),{kind:'gallery',layout:'grid',initial:4,emptyText:'등록된 현장 사진이 없습니다.'});
 }
 function articleMedia(story) {
@@ -1393,6 +1404,7 @@ function onCoverFigure(key) {
 }
 
 function onPagePhotoKeys(route,item) {
+  if(onReleaseContent.pagePhotos[route])return [onReleaseContent.pagePhotos[route]];
   if (Object.hasOwn(onSectionPhotos,route)) return onSectionPhotos[route];
   const [area,id]=route.split('/');
   if (area==='gallery') return [id];
@@ -1459,7 +1471,7 @@ function onSeoPage(route) {
   const article=indexable&&(item?.type==='policy'||item?.type==='news');
   if (article) {
     const source=cleanURL(item.url)||item.source;
-    const published=item.type==='news'?(item.publishedDate||(/^\d{4}\.\d{2}\.\d{2}$/.test(item.date||'')?item.date.replaceAll('.','-'):'')):'';
+    const published=item.type==='news'?(item.publishedDate||''):'';
     const image=mainPhoto?[...new Set([mainPhoto.primary,...mainPhoto.variants].map(asset=>asset.url))]:[];
     graph.push({'@type':'Article','@id':url+'#article',headline:title,description,inLanguage:'ko-KR',
       mainEntityOfPage:{'@id':url},publisher,...(image.length?{image}:{}),
@@ -2446,6 +2458,7 @@ function organizationSource(source) {
 function organizationInfo(org) {
   return `<h2>기관 소개</h2><p class="campaign-prose">${esc(org.body)}</p>
     ${org.url?`<a class="btn" href="${esc(cleanURL(org.url))}" target="_blank" rel="noopener noreferrer">${esc(org.urlLabel||'홈페이지')}</a>`:'<p class="smalltext muted">홈페이지 미등록</p>'}
+    ${org.channels?.length?`<div class="on-actions">${org.channels.map(channel=>`<a class="btn small" href="${esc(cleanURL(channel.url))}" target="_blank" rel="noopener noreferrer">${esc(channel.label)}</a>`).join('')}</div>`:''}
     ${org.facts.length?`<dl class="org-facts">${org.facts.map(([term,value])=>`<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>`:''}
     ${org.extra?`<h3>${esc(org.extraTitle)}</h3><ul>${org.extra.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`:''}
     <details class="org-source-details"><summary>확인 자료</summary><ul>${org.sources.map(source=>`<li>${organizationSource(source)}</li>`).join('')}</ul></details>`;
@@ -2549,83 +2562,44 @@ function documentedAbout() {
 
 for(const [key,photo] of Object.entries(onContentCasePhotos)){
   photoData[key]=photo;
-  onImagePreviews[photo.file]={original:[photo.file,photo.width,photo.height,photo.file.endsWith('.png')?'image/png':'image/jpeg']};
+  const mime=photo.file.endsWith('.webp')?'image/webp':photo.file.endsWith('.png')?'image/png':'image/jpeg';
+  onImagePreviews[photo.file]={original:[photo.file,photo.width,photo.height,mime]};
   if(photo.displayFile)onImagePreviews[photo.file].wide=[photo.displayFile,photo.displayWidth,photo.displayHeight,'image/jpeg'];
 }
 documentedNews.unshift(...onResearchedNews);
 for(const org of organizations){
   if(photoData['org-'+org.id])organizationReferences[org.id]='org-'+org.id;
+  const update=onReleaseContent.organizations[org.id];
+  if(update){
+    if(update.body)org.body=update.body;
+    if(update.facts)org.facts=[...org.facts,...update.facts];
+    if(update.sources)org.sources=[...new Set([...org.sources,...update.sources])];
+    if(update.channels)org.channels=update.channels;
+    if(update.highlights)org.highlights=update.highlights;
+  }
+  const campaign=organizationCampaigns[org.id];
+  if(campaign){campaign.raised=0;campaign.count=0;}
 }
 
-const news=members.map((member,index)=>({
-  id:'n'+(index+1),type:'news',memberId:member.id,title:member.story[0],org:member.name,
-  category:member.story[1],body:member.story[2],tone:member.tone
-}));
-const onExampleEditorial = {
-  "n1": {
-    "title": "의료사랑방에서 함께하는 한 끼",
-    "photoKey": "with-34-2",
-    "body": "의료사랑방에서 함께하는 한 끼에 관한 화면 구성 예시입니다.\n\n사진은 의료사랑방 현장에서 어르신들이 식사하는 모습\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n2": {
-    "title": "의료현장에서 배우는 건강 돌봄",
-    "photoKey": "example-n2",
-    "body": "의료현장에서 배우는 건강 돌봄에 관한 화면 구성 예시입니다.\n\n사진은 의료현장 실습에 참여한 의대생과 주민들\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n3": {
-    "title": "청소·정리로 살피는 집안 안전",
-    "photoKey": "example-n3",
-    "body": "청소·정리로 살피는 집안 안전에 관한 화면 구성 예시입니다.\n\n사진은 가사지원 후 정돈된 주방\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n4": {
-    "title": "이웃에게 전하는 한 끼",
-    "photoKey": "example-n4",
-    "body": "이웃에게 전하는 한 끼에 관한 화면 구성 예시입니다.\n\n사진은 생선까스 식단 포장\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n5": {
-    "title": "의자에 앉아 함께하는 생활운동",
-    "photoKey": "example-n5",
-    "body": "의자에 앉아 함께하는 생활운동에 관한 화면 구성 예시입니다.\n\n사진은 250416 （사진1） 지난해 건강돌봄 소모임에서 어르신들이 건강증진 체험 활동을 하고 있다.\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n6": {
-    "title": "퇴원 후 돌봄을 잇는 지역 정보",
-    "photoKey": "example-n6",
-    "body": "퇴원 후 돌봄을 잇는 지역 정보에 관한 화면 구성 예시입니다.\n\n사진은 260319 （사진1） 퇴원환자 지역사회 연계 체계 구축을 위한 업무협약 기념촬영\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n7": {
-    "title": "스마트폰으로 찍은 나의 인생사진",
-    "photoKey": "digital-photo-example",
-    "body": "스마트폰으로 찍은 나의 인생사진에 관한 화면 구성 예시입니다.\n\n사진은 김포시 스마트폰 교육 참가자들이 직접 촬영한 인물사진을 펼쳐 보이는 실제 교육 현장입니다.\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  },
-  "n8": {
-    "title": "가족과 함께하는 자연 체험",
-    "photoKey": "example-n8",
-    "body": "가족과 함께하는 자연 체험에 관한 화면 구성 예시입니다.\n\n사진은 250121 （사진1） 아이들과 그 가족들이 딸기농장에서 딸기따기 체험을 하고 있다\n\n사진 속 실제 기관·지역의 활동을 참고하며, 예시 회원사의 수행 실적으로 표시하지 않습니다."
-  }
-};
-for(const item of news)Object.assign(item,onExampleEditorial[item.id]||{});
+const news=onReleaseContent.news;
 const policies=[
- {id:'p1',type:'policy',photoKey:'policy-p1',title:'지역사회 통합돌봄 제도, 한눈에 보기',org:'보건복지부',category:'제도 안내',date:'2026.11.11 확인',url:'https://www.mohw.go.kr/menu.es?mid=a60100000000',body:'지역사회 통합돌봄은 일상생활에 어려움이 있는 사람이 살던 곳에서 지낼 수 있도록 의료·요양·돌봄 서비스를 연결하는 제도입니다.\n\n의료·요양 등 지역 돌봄의 통합지원에 관한 법률과 관련 하위법령은 2026년 3월 27일 시행되었습니다.\n\n보건복지부 공식 안내에서 제도의 목적, 대상자와 지원절차를 확인할 수 있습니다. 이 게시물은 공식 자료를 요약한 정보입니다.'},
- {id:'p2',type:'policy',photoKey:'policy-p2',title:'대구지역 통합돌봄 서비스 정보 확인',org:'보건복지부 · 대구광역시',category:'지역 정보',date:'2026.11.11 확인',url:'https://www.mohw.go.kr/board.es?mid=a60603000000&bid=0077',body:'보건복지부 통합돌봄 전용 누리집의 「지방정부 서비스 메뉴판 → 대구광역시」에서 지역별 서비스 안내를 확인할 수 있습니다.\n\n대구지역 안내를 모으는 게시판의 초기 연결 자료입니다. 실제 이용 가능 여부와 상세 조건은 각 안내의 담당 기관에 확인해야 합니다.'},
- {id:'p3',type:'policy',photoKey:'policy-p3',title:'통합돌봄 정책자료와 교육자료 모아보기',org:'보건복지부',category:'정책자료',date:'2026.11.11 확인',url:'https://www.mohw.go.kr/integratedcare/',body:'보건복지부 지역사회 통합돌봄 전용 누리집에는 정책자료, 교육자료와 지방정부 사례가 정리되어 있습니다.\n\n회원사가 관련 제도와 현장 사례를 확인할 수 있도록 공식 자료실을 연결합니다. 새로운 자료의 게시 여부와 개정본은 원문에서 확인해 주세요.'},
- {id:'p4',type:'policy',photoKey:'policy-p4',title:'통합돌봄 신청과 이용 절차',org:'보건복지부',category:'제도 안내',date:'2026.11.11 확인',url:'https://mohw.go.kr/menu.es?mid=a60200000000',body:'통합돌봄은 주소지 읍·면·동 행정복지센터 또는 국민건강보험공단 지사 등에서 신청할 수 있습니다.\n\n신청 방법, 사전조사와 개인별 지원계획은 보건복지부 이용안내에서 확인하세요.'},
- {id:'p5',type:'policy',photoKey:'policy-p5',title:'돌봄통합지원법 원문',org:'국가법령정보센터',category:'정책자료',date:'2026.11.11 확인',url:'https://www.law.go.kr/LSW/lsInfoP.do?lsId=014633',body:'의료·요양 등 지역 돌봄의 통합지원에 관한 법률 원문입니다. 통합지원의 정의, 기본계획과 서비스 연계에 관한 조문을 확인할 수 있습니다.'},
- {id:'p6',type:'policy',photoKey:'policy-p6',title:'시·도별 통합돌봄 서비스 메뉴판',org:'보건복지부',category:'지역 정보',date:'2026.11.11 확인',url:'https://www.mohw.go.kr/menu.es?mid=a60600000000',body:'지방정부 서비스 메뉴판에서 시·도별 통합돌봄 안내로 이동할 수 있습니다. 지역을 선택해 지자체별 자료를 확인해 보세요.'}
+ {id:'p1',type:'policy',photoKey:'policy-p1',title:'지역사회 통합돌봄 제도, 한눈에 보기',org:'보건복지부',category:'제도 안내',date:'2026.11.20 확인',url:'https://www.mohw.go.kr/menu.es?mid=a60100000000',body:'지역사회 통합돌봄은 일상생활에 어려움이 있는 사람이 살던 곳에서 지낼 수 있도록 의료·요양·돌봄 서비스를 연결하는 제도입니다.\n\n의료·요양 등 지역 돌봄의 통합지원에 관한 법률과 관련 하위법령은 2026년 3월 27일 시행되었습니다.\n\n보건복지부 공식 안내에서 제도의 목적, 대상자와 지원절차를 확인할 수 있습니다. 이 게시물은 공식 자료를 요약한 정보입니다.'},
+ {id:'p2',type:'policy',photoKey:'policy-p2',title:'대구지역 통합돌봄 서비스 정보 확인',org:'보건복지부 · 대구광역시',category:'지역 정보',date:'2026.11.20 확인',url:'https://www.mohw.go.kr/board.es?mid=a60603000000&bid=0077',body:'보건복지부 통합돌봄 전용 누리집의 「지방정부 서비스 메뉴판 → 대구광역시」에서 지역별 서비스 안내를 확인할 수 있습니다.\n\n대구지역 안내를 모으는 게시판의 초기 연결 자료입니다. 실제 이용 가능 여부와 상세 조건은 각 안내의 담당 기관에 확인해야 합니다.'},
+ {id:'p3',type:'policy',photoKey:'policy-p3',title:'통합돌봄 정책자료와 교육자료 모아보기',org:'보건복지부',category:'정책자료',date:'2026.11.20 확인',url:'https://www.mohw.go.kr/integratedcare/',body:'보건복지부 지역사회 통합돌봄 전용 누리집에는 정책자료, 교육자료와 지방정부 사례가 정리되어 있습니다.\n\n회원사가 관련 제도와 현장 사례를 확인할 수 있도록 공식 자료실을 연결합니다. 새로운 자료의 게시 여부와 개정본은 원문에서 확인해 주세요.'},
+ {id:'p4',type:'policy',photoKey:'policy-p4',title:'통합돌봄 신청과 이용 절차',org:'보건복지부',category:'제도 안내',date:'2026.11.20 확인',url:'https://mohw.go.kr/menu.es?mid=a60200000000',body:'통합돌봄은 주소지 읍·면·동 행정복지센터 또는 국민건강보험공단 지사 등에서 신청할 수 있습니다.\n\n신청 방법, 사전조사와 개인별 지원계획은 보건복지부 이용안내에서 확인하세요.'},
+ {id:'p5',type:'policy',photoKey:'policy-p5',title:'돌봄통합지원법 원문',org:'국가법령정보센터',category:'정책자료',date:'2026.11.20 확인',url:'https://www.law.go.kr/LSW/lsInfoP.do?lsId=014633',body:'의료·요양 등 지역 돌봄의 통합지원에 관한 법률 원문입니다. 통합지원의 정의, 기본계획과 서비스 연계에 관한 조문을 확인할 수 있습니다.'},
+ {id:'p6',type:'policy',photoKey:'policy-p6',title:'시·도별 통합돌봄 서비스 메뉴판',org:'보건복지부',category:'지역 정보',date:'2026.11.20 확인',url:'https://www.mohw.go.kr/menu.es?mid=a60600000000',body:'지방정부 서비스 메뉴판에서 시·도별 통합돌봄 안내로 이동할 수 있습니다. 지역을 선택해 지자체별 자료를 확인해 보세요.'}
 ];
 const pastEvents = ['daegu-health-symposium','daegu-university-symposium','daegu-national-conference','daegu-seminar'].map(id=>{
   const story=documentedNews.find(item=>item.id===id);
   const [,month,day]=story.date.split('.');
   return {...story,id:'event-'+id,type:'event',past:true,storyId:id,month:Number(month)+'월',day:Number(day)};
 });
-const events=[
- {id:'e1',type:'event', photoKey:'m7',title:'회원사 담당자 플랫폼 이용 안내',org:'사무국',category:'이용교육',day:'20',month:'11월',date:'예시 일정 · 2026.11.20',body:'플랫폼 이용교육을 표시하는 예시입니다. 실제 개최 예정인 행사가 아닙니다.\n\n교육·행사 페이지에서는 행사명, 대상, 일정, 장소와 신청 안내를 함께 제공합니다.\n\n이 예시는 회원사 담당자를 대상으로 기업정보 등록, 활동소식 작성, 정책정보 확인 방법을 안내하는 내용입니다.'},
- {id:'e2',type:'event', photoKey:'health-forum-reference',title:'통합돌봄 현장 이야기 나눔',org:'운영위원회',category:'간담회',day:'27',month:'11월',date:'예시 일정 · 2026.11.27',body:'간담회 안내를 보여주는 예시 콘텐츠이며 확정된 행사가 아닙니다.\n\n기관의 경험과 정보공유를 위한 정기 간담회를 이곳에 안내할 수 있습니다. 행사 확정 후 실제 신청 경로와 담당 연락처를 등록합니다.'},
- ...pastEvents
-];
+const events=[...onReleaseContent.events,...pastEvents];
 const resources=[
- {id:'r1',type:'resource', photoKey:'policy-p3',title:'회원사 기본정보 취합 양식',org:'플랫폼 제안 자료',category:'운영서식',format:'CSV',body:'신규 회원사의 정보를 취합하기 위한 기본 양식입니다.\n\n기관명, 활동 분야, 주요 사업, 서비스 지역, 홈페이지·블로그와 담당자 정보를 정리할 수 있습니다. 담당자의 개인정보 공개 범위는 별도로 확인해야 합니다.',download:'members'},
- {id:'r2',type:'resource', photoKey:'community-care-forum-reference',title:'회원사 활동소식 작성 가이드',org:'플랫폼 제안 자료',category:'이용안내',format:'TXT',body:'활동소식은 이렇게 작성합니다.\n\n1. 사진 또는 자료를 준비합니다.\n2. 활동 제목과 기관명을 입력합니다.\n3. 언제, 어디서, 어떤 활동을 했는지 설명합니다.\n4. 관련 홈페이지나 블로그 링크를 연결합니다.\n5. 게시 요청 후 사무국의 확인을 기다립니다.\n\n회원사별 담당자를 지정하고 월 1회 이상 활동소식 등록을 권장합니다. 사진과 자료의 공개 동의를 확인해 주세요.',download:'guide'},
- {id:'r3',type:'resource', photoKey:'policy-p3',title:'보건복지부 통합돌봄 공식 자료실',org:'보건복지부',category:'정책자료',format:'LINK',url:'https://www.mohw.go.kr/integratedcare/',body:'보건복지부 통합돌봄 전용 누리집에서 정책자료와 교육자료를 확인할 수 있습니다.\n\n공식 누리집의 「자료실」 메뉴에서 최신 자료를 확인해 주세요.'}
+ {id:'r1',type:'resource', photoKey:'resource-r1',title:'회원사 기본정보 취합 양식',org:'플랫폼 제안 자료',category:'운영서식',format:'CSV',body:'신규 회원사의 정보를 취합하기 위한 기본 양식입니다.\n\n기관명, 활동 분야, 주요 사업, 서비스 지역, 홈페이지·블로그와 담당자 정보를 정리할 수 있습니다. 담당자의 개인정보 공개 범위는 별도로 확인해야 합니다.',download:'members'},
+ {id:'r2',type:'resource', photoKey:'resource-r2',title:'회원사 활동소식 작성 가이드',org:'플랫폼 제안 자료',category:'이용안내',format:'TXT',body:'활동소식은 이렇게 작성합니다.\n\n1. 사진 또는 자료를 준비합니다.\n2. 활동 제목과 기관명을 입력합니다.\n3. 언제, 어디서, 어떤 활동을 했는지 설명합니다.\n4. 관련 홈페이지나 블로그 링크를 연결합니다.\n5. 게시 요청 후 사무국의 확인을 기다립니다.\n\n회원사별 담당자를 지정하고 월 1회 이상 활동소식 등록을 권장합니다. 사진과 자료의 공개 동의를 확인해 주세요.',download:'guide'},
+ {id:'r3',type:'resource', photoKey:'resource-r3',title:'보건복지부 통합돌봄 공식 자료실',org:'보건복지부',category:'정책자료',format:'LINK',url:'https://www.mohw.go.kr/integratedcare/',body:'보건복지부 통합돌봄 전용 누리집에서 정책자료와 교육자료를 확인할 수 있습니다.\n\n공식 누리집의 「자료실」 메뉴에서 최신 자료를 확인해 주세요.'}
 ];
 const signInProviders = {
   kakao: {name:'카카오', mark:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5C6.5 3.5 2 6.8 2 10.8c0 2.6 1.8 4.9 4.5 6.2l-1 3.6a.4.4 0 0 0 .6.4l4.2-2.8c.5.1 1.1.1 1.7.1 5.5 0 10-3.4 10-7.5S17.5 3.5 12 3.5Z"/></svg>'},
@@ -2827,7 +2801,7 @@ function policyThumbnail(item, informative=false) {
   const key=storyPhotoKey(item);
   if (!key) return '';
   const src=offlinePhotoData?.[key]||'/media/'+photoData[key].file;
-  return `<img class="policy-thumbnail" src="${esc(src)}" width="640" height="360" alt="${informative?esc(photoData[key].caption+' (AI 생성 참고 이미지)'):''}" loading="lazy" decoding="async">`;
+  return `<img class="policy-thumbnail" src="${esc(src)}" width="640" height="360" alt="${informative?esc(photoData[key].caption):''}" loading="lazy" decoding="async">`;
 }
 function policyRow(p) {
   if (p.type!=='policy') return relatedContentRow(p);
@@ -3120,7 +3094,7 @@ function resourceRow(r){
 }
 function resourcesPage(){
   return pageHead('자료실','',`<button class="btn" data-action="post" data-type="resource">${icon('plus')} 자료 등록 시연</button>`)+
-    `<div class="wrap page-content">${feedSection('resource-directory','',items('resource'),resourceRow,{kind:'resources',initial:2})}${onCoverFigure('policy-p3')}</div>`;
+    `<div class="wrap page-content">${feedSection('resource-directory','',items('resource'),resourceRow,{kind:'resources',initial:2})}${onCoverFigure('resource-r3')}</div>`;
 }
 function detail(id) {
   const item=findItem(id);
@@ -3137,11 +3111,11 @@ function detail(id) {
       <div class="on-article-title"><h1>${esc(item.title)}</h1>${item.type==='news'&&canPreviewShare('detail/'+id)?`<button class="icon-btn" data-action="share" aria-label="소식 공유하기">${icon('share')}</button>`:''}</div>
       <div class="detail-meta">${item.type==='policy'&&original?`<a href="${esc(original)}" target="_blank" rel="noopener noreferrer">${esc(item.org)}</a>`:esc(item.org)}${item.date?' · '+esc(item.date):''}</div>
       ${answer?`<p class="on-policy-answer">${esc(answer)}</p>`:''}
-      ${item.type==='news'?articleMedia(item):item.type==='policy'?`<figure class="policy-detail-photo">${policyThumbnail(item,true)}<figcaption>분야 참고 이미지 · AI 생성</figcaption></figure>`:onCoverFigure(storyPhotoKey(item))}
+      ${item.type==='news'?articleMedia(item):item.type==='policy'?`<figure class="policy-detail-photo">${policyThumbnail(item,true)}<figcaption>${photoCredit(storyPhotoKey(item))}</figcaption></figure>`:onCoverFigure(storyPhotoKey(item))}
       <div class="bodytext">${paragraphs.map(paragraph=>`<p>${esc(paragraph)}</p>`).join('')}</div>${item.source?`<p class="network-source">출처 · ${esc(item.source)}</p>`:''}${actions}
       ${item.type==='policy'&&original?`<a class="btn primary" href="${esc(original)}" target="_blank" rel="noopener noreferrer">공식 원문 보기 ${icon('external')}</a>`:''}
       ${item.type==='resource'?`<button class="btn primary" data-action="${original?'external':'download'}" data-id="${esc(id)}">${icon(original?'external':'download')} ${original?'공식 자료실 열기':'자료 다운로드'}</button>`:''}
-      ${item.past?`<a class="btn" href="#/detail/${esc(item.storyId)}">관련 활동소식 보기 ${icon('arrow')}</a>`:item.type==='event'?`<div class="specs"><div class="spec"><small>일정</small><strong>${esc(item.date||'일정 미정')}</strong></div><div class="spec"><small>장소</small><strong>확정 후 안내</strong></div></div>${note('행사 신청은 실제 일정과 접수 경로 확정 후 제공됩니다.')}`:''}
+      ${item.past?(item.storyId?`<a class="btn" href="#/detail/${esc(item.storyId)}">관련 활동소식 보기 ${icon('arrow')}</a>`:original?`<a class="btn" href="${esc(original)}" target="_blank" rel="noopener noreferrer">활동 원문 보기</a>`:''):item.type==='event'?`<div class="specs"><div class="spec"><small>일정</small><strong>${esc(item.date||'일정 미정')}</strong></div><div class="spec"><small>장소</small><strong>확정 후 안내</strong></div></div>${note('행사 신청은 실제 일정과 접수 경로 확정 후 제공됩니다.')}`:''}
       ${item.type==='news'&&original?`<a class="btn" href="${esc(original)}" target="_blank" rel="noopener noreferrer">원문 보기 ${icon('external')}</a>`:''}
     </article><aside class="detail-aside"><h3>${label}</h3><a class="btn" href="#/${route}">${label} 전체 보기 ${icon('arrow')}</a>
       ${item.type==='news'&&!item.verified?note(item.isLocal?'브라우저에서 등록한 시연 소식입니다.':'사진은 참고 사례이며 소식은 예시입니다.'):''}</aside></div>

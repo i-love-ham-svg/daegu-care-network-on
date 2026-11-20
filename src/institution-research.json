@@ -1,0 +1,970 @@
+{
+  "checkedAt": "2026-11-20",
+  "engineCoverage": [
+    {
+      "institutionId": "daegu-dounuri",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%8C%80%EA%B5%AC%EB%8F%84%EC%9A%B0%EB%88%84%EB%A6%AC",
+      "completed": false,
+      "method": "ordinary public HTTP GET",
+      "httpStatus": 200,
+      "evidenceFile": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\dounuri-google.html",
+      "notes": "Search URL reachable but returned JavaScript-navigation shell, not search results."
+    },
+    {
+      "institutionId": "daegu-dounuri",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%8C%80%EA%B5%AC%EB%8F%84%EC%9A%B0%EB%88%84%EB%A6%AC",
+      "completed": true,
+      "method": "ordinary public HTTP GET",
+      "httpStatus": 200,
+      "evidenceFile": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\dounuri-naver.html",
+      "notes": "Actual search-result titles, snippets, and external source links read. captcha string appeared only in embedded script, not a visible security challenge."
+    },
+    {
+      "institutionId": "woorihamkke",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%9A%B0%EB%A6%AC%ED%95%A8%EA%BB%98%ED%86%B5%ED%95%A9%EB%8F%8C%EB%B4%84%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": false,
+      "method": "ordinary public HTTP GET",
+      "httpStatus": 200,
+      "evidenceFile": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\woori-google.html",
+      "notes": "Search URL reachable but returned JavaScript-navigation shell, not search results."
+    },
+    {
+      "institutionId": "woorihamkke",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%ED%95%A8%EA%BB%98%ED%86%B5%ED%95%A9%EB%8F%8C%EB%B4%84%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "ordinary public HTTP GET",
+      "httpStatus": 200,
+      "evidenceFile": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\woori-naver.html",
+      "notes": "Actual search-result titles, snippets, and external source links read. captcha string appeared only in embedded script, not a visible security challenge."
+    },
+    {
+      "institutionId": "with-medical",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%9C%84%EB%93%9C%EC%9D%98%EB%A3%8C%EB%B3%B5%EC%A7%80%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": false,
+      "method": "ordinary public HTTP GET",
+      "httpStatus": 200,
+      "evidenceFile": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-google.html",
+      "notes": "Search URL reachable but returned JavaScript-navigation shell, not search results."
+    },
+    {
+      "institutionId": "with-medical",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EC%9C%84%EB%93%9C%EC%9D%98%EB%A3%8C%EB%B3%B5%EC%A7%80%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "ordinary public HTTP GET",
+      "httpStatus": 200,
+      "evidenceFile": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-naver.html",
+      "notes": "Actual search-result titles, snippets, and external source links read. captcha string appeared only in embedded script, not a visible security challenge."
+    },
+    {
+      "institutionId": "welfare-design",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%B0%EA%B5%AC%EC%86%8C%20%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "search results read"
+    },
+    {
+      "institutionId": "welfare-design",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%B0%EA%B5%AC%EC%86%8C%20%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": false,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "HTTP response only; no substantial search results"
+    },
+    {
+      "institutionId": "daegu-care",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EB%8C%80%EA%B5%AC%EB%8F%8C%EB%B4%84%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "search results read"
+    },
+    {
+      "institutionId": "daegu-care",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EB%8C%80%EA%B5%AC%EB%8F%8C%EB%B4%84%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": false,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "HTTP response only; no substantial search results"
+    },
+    {
+      "institutionId": "naeiln",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EB%82%B4%EC%9D%BC%EC%95%A4%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%8D%94%EB%B4%84",
+      "completed": true,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "search results read"
+    },
+    {
+      "institutionId": "naeiln",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EB%82%B4%EC%9D%BC%EC%95%A4%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%8D%94%EB%B4%84",
+      "completed": false,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "HTTP response only; no substantial search results"
+    },
+    {
+      "institutionId": "modoo-happy",
+      "engine": "Naver",
+      "queryURL": "https://search.naver.com/search.naver?query=%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%AA%A8%EB%91%90%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0",
+      "completed": true,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "search results read"
+    },
+    {
+      "institutionId": "modoo-happy",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%AA%A8%EB%91%90%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0",
+      "completed": false,
+      "method": "ordinary public HTTP GET; no challenge solving or bypass",
+      "httpStatus": 200,
+      "evidenceFile": null,
+      "notes": "HTTP response only; no substantial search results"
+    },
+    {
+      "institutionId": "daegu-dounuri",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%22%EB%8C%80%EA%B5%AC%EB%8F%84%EC%9A%B0%EB%88%84%EB%A6%AC%22",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    },
+    {
+      "institutionId": "woorihamkke",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%9A%B0%EB%A6%AC%ED%95%A8%EA%BB%98%ED%86%B5%ED%95%A9%EB%8F%8C%EB%B4%84%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    },
+    {
+      "institutionId": "with-medical",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%9C%84%EB%93%9C%EC%9D%98%EB%A3%8C%EB%B3%B5%EC%A7%80%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    },
+    {
+      "institutionId": "welfare-design",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%82%AC%ED%9A%8C%EB%B3%B5%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%B0%EA%B5%AC%EC%86%8C%20%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    },
+    {
+      "institutionId": "daegu-care",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EB%8C%80%EA%B5%AC%EB%8F%8C%EB%B4%84%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    },
+    {
+      "institutionId": "naeiln",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EB%82%B4%EC%9D%BC%EC%95%A4%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%8D%94%EB%B4%84",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    },
+    {
+      "institutionId": "modoo-happy",
+      "engine": "Google",
+      "queryURL": "https://www.google.com/search?q=%EC%82%AC%ED%9A%8C%EC%A0%81%ED%98%91%EB%8F%99%EC%A1%B0%ED%95%A9%20%EB%AA%A8%EB%91%90%ED%96%89%EB%B3%B5%EC%84%BC%ED%84%B0",
+      "completed": true,
+      "method": "Rendered Google results observed through supported Windows Computer Use",
+      "httpStatus": null,
+      "evidenceFile": null,
+      "notes": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "with-27",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=27&theme_type=main1",
+      "title": "합천 수해지역 의료 봉사활동",
+      "bodyRead": true,
+      "identityEvidence": "위드의료사협 공식 도메인·기관명·공식사진갤러리 원문 및 현장사진을 대조했습니다.",
+      "newVsExisting": "new institution activity for publication; IDs27~31 are not in current active photo recipes",
+      "bodySnapshot": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-27.html",
+      "activityDate": "2025-07-23",
+      "publishedDate": "2025-07-25",
+      "summary": "합천군 가회면 덕천리 무봉관 실내체육관에서 수해지역 의료지원과 노동력 지원을 진행했다고 기관이 기록했습니다.",
+      "sceneTag": "재난지역 의료봉사"
+    },
+    {
+      "id": "with-28",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=28&theme_type=main1",
+      "title": "위드 신규 조합원 환영회, 즐거운 시간을 가졌습니다.",
+      "bodyRead": true,
+      "identityEvidence": "위드의료사협 공식 도메인·기관명·공식사진갤러리 원문 및 현장사진을 대조했습니다.",
+      "newVsExisting": "new institution activity for publication; IDs27~31 are not in current active photo recipes",
+      "bodySnapshot": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-28.html",
+      "activityDate": "2025-07-24",
+      "publishedDate": "2025-07-25",
+      "summary": "위드의원에서 제1회 신규 조합원 환영회를 진행했습니다.",
+      "sceneTag": "조합원 환영회"
+    },
+    {
+      "id": "with-29",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=29&theme_type=main1",
+      "title": "2025년 대구시 사회적경제 통합돌봄 시범사업 단체 1위로 선정",
+      "bodyRead": true,
+      "identityEvidence": "위드의료사협 공식 도메인·기관명·공식사진갤러리 원문 및 현장사진을 대조했습니다.",
+      "newVsExisting": "new institution activity for publication; IDs27~31 are not in current active photo recipes",
+      "bodySnapshot": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-29.html",
+      "activityDate": null,
+      "publishedDate": "2025-10-30",
+      "summary": "대구시 사회적경제 통합돌봄 시범사업 선정 IR 발표에서 최우수로 선정됐다는 기관 기록입니다. 지원한4개팀과네트워크자료의사업참여4개기관은서로다른개념입니다.",
+      "sceneTag": "통합돌봄 시범사업 선정"
+    },
+    {
+      "id": "with-30",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=30&theme_type=main1",
+      "title": "사진으로 보는 제5차 위드의료복지사회적협동조합 총회",
+      "bodyRead": true,
+      "identityEvidence": "위드의료사협 공식 도메인·기관명·공식사진갤러리 원문 및 현장사진을 대조했습니다.",
+      "newVsExisting": "new institution activity for publication; IDs27~31 are not in current active photo recipes",
+      "bodySnapshot": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-30.html",
+      "activityDate": null,
+      "publishedDate": "2026-03-30",
+      "summary": "2026년 제5차 위드의료복지사회적협동조합 정기총회 현장입니다. 개최일은본문에없으므로게시일로표시합니다.",
+      "sceneTag": "정기총회"
+    },
+    {
+      "id": "with-31",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=31&theme_type=main1",
+      "title": "위드 건강 강좌 시리즈 1탄 \"음식과 암 이야기\" 강좌 스케치",
+      "bodyRead": true,
+      "identityEvidence": "위드의료사협 공식 도메인·기관명·공식사진갤러리 원문 및 현장사진을 대조했습니다.",
+      "newVsExisting": "new institution activity for publication; IDs27~31 are not in current active photo recipes",
+      "bodySnapshot": "C:\\Users\\sking\\CodexWorkspace\\모두의기부-대구 돌봄\\output\\work\\release-research-a\\with-31.html",
+      "activityDate": null,
+      "publishedDate": "2026-05-18",
+      "summary": "음식과 암 이야기를 주제로 건강강좌를 열었으며25명가까운조합원과비조합원이함께했다고기록했습니다. 의학적효과나예방방법을이자료만으로서비스의권고로재전달하지않습니다.",
+      "sceneTag": "주민 건강강좌"
+    },
+    {
+      "id": "with-history",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/content.php?co_id=sub0103&theme_type=main1",
+      "title": "위드가 걸어온 길",
+      "bodyRead": true,
+      "summary": "2022년설립인가·2023년위드의원개원·2024년재택의료센터지정·K-water의료사랑방사업·2025년IR최우수등연혁을확인했습니다.",
+      "newVsExisting": "new source for institution background"
+    },
+    {
+      "id": "with-location",
+      "owner": "with-medical",
+      "url": "https://www.withmedcoop.com/bbs/content.php?co_id=sub0105&theme_type=main1",
+      "title": "찾아오시는 길",
+      "bodyRead": true,
+      "summary": "위드의원은대구중구국채보상로541 5층으로안내됩니다. 조합사무실서구통학로32길8 2층과구별해야합니다.",
+      "newVsExisting": "new clarification of clinic vs cooperative address"
+    },
+    {
+      "id": "woori-114",
+      "owner": "woorihamkke",
+      "url": "https://www.114.co.kr/search/detail?comp_id=24167227&comp_tp_cd=TEL&upjong_cd=901209",
+      "title": "우리함께통합돌봄사회적협동조합 — 114On",
+      "bodyRead": true,
+      "summary": "정확한법인명·전화053-942-9988·대구동구큰고개로23/신암4동622가검색제목과공개HTML설명에확인됩니다. 후보자개인연락처와구별되는사업체번호교차근거입니다.",
+      "identityEvidence": "정확법인명및동구큰고개로23주소가제공자료와일치",
+      "newVsExisting": "new independent business contact/address source"
+    },
+    {
+      "id": "dounuri-official",
+      "owner": "daegu-dounuri",
+      "url": "https://blog.naver.com/dgdounuri/224454100769",
+      "title": "대구 방문요양, 사회적 협동조합 대구도우누리를 소개합니다",
+      "bodyRead": true,
+      "publishedDate": "2026-10-26",
+      "summary": "방문요양·가족요양·복지용구·병원동행·이동지원·통합돌봄·가사돌봄·공동체밥집한끼라면을공식안내합니다. 재가센터053-721-7935,복지용구053-721-7568. 평일09:00~18:00,점심12:00~13:00,주말공휴일휴무로게시합니다.",
+      "identityEvidence": "기존공식Linktree가동일블로그를연결하며법인명·수성구범안로16길5 1층·대표전화가공식홈페이지와일치",
+      "newVsExisting": "previously discovered URL only; body newly read this pass",
+      "caution": "2013년보건복지부인가등설명은전신전국도우누리와현법인설립을구별해야하며대구법인의단독설립일로옮기지않습니다."
+    },
+    {
+      "id": "dounuri-beomeo",
+      "owner": "daegu-dounuri",
+      "url": "https://blog.naver.com/beomeo3535/224247435912",
+      "title": "범어연합내과 재택의료센터와 대구 재가장기요양기관연합회 수성지회·대구도우누리 업무협약",
+      "bodyRead": true,
+      "activityDate": "2026-04-03",
+      "publishedDate": "2026-04-10",
+      "summary": "범어연합내과재택의료센터가대구재가장기요양기관연합회수성지회및대구도우누리와취약재가어르신의의료·사례관리연계를위해협약했습니다.",
+      "identityEvidence": "파트너의원공개본문에대구도우누리정확명이명시되고사진현수막에도법인명이확인됩니다.",
+      "newVsExisting": "new activity and photographs"
+    },
+    {
+      "id": "dounuri-interview",
+      "owner": "daegu-dounuri",
+      "url": "https://blog.naver.com/thecompanyc/224471963501",
+      "title": "경영에서 돌봄으로, 사람을 이해하는 길을 걷다 | 사회적 협동 조합 대구 도우누리",
+      "bodyRead": true,
+      "publishedDate": "2026-11-10",
+      "summary": "2026두근두근소셜홍보프로젝트청년에디터사업으로기관대표의서비스철학·설립준비·지역돌봄연결을소개합니다. 실제기관대표인터뷰사진은37번이며다수삽화·일반스톡이미지는기관활동사진으로제외했습니다.",
+      "identityEvidence": "본문이법인명을반복명시하고공식홈페이지및수성구범안로16길5주소를연결하며인터뷰실사진조끼에서법인명을확인",
+      "newVsExisting": "new original interview source",
+      "caution": "대표개인생애·이전직장의활동사진과현재법인사업실적을섞지않습니다."
+    },
+    {
+      "id": "dounuri-housecook",
+      "owner": "daegu-dounuri",
+      "url": "https://www.sportsworldi.com/newsView/20260806517776",
+      "title": "정수조리기 하우스쿡, 이웃과의 나눔사업 동참 본격화",
+      "bodyRead": true,
+      "publishedDate": "2026-08-06",
+      "summary": "하우스쿡이대구도우누리한끼라면에설비·기술지원및운영모델공동개발을위한업무협약을맺었다고보도합니다.",
+      "newVsExisting": "new activity source, no matching own-activity photograph",
+      "caution": "사진은서울무인매장과태권도장으로명시되어있어대구도우누리현장으로사용하지않습니다."
+    },
+    {
+      "id": "with-social-finance",
+      "owner": "with-medical",
+      "url": "https://healthallnet.org/membersnews/?idx=172087344&bmode=view",
+      "title": "위드의료복지사협 사회적금융 인터뷰 소개",
+      "bodyRead": false,
+      "publishedDate": "2026-06-29",
+      "summary": "한국사회적의료기관연합회가위드정민철이사장의지역사회적금융관점인터뷰를소개하며머니투데이원문을연결합니다. 돌봄서비스실적이나후원금실적으로전용하지않습니다.",
+      "originalArticle": "https://www.mt.co.kr/policy/2026/06/29/2026062809522648384",
+      "newVsExisting": "new related institution coverage; article image not adopted",
+      "retrievalMethod": "검색 색인의 연합회 본문 발췌를 읽음. canonical 원문 웹 도구 직접 열기는 캐시 오류.",
+      "recommendedUse": "관련 원문 링크 후보"
+    },
+    {
+      "id": "sdl-safety",
+      "orgId": "welfare-design",
+      "title": "KNOW 재난! YES 안전! 찾아가는 안전교육",
+      "url": "https://gumiymca.or.kr/1911628715/?bmode=view&idx=165795609",
+      "publisher": "구미YMCA",
+      "activityDate": "2025-06-05",
+      "activityDateMeaning": "교육 시작일, 총4회; 종료일은 미기재",
+      "publishedDate": "2025-06-20",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "주최 측 원문에서 사회복지디자인연구소 사회적협동조합과 공동 진행했다고 정확한 기관명을 명시",
+      "summary": "고아지역아동센터에서 재난·환경·생활안전과 응급처치를 아동 눈높이에 맞게 교육했다. 재난 생존가방 체험과 보드게임 활동을 포함한다.",
+      "recommendedTitle": "아이들과 함께 배우는 재난·생활 안전",
+      "photoIds": [
+        "sdl-safety-1",
+        "sdl-safety-2"
+      ]
+    },
+    {
+      "id": "sdl-agreement",
+      "orgId": "welfare-design",
+      "title": "경북대학교 사회복지학부와 상호협력을 위한 업무협약",
+      "url": "https://kwelltimes.com/news/view.php?idx=953",
+      "publisher": "케이웰타임즈 · 이연주 책임기자",
+      "activityDate": "2023-07-26",
+      "activityDateMeaning": "현수막에 2023.07.26(수)11:30 명시; 개최일은 사진 근거",
+      "publishedDate": "2023-07-27",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "원문에 정확한 법인명과 이연주 이사장 참여, 사진 현수막에 두 기관명이 함께 표기",
+      "summary": "경북대학교 사회복지학부와 사회복지디자인연구소가 지역사회 문제에 함께 협력하기 위한 업무협약을 체결했다.",
+      "photoIds": [
+        "sdl-agreement-1",
+        "sdl-agreement-2",
+        "sdl-agreement-3",
+        "sdl-agreement-4",
+        "sdl-agreement-5"
+      ]
+    },
+    {
+      "id": "sdl-donation",
+      "orgId": "welfare-design",
+      "title": "굿네이버스 100인의 꿈지원단 위촉",
+      "url": "https://www.pbsnews.kr/101352",
+      "publisher": "PBS중앙방송",
+      "activityDate": null,
+      "activityDateMeaning": "행사 개최일 별도 미기재; 2024.12.11은 발표·기사게시일",
+      "publishedDate": "2024-12-11",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "기사에서 이연주 사회복지디자인연구소 사회적협동조합 이사장의 위촉을 명시",
+      "summary": "굿네이버스 대구사업본부가 지역 취약계층 아동의 꿈을 응원하는 꿈지원단에 이연주 이사장과 이연경 스카이덕디자인 대표를 위촉했다고 밝혔다. 직업탐색 멘토 활동과 응원 메시지 등을 소개한다.",
+      "photoIds": [
+        "sdl-donation-1"
+      ],
+      "doNotClaim": "위촉 기념사진을 실제 청년 상담·돌봄 제공 장면으로 표현하지 않음"
+    },
+    {
+      "id": "sdl-blog-intro",
+      "orgId": "welfare-design",
+      "title": "소셜디자인랩 공식블로그 소개",
+      "url": "https://blog.naver.com/sdl2023/224427100832",
+      "publisher": "소셜디자인랩 사회적협동조합 공식 블로그",
+      "publishedDate": "2026-09-30",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "SDL2023 명칭, 같은 북구 경대로5길10 5층 주소, 2024교육 주관자료의 sdl2023@naver.com과 같은 메일로 브랜드 연속성 교차확인",
+      "summary": "연구·교육·상담과 컨설팅·사회공헌과 협력·사회서비스를 주요 활동으로 소개한다. 자립준비청년 등 지역 현안 연구, 사례관리와 주민조직화 교육, 종사자 소진 예방 및 조직 컨설팅 등을 안내한다.",
+      "facts": {
+        "address": "대구광역시 북구 경대로5길10 5층",
+        "email": "sdl2023@naver.com",
+        "brandAlias": "소셜디자인랩"
+      },
+      "qualification": "브랜드·연락 자료로 활용 가능. 법인 공식 명칭 변경이나 폐업 여부는 이 자료만으로 확정하지 않음. 표기 전화번호에 이중 하이픈이 있어 자동 정규화·입력하지 않음.",
+      "photoIds": []
+    },
+    {
+      "id": "sdl-buk-directory",
+      "orgId": "welfare-design",
+      "title": "북구청 예비사회적기업 현황",
+      "url": "https://www.buk.daegu.kr/index.do?menu_id=00002532",
+      "publisher": "대구광역시 북구청",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "정확한 법인명과 주소를 공공기관 목록에서 확인",
+      "facts": {
+        "address": "경대로5길10,5층",
+        "additionalServices": [
+          "일상돌봄",
+          "공동체안전교육",
+          "사회복지종사자 심리지원 역량강화 교육"
+        ]
+      },
+      "summary": "북구청 공공 기업현황에 소재지와 서비스가 기재되어 있다. 참여 동의기관 PDF의 주 분야인 자립준비청년을 대체하지 않고 추가 확인 자료로 활용한다.",
+      "photoIds": []
+    },
+    {
+      "id": "sdl-goodchange-2026",
+      "orgId": "welfare-design",
+      "title": "2026 좋은변화실험실 면접심사 선정결과",
+      "url": "https://dgpublic.org/web/jhboard/?act=view&id=noti&no=5390",
+      "publisher": "대구시민공익활동지원센터",
+      "publishedDate": "2026-04-09",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "좋은변화실험실 선정 조직에 정확한 법인명을 단독 명시",
+      "summary": "사회복지디자인연구소사회적협동조합의 선정 사실을 확인할 수 있다. 해당 공고만으로 사업 수행 성과를 주장하지 않는다.",
+      "photoIds": []
+    },
+    {
+      "id": "sdl-academy-2024",
+      "orgId": "welfare-design",
+      "title": "제7기 비영리조직 팀장 아카데미 모집",
+      "url": "https://www.djasw.or.kr/28/?bmode=view&idx=17842493",
+      "publisher": "대전광역시사회복지사협회",
+      "publishedDate": "2024-01-30",
+      "activityDate": "2024-02-15",
+      "activityEndDate": "2024-02-17",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "사회복지디자인연구소와 서울·대전사회복지사협회를 공동 주관기관으로 명시, SDL2023 메일 일치",
+      "summary": "비영리조직 중간관리자 역량강화 교육의 모집 공고다.",
+      "qualification": "모집 공고만으로 실제 교육 수료나 성과를 주장하지 않으며 포스터를 실제 현장사진으로 쓰지 않음",
+      "photoIds": []
+    },
+    {
+      "id": "sdl-counseling",
+      "orgId": "welfare-design",
+      "title": "대구광역자활센터 상담센터 전문위원",
+      "url": "https://www.dgpsc.or.kr/index.php?gt=counseling/committee02",
+      "publisher": "대구광역자활센터",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "전문위원 이연주의 현 경력에 사회복지디자인연구소 사회적협동조합 명시",
+      "summary": "기관의 교육·상담 컨설팅과 지역사회 연구 활동을 교차 확인할 수 있다. 개인 전문위원 사진은 기관의 직접 돌봄 사례사진으로 사용하지 않는다.",
+      "photoIds": []
+    },
+    {
+      "id": "dgcare-training-2023",
+      "orgId": "daegu-care",
+      "title": "사회복지법인 외부추천이사 및 후보군 역량강화 교육",
+      "url": "https://www.gccwo.org/index.php?document_srl=16943&listStyle=viewer&mid=gccwo_board_02&page=5",
+      "publisher": "경상북도사회복지협의회",
+      "activityDate": "2023-05-24",
+      "publishedDate": null,
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "강사 소속을 대구돌봄사회적협동조합 원대재가노인복지센터 센터장 성기순으로 정확히 명시",
+      "summary": "경북경산지역자활센터에서 외부추천이사 및 후보군51명을 대상으로 사회복지법인 이해, 예결산, 이사의 임무와 역할을 다룬 교육이다.",
+      "doNotClaim": "교육 참석자 전체를 대구돌봄 직원이나 돌봄 이용자로 표현하지 않음. 센터장 성기순을 법인대표와 혼동하지 않음.",
+      "photoIds": [
+        "dgcare-training-1",
+        "dgcare-training-2"
+      ]
+    },
+    {
+      "id": "dgcare-kbs-2026",
+      "orgId": "daegu-care",
+      "title": "마을의 꿈: 통합돌봄으로 행복을 만드는 대구돌봄협동조합",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8465326",
+      "readableMirror": "https://v.daum.net/v/20260121200029850",
+      "publisher": "KBS대구",
+      "publishedDate": "2026-01-21",
+      "bodyRead": true,
+      "isNew": true,
+      "summary": "지역아동센터, 재가노인복지센터, 청·중년층 돌봄센터 등3개 센터 운영을 소개하고2025년 마을기업 선정 소식을 전한 방송이다.",
+      "facts": {
+        "serviceScope": [
+          "아동 교육·상담",
+          "노인 재가돌봄",
+          "청·중년층 돌봄"
+        ],
+        "villageEnterpriseSelectionYear": 2025
+      },
+      "qualification": "KBS원문주소는네이버실검색결과로발굴,본문은KBS가다음에송출한공개원문에서읽음. 다른기관의 돌봄사진을 방송 장면처럼 쓰지 않음.",
+      "photoIds": []
+    },
+    {
+      "id": "naeil-public-facility",
+      "orgId": "naeiln",
+      "title": "꿈드래 더봄 시설현황",
+      "url": "https://www.goods.go.kr/pp/fc/facility/view.do?fcltyCode=P2024011",
+      "publisher": "한국장애인개발원 꿈드래",
+      "bodyRead": false,
+      "searchIndexedTextRead": true,
+      "isNew": false,
+      "newFacts": true,
+      "relationship": "운영법인 내일앤사회적협동조합, 더봄, 옥포읍 돌미로85 301호가 일치",
+      "facts": {
+        "facilityType": "장애인보호작업장",
+        "phone": "053-614-9870",
+        "address": "대구광역시 달성군 옥포읍 돌미로85,301호",
+        "designatedProducts": [
+          "생활가전세척서비스",
+          "소독방역",
+          "청소"
+        ],
+        "designationStart": "2024-08-05",
+        "designationEnd": "2027-08-04"
+      },
+      "qualification": "이번원문open은cache miss였고검색에노출된공공원문시설정보를읽음. 이전연구에서이미동일공공시설현황확인됨.생산시설지정을의료자격이나현재후원금세액공제자격으로확장하지않음.",
+      "photoIds": []
+    },
+    {
+      "id": "naeil-opening",
+      "orgId": "naeiln",
+      "title": "내일앤사회적협동조합 더봄 개소식",
+      "url": "https://www.gcs.co.kr/post/4062",
+      "publisher": "푸른방송",
+      "activityDate": "2024-01-12",
+      "publishedDate": "2024-01-16",
+      "bodyRead": true,
+      "isNew": true,
+      "summary": "직업재활시설 더봄의 개소식과 장애인 맞춤형 직업훈련·일자리 기회 확대 목적을 소개한 지역방송 원문이다.",
+      "qualification": "같은개소식YouTube영상은기존확보.새원문방송사이트만추가확인.직접사진은없고삽입된영상썸네일은제목·방송사로고가이미있어원문링크권장.",
+      "photoIds": []
+    },
+    {
+      "id": "naeil-visit-2026",
+      "orgId": "naeiln",
+      "title": "더봄 방문기",
+      "url": "https://blog.naver.com/manman96_/224285863562",
+      "publisher": "Project96 · JAYM96 공개 방문후기",
+      "publishedDate": "2026-05-15",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "시설명과운영법인·대표·돌미로85주소·0536149870전화·naeiland홈페이지가일치",
+      "summary": "더봄을 방문한 개인이 냉난방기 세척 사업과 장애인 직업재활 활동을 소개한 후기다.",
+      "qualification": "원문실사0장(지도만있음).개인의평가·운영인원·재정사정·출장범위를독립공식사실로확정하지않음.새현장사진이있는것처럼쓰지않음.",
+      "photoIds": []
+    },
+    {
+      "id": "naeil-sharing-original",
+      "orgId": "naeiln",
+      "title": "읍내중고 제과반의 더봄 나눔",
+      "url": "https://www.ksmnews.co.kr/news/view.php?idx=543385",
+      "publisher": "경상매일신문",
+      "activityDate": "2025-05-29",
+      "publishedDate": "2025-06-01",
+      "bodyRead": true,
+      "isNew": false,
+      "newOriginalSource": true,
+      "summary": "법무부가재게시한기존마들렌나눔보도의신문사원문을이번에직접확인했다.",
+      "qualification": "나눔현장사진은현재내일앤프로필의PDF추출사진과같은사진이므로새로운별개사진으로계산하지않음.",
+      "photoIds": []
+    },
+    {
+      "id": "happy-member-association",
+      "orgId": "modoo-happy",
+      "title": "대구사회적기업협의회 회원사현황",
+      "url": "https://daeguse.or.kr/p/memberlist",
+      "publisher": "대구사회적기업협의회",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "정확한법인명과기존dasahappy블로그연결로동일기관확인",
+      "facts": {
+        "address": "대구달성군다사읍대실역북로2길119-5",
+        "phone": "053-586-3332",
+        "representative": "이수정"
+      },
+      "summary": "협의회회원사현황에서기관주소·대표전화·블로그를교차확인했다.",
+      "photoIds": []
+    },
+    {
+      "id": "happy-care-directory",
+      "orgId": "modoo-happy",
+      "title": "방문요양기관 시설정보",
+      "url": "https://eroum.co.kr/search/detail?careCenterType=VISITING_CARE&ltcAdminSym=22771000287&webYn=",
+      "publisher": "이로움돌봄",
+      "bodyRead": true,
+      "isNew": true,
+      "relationship": "정확한기관명,주소,공식dasahappy블로그가일치",
+      "facts": {
+        "service": "방문요양",
+        "address": "대구광역시 달성군 다사읍 대실역북로2길119-5 1층",
+        "facilityNumber": "22771000287",
+        "facilityStart": "2025-08-01"
+      },
+      "qualification": "시설등록일을법인설립일로혼동하지않음.정부기관직접원문이아닌민간장기요양디렉터리이므로보조자료로사용.",
+      "photoIds": []
+    },
+    {
+      "id": "happy-hospital-2026",
+      "orgId": "modoo-happy",
+      "title": "병원동행",
+      "url": "https://blog.naver.com/dasahappy/224285448077",
+      "publisher": "사회적협동조합 모두행복센터 공식블로그",
+      "publishedDate": "2026-05-14",
+      "bodyRead": true,
+      "readViaPriorResearch": true,
+      "isNew": false,
+      "summary": "기존공식블로그조사에서본문을확인한실제병원동행사례다.현재표지배정에서풀린병원동행사진5번을새로운실제소식전환에사용할수있다.",
+      "photoIds": [
+        "existing-happy-escort-5"
+      ]
+    },
+    {
+      "id": "happy-training-2026",
+      "orgId": "modoo-happy",
+      "title": "치매전문교육",
+      "url": "https://blog.naver.com/dasahappy/224283510997",
+      "publisher": "사회적협동조합 모두행복센터 공식블로그",
+      "publishedDate": null,
+      "bodyRead": true,
+      "readViaPriorResearch": true,
+      "isNew": false,
+      "summary": "기존공식블로그조사에서확보한돌봄종사자교육사례다.현재표지에서미사용인2번사진을실제교육소식으로활용할수있다.",
+      "photoIds": [
+        "existing-happy-training-2"
+      ]
+    },
+    {
+      "id": "woori-founding",
+      "orgId": "woorihamkke",
+      "url": "https://www.yangpatv.kr/news/articleView.html?idxno=24640",
+      "title": "우리함께통합돌봄사회적협동조합 창립총회 성공적으로 개최",
+      "publisher": "양파티브이뉴스",
+      "byline": "장현준 기자",
+      "publishedDate": "2024-11-25",
+      "publishedTimeKST": "14:41",
+      "activityDate": "2024-11-22",
+      "activityTimeKST": "15:00 (visible banner)",
+      "venue": "제일기독종합사회복지관 2층 회의실",
+      "bodyRead": true,
+      "bodySnapshot": "output/work/release-research-a/woori-founding-article.html",
+      "verifiedFacts": [
+        "2024년11월22일창립총회가열렸습니다.",
+        "법인명확정·정관승인·사업계획및예산확정·임원선출·설립안건심의가기사에기록됩니다.",
+        "보건의료·장기요양·일상생활돌봄을통합해노인·장애인등일상생활의어려움이있는주민을지원하려는창립목적을소개합니다."
+      ],
+      "identityEvidence": [
+        "기사제목과본문의정확법인명이제공동의기관PDF의기관과일치합니다.",
+        "사진현수막에우리함께통합돌봄사회적협동조합창립총회와2024.11.22일정이명시되어원문과일치합니다.",
+        "서울자활공제단체우리함께·울산큰애기센터우리함께전시·광주동행사이영등동명기관의행사가아닙니다."
+      ],
+      "dateCaution": "창립총회2024.11.22,보도2024.11.25,제공설립인가2025.05.01은서로다른날짜입니다. 창립총회일을법인인가일로바꾸지않습니다."
+    },
+    {
+      "id": "sdl-official-coop",
+      "orgId": "welfare-design",
+      "url": "https://www.coop.go.kr/home/state/guildEstablish.do?menu_no=2032",
+      "title": "공식 협동조합 설립현황: 운영중 표기",
+      "publisher": "한국사회적기업진흥원",
+      "bodyRead": true,
+      "checkedAt": "2026-11-20",
+      "qualification": "사업자번호별 과세상태를 확인한 자료는 아님"
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "with-28-1",
+      "reason": "신규조합원환영회초대포스터로실제현장사진아님"
+    },
+    {
+      "id": "dounuri-housecook-images",
+      "reason": "기사캡션이서울무인매장과태권도장으로명시. 도우누리현장으로전용금지"
+    },
+    {
+      "id": "dounuri-beomeo-4",
+      "reason": "별도의2인협약사진이며해당인물을도우누리대표로입증하지못해기관단독실사진채택제외"
+    },
+    {
+      "id": "dounuri-official-3/4",
+      "reason": "공식블로그에게재된실제돌봄사진이지만얼굴과조끼로고까지블러되어대구도우누리자체수행임을독립확인할수없음. 기관소개에수록된참고사례사진정도로만사용가능;확정사진목록에서제외"
+    },
+    {
+      "id": "dounuri-interview-1..47 except37",
+      "reason": "대부분일반스톡·외국인모델·일러스트·카드디자인·로고·장식.37번만기관명이찍힌조끼의실제인터뷰사진으로확인"
+    },
+    {
+      "id": "Woori near names",
+      "reason": "울산큰애기우리함께사진전,안산우리함께가요,서울우리함께사회적금융,광주동행사이영은대구법인과동일성없어제외"
+    },
+    {
+      "id": "Google search shell",
+      "reason": "기본검색및gbv1공개표시옵션모두JS이동안내94자뿐. 검색결과를읽었다고주장하지않음. 안전차단·보안문자우회없음"
+    },
+    {
+      "type": "blocked-source",
+      "item": "SDL2023 Daum cafe",
+      "reason": "No access or alternate-endpoint request attempted."
+    },
+    {
+      "type": "unverified-business-status",
+      "item": "Third-party Naver snippets disagree on closure/continuing operation of SDL",
+      "reason": "Do not override current participant-confirmation PDF or assert legal status from snippets."
+    },
+    {
+      "type": "no-case-photo",
+      "item": "2026더봄방문기",
+      "reason": "Body has map and textual personal impressions; no actual case photograph was present."
+    },
+    {
+      "type": "duplicate-photo",
+      "item": "KSM higher-resolution image of 2025더봄마들렌나눔",
+      "reason": "Same photograph already used in institution profile; not counted as a new distinct source photo."
+    },
+    {
+      "type": "broadcast-thumbnail",
+      "item": "더봄개소식YouTube",
+      "reason": "Previously known image already has broadcast title/logo; link to original broadcast rather than claim it is an uncaptioned original."
+    },
+    {
+      "type": "private-case-details",
+      "item": "모두행복센터요양보호사채용공고의개별이용자정보",
+      "reason": "Do not copy recipients' ages, household arrangements, medical details or home addresses into service content. Use association directory for institution contact."
+    },
+    {
+      "type": "unverified-hours",
+      "item": "네이버플레이스24시간표기",
+      "reason": "Do not infer all care services operate24hours from a place-profile label."
+    },
+    {
+      "type": "posters",
+      "item": "SDL공식블로그소개그래픽·팀장아카데미모집포스터",
+      "reason": "Useful factual source but not a real activity photograph."
+    },
+    {
+      "name": "대전 모두행복사회적협동조합",
+      "reason": "대전 중구 계백로 소재 동명기관의 홈페이지·계좌·재무정보는 대구 달성군 모두행복센터 정보로 사용하지 않음"
+    }
+  ],
+  "limits": [
+    "Confirmed institutions and external reference cases are separately labelled.",
+    "SNS sign-in and donations remain demonstration flows."
+  ],
+  "engineSummary": {
+    "daegu-dounuri": {
+      "naver": true,
+      "google": true
+    },
+    "woorihamkke": {
+      "naver": true,
+      "google": true
+    },
+    "with-medical": {
+      "naver": true,
+      "google": true
+    },
+    "welfare-design": {
+      "naver": true,
+      "google": true
+    },
+    "daegu-care": {
+      "naver": true,
+      "google": true
+    },
+    "naeiln": {
+      "naver": true,
+      "google": true
+    },
+    "modoo-happy": {
+      "naver": true,
+      "google": true
+    }
+  },
+  "operationalStatusReview": {
+    "completed": true,
+    "checkedAt": "2026-11-20",
+    "institutionId": "welfare-design",
+    "institutionName": "사회복지디자인연구소사회적협동조합",
+    "scope": "제3자 폐업 표기와 공식 공개기관 자료의 상충을 한정 교차확인. 세무·법인 상태를 단정하지 않음.",
+    "thirdPartyClaim": {
+      "source": "BigValue Google 검색 결과 및 이를 반복하는 Google AI 개요",
+      "businessNumberClaimed": "713-82-00683",
+      "closureDateClaimed": "2026-09-28",
+      "recordPublicationDateClaimed": "2026-10-28",
+      "retrieval": "부모 작업자가 직접 Google 브라우저 검색에서 확인해 전달한 정보. 이 조사자는 해당 세무상태를 원천기관에서 독립 확인하지 않음.",
+      "primaryEvidence": false,
+      "aiOverviewIndependentEvidence": false
+    },
+    "primarySources": [
+      {
+        "publisher": "한국사회적기업진흥원 협동조합 포털",
+        "source": "https://www.coop.go.kr/home/state/guildEstablish.do?menu_no=2032",
+        "sourceType": "공식 협동조합 설립현황 공개 검색",
+        "checkedAt": "2026-11-20",
+        "query": {
+          "search_type": "COOP_NM",
+          "search_text": "사회복지디자인"
+        },
+        "matchingRecords": 1,
+        "observedRecord": {
+          "organizationName": "사회복지디자인연구소 사회적 협동조합",
+          "region": "대구 북구",
+          "approvalDate": "2023-03-13",
+          "operatingStatusLiteral": "운영중",
+          "businessNumberLiteral": "-"
+        },
+        "snapshot": "output/work/release-research-a/sdl-coop-oldname.html",
+        "qualification": "공식 포털의 협동조합 운영상태 기재를 확인한 것이며, 국세청 사업자등록번호별 현재 과세사업 상태를 직접 조회한 것은 아님. 사업자번호가 공란이라 제3자 번호와 결합해 확정할 수 없음."
+      },
+      {
+        "publisher": "한국사회적기업진흥원 협동조합 포털",
+        "source": "https://www.coop.go.kr/home/state/guildEstablishView.do",
+        "sourceType": "공개 목록에서 직접 연결된 협동조합 상세정보",
+        "requestFields": {
+          "menu_no": "2032",
+          "acpt_no": "20221460000SO222856",
+          "page_now": "1"
+        },
+        "checkedAt": "2026-11-20",
+        "observedRecord": {
+          "organizationName": "사회복지디자인연구소 사회적 협동조합",
+          "businessNumberLiteral": "-",
+          "approvalDate": "2023-03-13",
+          "operatingStatusLiteral": "운영중",
+          "representative": "이연주",
+          "supervisingMinistry": "보건복지부",
+          "cooperativeType": "사회적협동조합",
+          "industry": "보건업 및 사회복지서비스업",
+          "products": "사회서비스",
+          "mainBusiness": "사회복지분야 연구, 상담 및 교육사업",
+          "address": "대구광역시 북구 경대로5길 10"
+        },
+        "snapshot": "output/work/release-research-a/sdl-coop-detail.html",
+        "qualification": "공개 상세정보의 명칭·대표자·주소가 기존 기관자료와 일치. 사업자번호별 세무 폐업 여부나 명칭 변경 이력을 확인하는 증명서는 아님."
+      },
+      {
+        "publisher": "대구광역시 북구청",
+        "source": "https://www.buk.daegu.kr/index.do?menu_id=00002532",
+        "sourceType": "대한민국 공식 전자정부 누리집의 사회적기업/마을기업 현황",
+        "checkedAt": "2026-11-20",
+        "pageLastModifiedLiteral": "2026.11.17",
+        "observedRecord": {
+          "category": "예비 사회적기업",
+          "organizationName": "사회복지디자인연구소 사회적협동조합",
+          "address": "경대로5길 10, 5층",
+          "services": "일상돌봄, 공동체안전교육, 사회복지종사자 심리지원 역량강화 교육"
+        },
+        "snapshot": "output/work/release-research-a/sdl-buk-list.html",
+        "qualification": "검색 색인만이 아니라 2026.11.20 정상 HTTP200으로 읽은 현재 공개 본문에 기재되어 있음. 페이지 수정일은 개별 기관자료의 검증일을 뜻하지 않으며, 국세청 세무상태 증명도 아님."
+      },
+      {
+        "publisher": "소셜디자인랩 사회적협동조합 공식 블로그",
+        "source": "https://blog.naver.com/sdl2023/224427100832",
+        "title": "[소셜디자인랩 공식블로그] 함께 만들어갈 더 나은 내일을 소개합니다",
+        "publishedDate": "2026-09-30",
+        "bodyReviewedFrom": "output/work/release-research-b/sdl-blog-intro.txt",
+        "observations": [
+          "소셜디자인랩 사회적협동조합이라는 브랜드명으로 소개",
+          "대구 북구 경대로5길10 5층 주소가 기존 기관자료와 일치",
+          "기존 기관자료와 SDL2023 이메일·브랜드 연속성이 확인됨",
+          "게시글 본문에서 사업자등록번호·법인 명칭변경 인가/등기·폐업신고 내역은 확인되지 않음"
+        ],
+        "qualification": "공식 블로그의 최근 소개와 브랜드 활동을 뒷받침하지만, 법인명 변경이나 특정 사업자번호의 계속사업 상태를 확정하는 근거는 아님."
+      }
+    ],
+    "additionalOfficialSearches": [
+      {
+        "site": "coop.go.kr 협동조합 설립현황",
+        "search_type": "COOP_NM",
+        "search_text": "소셜디자인",
+        "resultCount": 0,
+        "qualification": "브랜드명으로 별도 법인을 찾지 못함. 법인 명칭변경이 없다고 확정할 수는 없음."
+      },
+      {
+        "site": "coop.go.kr 협동조합 설립현황",
+        "search_type": "BUSI_NO",
+        "search_text": "7138200683",
+        "resultCount": 0,
+        "qualification": "정확명 일치 기관의 사업자번호가 '-'로 표시되므로 번호 미등록 가능성을 배제할 수 없음. 0건 결과를 폐업 증거로 사용하지 않음."
+      }
+    ],
+    "userProvidedParticipation": {
+      "listDate": "2026-11-20",
+      "confirmedParticipants": 7,
+      "institutionIsIncluded": true,
+      "qualification": "사용자가 제공한 참여확정 명단을 보존. 참여확정 사실과 세무상 사업자 상태는 별도 항목임."
+    },
+    "conclusion": {
+      "officialCooperativeDirectoryStatusObserved": "운영중",
+      "officialLocalGovernmentListingObserved": true,
+      "taxClosureConfirmed": false,
+      "taxContinuingBusinessConfirmed": false,
+      "claimedBusinessNumberOfficiallyMatched": false,
+      "legalNameChangeConfirmed": false,
+      "status": "상충 정보 있음 · 사업자번호별 현재 세무상태와 법인명 변경 여부는 미확인",
+      "publicationRecommendation": "7개 참여기관에서 제외하지 않고 사용자가 제공한 확정 기관명과 출처 확인된 과거·현재 활동자료를 유지. 폐업 또는 세무상 정상영업을 단정해 공개 표시하지 않음."
+    },
+    "preOpenQuestionsForInstitution": [
+      "현재 참여·후원 계약의 법인 공식 명칭과 사업자등록번호가 무엇인지",
+      "713-82-00683의 제3자 폐업 표기가 이전 사업장·등록번호 종료·데이터 오류 중 무엇인지",
+      "소셜디자인랩이 브랜드명인지 법인명 변경인지와 현재 유효한 기관 등록 자료"
+    ],
+    "accessRestrictionsObserved": {
+      "ntsAuthenticatedOrCaptchaLookupUsed": false,
+      "loginUsed": false,
+      "securityBarrierBypassUsed": false,
+      "sdlBlockedCafeAccessed": false,
+      "messagesSentToInstitution": false
+    },
+    "sourceFilesModified": false,
+    "productionFilesModified": false
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "news": [
+    {
+      "id": "n1",
+      "type": "news",
+      "verified": true,
+      "memberId": "with-medical",
+      "org": "위드의료복지사회적협동조합",
+      "category": "기관 활동",
+      "photoKey": "case-with-meal",
+      "title": "위드 의료사랑방, 대천리 어르신과 함께한 의료·돌봄 활동",
+      "date": "2026.07.25",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=34&theme_type=main1",
+      "source": "위드의료복지사회적협동조합",
+      "body": "위드의료복지사회적협동조합은 청도 운문댐 지사 사업구역의 대천리 마을에서 의료사랑방 활동을 시작했다고 공식 갤러리에 공개했습니다.\n\n사진은 해당 현장에서 어르신들이 함께 식사하는 모습입니다. 방문 의료와 지역 주민의 일상이 만나는 현장을 확인할 수 있습니다.",
+      "publishedDate": "2026-07-27"
+    },
+    {
+      "id": "n2",
+      "type": "news",
+      "verified": true,
+      "memberId": "with-medical",
+      "org": "위드의료복지사회적협동조합",
+      "category": "기관 활동",
+      "photoKey": "case-with-practice",
+      "title": "위드와 대구가톨릭의대생이 함께한 의료현장 실습",
+      "date": "2026.07.21부터",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=33&theme_type=main1",
+      "source": "위드의료복지사회적협동조합",
+      "body": "대구가톨릭의대 본과 3학년 학생들이 위드의 의료현장 실습에 참여했습니다. 기관의 역사와 의료 철학을 듣고 방문진료 현장을 함께했으며, 군위 학성2리 마을회관의 의료사랑방 활동도 경험했습니다.\n\n사진은 실제 실습에 참여한 학생들과 지역 주민들의 모습입니다.",
+      "publishedDate": "2026-07-27"
+    },
+    {
+      "id": "n3",
+      "type": "news",
+      "verified": true,
+      "memberId": "modoo-happy",
+      "org": "사회적협동조합 모두행복센터",
+      "category": "기관 활동",
+      "photoKey": "case-happy-housekeeping",
+      "title": "모두행복센터가 공개한 가정방문·가사지원 사례",
+      "date": "2026.06.14 게시",
+      "url": "https://blog.naver.com/dasahappy/224315829543",
+      "source": "사회적협동조합 모두행복센터",
+      "body": "모두행복센터는 이용자의 생활 여건과 필요한 도움을 살펴 제공인력을 연결하고, 가정을 방문해 서비스 범위를 함께 정한 지원 사례를 공개했습니다.\n\n사진은 가사지원 뒤 정돈된 주방입니다. 기관이 공개한 전후 사진과 후기를 통해 일상생활을 돕는 지원 내용을 확인할 수 있습니다.",
+      "publishedDate": "2026-06-14"
+    },
+    {
+      "id": "n4",
+      "type": "news",
+      "verified": true,
+      "memberId": "daegu-care",
+      "org": "대구돌봄사회적협동조합",
+      "category": "기관 활동",
+      "photoKey": "case-dgcare-meals",
+      "title": "대구돌봄센터의 식사영양관리: 조리부터 포장·배달까지",
+      "date": "2025.02.27 식단",
+      "url": "https://blog.naver.com/dgcare1/223802349837",
+      "source": "대구돌봄사회적협동조합",
+      "body": "대구돌봄센터는 식사영양관리 서비스의 2월 27일 식단과 조리·포장 과정을 공식 블로그에 소개했습니다. 생선까스, 청경채새우살볶음과 콘샐러드를 개별 포장해 이용자에게 전달하는 과정입니다.\n\n사진은 해당 식단의 포장 모습이며, 기관별 실제 지원 내용과 이용 조건은 원문 안내에서 확인할 수 있습니다.",
+      "publishedDate": "2025-03-19"
+    },
+    {
+      "id": "n5",
+      "type": "news",
+      "verified": true,
+      "memberId": "with-medical",
+      "org": "위드의료복지사회적협동조합",
+      "category": "기관 활동",
+      "photoKey": "case-with-book",
+      "title": "위드 생애구술기록 출판기념회, 어르신의 삶을 책으로 잇다",
+      "date": "2026.10.29",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=37&theme_type=main1",
+      "source": "위드의료복지사회적협동조합",
+      "body": "위드는 청운아트센터에서 생애구술기록 출판기념회를 열고, 열 분의 어르신이 들려준 삶의 이야기를 기록한 책을 함께 나눴습니다. 이야기를 들려준 어르신과 기록에 참여한 사람들, 후원기관 관계자가 함께한 자리입니다.\n\n사진은 해당 출판기념회의 발표 현장입니다."
+    },
+    {
+      "id": "n6",
+      "type": "news",
+      "verified": true,
+      "memberId": "modoo-happy",
+      "org": "사회적협동조합 모두행복센터",
+      "category": "기관 활동",
+      "photoKey": "case-happy-escort",
+      "title": "모두행복센터의 병원동행: 진료 준비부터 함께하는 길",
+      "date": "2026.05.14 게시",
+      "url": "https://blog.naver.com/dasahappy/224285448077",
+      "source": "사회적협동조합 모두행복센터",
+      "body": "모두행복센터는 병원 방문을 앞둔 어르신과 진료 때 전할 내용을 함께 준비한 동행 사례를 공개했습니다. 이용자의 준비와 이동을 살피며 병원에 가는 길을 함께한 기록입니다.\n\n사진은 해당 기관이 공개한 실제 병원동행 장면입니다.",
+      "publishedDate": "2026-05-14"
+    },
+    {
+      "id": "n7",
+      "type": "news",
+      "verified": true,
+      "memberId": "with-medical",
+      "org": "위드의료복지사회적협동조합",
+      "category": "기관 활동",
+      "photoKey": "case-with-arboretum",
+      "title": "위드 어부바 사업, 어르신들과 대구수목원 나들이",
+      "date": "2026.10.15",
+      "url": "https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=36&theme_type=main1",
+      "source": "위드의료복지사회적협동조합",
+      "body": "위드는 생애구술기록 프로젝트 어부바 사업의 일정으로 어르신들과 대구수목원을 찾았습니다. 걷고 꽃을 살피며 일상의 여유와 이야기를 나눈 활동입니다.\n\n사진은 해당 나들이에 함께한 참가자들의 실제 기념사진입니다.",
+      "publishedDate": "2026-10-26"
+    },
+    {
+      "id": "n8",
+      "type": "news",
+      "verified": true,
+      "memberId": "welfare-design",
+      "org": "사회복지디자인연구소사회적협동조합",
+      "category": "기관 활동",
+      "photoKey": "sdl-safety-2",
+      "title": "사회복지디자인연구소와 구미YMCA, 찾아가는 아동 안전교육",
+      "date": "2025.06.05부터",
+      "url": "https://gumiymca.or.kr/1911628715/?bmode=view&idx=165795609",
+      "source": "구미YMCA",
+      "body": "사회복지디자인연구소사회적협동조합과 구미YMCA가 지역아동센터 아동을 대상으로 찾아가는 안전교육을 함께 진행했습니다. 6월 5일부터 네 차례 진행한 교육은 재난·환경·생활안전과 응급처치를 아동 눈높이에 맞춰 다뤘습니다.\n\n사진은 강사와 아동들이 함께한 해당 수업의 실제 현장입니다.",
+      "publishedDate": "2025-06-20"
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "type": "event",
+      "verified": true,
+      "past": true,
+      "memberId": "modoo-happy",
+      "org": "사회적협동조합 모두행복센터",
+      "photoKey": "case-happy-training",
+      "title": "모두행복센터 종사자 소양교육·치매전문교육 기록",
+      "category": "종사자 교육",
+      "date": "2025년 교육 · 2026.05.12 게시",
+      "day": "기록",
+      "month": "2025",
+      "url": "https://blog.naver.com/dasahappy/224283510997",
+      "source": "모두행복센터 공식 블로그 · 2026.05.12 게시",
+      "body": "모두행복센터는 달성군 치매안심센터와 연계해 2025년 종사자 기본 소양교육으로 치매전문교육을 진행했다고 공개했습니다. 치매에 대한 이해와 상황별 돌봄 내용을 다루고 퀴즈를 함께한 교육입니다.\n\n사진은 해당 교육에 참여한 종사자들입니다. 원문이 공개한 교육 연도와 게시일을 구분해 표시했습니다."
+    },
+    {
+      "id": "e2",
+      "type": "event",
+      "verified": true,
+      "past": true,
+      "memberId": "modoo-happy",
+      "org": "사회적협동조합 모두행복센터",
+      "photoKey": "case-happy-service-day",
+      "title": "모두행복센터가 함께한 2025 대구지역사회서비스의 날",
+      "category": "지역사회서비스",
+      "date": "2025.12.01",
+      "day": "1",
+      "month": "12월",
+      "url": "https://blog.naver.com/dasahappy/224268454487",
+      "source": "모두행복센터 공식 블로그 · 2026.04.28 게시",
+      "body": "모두행복센터는 2025년 12월 1일 대구지역사회서비스의 날 행사에 참여했다고 공개했습니다. 지역의 기관과 종사자가 한 해의 활동을 돌아보고 격려하는 자리였으며, 우수사례공모전 시상도 진행됐습니다.\n\n사진은 해당 행사장입니다. 원문 게시일은 2026년 4월 28일로, 실제 행사일과 구분했습니다."
+    }
+  ],
+  "pagePhotos": {
+    "detail/p1": "policy-p1",
+    "detail/p2": "policy-p2",
+    "detail/p3": "policy-p3",
+    "detail/p4": "policy-p4",
+    "detail/p5": "policy-p5",
+    "detail/p6": "policy-p6",
+    "detail/r1": "resource-r1",
+    "detail/r2": "resource-r2",
+    "detail/r3": "resource-r3"
+  },
+  "organizations": {
+    "daegu-dounuri": {
+      "sources": [
+        "대구 방문요양, 사회적 협동조합 대구도우누리를 소개합니다: https://blog.naver.com/dgdounuri/224454100769",
+        "범어연합내과 재택의료센터와 대구 재가장기요양기관연합회 수성지회·대구도우누리 업무협약: https://blog.naver.com/beomeo3535/224247435912",
+        "경영에서 돌봄으로, 사람을 이해하는 길을 걷다 | 사회적 협동 조합 대구 도우누리: https://blog.naver.com/thecompanyc/224471963501",
+        "정수조리기 하우스쿡, 이웃과의 나눔사업 동참 본격화: https://www.sportsworldi.com/newsView/20260806517776"
+      ],
+      "facts": [
+        [
+          "재가센터 문의",
+          "053-721-7935"
+        ],
+        [
+          "복지용구 문의",
+          "053-721-7568"
+        ]
+      ],
+      "channels": [
+        {
+          "label": "공식 블로그",
+          "url": "https://blog.naver.com/dgdounuri"
+        },
+        {
+          "label": "사업 안내",
+          "url": "https://www.dgdounuri.kr/33"
+        }
+      ]
+    },
+    "woorihamkke": {
+      "sources": [
+        "우리함께통합돌봄사회적협동조합 — 114On: https://www.114.co.kr/search/detail?comp_id=24167227&comp_tp_cd=TEL&upjong_cd=901209",
+        "우리함께통합돌봄사회적협동조합 창립총회 성공적으로 개최: https://www.yangpatv.kr/news/articleView.html?idxno=24640"
+      ],
+      "facts": [
+        [
+          "사업체 연락처",
+          "053-942-9988 · 114On 교차확인"
+        ],
+        [
+          "주소 교차확인",
+          "대구 동구 큰고개로 23"
+        ],
+        [
+          "창립총회",
+          "2024년 11월 22일 · 제일기독종합사회복지관"
+        ]
+      ],
+      "body": "장기요양, 일상돌봄, 병원동행 분야로 플랫폼 참여가 확정된 기관입니다. 2024년 11월 22일 제일기독종합사회복지관에서 창립총회를 열고 명칭과 정관, 사업 계획 및 임원 선출 등을 논의했습니다. 보건의료·장기요양·일상생활 돌봄을 함께 연결해 일상생활에 어려움이 있는 주민을 지원하는 창립 목적을 공개했습니다.",
+      "highlights": [
+        {
+          "title": "우리함께통합돌봄사회적협동조합 창립총회",
+          "date": "2024.11.22",
+          "summary": "제일기독종합사회복지관에서 정관과 사업 계획을 논의하고 임원을 선출했습니다.",
+          "url": "https://www.yangpatv.kr/news/articleView.html?idxno=24640"
+        }
+      ]
+    },
+    "with-medical": {
+      "sources": [
+        "합천 수해지역 의료 봉사활동: https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=27&theme_type=main1",
+        "위드 신규 조합원 환영회, 즐거운 시간을 가졌습니다.: https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=28&theme_type=main1",
+        "2025년 대구시 사회적경제 통합돌봄 시범사업 단체 1위로 선정: https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=29&theme_type=main1",
+        "사진으로 보는 제5차 위드의료복지사회적협동조합 총회: https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=30&theme_type=main1",
+        "위드 건강 강좌 시리즈 1탄 \"음식과 암 이야기\" 강좌 스케치: https://www.withmedcoop.com/bbs/board.php?bo_table=sub0204&wr_id=31&theme_type=main1",
+        "위드가 걸어온 길: https://www.withmedcoop.com/bbs/content.php?co_id=sub0103&theme_type=main1",
+        "찾아오시는 길: https://www.withmedcoop.com/bbs/content.php?co_id=sub0105&theme_type=main1"
+      ],
+      "facts": [
+        [
+          "위드의원 소재지",
+          "대구 중구 국채보상로 541 5층 · 조합사무실과 구별"
+        ]
+      ]
+    },
+    "welfare-design": {
+      "sources": [
+        "KNOW 재난! YES 안전! 찾아가는 안전교육: https://gumiymca.or.kr/1911628715/?bmode=view&idx=165795609",
+        "경북대학교 사회복지학부와 상호협력을 위한 업무협약: https://kwelltimes.com/news/view.php?idx=953",
+        "굿네이버스 100인의 꿈지원단 위촉: https://www.pbsnews.kr/101352",
+        "소셜디자인랩 공식블로그 소개: https://blog.naver.com/sdl2023/224427100832",
+        "북구청 예비사회적기업 현황: https://www.buk.daegu.kr/index.do?menu_id=00002532",
+        "2026 좋은변화실험실 면접심사 선정결과: https://dgpublic.org/web/jhboard/?act=view&id=noti&no=5390",
+        "제7기 비영리조직 팀장 아카데미 모집: https://www.djasw.or.kr/28/?bmode=view&idx=17842493",
+        "대구광역자활센터 상담센터 전문위원: https://www.dgpsc.or.kr/index.php?gt=counseling/committee02",
+        "공식 협동조합 현황: https://www.coop.go.kr/home/state/guildEstablish.do?menu_no=2032"
+      ],
+      "facts": [
+        [
+          "소재지 교차확인",
+          "대구 북구 경대로5길 10 5층 · 북구청 현황"
+        ],
+        [
+          "공개 사업 안내",
+          "자립준비청년 · 일상돌봄 · 공동체 안전교육"
+        ]
+      ],
+      "channels": [
+        {
+          "label": "공식 블로그",
+          "url": "https://blog.naver.com/sdl2023"
+        }
+      ]
+    },
+    "daegu-care": {
+      "sources": [
+        "사회복지법인 외부추천이사 및 후보군 역량강화 교육: https://www.gccwo.org/index.php?document_srl=16943&listStyle=viewer&mid=gccwo_board_02&page=5",
+        "마을의 꿈: 통합돌봄으로 행복을 만드는 대구돌봄협동조합: https://news.kbs.co.kr/news/pc/view/view.do?ncd=8465326"
+      ]
+    },
+    "naeiln": {
+      "sources": [
+        "내일앤사회적협동조합 더봄 개소식: https://www.gcs.co.kr/post/4062",
+        "더봄 방문기: https://blog.naver.com/manman96_/224285863562",
+        "읍내중고 제과반의 더봄 나눔: https://www.ksmnews.co.kr/news/view.php?idx=543385"
+      ],
+      "facts": [
+        [
+          "더봄 문의",
+          "053-614-9870 · 공공 시설현황"
+        ]
+      ]
+    },
+    "modoo-happy": {
+      "sources": [
+        "대구사회적기업협의회 회원사현황: https://daeguse.or.kr/p/memberlist",
+        "방문요양기관 시설정보: https://eroum.co.kr/search/detail?careCenterType=VISITING_CARE&ltcAdminSym=22771000287&webYn=",
+        "병원동행: https://blog.naver.com/dasahappy/224285448077",
+        "치매전문교육: https://blog.naver.com/dasahappy/224283510997"
+      ],
+      "facts": [
+        [
+          "문의",
+          "053-586-3332 · 대구사회적기업협의회"
+        ],
+        [
+          "소재지 교차확인",
+          "대구 달성군 다사읍 대실역북로2길 119-5"
+        ]
+      ]
+    }
+  }
+}

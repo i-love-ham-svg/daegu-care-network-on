@@ -8,6 +8,10 @@ DATA=json.loads((ROOT/'output/work/catalog.json').read_text(encoding='utf-8'))
 RECIPES=json.loads((ROOT/'src/social-covers.json').read_text(encoding='utf-8'))
 subprocess.run([sys.executable,str(ROOT/'scripts/verify-unique.py'),'--source-only'],check=True)
 DEST=ROOT/'docs/media/social'
+PREVIEW=sys.argv[sys.argv.index('--preview-route')+1] if '--preview-route' in sys.argv else None
+if PREVIEW:
+    DATA['canonicalRoutes']=[PREVIEW]
+    DEST=ROOT/'output/work/thumbnail-preview'
 DEST.mkdir(parents=True,exist_ok=True)
 FONT='C:/Windows/Fonts/malgunbd.ttf'
 REGULAR='C:/Windows/Fonts/malgun.ttf'
@@ -55,17 +59,23 @@ for route in DATA['canonicalRoutes']:
         scale=w/1200
         focus=recipe.get('focus',[.5,.40])
         im=ImageOps.fit(original,(w,h),centering=tuple(focus))
-        if recipe.get('portraitFit')=='contain' and h/w>1.1:
-            # Keep the entire actual photograph visible in tall layouts.
+        contained_photo=None
+        if h/w>=1:
+            # Keep the complete case scene clear of titles in square and tall covers.
             im=im.filter(ImageFilter.GaussianBlur(round(w*.018)))
-            fitted=ImageOps.contain(original,(w,round(h*.60)))
-            photo_top=round(h*(.17 if h/w>1.6 else .10))
-            im.paste(fitted,((w-fitted.width)//2,photo_top))
+            photo_top=round(h*(.24 if h/w>1.6 else .12))
+            photo_bottom=round(h*(.54 if h/w>1.6 else .50))
+            fitted=ImageOps.contain(original,(w,photo_bottom-photo_top))
+            photo_y=photo_top+(photo_bottom-photo_top-fitted.height)//2
+            contained_photo=(fitted,((w-fitted.width)//2,photo_y))
         overlay=Image.new('RGBA',(w,h))
         od=ImageDraw.Draw(overlay)
         for y in range(h):
             ratio=y/h
-            if h/w>1.1:
+            if recipe.get('layout')=='top' and h/w<1:
+                alpha=round(215*max(0,min(1,(.67-ratio)/.58)))
+                alpha=max(alpha,round(175*max(0,min(1,(ratio-.84)/.16))))
+            elif h/w>1.1:
                 alpha=round(230*max(0,min(1,(ratio-.30)/.48)))
             else:
                 alpha=round(238*max(0,min(1,(ratio-.26)/.62)))
@@ -75,10 +85,13 @@ for route in DATA['canonicalRoutes']:
             alpha=round(105*(1-y/(h*.25)))
             od.line((0,y,w,y),fill=(7,23,43,alpha))
         im=Image.alpha_composite(im.convert('RGBA'),overlay)
+        if contained_photo:
+            fitted,position=contained_photo
+            im.paste(fitted.convert('RGBA'),position)
         d=ImageDraw.Draw(im)
         margin=round(w*.052)
         portrait=h/w>1.1
-        top=round(h*.27) if h/w>1.6 else round(h*.06)
+        top=round(h*.19) if h/w>1.6 else round(h*.06)
         brand_font=font(23*scale)
         d.text((margin,top),'ON  대구 통합돌봄네트워크',font=brand_font,fill='white',stroke_width=1,stroke_fill='#18314d')
         # Main message remains inside the central square for story/reel crops.
@@ -86,8 +99,9 @@ for route in DATA['canonicalRoutes']:
         minimum=48*scale if portrait else 44*scale
         heading=fit_font(d,title,initial,w-2*margin,minimum)
         lineheight=round(heading.size*1.25)
-        heading_y=round(h*.50) if portrait else round(h*.43)
-        if channel=='band':heading_y=round(h*.57)
+        heading_y=round(h*.60) if h/w>=1 else round(h*.43)
+        if recipe.get('layout')=='top' and h/w<1:heading_y=round(h*.22)
+        if channel=='band':heading_y=round(h*.62)
         if len(title)==3: heading_y-=round(lineheight*.45)
         category_y=heading_y-round(58*scale)
         category=recipe.get('referenceLabel') or recipe['category']+(' · 분야 참고사진' if recipe.get('reference') else '')
@@ -97,6 +111,7 @@ for route in DATA['canonicalRoutes']:
             text_color='#a4f0d3' if i==len(title)-1 and len(title)>1 and channel!='band' else 'white'
             d.text((margin,heading_y+i*lineheight),line,font=heading,fill=text_color,stroke_width=max(1,round(scale*1.5)),stroke_fill='#10233b')
         subtitle_y=heading_y+len(title)*lineheight+round(20*scale)
+        if recipe.get('layout')=='top' and h/w<1:subtitle_y=round(h*.82)
         subtitle_font=fit_font(d,[recipe['subtitle']],30*scale,w-2*margin,18*scale)
         d.text((margin,subtitle_y),recipe['subtitle'],font=subtitle_font,fill='#e5edf8',stroke_width=1,stroke_fill='#10233b')
         note_y=max(subtitle_y+round(53*scale),round(h*.91 if not portrait else h*.76))
@@ -118,6 +133,10 @@ for route in DATA['canonicalRoutes']:
         report.append({'route':route,'channel':channel,'file':asset['file'],'width':w,'height':h,'photo':recipe['photo'],'headline_size':heading.size,'bytes':target.stat().st_size})
     manifest[route]=entry
 
+if PREVIEW:
+    (ROOT/'output/work/thumbnail-preview/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({'preview':PREVIEW,'images':len(report),'directory':str(DEST)},ensure_ascii=False))
+    sys.exit(0)
 (ROOT/'src/social-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 proof=ROOT/'output/verification/social';proof.mkdir(parents=True,exist_ok=True)
 (proof/'image-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

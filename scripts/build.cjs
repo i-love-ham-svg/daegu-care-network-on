@@ -28,8 +28,9 @@ for(const route of catalog.canonicalRoutes){
 const app=fs.readFileSync(path.join(root,'src/app.js'),'utf8').replace(/\r\n/g,'\n');
 const contentPhotos=JSON.parse(fs.readFileSync(path.join(root,'src/content-photos.json'),'utf8'));
 const researchedNews=JSON.parse(fs.readFileSync(path.join(root,'src/researched-news.json'),'utf8'));
+const release=JSON.parse(fs.readFileSync(path.join(root,'src/release-content.json'),'utf8'));
 const css=fs.readFileSync(path.join(root,'src/styles.css'),'utf8').replace(/\r\n/g,'\n').trimEnd()+'\n';
-const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)+JSON.stringify(researchedNews)).digest('hex').slice(0,12);
+const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)+JSON.stringify(researchedNews)+JSON.stringify(release)).digest('hex').slice(0,12);
 const r=runtime('const onSocialThumbnails = '+JSON.stringify(manifest)+';');
 for(const organization of catalog.organizations){
   if(!r.run(`Boolean(campaignFor(organizations.find(x=>x.id===${JSON.stringify(organization.id)})))`)){
@@ -38,7 +39,7 @@ for(const organization of catalog.organizations){
 }
 const shell=fs.readFileSync(path.join(root,'src/shell.html'),'utf8').replaceAll('{{VERSION}}',version);
 fs.mkdirSync(path.join(docs,'assets'),{recursive:true});
-fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onResearchedNews = '+JSON.stringify(researchedNews)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
+fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onReleaseContent = '+JSON.stringify(release)+';\nconst onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onResearchedNews = '+JSON.stringify(researchedNews)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
 fs.writeFileSync(path.join(docs,`assets/site-${version}.css`),css);
 const generated=[];
 function page(route,channel='facebook',legacy=false,versioned=false,outputOverride='') {
