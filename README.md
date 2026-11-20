@@ -33,6 +33,7 @@ python scripts/verify-unique.py --source-only
 python scripts/render-social.py
 node scripts/build.cjs
 node scripts/verify-social.cjs
+node scripts/verify-giving.cjs
 python scripts/verify-images.py
 python scripts/verify-unique.py
 python scripts/contact-sheets.py

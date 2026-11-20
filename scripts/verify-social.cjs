@@ -102,6 +102,7 @@ for(const org of jsonRun('organizations')){
   const card=r.run(`organizationCard(organizations.find(x=>x.id===${JSON.stringify(org.id)}))`);
   assert.ok(card.includes('<img '),'Every confirmed institution must show a verified case photograph: '+org.id);
   assert.ok(!card.includes('org-card-no-photo'),'No empty institution photo block: '+org.id);
+  assert.ok(card.includes('data-action="campaign-give" data-id="'+org.id+'"'),'Every confirmed institution must show its donation button: '+org.id);
 }
 for(const id of ['suseong-nutrition-sharing','sdl-geochang-workshop']){
   const story=jsonRun(`findItem(${JSON.stringify(id)})`);

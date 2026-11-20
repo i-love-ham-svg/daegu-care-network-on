@@ -31,6 +31,11 @@ const researchedNews=JSON.parse(fs.readFileSync(path.join(root,'src/researched-n
 const css=fs.readFileSync(path.join(root,'src/styles.css'),'utf8').replace(/\r\n/g,'\n').trimEnd()+'\n';
 const version=crypto.createHash('sha256').update(app+css+JSON.stringify(manifest)+JSON.stringify(contentPhotos)+JSON.stringify(researchedNews)).digest('hex').slice(0,12);
 const r=runtime('const onSocialThumbnails = '+JSON.stringify(manifest)+';');
+for(const organization of catalog.organizations){
+  if(!r.run(`Boolean(campaignFor(organizations.find(x=>x.id===${JSON.stringify(organization.id)})))`)){
+    throw new Error('Confirmed institution is missing its donation campaign: '+organization.id);
+  }
+}
 const shell=fs.readFileSync(path.join(root,'src/shell.html'),'utf8').replaceAll('{{VERSION}}',version);
 fs.mkdirSync(path.join(docs,'assets'),{recursive:true});
 fs.writeFileSync(path.join(docs,`assets/site-${version}.js`),'const onContentCasePhotos = '+JSON.stringify(contentPhotos)+';\nconst onResearchedNews = '+JSON.stringify(researchedNews)+';\nconst onSocialThumbnails = '+JSON.stringify(manifest)+';\n'+app);
