@@ -9,3 +9,5 @@
 *.jpg binary
 *.webp binary
 *.png binary
+# Preserve PDF streams, fonts, and cross-reference byte offsets during checkout.
+*.pdf binary

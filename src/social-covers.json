@@ -23,7 +23,12 @@
     "photoNote": "대구가톨릭의대와 위드의 실습 협약 기념사진",
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "기관 실제 활동",
-    "reference": false
+    "reference": false,
+    "channelLayouts": {
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    }
   },
   "members": {
     "photo": "dasahappy-224268454487-4",
@@ -36,7 +41,15 @@
     "photoNote": "모두행복 제공인력 우수사례 시상",
     "credit": "사회적협동조합 모두행복센터",
     "caseKind": "기관 실제 활동",
-    "reference": false
+    "reference": false,
+    "channelLayouts": {
+      "instagram-feed": {
+        "titleY": 0.22
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    }
   },
   "news": {
     "photo": "dasahappy-224315795545-3",
@@ -161,7 +174,23 @@
     "caseKind": "기관 창립총회 실제사진",
     "reference": false,
     "portraitFit": "contain",
-    "layout": "top"
+    "layout": "top",
+    "channelLayouts": {
+      "naver": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "band": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      },
+      "instagram-feed": {
+        "titleY": 0.22
+      }
+    }
   },
   "member/with-medical": {
     "photo": "org-with-medical",
@@ -174,7 +203,15 @@
     "photoNote": "어르신의 혈압을 측정하는 위드 활동가",
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "기관 실제 활동",
-    "reference": false
+    "reference": false,
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    }
   },
   "member/welfare-design": {
     "photo": "org-welfare-design",
@@ -188,7 +225,35 @@
     "credit": "대구시민공익활동지원센터 · 사회복지디자인연구소 사협 참여후기",
     "caseKind": "기관 실제 활동 · 조합원 워크숍",
     "reference": false,
-    "portraitFit": "contain"
+    "portraitFit": "contain",
+    "channelLayouts": {
+      "naver": {
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "band": {
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "instagram-feed": {
+        "titleY": 0.22,
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "instagram-story": {
+        "titleY": 0.3,
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    }
   },
   "member/daegu-care": {
     "photo": "org-daegu-care",
@@ -376,7 +441,15 @@
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "해당 활동 실제사진",
     "reference": false,
-    "portraitFit": "contain"
+    "portraitFit": "contain",
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          0.85,
+          0.4
+        ]
+      }
+    }
   },
   "detail/n3": {
     "photo": "case-happy-housekeeping",
@@ -516,7 +589,15 @@
     "credit": "서울 구로구청",
     "caseKind": "분야 참고 사례",
     "reference": true,
-    "referenceLabel": "공식 정책 안내 · 다른 지역 참고사진"
+    "referenceLabel": "공식 정책 안내 · 다른 지역 참고사진",
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          0,
+          0.4
+        ]
+      }
+    }
   },
   "detail/p5": {
     "photo": "policy-p5",
@@ -602,7 +683,15 @@
     "caseKind": "자료 주제 참고사진",
     "reference": true,
     "referenceLabel": "자료 안내 · 기관 교육활동 참고사진",
-    "portraitFit": "contain"
+    "portraitFit": "contain",
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          0.75,
+          0.4
+        ]
+      }
+    }
   },
   "detail/r3": {
     "photo": "resource-r3",
@@ -643,7 +732,21 @@
     "credit": "서울 강남구청",
     "caseKind": "외부 지역 실제 활동",
     "reference": true,
-    "referenceLabel": "다른 지역 참고 사례 · 서울 강남구청"
+    "referenceLabel": "다른 지역 참고 사례 · 서울 강남구청",
+    "channelLayouts": {
+      "instagram-feed": {
+        "focus": [
+          0.1,
+          0.4
+        ]
+      },
+      "instagram-story": {
+        "focus": [
+          0.1,
+          0.4
+        ]
+      }
+    }
   },
   "gallery/m3": {
     "photo": "m3",
@@ -695,7 +798,15 @@
     "photoNote": "혈압 측정과 상담을 함께 진행하는 의료현장 실습",
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "해당 활동 원본사진",
-    "reference": false
+    "reference": false,
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    }
   },
   "gallery/m7": {
     "photo": "m7",
@@ -833,7 +944,23 @@
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "해당 활동 실제사진",
     "reference": false,
-    "portraitFit": "contain"
+    "portraitFit": "contain",
+    "channelLayouts": {
+      "naver": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "band": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "instagram-feed": {
+        "titleY": 0.22
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    }
   },
   "detail/with-activity-30": {
     "photo": "with-30-10",
@@ -904,7 +1031,23 @@
     "caseKind": "해당 활동 실제사진",
     "reference": false,
     "portraitFit": "contain",
-    "layout": "top"
+    "layout": "top",
+    "channelLayouts": {
+      "naver": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "band": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "instagram-feed": {
+        "titleY": 0.22
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    }
   },
   "detail/dgcare-practitioner-training": {
     "photo": "dgcare-training-1",
@@ -918,6 +1061,20 @@
     "credit": "경상북도사회복지협의회",
     "caseKind": "해당 활동 실제사진",
     "reference": false,
-    "portraitFit": "contain"
+    "portraitFit": "contain",
+    "channelLayouts": {
+      "instagram-feed": {
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "instagram-story": {
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    }
   }
 }

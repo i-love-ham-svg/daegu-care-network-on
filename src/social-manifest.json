@@ -55,35 +55,35 @@
         "alt": "대구 통합돌봄 · 필요한 돌봄을 한곳에 · 기관 · 활동 · 정책을 연결합니다 · 어르신들 곁에서 안내하는 위드 의료사랑방 현장"
       },
       "naver": {
-        "file": "social/home-naver-9df04b043e.jpg",
+        "file": "social/home-naver-e967449969.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/home-naver-9df04b043e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/home-naver-e967449969.jpg",
         "alt": "대구 통합돌봄 · 필요한 돌봄을 한곳에 · 기관 · 활동 · 정책을 연결합니다 · 어르신들 곁에서 안내하는 위드 의료사랑방 현장"
       },
       "band": {
-        "file": "social/home-band-27a300df0b.jpg",
+        "file": "social/home-band-9a39ca0c29.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/home-band-27a300df0b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/home-band-9a39ca0c29.jpg",
         "alt": "대구 통합돌봄 · 필요한 돌봄을 한곳에 · 기관 · 활동 · 정책을 연결합니다 · 어르신들 곁에서 안내하는 위드 의료사랑방 현장"
       },
       "instagram-feed": {
-        "file": "social/home-instagram-feed-da5bd52c39.jpg",
+        "file": "social/home-instagram-feed-f911ee901e.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/home-instagram-feed-da5bd52c39.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/home-instagram-feed-f911ee901e.jpg",
         "alt": "대구 통합돌봄 · 필요한 돌봄을 한곳에 · 기관 · 활동 · 정책을 연결합니다 · 어르신들 곁에서 안내하는 위드 의료사랑방 현장"
       },
       "instagram-story": {
-        "file": "social/home-instagram-story-1f479cb5fa.jpg",
+        "file": "social/home-instagram-story-a43bf4afb1.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/home-instagram-story-1f479cb5fa.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/home-instagram-story-a43bf4afb1.jpg",
         "alt": "대구 통합돌봄 · 필요한 돌봄을 한곳에 · 기관 · 활동 · 정책을 연결합니다 · 어르신들 곁에서 안내하는 위드 의료사랑방 현장"
       },
       "youtube": {
@@ -108,6 +108,11 @@
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "기관 실제 활동",
     "reference": false,
+    "channelLayouts": {
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    },
     "background": {
       "file": "cases/with-32-1.jpg",
       "caption": "대구가톨릭의대와 위드의 실습 협약 기념사진",
@@ -152,35 +157,35 @@
         "alt": "대구의 돌봄 · 함께 만드는 연결 · 통합돌봄 네트워크 소개 · 대구가톨릭의대와 위드의 실습 협약 기념사진"
       },
       "naver": {
-        "file": "social/about-naver-ab43da7839.jpg",
+        "file": "social/about-naver-ebdd17272d.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/about-naver-ab43da7839.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/about-naver-ebdd17272d.jpg",
         "alt": "대구의 돌봄 · 함께 만드는 연결 · 통합돌봄 네트워크 소개 · 대구가톨릭의대와 위드의 실습 협약 기념사진"
       },
       "band": {
-        "file": "social/about-band-54df3beec6.jpg",
+        "file": "social/about-band-28cd1f5e7a.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/about-band-54df3beec6.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/about-band-28cd1f5e7a.jpg",
         "alt": "대구의 돌봄 · 함께 만드는 연결 · 통합돌봄 네트워크 소개 · 대구가톨릭의대와 위드의 실습 협약 기념사진"
       },
       "instagram-feed": {
-        "file": "social/about-instagram-feed-482e7e2958.jpg",
+        "file": "social/about-instagram-feed-8e65ae88d8.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/about-instagram-feed-482e7e2958.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/about-instagram-feed-8e65ae88d8.jpg",
         "alt": "대구의 돌봄 · 함께 만드는 연결 · 통합돌봄 네트워크 소개 · 대구가톨릭의대와 위드의 실습 협약 기념사진"
       },
       "instagram-story": {
-        "file": "social/about-instagram-story-a36a9dcdc2.jpg",
+        "file": "social/about-instagram-story-bee27231f7.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/about-instagram-story-a36a9dcdc2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/about-instagram-story-bee27231f7.jpg",
         "alt": "대구의 돌봄 · 함께 만드는 연결 · 통합돌봄 네트워크 소개 · 대구가톨릭의대와 위드의 실습 협약 기념사진"
       },
       "youtube": {
@@ -205,6 +210,14 @@
     "credit": "사회적협동조합 모두행복센터",
     "caseKind": "기관 실제 활동",
     "reference": false,
+    "channelLayouts": {
+      "instagram-feed": {
+        "titleY": 0.22
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    },
     "background": {
       "file": "cases/dasahappy-224268454487-4.jpg",
       "caption": "모두행복 제공인력 우수사례 시상",
@@ -249,35 +262,35 @@
         "alt": "대구의 돌봄기관 · 7곳을 만나보세요 · 병원동행 · 요양 · 의료 · 생활돌봄 · 모두행복 제공인력 우수사례 시상"
       },
       "naver": {
-        "file": "social/members-naver-436ca94064.jpg",
+        "file": "social/members-naver-f8a6e0f0e1.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/members-naver-436ca94064.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/members-naver-f8a6e0f0e1.jpg",
         "alt": "대구의 돌봄기관 · 7곳을 만나보세요 · 병원동행 · 요양 · 의료 · 생활돌봄 · 모두행복 제공인력 우수사례 시상"
       },
       "band": {
-        "file": "social/members-band-5194d41b8e.jpg",
+        "file": "social/members-band-69155cac91.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/members-band-5194d41b8e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/members-band-69155cac91.jpg",
         "alt": "대구의 돌봄기관 · 7곳을 만나보세요 · 병원동행 · 요양 · 의료 · 생활돌봄 · 모두행복 제공인력 우수사례 시상"
       },
       "instagram-feed": {
-        "file": "social/members-instagram-feed-ad3f393f37.jpg",
+        "file": "social/members-instagram-feed-30bb7269c7.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/members-instagram-feed-ad3f393f37.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/members-instagram-feed-30bb7269c7.jpg",
         "alt": "대구의 돌봄기관 · 7곳을 만나보세요 · 병원동행 · 요양 · 의료 · 생활돌봄 · 모두행복 제공인력 우수사례 시상"
       },
       "instagram-story": {
-        "file": "social/members-instagram-story-19af97152f.jpg",
+        "file": "social/members-instagram-story-4b4ee867a1.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/members-instagram-story-19af97152f.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/members-instagram-story-4b4ee867a1.jpg",
         "alt": "대구의 돌봄기관 · 7곳을 만나보세요 · 병원동행 · 요양 · 의료 · 생활돌봄 · 모두행복 제공인력 우수사례 시상"
       },
       "youtube": {
@@ -346,35 +359,35 @@
         "alt": "돌봄 현장에서 온 · 오늘의 이야기 · 대구 통합돌봄 활동소식 · 돌봄 제공인력이 함께하는 꽃바구니 실습"
       },
       "naver": {
-        "file": "social/news-naver-0596a4ba44.jpg",
+        "file": "social/news-naver-9911252b7a.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/news-naver-0596a4ba44.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/news-naver-9911252b7a.jpg",
         "alt": "돌봄 현장에서 온 · 오늘의 이야기 · 대구 통합돌봄 활동소식 · 돌봄 제공인력이 함께하는 꽃바구니 실습"
       },
       "band": {
-        "file": "social/news-band-1713d6a7a0.jpg",
+        "file": "social/news-band-4536d45152.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/news-band-1713d6a7a0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/news-band-4536d45152.jpg",
         "alt": "돌봄 현장에서 온 · 오늘의 이야기 · 대구 통합돌봄 활동소식 · 돌봄 제공인력이 함께하는 꽃바구니 실습"
       },
       "instagram-feed": {
-        "file": "social/news-instagram-feed-4746b5552a.jpg",
+        "file": "social/news-instagram-feed-e9292d80b8.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/news-instagram-feed-4746b5552a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/news-instagram-feed-e9292d80b8.jpg",
         "alt": "돌봄 현장에서 온 · 오늘의 이야기 · 대구 통합돌봄 활동소식 · 돌봄 제공인력이 함께하는 꽃바구니 실습"
       },
       "instagram-story": {
-        "file": "social/news-instagram-story-683751073c.jpg",
+        "file": "social/news-instagram-story-2fb22b1fa6.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/news-instagram-story-683751073c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/news-instagram-story-2fb22b1fa6.jpg",
         "alt": "돌봄 현장에서 온 · 오늘의 이야기 · 대구 통합돌봄 활동소식 · 돌봄 제공인력이 함께하는 꽃바구니 실습"
       },
       "youtube": {
@@ -444,35 +457,35 @@
         "alt": "통합돌봄 정책 · 필요한 정보만 한눈에 · 제도 · 신청 · 공식 자료 안내 · 251230 （사진1） 구로구가 통합돌봄사업의 원활한 추진을 위해 분야별 실무자 회의를 열고 있다."
       },
       "naver": {
-        "file": "social/policy-naver-8acf574912.jpg",
+        "file": "social/policy-naver-d9780cd7e1.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/policy-naver-8acf574912.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/policy-naver-d9780cd7e1.jpg",
         "alt": "통합돌봄 정책 · 필요한 정보만 한눈에 · 제도 · 신청 · 공식 자료 안내 · 251230 （사진1） 구로구가 통합돌봄사업의 원활한 추진을 위해 분야별 실무자 회의를 열고 있다."
       },
       "band": {
-        "file": "social/policy-band-ba11b3405a.jpg",
+        "file": "social/policy-band-5fd17f17fd.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/policy-band-ba11b3405a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/policy-band-5fd17f17fd.jpg",
         "alt": "통합돌봄 정책 · 필요한 정보만 한눈에 · 제도 · 신청 · 공식 자료 안내 · 251230 （사진1） 구로구가 통합돌봄사업의 원활한 추진을 위해 분야별 실무자 회의를 열고 있다."
       },
       "instagram-feed": {
-        "file": "social/policy-instagram-feed-2d8100a5d3.jpg",
+        "file": "social/policy-instagram-feed-0da2081fce.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/policy-instagram-feed-2d8100a5d3.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/policy-instagram-feed-0da2081fce.jpg",
         "alt": "통합돌봄 정책 · 필요한 정보만 한눈에 · 제도 · 신청 · 공식 자료 안내 · 251230 （사진1） 구로구가 통합돌봄사업의 원활한 추진을 위해 분야별 실무자 회의를 열고 있다."
       },
       "instagram-story": {
-        "file": "social/policy-instagram-story-bb8c29722c.jpg",
+        "file": "social/policy-instagram-story-d3794fe759.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/policy-instagram-story-bb8c29722c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/policy-instagram-story-d3794fe759.jpg",
         "alt": "통합돌봄 정책 · 필요한 정보만 한눈에 · 제도 · 신청 · 공식 자료 안내 · 251230 （사진1） 구로구가 통합돌봄사업의 원활한 추진을 위해 분야별 실무자 회의를 열고 있다."
       },
       "youtube": {
@@ -541,35 +554,35 @@
         "alt": "배우고 나누는 · 통합돌봄 현장 · 교육 · 행사 · 포럼 기록 · 돌봄 제공인력 플라워바스켓 교육"
       },
       "naver": {
-        "file": "social/events-naver-4b3e01d2ac.jpg",
+        "file": "social/events-naver-81447c3b7f.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/events-naver-4b3e01d2ac.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/events-naver-81447c3b7f.jpg",
         "alt": "배우고 나누는 · 통합돌봄 현장 · 교육 · 행사 · 포럼 기록 · 돌봄 제공인력 플라워바스켓 교육"
       },
       "band": {
-        "file": "social/events-band-8a28b310c3.jpg",
+        "file": "social/events-band-bcbc1247e1.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/events-band-8a28b310c3.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/events-band-bcbc1247e1.jpg",
         "alt": "배우고 나누는 · 통합돌봄 현장 · 교육 · 행사 · 포럼 기록 · 돌봄 제공인력 플라워바스켓 교육"
       },
       "instagram-feed": {
-        "file": "social/events-instagram-feed-5dd588932a.jpg",
+        "file": "social/events-instagram-feed-f43a9163a7.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/events-instagram-feed-5dd588932a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/events-instagram-feed-f43a9163a7.jpg",
         "alt": "배우고 나누는 · 통합돌봄 현장 · 교육 · 행사 · 포럼 기록 · 돌봄 제공인력 플라워바스켓 교육"
       },
       "instagram-story": {
-        "file": "social/events-instagram-story-8fa3256922.jpg",
+        "file": "social/events-instagram-story-dfdc0097c8.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/events-instagram-story-8fa3256922.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/events-instagram-story-dfdc0097c8.jpg",
         "alt": "배우고 나누는 · 통합돌봄 현장 · 교육 · 행사 · 포럼 기록 · 돌봄 제공인력 플라워바스켓 교육"
       },
       "youtube": {
@@ -639,35 +652,35 @@
         "alt": "돌봄 실무에 필요한 · 자료를 한곳에 · 공식 자료 · 운영서식 · 작성 가이드 · 251230 （사진2） 구로구가 11월 13일 통합돌봄 추진 역량 강화를 위한 실무자 대상 교육을 진행하고 있다."
       },
       "naver": {
-        "file": "social/resources-naver-a403ca1206.jpg",
+        "file": "social/resources-naver-da6f7dcc6e.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/resources-naver-a403ca1206.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/resources-naver-da6f7dcc6e.jpg",
         "alt": "돌봄 실무에 필요한 · 자료를 한곳에 · 공식 자료 · 운영서식 · 작성 가이드 · 251230 （사진2） 구로구가 11월 13일 통합돌봄 추진 역량 강화를 위한 실무자 대상 교육을 진행하고 있다."
       },
       "band": {
-        "file": "social/resources-band-a71aca6949.jpg",
+        "file": "social/resources-band-fe2633052c.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/resources-band-a71aca6949.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/resources-band-fe2633052c.jpg",
         "alt": "돌봄 실무에 필요한 · 자료를 한곳에 · 공식 자료 · 운영서식 · 작성 가이드 · 251230 （사진2） 구로구가 11월 13일 통합돌봄 추진 역량 강화를 위한 실무자 대상 교육을 진행하고 있다."
       },
       "instagram-feed": {
-        "file": "social/resources-instagram-feed-bfcfd2f4e5.jpg",
+        "file": "social/resources-instagram-feed-11c19f412a.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/resources-instagram-feed-bfcfd2f4e5.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/resources-instagram-feed-11c19f412a.jpg",
         "alt": "돌봄 실무에 필요한 · 자료를 한곳에 · 공식 자료 · 운영서식 · 작성 가이드 · 251230 （사진2） 구로구가 11월 13일 통합돌봄 추진 역량 강화를 위한 실무자 대상 교육을 진행하고 있다."
       },
       "instagram-story": {
-        "file": "social/resources-instagram-story-db042827f9.jpg",
+        "file": "social/resources-instagram-story-1f9840ae47.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/resources-instagram-story-db042827f9.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/resources-instagram-story-1f9840ae47.jpg",
         "alt": "돌봄 실무에 필요한 · 자료를 한곳에 · 공식 자료 · 운영서식 · 작성 가이드 · 251230 （사진2） 구로구가 11월 13일 통합돌봄 추진 역량 강화를 위한 실무자 대상 교육을 진행하고 있다."
       },
       "youtube": {
@@ -737,35 +750,35 @@
         "alt": "지역의 돌봄에 · 마음을 더하는 방법 · 일시후원 · 정기후원 안내 · 시연 · 250715 （사진1） 15일 제78호 구로히어로즈 명예의 전당 헌액식에서 사회공헌인증서를 수여하고 기념촬영（왼쪽 장인홍 구로구청장）을 하고 있다"
       },
       "naver": {
-        "file": "social/giving-guide-naver-5450d16885.jpg",
+        "file": "social/giving-guide-naver-e9c1678c48.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-naver-5450d16885.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-naver-e9c1678c48.jpg",
         "alt": "지역의 돌봄에 · 마음을 더하는 방법 · 일시후원 · 정기후원 안내 · 시연 · 250715 （사진1） 15일 제78호 구로히어로즈 명예의 전당 헌액식에서 사회공헌인증서를 수여하고 기념촬영（왼쪽 장인홍 구로구청장）을 하고 있다"
       },
       "band": {
-        "file": "social/giving-guide-band-7db865100c.jpg",
+        "file": "social/giving-guide-band-a564a8c925.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-band-7db865100c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-band-a564a8c925.jpg",
         "alt": "지역의 돌봄에 · 마음을 더하는 방법 · 일시후원 · 정기후원 안내 · 시연 · 250715 （사진1） 15일 제78호 구로히어로즈 명예의 전당 헌액식에서 사회공헌인증서를 수여하고 기념촬영（왼쪽 장인홍 구로구청장）을 하고 있다"
       },
       "instagram-feed": {
-        "file": "social/giving-guide-instagram-feed-65b14234b0.jpg",
+        "file": "social/giving-guide-instagram-feed-25ab6c78a6.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-instagram-feed-65b14234b0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-instagram-feed-25ab6c78a6.jpg",
         "alt": "지역의 돌봄에 · 마음을 더하는 방법 · 일시후원 · 정기후원 안내 · 시연 · 250715 （사진1） 15일 제78호 구로히어로즈 명예의 전당 헌액식에서 사회공헌인증서를 수여하고 기념촬영（왼쪽 장인홍 구로구청장）을 하고 있다"
       },
       "instagram-story": {
-        "file": "social/giving-guide-instagram-story-48f2c28bab.jpg",
+        "file": "social/giving-guide-instagram-story-722372a29d.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-instagram-story-48f2c28bab.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/giving-guide-instagram-story-722372a29d.jpg",
         "alt": "지역의 돌봄에 · 마음을 더하는 방법 · 일시후원 · 정기후원 안내 · 시연 · 250715 （사진1） 15일 제78호 구로히어로즈 명예의 전당 헌액식에서 사회공헌인증서를 수여하고 기념촬영（왼쪽 장인홍 구로구청장）을 하고 있다"
       },
       "youtube": {
@@ -835,35 +848,35 @@
         "alt": "우리 지역의 돌봄 · 함께 응원할 사업 · 돌봄사업과 후원 안내 · 시연 · 230609 （사진2） 허약 어르신 건강소모임（2023년도 근감소증 예방식단 쿠킹클래스）"
       },
       "naver": {
-        "file": "social/projects-naver-4073d6dd91.jpg",
+        "file": "social/projects-naver-5aeefd0f0f.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/projects-naver-4073d6dd91.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/projects-naver-5aeefd0f0f.jpg",
         "alt": "우리 지역의 돌봄 · 함께 응원할 사업 · 돌봄사업과 후원 안내 · 시연 · 230609 （사진2） 허약 어르신 건강소모임（2023년도 근감소증 예방식단 쿠킹클래스）"
       },
       "band": {
-        "file": "social/projects-band-b61743d7a2.jpg",
+        "file": "social/projects-band-d7380a94b2.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/projects-band-b61743d7a2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/projects-band-d7380a94b2.jpg",
         "alt": "우리 지역의 돌봄 · 함께 응원할 사업 · 돌봄사업과 후원 안내 · 시연 · 230609 （사진2） 허약 어르신 건강소모임（2023년도 근감소증 예방식단 쿠킹클래스）"
       },
       "instagram-feed": {
-        "file": "social/projects-instagram-feed-fd72054b9b.jpg",
+        "file": "social/projects-instagram-feed-dda997041d.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/projects-instagram-feed-fd72054b9b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/projects-instagram-feed-dda997041d.jpg",
         "alt": "우리 지역의 돌봄 · 함께 응원할 사업 · 돌봄사업과 후원 안내 · 시연 · 230609 （사진2） 허약 어르신 건강소모임（2023년도 근감소증 예방식단 쿠킹클래스）"
       },
       "instagram-story": {
-        "file": "social/projects-instagram-story-0159847022.jpg",
+        "file": "social/projects-instagram-story-8694ebecc9.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/projects-instagram-story-0159847022.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/projects-instagram-story-8694ebecc9.jpg",
         "alt": "우리 지역의 돌봄 · 함께 응원할 사업 · 돌봄사업과 후원 안내 · 시연 · 230609 （사진2） 허약 어르신 건강소모임（2023년도 근감소증 예방식단 쿠킹클래스）"
       },
       "youtube": {
@@ -933,35 +946,35 @@
         "alt": "대구 통합돌봄 ON · 플랫폼 운영안 · 기관과 시민을 잇는 온라인 돌봄 네트워크 · 260211 （사진2） 구로구 통합지원협의체"
       },
       "naver": {
-        "file": "social/proposal-naver-f3a567371b.jpg",
+        "file": "social/proposal-naver-d0f6a7d821.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-naver-f3a567371b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-naver-d0f6a7d821.jpg",
         "alt": "대구 통합돌봄 ON · 플랫폼 운영안 · 기관과 시민을 잇는 온라인 돌봄 네트워크 · 260211 （사진2） 구로구 통합지원협의체"
       },
       "band": {
-        "file": "social/proposal-band-93f507ef3a.jpg",
+        "file": "social/proposal-band-61bd9d5157.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-band-93f507ef3a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-band-61bd9d5157.jpg",
         "alt": "대구 통합돌봄 ON · 플랫폼 운영안 · 기관과 시민을 잇는 온라인 돌봄 네트워크 · 260211 （사진2） 구로구 통합지원협의체"
       },
       "instagram-feed": {
-        "file": "social/proposal-instagram-feed-8c53e96960.jpg",
+        "file": "social/proposal-instagram-feed-1a3492e883.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-instagram-feed-8c53e96960.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-instagram-feed-1a3492e883.jpg",
         "alt": "대구 통합돌봄 ON · 플랫폼 운영안 · 기관과 시민을 잇는 온라인 돌봄 네트워크 · 260211 （사진2） 구로구 통합지원협의체"
       },
       "instagram-story": {
-        "file": "social/proposal-instagram-story-100fa760c6.jpg",
+        "file": "social/proposal-instagram-story-dd872784a3.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-instagram-story-100fa760c6.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/proposal-instagram-story-dd872784a3.jpg",
         "alt": "대구 통합돌봄 ON · 플랫폼 운영안 · 기관과 시민을 잇는 온라인 돌봄 네트워크 · 260211 （사진2） 구로구 통합지원협의체"
       },
       "youtube": {
@@ -1031,35 +1044,35 @@
         "alt": "대구도우누리 · 병원 가는 길을 함께 · 병원동행 · 이동지원 · 2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영."
       },
       "naver": {
-        "file": "social/member--daegu-dounuri-naver-3ba375aeda.jpg",
+        "file": "social/member--daegu-dounuri-naver-b06c55f738.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-naver-3ba375aeda.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-naver-b06c55f738.jpg",
         "alt": "대구도우누리 · 병원 가는 길을 함께 · 병원동행 · 이동지원 · 2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영."
       },
       "band": {
-        "file": "social/member--daegu-dounuri-band-3d08fede2e.jpg",
+        "file": "social/member--daegu-dounuri-band-775b82c585.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-band-3d08fede2e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-band-775b82c585.jpg",
         "alt": "대구도우누리 · 병원 가는 길을 함께 · 병원동행 · 이동지원 · 2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영."
       },
       "instagram-feed": {
-        "file": "social/member--daegu-dounuri-instagram-feed-69d6713aba.jpg",
+        "file": "social/member--daegu-dounuri-instagram-feed-114d27f4e8.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-instagram-feed-69d6713aba.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-instagram-feed-114d27f4e8.jpg",
         "alt": "대구도우누리 · 병원 가는 길을 함께 · 병원동행 · 이동지원 · 2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영."
       },
       "instagram-story": {
-        "file": "social/member--daegu-dounuri-instagram-story-20005b7b83.jpg",
+        "file": "social/member--daegu-dounuri-instagram-story-8948d8cd23.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-instagram-story-20005b7b83.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-dounuri-instagram-story-8948d8cd23.jpg",
         "alt": "대구도우누리 · 병원 가는 길을 함께 · 병원동행 · 이동지원 · 2026년 11월 12일 대구 수성구청에서 열린 사회적협동조합 대구도우누리의 영양식 기탁 기념촬영."
       },
       "youtube": {
@@ -1086,6 +1099,22 @@
     "reference": false,
     "portraitFit": "contain",
     "layout": "top",
+    "channelLayouts": {
+      "naver": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "band": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      },
+      "instagram-feed": {
+        "titleY": 0.22
+      }
+    },
     "background": {
       "file": "cases/woori-founding-20241122.jpg",
       "caption": "2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다.",
@@ -1130,35 +1159,35 @@
         "alt": "우리함께통합돌봄 · 일상에 필요한 돌봄 · 장기요양 · 일상돌봄 · 병원동행 · 2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다."
       },
       "naver": {
-        "file": "social/member--woorihamkke-naver-5b4a6830fa.jpg",
+        "file": "social/member--woorihamkke-naver-b354ec88a0.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-naver-5b4a6830fa.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-naver-b354ec88a0.jpg",
         "alt": "우리함께통합돌봄 · 일상에 필요한 돌봄 · 장기요양 · 일상돌봄 · 병원동행 · 2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다."
       },
       "band": {
-        "file": "social/member--woorihamkke-band-a03d440100.jpg",
+        "file": "social/member--woorihamkke-band-d4d0f39648.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-band-a03d440100.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-band-d4d0f39648.jpg",
         "alt": "우리함께통합돌봄 · 일상에 필요한 돌봄 · 장기요양 · 일상돌봄 · 병원동행 · 2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다."
       },
       "instagram-feed": {
-        "file": "social/member--woorihamkke-instagram-feed-ec0fdd9ada.jpg",
+        "file": "social/member--woorihamkke-instagram-feed-32abd434f3.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-instagram-feed-ec0fdd9ada.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-instagram-feed-32abd434f3.jpg",
         "alt": "우리함께통합돌봄 · 일상에 필요한 돌봄 · 장기요양 · 일상돌봄 · 병원동행 · 2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다."
       },
       "instagram-story": {
-        "file": "social/member--woorihamkke-instagram-story-a3e0aa6826.jpg",
+        "file": "social/member--woorihamkke-instagram-story-2325de08f7.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-instagram-story-a3e0aa6826.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--woorihamkke-instagram-story-2325de08f7.jpg",
         "alt": "우리함께통합돌봄 · 일상에 필요한 돌봄 · 장기요양 · 일상돌봄 · 병원동행 · 2024년 11월 22일 제일기독종합사회복지관 2층 회의실에서 열린 우리함께통합돌봄사회적협동조합 창립총회의 참석자 기념촬영. 현수막에 기관명과 개최일이 보입니다."
       },
       "youtube": {
@@ -1183,6 +1212,14 @@
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "기관 실제 활동",
     "reference": false,
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/with-34-6.jpg",
       "caption": "어르신의 혈압을 측정하는 위드 활동가",
@@ -1227,35 +1264,35 @@
         "alt": "위드의료복지 · 가까이에서 만나는 돌봄 · 방문진료 · 방문운동 · 건강활동 · 어르신의 혈압을 측정하는 위드 활동가"
       },
       "naver": {
-        "file": "social/member--with-medical-naver-8dc0cec515.jpg",
+        "file": "social/member--with-medical-naver-9577e16f05.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-naver-8dc0cec515.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-naver-9577e16f05.jpg",
         "alt": "위드의료복지 · 가까이에서 만나는 돌봄 · 방문진료 · 방문운동 · 건강활동 · 어르신의 혈압을 측정하는 위드 활동가"
       },
       "band": {
-        "file": "social/member--with-medical-band-155a2490a5.jpg",
+        "file": "social/member--with-medical-band-f2e7415454.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-band-155a2490a5.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-band-f2e7415454.jpg",
         "alt": "위드의료복지 · 가까이에서 만나는 돌봄 · 방문진료 · 방문운동 · 건강활동 · 어르신의 혈압을 측정하는 위드 활동가"
       },
       "instagram-feed": {
-        "file": "social/member--with-medical-instagram-feed-de28fca6e0.jpg",
+        "file": "social/member--with-medical-instagram-feed-8cb5eda4b7.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-instagram-feed-de28fca6e0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-instagram-feed-8cb5eda4b7.jpg",
         "alt": "위드의료복지 · 가까이에서 만나는 돌봄 · 방문진료 · 방문운동 · 건강활동 · 어르신의 혈압을 측정하는 위드 활동가"
       },
       "instagram-story": {
-        "file": "social/member--with-medical-instagram-story-4fe6aaaef3.jpg",
+        "file": "social/member--with-medical-instagram-story-e6de1af0ce.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-instagram-story-4fe6aaaef3.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--with-medical-instagram-story-e6de1af0ce.jpg",
         "alt": "위드의료복지 · 가까이에서 만나는 돌봄 · 방문진료 · 방문운동 · 건강활동 · 어르신의 혈압을 측정하는 위드 활동가"
       },
       "youtube": {
@@ -1281,6 +1318,34 @@
     "caseKind": "기관 실제 활동 · 조합원 워크숍",
     "reference": false,
     "portraitFit": "contain",
+    "channelLayouts": {
+      "naver": {
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "band": {
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "instagram-feed": {
+        "titleY": 0.22,
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "instagram-story": {
+        "titleY": 0.3,
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/org-welfare-design.jpg",
       "caption": "사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습.",
@@ -1325,35 +1390,35 @@
         "alt": "사회복지디자인연구소 · 청년의 자립을 함께 · 자립준비청년 지원 분야 · 사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습."
       },
       "naver": {
-        "file": "social/member--welfare-design-naver-69a16f42d9.jpg",
+        "file": "social/member--welfare-design-naver-af7c1b7bb6.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-naver-69a16f42d9.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-naver-af7c1b7bb6.jpg",
         "alt": "사회복지디자인연구소 · 청년의 자립을 함께 · 자립준비청년 지원 분야 · 사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습."
       },
       "band": {
-        "file": "social/member--welfare-design-band-102d454e59.jpg",
+        "file": "social/member--welfare-design-band-f0d23639f9.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-band-102d454e59.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-band-f0d23639f9.jpg",
         "alt": "사회복지디자인연구소 · 청년의 자립을 함께 · 자립준비청년 지원 분야 · 사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습."
       },
       "instagram-feed": {
-        "file": "social/member--welfare-design-instagram-feed-1659e1dff9.jpg",
+        "file": "social/member--welfare-design-instagram-feed-7baba8ac78.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-instagram-feed-1659e1dff9.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-instagram-feed-7baba8ac78.jpg",
         "alt": "사회복지디자인연구소 · 청년의 자립을 함께 · 자립준비청년 지원 분야 · 사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습."
       },
       "instagram-story": {
-        "file": "social/member--welfare-design-instagram-story-d58d0fa3a6.jpg",
+        "file": "social/member--welfare-design-instagram-story-3fdbaaa5cc.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-instagram-story-d58d0fa3a6.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--welfare-design-instagram-story-3fdbaaa5cc.jpg",
         "alt": "사회복지디자인연구소 · 청년의 자립을 함께 · 자립준비청년 지원 분야 · 사회복지디자인연구소사회적협동조합 조합원들이 거창 워크숍에서 함께 모여 대화하는 모습."
       },
       "youtube": {
@@ -1422,35 +1487,35 @@
         "alt": "대구돌봄 · 아이부터 어르신까지 · 아동 · 노인 · 청중년층 생활돌봄 · 완성된 반찬 식단"
       },
       "naver": {
-        "file": "social/member--daegu-care-naver-fea212d0aa.jpg",
+        "file": "social/member--daegu-care-naver-3a933f3647.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-naver-fea212d0aa.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-naver-3a933f3647.jpg",
         "alt": "대구돌봄 · 아이부터 어르신까지 · 아동 · 노인 · 청중년층 생활돌봄 · 완성된 반찬 식단"
       },
       "band": {
-        "file": "social/member--daegu-care-band-99fb3d6e8d.jpg",
+        "file": "social/member--daegu-care-band-521c8dd898.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-band-99fb3d6e8d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-band-521c8dd898.jpg",
         "alt": "대구돌봄 · 아이부터 어르신까지 · 아동 · 노인 · 청중년층 생활돌봄 · 완성된 반찬 식단"
       },
       "instagram-feed": {
-        "file": "social/member--daegu-care-instagram-feed-6284dabebc.jpg",
+        "file": "social/member--daegu-care-instagram-feed-32b041ceb3.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-instagram-feed-6284dabebc.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-instagram-feed-32b041ceb3.jpg",
         "alt": "대구돌봄 · 아이부터 어르신까지 · 아동 · 노인 · 청중년층 생활돌봄 · 완성된 반찬 식단"
       },
       "instagram-story": {
-        "file": "social/member--daegu-care-instagram-story-d8187ac9f1.jpg",
+        "file": "social/member--daegu-care-instagram-story-8b8f8249c4.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-instagram-story-d8187ac9f1.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--daegu-care-instagram-story-8b8f8249c4.jpg",
         "alt": "대구돌봄 · 아이부터 어르신까지 · 아동 · 노인 · 청중년층 생활돌봄 · 완성된 반찬 식단"
       },
       "youtube": {
@@ -1520,35 +1585,35 @@
         "alt": "내일앤 · 일할 기회를 넓히는 돌봄 · 장애인 직업재활 · 직업훈련 · 2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장."
       },
       "naver": {
-        "file": "social/member--naeiln-naver-9982d0263c.jpg",
+        "file": "social/member--naeiln-naver-ae1900431b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-naver-9982d0263c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-naver-ae1900431b.jpg",
         "alt": "내일앤 · 일할 기회를 넓히는 돌봄 · 장애인 직업재활 · 직업훈련 · 2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장."
       },
       "band": {
-        "file": "social/member--naeiln-band-f08ac37592.jpg",
+        "file": "social/member--naeiln-band-9a04dda123.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-band-f08ac37592.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-band-9a04dda123.jpg",
         "alt": "내일앤 · 일할 기회를 넓히는 돌봄 · 장애인 직업재활 · 직업훈련 · 2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장."
       },
       "instagram-feed": {
-        "file": "social/member--naeiln-instagram-feed-cc8c9bde84.jpg",
+        "file": "social/member--naeiln-instagram-feed-5bded2dd6d.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-instagram-feed-cc8c9bde84.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-instagram-feed-5bded2dd6d.jpg",
         "alt": "내일앤 · 일할 기회를 넓히는 돌봄 · 장애인 직업재활 · 직업훈련 · 2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장."
       },
       "instagram-story": {
-        "file": "social/member--naeiln-instagram-story-b5ec30fb05.jpg",
+        "file": "social/member--naeiln-instagram-story-68a39a5ac6.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-instagram-story-b5ec30fb05.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--naeiln-instagram-story-68a39a5ac6.jpg",
         "alt": "내일앤 · 일할 기회를 넓히는 돌봄 · 장애인 직업재활 · 직업훈련 · 2025년 5월 29일 내일앤사회적협동조합 더봄에서 진행한 읍내중고 제과반의 마들렌 나눔 현장."
       },
       "youtube": {
@@ -1617,35 +1682,35 @@
         "alt": "모두행복센터 · 집에서 이어가는 일상 · 방문요양 · 방문목욕 · 일상돌봄 · 가정방문 지원 후 정돈된 주거공간"
       },
       "naver": {
-        "file": "social/member--modoo-happy-naver-004f1e094b.jpg",
+        "file": "social/member--modoo-happy-naver-f692440764.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-naver-004f1e094b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-naver-f692440764.jpg",
         "alt": "모두행복센터 · 집에서 이어가는 일상 · 방문요양 · 방문목욕 · 일상돌봄 · 가정방문 지원 후 정돈된 주거공간"
       },
       "band": {
-        "file": "social/member--modoo-happy-band-db36c82572.jpg",
+        "file": "social/member--modoo-happy-band-7db7e4a4b8.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-band-db36c82572.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-band-7db7e4a4b8.jpg",
         "alt": "모두행복센터 · 집에서 이어가는 일상 · 방문요양 · 방문목욕 · 일상돌봄 · 가정방문 지원 후 정돈된 주거공간"
       },
       "instagram-feed": {
-        "file": "social/member--modoo-happy-instagram-feed-7e8b85598f.jpg",
+        "file": "social/member--modoo-happy-instagram-feed-454a17e933.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-instagram-feed-7e8b85598f.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-instagram-feed-454a17e933.jpg",
         "alt": "모두행복센터 · 집에서 이어가는 일상 · 방문요양 · 방문목욕 · 일상돌봄 · 가정방문 지원 후 정돈된 주거공간"
       },
       "instagram-story": {
-        "file": "social/member--modoo-happy-instagram-story-d331c5ef99.jpg",
+        "file": "social/member--modoo-happy-instagram-story-7ab8500f24.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-instagram-story-d331c5ef99.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/member--modoo-happy-instagram-story-7ab8500f24.jpg",
         "alt": "모두행복센터 · 집에서 이어가는 일상 · 방문요양 · 방문목욕 · 일상돌봄 · 가정방문 지원 후 정돈된 주거공간"
       },
       "youtube": {
@@ -1715,35 +1780,35 @@
         "alt": "통합돌봄 이웃에게 · 영양식과 마음을 전하다 · 대구도우누리 등 3개 기관·단체의 나눔 · 같은 기탁 행사에 참여한 대구재가요양기관연합회 수성지회 관계자들의 기념촬영. 대구도우누리·다정실버주간보호센터도 함께 나눔에 참여했습니다."
       },
       "naver": {
-        "file": "social/detail--suseong-nutrition-sharing-naver-eacbcf7387.jpg",
+        "file": "social/detail--suseong-nutrition-sharing-naver-bf7084e108.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-naver-eacbcf7387.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-naver-bf7084e108.jpg",
         "alt": "통합돌봄 이웃에게 · 영양식과 마음을 전하다 · 대구도우누리 등 3개 기관·단체의 나눔 · 같은 기탁 행사에 참여한 대구재가요양기관연합회 수성지회 관계자들의 기념촬영. 대구도우누리·다정실버주간보호센터도 함께 나눔에 참여했습니다."
       },
       "band": {
-        "file": "social/detail--suseong-nutrition-sharing-band-84c8e21a44.jpg",
+        "file": "social/detail--suseong-nutrition-sharing-band-3007b21c2a.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-band-84c8e21a44.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-band-3007b21c2a.jpg",
         "alt": "통합돌봄 이웃에게 · 영양식과 마음을 전하다 · 대구도우누리 등 3개 기관·단체의 나눔 · 같은 기탁 행사에 참여한 대구재가요양기관연합회 수성지회 관계자들의 기념촬영. 대구도우누리·다정실버주간보호센터도 함께 나눔에 참여했습니다."
       },
       "instagram-feed": {
-        "file": "social/detail--suseong-nutrition-sharing-instagram-feed-fde8a86740.jpg",
+        "file": "social/detail--suseong-nutrition-sharing-instagram-feed-5f70533322.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-instagram-feed-fde8a86740.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-instagram-feed-5f70533322.jpg",
         "alt": "통합돌봄 이웃에게 · 영양식과 마음을 전하다 · 대구도우누리 등 3개 기관·단체의 나눔 · 같은 기탁 행사에 참여한 대구재가요양기관연합회 수성지회 관계자들의 기념촬영. 대구도우누리·다정실버주간보호센터도 함께 나눔에 참여했습니다."
       },
       "instagram-story": {
-        "file": "social/detail--suseong-nutrition-sharing-instagram-story-873e3fb901.jpg",
+        "file": "social/detail--suseong-nutrition-sharing-instagram-story-e67c3ced08.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-instagram-story-873e3fb901.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--suseong-nutrition-sharing-instagram-story-e67c3ced08.jpg",
         "alt": "통합돌봄 이웃에게 · 영양식과 마음을 전하다 · 대구도우누리 등 3개 기관·단체의 나눔 · 같은 기탁 행사에 참여한 대구재가요양기관연합회 수성지회 관계자들의 기념촬영. 대구도우누리·다정실버주간보호센터도 함께 나눔에 참여했습니다."
       },
       "youtube": {
@@ -1816,35 +1881,35 @@
         "alt": "사회복지디자인연구소 · 쉼과 대화의 조합원 워크숍 · 사회복지디자인연구소 거창 조합원 워크숍 · 사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다."
       },
       "naver": {
-        "file": "social/detail--sdl-geochang-workshop-naver-149e5d6a07.jpg",
+        "file": "social/detail--sdl-geochang-workshop-naver-1edcf7e7c4.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-naver-149e5d6a07.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-naver-1edcf7e7c4.jpg",
         "alt": "사회복지디자인연구소 · 쉼과 대화의 조합원 워크숍 · 사회복지디자인연구소 거창 조합원 워크숍 · 사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다."
       },
       "band": {
-        "file": "social/detail--sdl-geochang-workshop-band-e4decaccf3.jpg",
+        "file": "social/detail--sdl-geochang-workshop-band-3732de772f.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-band-e4decaccf3.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-band-3732de772f.jpg",
         "alt": "사회복지디자인연구소 · 쉼과 대화의 조합원 워크숍 · 사회복지디자인연구소 거창 조합원 워크숍 · 사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다."
       },
       "instagram-feed": {
-        "file": "social/detail--sdl-geochang-workshop-instagram-feed-39a575d420.jpg",
+        "file": "social/detail--sdl-geochang-workshop-instagram-feed-449e6ce7b8.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-instagram-feed-39a575d420.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-instagram-feed-449e6ce7b8.jpg",
         "alt": "사회복지디자인연구소 · 쉼과 대화의 조합원 워크숍 · 사회복지디자인연구소 거창 조합원 워크숍 · 사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다."
       },
       "instagram-story": {
-        "file": "social/detail--sdl-geochang-workshop-instagram-story-bfe5cc41e1.jpg",
+        "file": "social/detail--sdl-geochang-workshop-instagram-story-534d731639.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-instagram-story-bfe5cc41e1.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-geochang-workshop-instagram-story-534d731639.jpg",
         "alt": "사회복지디자인연구소 · 쉼과 대화의 조합원 워크숍 · 사회복지디자인연구소 거창 조합원 워크숍 · 사회복지디자인연구소 사회적협동조합 조합원들이 거창 창포원에서 족욕을 체험하는 모습. 기관의 워크숍 실제사진입니다."
       },
       "youtube": {
@@ -1914,35 +1979,35 @@
         "alt": "위드의 의료봉사 · 수해지역 이웃을 만나다 · 2025년 7월 23일 · 합천 수해지역 의료지원 · 합천 수해지역 의료지원 현장에서 어르신들을 안내하는 위드 활동가들."
       },
       "naver": {
-        "file": "social/detail--with-activity-27-naver-c79e75f0b1.jpg",
+        "file": "social/detail--with-activity-27-naver-393c4e24f3.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-naver-c79e75f0b1.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-naver-393c4e24f3.jpg",
         "alt": "위드의 의료봉사 · 수해지역 이웃을 만나다 · 2025년 7월 23일 · 합천 수해지역 의료지원 · 합천 수해지역 의료지원 현장에서 어르신들을 안내하는 위드 활동가들."
       },
       "band": {
-        "file": "social/detail--with-activity-27-band-d158af7bed.jpg",
+        "file": "social/detail--with-activity-27-band-cf62bef139.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-band-d158af7bed.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-band-cf62bef139.jpg",
         "alt": "위드의 의료봉사 · 수해지역 이웃을 만나다 · 2025년 7월 23일 · 합천 수해지역 의료지원 · 합천 수해지역 의료지원 현장에서 어르신들을 안내하는 위드 활동가들."
       },
       "instagram-feed": {
-        "file": "social/detail--with-activity-27-instagram-feed-59d5cde83c.jpg",
+        "file": "social/detail--with-activity-27-instagram-feed-7b4bf62f6a.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-instagram-feed-59d5cde83c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-instagram-feed-7b4bf62f6a.jpg",
         "alt": "위드의 의료봉사 · 수해지역 이웃을 만나다 · 2025년 7월 23일 · 합천 수해지역 의료지원 · 합천 수해지역 의료지원 현장에서 어르신들을 안내하는 위드 활동가들."
       },
       "instagram-story": {
-        "file": "social/detail--with-activity-27-instagram-story-7f0c14ef8a.jpg",
+        "file": "social/detail--with-activity-27-instagram-story-652d46feba.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-instagram-story-7f0c14ef8a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-27-instagram-story-652d46feba.jpg",
         "alt": "위드의 의료봉사 · 수해지역 이웃을 만나다 · 2025년 7월 23일 · 합천 수해지역 의료지원 · 합천 수해지역 의료지원 현장에서 어르신들을 안내하는 위드 활동가들."
       },
       "youtube": {
@@ -2012,35 +2077,35 @@
         "alt": "위드의 새 조합원 · 반가운 첫 만남 · 2025년 7월 24일 · 새 조합원을 맞이한 자리 · 제1회 위드 신규 조합원 환영회 참석자들의 기념촬영."
       },
       "naver": {
-        "file": "social/detail--with-activity-28-naver-1c1d373adb.jpg",
+        "file": "social/detail--with-activity-28-naver-57f49fdc17.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-naver-1c1d373adb.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-naver-57f49fdc17.jpg",
         "alt": "위드의 새 조합원 · 반가운 첫 만남 · 2025년 7월 24일 · 새 조합원을 맞이한 자리 · 제1회 위드 신규 조합원 환영회 참석자들의 기념촬영."
       },
       "band": {
-        "file": "social/detail--with-activity-28-band-41b14e2b49.jpg",
+        "file": "social/detail--with-activity-28-band-6042e1addb.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-band-41b14e2b49.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-band-6042e1addb.jpg",
         "alt": "위드의 새 조합원 · 반가운 첫 만남 · 2025년 7월 24일 · 새 조합원을 맞이한 자리 · 제1회 위드 신규 조합원 환영회 참석자들의 기념촬영."
       },
       "instagram-feed": {
-        "file": "social/detail--with-activity-28-instagram-feed-7e7264aa9b.jpg",
+        "file": "social/detail--with-activity-28-instagram-feed-cadcf35340.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-instagram-feed-7e7264aa9b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-instagram-feed-cadcf35340.jpg",
         "alt": "위드의 새 조합원 · 반가운 첫 만남 · 2025년 7월 24일 · 새 조합원을 맞이한 자리 · 제1회 위드 신규 조합원 환영회 참석자들의 기념촬영."
       },
       "instagram-story": {
-        "file": "social/detail--with-activity-28-instagram-story-32088276c1.jpg",
+        "file": "social/detail--with-activity-28-instagram-story-ac6f61c4d6.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-instagram-story-32088276c1.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-28-instagram-story-ac6f61c4d6.jpg",
         "alt": "위드의 새 조합원 · 반가운 첫 만남 · 2025년 7월 24일 · 새 조합원을 맞이한 자리 · 제1회 위드 신규 조합원 환영회 참석자들의 기념촬영."
       },
       "youtube": {
@@ -2066,6 +2131,22 @@
     "caseKind": "해당 활동 실제사진",
     "reference": false,
     "portraitFit": "contain",
+    "channelLayouts": {
+      "naver": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "band": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "instagram-feed": {
+        "titleY": 0.22
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    },
     "background": {
       "file": "cases/release-with-29-1.jpg",
       "caption": "대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영.",
@@ -2110,35 +2191,35 @@
         "alt": "위드 통합돌봄 모델 · 시범사업 IR 최우수 선정 · 공식 기록으로 확인하는 통합돌봄 모델 선정 · 대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영."
       },
       "naver": {
-        "file": "social/detail--with-activity-29-naver-f7650d0c6d.jpg",
+        "file": "social/detail--with-activity-29-naver-01f021c5c7.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-naver-f7650d0c6d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-naver-01f021c5c7.jpg",
         "alt": "위드 통합돌봄 모델 · 시범사업 IR 최우수 선정 · 공식 기록으로 확인하는 통합돌봄 모델 선정 · 대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영."
       },
       "band": {
-        "file": "social/detail--with-activity-29-band-265802e034.jpg",
+        "file": "social/detail--with-activity-29-band-09e364a7d7.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-band-265802e034.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-band-09e364a7d7.jpg",
         "alt": "위드 통합돌봄 모델 · 시범사업 IR 최우수 선정 · 공식 기록으로 확인하는 통합돌봄 모델 선정 · 대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영."
       },
       "instagram-feed": {
-        "file": "social/detail--with-activity-29-instagram-feed-d0d6dcaaa3.jpg",
+        "file": "social/detail--with-activity-29-instagram-feed-79daaadbac.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-instagram-feed-d0d6dcaaa3.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-instagram-feed-79daaadbac.jpg",
         "alt": "위드 통합돌봄 모델 · 시범사업 IR 최우수 선정 · 공식 기록으로 확인하는 통합돌봄 모델 선정 · 대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영."
       },
       "instagram-story": {
-        "file": "social/detail--with-activity-29-instagram-story-95cd1d5cb8.jpg",
+        "file": "social/detail--with-activity-29-instagram-story-2af419a305.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-instagram-story-95cd1d5cb8.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-29-instagram-story-2af419a305.jpg",
         "alt": "위드 통합돌봄 모델 · 시범사업 IR 최우수 선정 · 공식 기록으로 확인하는 통합돌봄 모델 선정 · 대구시 사회적경제 통합돌봄 시범사업 선정 발표 행사 참여 관계자들의 기념촬영."
       },
       "youtube": {
@@ -2208,35 +2289,35 @@
         "alt": "조합원과 함께 여는 · 위드의 다섯 번째 총회 · 조합원이 함께한 정기총회의 실제 기록 · 정기총회 자료를 들고 함께 기념촬영하는 위드 참석자들."
       },
       "naver": {
-        "file": "social/detail--with-activity-30-naver-bc2031bfd7.jpg",
+        "file": "social/detail--with-activity-30-naver-276ef6e3a3.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-naver-bc2031bfd7.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-naver-276ef6e3a3.jpg",
         "alt": "조합원과 함께 여는 · 위드의 다섯 번째 총회 · 조합원이 함께한 정기총회의 실제 기록 · 정기총회 자료를 들고 함께 기념촬영하는 위드 참석자들."
       },
       "band": {
-        "file": "social/detail--with-activity-30-band-0cce47f81d.jpg",
+        "file": "social/detail--with-activity-30-band-b22df4ca42.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-band-0cce47f81d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-band-b22df4ca42.jpg",
         "alt": "조합원과 함께 여는 · 위드의 다섯 번째 총회 · 조합원이 함께한 정기총회의 실제 기록 · 정기총회 자료를 들고 함께 기념촬영하는 위드 참석자들."
       },
       "instagram-feed": {
-        "file": "social/detail--with-activity-30-instagram-feed-2371e9e9ac.jpg",
+        "file": "social/detail--with-activity-30-instagram-feed-7c892ca688.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-instagram-feed-2371e9e9ac.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-instagram-feed-7c892ca688.jpg",
         "alt": "조합원과 함께 여는 · 위드의 다섯 번째 총회 · 조합원이 함께한 정기총회의 실제 기록 · 정기총회 자료를 들고 함께 기념촬영하는 위드 참석자들."
       },
       "instagram-story": {
-        "file": "social/detail--with-activity-30-instagram-story-64e6e31047.jpg",
+        "file": "social/detail--with-activity-30-instagram-story-cf9021536b.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-instagram-story-64e6e31047.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-30-instagram-story-cf9021536b.jpg",
         "alt": "조합원과 함께 여는 · 위드의 다섯 번째 총회 · 조합원이 함께한 정기총회의 실제 기록 · 정기총회 자료를 들고 함께 기념촬영하는 위드 참석자들."
       },
       "youtube": {
@@ -2306,35 +2387,35 @@
         "alt": "위드 건강강좌 · 음식과 암 이야기를 듣다 · 조합원과 주민이 함께한 건강강좌 · 위드 건강강좌 음식과 암 이야기에서 강연하는 임재양 원장."
       },
       "naver": {
-        "file": "social/detail--with-activity-31-naver-3517264f57.jpg",
+        "file": "social/detail--with-activity-31-naver-3e27bd137b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-naver-3517264f57.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-naver-3e27bd137b.jpg",
         "alt": "위드 건강강좌 · 음식과 암 이야기를 듣다 · 조합원과 주민이 함께한 건강강좌 · 위드 건강강좌 음식과 암 이야기에서 강연하는 임재양 원장."
       },
       "band": {
-        "file": "social/detail--with-activity-31-band-b41624b38f.jpg",
+        "file": "social/detail--with-activity-31-band-cad6d8b087.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-band-b41624b38f.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-band-cad6d8b087.jpg",
         "alt": "위드 건강강좌 · 음식과 암 이야기를 듣다 · 조합원과 주민이 함께한 건강강좌 · 위드 건강강좌 음식과 암 이야기에서 강연하는 임재양 원장."
       },
       "instagram-feed": {
-        "file": "social/detail--with-activity-31-instagram-feed-5cd6ad3eae.jpg",
+        "file": "social/detail--with-activity-31-instagram-feed-83203f414c.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-instagram-feed-5cd6ad3eae.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-instagram-feed-83203f414c.jpg",
         "alt": "위드 건강강좌 · 음식과 암 이야기를 듣다 · 조합원과 주민이 함께한 건강강좌 · 위드 건강강좌 음식과 암 이야기에서 강연하는 임재양 원장."
       },
       "instagram-story": {
-        "file": "social/detail--with-activity-31-instagram-story-bcc99f6cee.jpg",
+        "file": "social/detail--with-activity-31-instagram-story-c820c49398.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-instagram-story-bcc99f6cee.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--with-activity-31-instagram-story-c820c49398.jpg",
         "alt": "위드 건강강좌 · 음식과 암 이야기를 듣다 · 조합원과 주민이 함께한 건강강좌 · 위드 건강강좌 음식과 암 이야기에서 강연하는 임재양 원장."
       },
       "youtube": {
@@ -2404,35 +2485,35 @@
         "alt": "대구도우누리 · 재택의료 협력망을 잇다 · 2026년 4월 3일 · 의료와 재가돌봄의 연결 · 범어연합내과 재택의료센터와 대구도우누리·재가장기요양기관연합회 수성지회의 업무협약 기념촬영. 현수막에 대구도우누리 법인명이 보입니다."
       },
       "naver": {
-        "file": "social/detail--dounuri-home-medical-agreement-naver-929569fc98.jpg",
+        "file": "social/detail--dounuri-home-medical-agreement-naver-0f15cc4824.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-naver-929569fc98.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-naver-0f15cc4824.jpg",
         "alt": "대구도우누리 · 재택의료 협력망을 잇다 · 2026년 4월 3일 · 의료와 재가돌봄의 연결 · 범어연합내과 재택의료센터와 대구도우누리·재가장기요양기관연합회 수성지회의 업무협약 기념촬영. 현수막에 대구도우누리 법인명이 보입니다."
       },
       "band": {
-        "file": "social/detail--dounuri-home-medical-agreement-band-bd67091ecf.jpg",
+        "file": "social/detail--dounuri-home-medical-agreement-band-5e9711d32c.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-band-bd67091ecf.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-band-5e9711d32c.jpg",
         "alt": "대구도우누리 · 재택의료 협력망을 잇다 · 2026년 4월 3일 · 의료와 재가돌봄의 연결 · 범어연합내과 재택의료센터와 대구도우누리·재가장기요양기관연합회 수성지회의 업무협약 기념촬영. 현수막에 대구도우누리 법인명이 보입니다."
       },
       "instagram-feed": {
-        "file": "social/detail--dounuri-home-medical-agreement-instagram-feed-ba72826c26.jpg",
+        "file": "social/detail--dounuri-home-medical-agreement-instagram-feed-a594d4868b.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-instagram-feed-ba72826c26.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-instagram-feed-a594d4868b.jpg",
         "alt": "대구도우누리 · 재택의료 협력망을 잇다 · 2026년 4월 3일 · 의료와 재가돌봄의 연결 · 범어연합내과 재택의료센터와 대구도우누리·재가장기요양기관연합회 수성지회의 업무협약 기념촬영. 현수막에 대구도우누리 법인명이 보입니다."
       },
       "instagram-story": {
-        "file": "social/detail--dounuri-home-medical-agreement-instagram-story-5f5f66069e.jpg",
+        "file": "social/detail--dounuri-home-medical-agreement-instagram-story-59e050574a.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-instagram-story-5f5f66069e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-home-medical-agreement-instagram-story-59e050574a.jpg",
         "alt": "대구도우누리 · 재택의료 협력망을 잇다 · 2026년 4월 3일 · 의료와 재가돌봄의 연결 · 범어연합내과 재택의료센터와 대구도우누리·재가장기요양기관연합회 수성지회의 업무협약 기념촬영. 현수막에 대구도우누리 법인명이 보입니다."
       },
       "youtube": {
@@ -2502,35 +2583,35 @@
         "alt": "대구도우누리 대표가 전하는 · 사람을 잇는 지역 돌봄 · 기관 대표가 이야기하는 돌봄의 철학 · 기관명이 적힌 조끼를 입고 지역 돌봄과 서비스의 방향을 이야기하는 대구도우누리 대표의 인터뷰 장면."
       },
       "naver": {
-        "file": "social/detail--dounuri-community-interview-naver-3c5e519ea8.jpg",
+        "file": "social/detail--dounuri-community-interview-naver-62e08232f9.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-naver-3c5e519ea8.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-naver-62e08232f9.jpg",
         "alt": "대구도우누리 대표가 전하는 · 사람을 잇는 지역 돌봄 · 기관 대표가 이야기하는 돌봄의 철학 · 기관명이 적힌 조끼를 입고 지역 돌봄과 서비스의 방향을 이야기하는 대구도우누리 대표의 인터뷰 장면."
       },
       "band": {
-        "file": "social/detail--dounuri-community-interview-band-c442050f42.jpg",
+        "file": "social/detail--dounuri-community-interview-band-529f871723.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-band-c442050f42.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-band-529f871723.jpg",
         "alt": "대구도우누리 대표가 전하는 · 사람을 잇는 지역 돌봄 · 기관 대표가 이야기하는 돌봄의 철학 · 기관명이 적힌 조끼를 입고 지역 돌봄과 서비스의 방향을 이야기하는 대구도우누리 대표의 인터뷰 장면."
       },
       "instagram-feed": {
-        "file": "social/detail--dounuri-community-interview-instagram-feed-b75aa904a8.jpg",
+        "file": "social/detail--dounuri-community-interview-instagram-feed-3804afc634.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-instagram-feed-b75aa904a8.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-instagram-feed-3804afc634.jpg",
         "alt": "대구도우누리 대표가 전하는 · 사람을 잇는 지역 돌봄 · 기관 대표가 이야기하는 돌봄의 철학 · 기관명이 적힌 조끼를 입고 지역 돌봄과 서비스의 방향을 이야기하는 대구도우누리 대표의 인터뷰 장면."
       },
       "instagram-story": {
-        "file": "social/detail--dounuri-community-interview-instagram-story-8aa91238cd.jpg",
+        "file": "social/detail--dounuri-community-interview-instagram-story-b1511d1036.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-instagram-story-8aa91238cd.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dounuri-community-interview-instagram-story-b1511d1036.jpg",
         "alt": "대구도우누리 대표가 전하는 · 사람을 잇는 지역 돌봄 · 기관 대표가 이야기하는 돌봄의 철학 · 기관명이 적힌 조끼를 입고 지역 돌봄과 서비스의 방향을 이야기하는 대구도우누리 대표의 인터뷰 장면."
       },
       "youtube": {
@@ -2557,6 +2638,22 @@
     "reference": false,
     "portraitFit": "contain",
     "layout": "top",
+    "channelLayouts": {
+      "naver": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "band": {
+        "titleY": 0.14,
+        "brandY": 0.025
+      },
+      "instagram-feed": {
+        "titleY": 0.22
+      },
+      "instagram-story": {
+        "titleY": 0.3
+      }
+    },
     "background": {
       "file": "cases/release-sdl-agreement-1.jpg",
       "caption": "2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진.",
@@ -2601,35 +2698,35 @@
         "alt": "사회복지디자인연구소 · 경북대와 돌봄 협력 · 2023년 7월 26일 · 대학과 지역의 협력 · 2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진."
       },
       "naver": {
-        "file": "social/detail--sdl-university-agreement-naver-f388e35ddc.jpg",
+        "file": "social/detail--sdl-university-agreement-naver-58579efccb.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-naver-f388e35ddc.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-naver-58579efccb.jpg",
         "alt": "사회복지디자인연구소 · 경북대와 돌봄 협력 · 2023년 7월 26일 · 대학과 지역의 협력 · 2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진."
       },
       "band": {
-        "file": "social/detail--sdl-university-agreement-band-2fae7fe33b.jpg",
+        "file": "social/detail--sdl-university-agreement-band-3be42b44f6.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-band-2fae7fe33b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-band-3be42b44f6.jpg",
         "alt": "사회복지디자인연구소 · 경북대와 돌봄 협력 · 2023년 7월 26일 · 대학과 지역의 협력 · 2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진."
       },
       "instagram-feed": {
-        "file": "social/detail--sdl-university-agreement-instagram-feed-e43a9fcc6c.jpg",
+        "file": "social/detail--sdl-university-agreement-instagram-feed-cad806f733.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-instagram-feed-e43a9fcc6c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-instagram-feed-cad806f733.jpg",
         "alt": "사회복지디자인연구소 · 경북대와 돌봄 협력 · 2023년 7월 26일 · 대학과 지역의 협력 · 2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진."
       },
       "instagram-story": {
-        "file": "social/detail--sdl-university-agreement-instagram-story-ed4f41a2ba.jpg",
+        "file": "social/detail--sdl-university-agreement-instagram-story-72488ed5dd.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-instagram-story-ed4f41a2ba.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--sdl-university-agreement-instagram-story-72488ed5dd.jpg",
         "alt": "사회복지디자인연구소 · 경북대와 돌봄 협력 · 2023년 7월 26일 · 대학과 지역의 협력 · 2023년7월26일 경북대학교 사회복지학부와 사회복지디자인연구소사회적협동조합 업무협약식의 단체 기념사진."
       },
       "youtube": {
@@ -2655,6 +2752,20 @@
     "caseKind": "해당 활동 실제사진",
     "reference": false,
     "portraitFit": "contain",
+    "channelLayouts": {
+      "instagram-feed": {
+        "focus": [
+          1,
+          0.4
+        ]
+      },
+      "instagram-story": {
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/release-dgcare-training-1.jpg",
       "caption": "대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습.",
@@ -2699,35 +2810,35 @@
         "alt": "대구돌봄 소속 실무자가 · 함께한 사회복지 교육 · 2023년 5월 24일 · 소속 실무자의 강의 참여 · 대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습."
       },
       "naver": {
-        "file": "social/detail--dgcare-practitioner-training-naver-7c7f9d8486.jpg",
+        "file": "social/detail--dgcare-practitioner-training-naver-93e3663ce3.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-naver-7c7f9d8486.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-naver-93e3663ce3.jpg",
         "alt": "대구돌봄 소속 실무자가 · 함께한 사회복지 교육 · 2023년 5월 24일 · 소속 실무자의 강의 참여 · 대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습."
       },
       "band": {
-        "file": "social/detail--dgcare-practitioner-training-band-7ab36bd0af.jpg",
+        "file": "social/detail--dgcare-practitioner-training-band-598eccdb58.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-band-7ab36bd0af.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-band-598eccdb58.jpg",
         "alt": "대구돌봄 소속 실무자가 · 함께한 사회복지 교육 · 2023년 5월 24일 · 소속 실무자의 강의 참여 · 대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습."
       },
       "instagram-feed": {
-        "file": "social/detail--dgcare-practitioner-training-instagram-feed-a85bde7c06.jpg",
+        "file": "social/detail--dgcare-practitioner-training-instagram-feed-aba80a4b2f.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-instagram-feed-a85bde7c06.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-instagram-feed-aba80a4b2f.jpg",
         "alt": "대구돌봄 소속 실무자가 · 함께한 사회복지 교육 · 2023년 5월 24일 · 소속 실무자의 강의 참여 · 대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습."
       },
       "instagram-story": {
-        "file": "social/detail--dgcare-practitioner-training-instagram-story-45962c4470.jpg",
+        "file": "social/detail--dgcare-practitioner-training-instagram-story-fc4c3d0684.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-instagram-story-45962c4470.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--dgcare-practitioner-training-instagram-story-fc4c3d0684.jpg",
         "alt": "대구돌봄 소속 실무자가 · 함께한 사회복지 교육 · 2023년 5월 24일 · 소속 실무자의 강의 참여 · 대구돌봄 소속 원대재가노인복지센터장이 강의에 참여한 사회복지법인 외부추천이사 교육. 강사가 자료를 설명하고 참석자들이 듣는 모습."
       },
       "youtube": {
@@ -2796,35 +2907,35 @@
         "alt": "대구 통합돌봄 · 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 발대식에서 참여자들이 함께 찍은 사진"
       },
       "naver": {
-        "file": "social/detail--daegu-declaration-naver-f0b8ced1b2.jpg",
+        "file": "social/detail--daegu-declaration-naver-fb69590d8a.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-naver-f0b8ced1b2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-naver-fb69590d8a.jpg",
         "alt": "대구 통합돌봄 · 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 발대식에서 참여자들이 함께 찍은 사진"
       },
       "band": {
-        "file": "social/detail--daegu-declaration-band-8e96595f1a.jpg",
+        "file": "social/detail--daegu-declaration-band-d0e9252a83.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-band-8e96595f1a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-band-d0e9252a83.jpg",
         "alt": "대구 통합돌봄 · 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 발대식에서 참여자들이 함께 찍은 사진"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-declaration-instagram-feed-4792bdb63e.jpg",
+        "file": "social/detail--daegu-declaration-instagram-feed-11df51fb03.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-instagram-feed-4792bdb63e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-instagram-feed-11df51fb03.jpg",
         "alt": "대구 통합돌봄 · 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 발대식에서 참여자들이 함께 찍은 사진"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-declaration-instagram-story-843a14dbdd.jpg",
+        "file": "social/detail--daegu-declaration-instagram-story-13b96a775b.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-instagram-story-843a14dbdd.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-declaration-instagram-story-13b96a775b.jpg",
         "alt": "대구 통합돌봄 · 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 출범 선언 · 대구광역 통합돌봄 네트워크 발대식에서 참여자들이 함께 찍은 사진"
       },
       "youtube": {
@@ -2894,35 +3005,35 @@
         "alt": "자료로 읽는 · 대구 돌봄 시범사업 · 4개 기관의 통합돌봄 사업 기록 · 접수·진료 현장에서 어르신을 만나는 의대생 실습"
       },
       "naver": {
-        "file": "social/detail--daegu-care-pilot-naver-f19e14c66b.jpg",
+        "file": "social/detail--daegu-care-pilot-naver-4082ecfc7a.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-naver-f19e14c66b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-naver-4082ecfc7a.jpg",
         "alt": "자료로 읽는 · 대구 돌봄 시범사업 · 4개 기관의 통합돌봄 사업 기록 · 접수·진료 현장에서 어르신을 만나는 의대생 실습"
       },
       "band": {
-        "file": "social/detail--daegu-care-pilot-band-4a676bb91c.jpg",
+        "file": "social/detail--daegu-care-pilot-band-0fc4590a2b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-band-4a676bb91c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-band-0fc4590a2b.jpg",
         "alt": "자료로 읽는 · 대구 돌봄 시범사업 · 4개 기관의 통합돌봄 사업 기록 · 접수·진료 현장에서 어르신을 만나는 의대생 실습"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-care-pilot-instagram-feed-6d6887025a.jpg",
+        "file": "social/detail--daegu-care-pilot-instagram-feed-e68e511a8b.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-instagram-feed-6d6887025a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-instagram-feed-e68e511a8b.jpg",
         "alt": "자료로 읽는 · 대구 돌봄 시범사업 · 4개 기관의 통합돌봄 사업 기록 · 접수·진료 현장에서 어르신을 만나는 의대생 실습"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-care-pilot-instagram-story-2b8ac6a290.jpg",
+        "file": "social/detail--daegu-care-pilot-instagram-story-5d82efdf9c.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-instagram-story-2b8ac6a290.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-care-pilot-instagram-story-5d82efdf9c.jpg",
         "alt": "자료로 읽는 · 대구 돌봄 시범사업 · 4개 기관의 통합돌봄 사업 기록 · 접수·진료 현장에서 어르신을 만나는 의대생 실습"
       },
       "youtube": {
@@ -2991,35 +3102,35 @@
         "alt": "대구의 돌봄을 위해 · 15개 기관이 손잡다 · 복현어울림센터에서 15개 기관 업무협약 · 복현어울림센터 업무협약식에서 협약서를 들어 보이는 참여기관 관계자들"
       },
       "naver": {
-        "file": "social/detail--daegu-agreement-naver-44e09aa4c3.jpg",
+        "file": "social/detail--daegu-agreement-naver-0911bbda62.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-naver-44e09aa4c3.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-naver-0911bbda62.jpg",
         "alt": "대구의 돌봄을 위해 · 15개 기관이 손잡다 · 복현어울림센터에서 15개 기관 업무협약 · 복현어울림센터 업무협약식에서 협약서를 들어 보이는 참여기관 관계자들"
       },
       "band": {
-        "file": "social/detail--daegu-agreement-band-e016596690.jpg",
+        "file": "social/detail--daegu-agreement-band-7d103d25fc.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-band-e016596690.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-band-7d103d25fc.jpg",
         "alt": "대구의 돌봄을 위해 · 15개 기관이 손잡다 · 복현어울림센터에서 15개 기관 업무협약 · 복현어울림센터 업무협약식에서 협약서를 들어 보이는 참여기관 관계자들"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-agreement-instagram-feed-c91860ca52.jpg",
+        "file": "social/detail--daegu-agreement-instagram-feed-dd7dbd8156.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-instagram-feed-c91860ca52.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-instagram-feed-dd7dbd8156.jpg",
         "alt": "대구의 돌봄을 위해 · 15개 기관이 손잡다 · 복현어울림센터에서 15개 기관 업무협약 · 복현어울림센터 업무협약식에서 협약서를 들어 보이는 참여기관 관계자들"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-agreement-instagram-story-9062964b40.jpg",
+        "file": "social/detail--daegu-agreement-instagram-story-cb5c3a458d.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-instagram-story-9062964b40.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-agreement-instagram-story-cb5c3a458d.jpg",
         "alt": "대구의 돌봄을 위해 · 15개 기관이 손잡다 · 복현어울림센터에서 15개 기관 업무협약 · 복현어울림센터 업무협약식에서 협약서를 들어 보이는 참여기관 관계자들"
       },
       "youtube": {
@@ -3089,35 +3200,35 @@
         "alt": "자료로 읽는 · 의료와 마을돌봄 · 대구가톨릭대 심포지엄 논의 기록 · 의료사랑방 차량과 청도 대천리 경로당 진입로"
       },
       "naver": {
-        "file": "social/detail--daegu-health-symposium-naver-f388065a9e.jpg",
+        "file": "social/detail--daegu-health-symposium-naver-a1081a20cc.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-naver-f388065a9e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-naver-a1081a20cc.jpg",
         "alt": "자료로 읽는 · 의료와 마을돌봄 · 대구가톨릭대 심포지엄 논의 기록 · 의료사랑방 차량과 청도 대천리 경로당 진입로"
       },
       "band": {
-        "file": "social/detail--daegu-health-symposium-band-e66982320e.jpg",
+        "file": "social/detail--daegu-health-symposium-band-9255f1e842.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-band-e66982320e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-band-9255f1e842.jpg",
         "alt": "자료로 읽는 · 의료와 마을돌봄 · 대구가톨릭대 심포지엄 논의 기록 · 의료사랑방 차량과 청도 대천리 경로당 진입로"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-health-symposium-instagram-feed-e320587ec0.jpg",
+        "file": "social/detail--daegu-health-symposium-instagram-feed-c6f7b88c4e.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-instagram-feed-e320587ec0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-instagram-feed-c6f7b88c4e.jpg",
         "alt": "자료로 읽는 · 의료와 마을돌봄 · 대구가톨릭대 심포지엄 논의 기록 · 의료사랑방 차량과 청도 대천리 경로당 진입로"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-health-symposium-instagram-story-fd92b29328.jpg",
+        "file": "social/detail--daegu-health-symposium-instagram-story-12c29feee4.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-instagram-story-fd92b29328.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-health-symposium-instagram-story-12c29feee4.jpg",
         "alt": "자료로 읽는 · 의료와 마을돌봄 · 대구가톨릭대 심포지엄 논의 기록 · 의료사랑방 차량과 청도 대천리 경로당 진입로"
       },
       "youtube": {
@@ -3187,35 +3298,35 @@
         "alt": "자료로 읽는 · 지역 돌봄 사례 · 영남대 심포지엄 기관 발표 기록 · 팔현습지를 걸으며 건강활동에 참여하는 조합원들"
       },
       "naver": {
-        "file": "social/detail--daegu-university-symposium-naver-c4b1f96317.jpg",
+        "file": "social/detail--daegu-university-symposium-naver-9a2dc56b18.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-naver-c4b1f96317.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-naver-9a2dc56b18.jpg",
         "alt": "자료로 읽는 · 지역 돌봄 사례 · 영남대 심포지엄 기관 발표 기록 · 팔현습지를 걸으며 건강활동에 참여하는 조합원들"
       },
       "band": {
-        "file": "social/detail--daegu-university-symposium-band-a068f53cc7.jpg",
+        "file": "social/detail--daegu-university-symposium-band-933f391e8b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-band-a068f53cc7.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-band-933f391e8b.jpg",
         "alt": "자료로 읽는 · 지역 돌봄 사례 · 영남대 심포지엄 기관 발표 기록 · 팔현습지를 걸으며 건강활동에 참여하는 조합원들"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-university-symposium-instagram-feed-48fc2da0b0.jpg",
+        "file": "social/detail--daegu-university-symposium-instagram-feed-8318b77ee0.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-instagram-feed-48fc2da0b0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-instagram-feed-8318b77ee0.jpg",
         "alt": "자료로 읽는 · 지역 돌봄 사례 · 영남대 심포지엄 기관 발표 기록 · 팔현습지를 걸으며 건강활동에 참여하는 조합원들"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-university-symposium-instagram-story-2fef94c854.jpg",
+        "file": "social/detail--daegu-university-symposium-instagram-story-7384b090b6.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-instagram-story-2fef94c854.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-university-symposium-instagram-story-7384b090b6.jpg",
         "alt": "자료로 읽는 · 지역 돌봄 사례 · 영남대 심포지엄 기관 발표 기록 · 팔현습지를 걸으며 건강활동에 참여하는 조합원들"
       },
       "youtube": {
@@ -3284,35 +3395,35 @@
         "alt": "전국의 돌봄 현장에 · 대구의 경험을 전하다 · 통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표 · 통합돌봄 광역 네트워크 전국대회 참가자들의 단체 사진"
       },
       "naver": {
-        "file": "social/detail--daegu-national-conference-naver-0682f254a6.jpg",
+        "file": "social/detail--daegu-national-conference-naver-0e3d0c98ef.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-naver-0682f254a6.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-naver-0e3d0c98ef.jpg",
         "alt": "전국의 돌봄 현장에 · 대구의 경험을 전하다 · 통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표 · 통합돌봄 광역 네트워크 전국대회 참가자들의 단체 사진"
       },
       "band": {
-        "file": "social/detail--daegu-national-conference-band-6a0a694a5d.jpg",
+        "file": "social/detail--daegu-national-conference-band-c12913ee5a.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-band-6a0a694a5d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-band-c12913ee5a.jpg",
         "alt": "전국의 돌봄 현장에 · 대구의 경험을 전하다 · 통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표 · 통합돌봄 광역 네트워크 전국대회 참가자들의 단체 사진"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-national-conference-instagram-feed-4369d6b53a.jpg",
+        "file": "social/detail--daegu-national-conference-instagram-feed-9623b4a106.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-instagram-feed-4369d6b53a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-instagram-feed-9623b4a106.jpg",
         "alt": "전국의 돌봄 현장에 · 대구의 경험을 전하다 · 통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표 · 통합돌봄 광역 네트워크 전국대회 참가자들의 단체 사진"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-national-conference-instagram-story-40310b8a3f.jpg",
+        "file": "social/detail--daegu-national-conference-instagram-story-37c420e2cf.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-instagram-story-40310b8a3f.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-national-conference-instagram-story-37c420e2cf.jpg",
         "alt": "전국의 돌봄 현장에 · 대구의 경험을 전하다 · 통합돌봄 광역 네트워크 전국대회에서 대구 사례 발표 · 통합돌봄 광역 네트워크 전국대회 참가자들의 단체 사진"
       },
       "youtube": {
@@ -3381,35 +3492,35 @@
         "alt": "의료사회복지사와 · 통합돌봄 과제를 묻다 · 대구경북 의료사회복지사와 통합돌봄 과제 논의 · 대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습"
       },
       "naver": {
-        "file": "social/detail--daegu-seminar-naver-eabbed0c83.jpg",
+        "file": "social/detail--daegu-seminar-naver-7dcd9d97aa.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-naver-eabbed0c83.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-naver-7dcd9d97aa.jpg",
         "alt": "의료사회복지사와 · 통합돌봄 과제를 묻다 · 대구경북 의료사회복지사와 통합돌봄 과제 논의 · 대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습"
       },
       "band": {
-        "file": "social/detail--daegu-seminar-band-4250c0649a.jpg",
+        "file": "social/detail--daegu-seminar-band-234715cfc8.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-band-4250c0649a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-band-234715cfc8.jpg",
         "alt": "의료사회복지사와 · 통합돌봄 과제를 묻다 · 대구경북 의료사회복지사와 통합돌봄 과제 논의 · 대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-seminar-instagram-feed-ade4270275.jpg",
+        "file": "social/detail--daegu-seminar-instagram-feed-cf720f57f4.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-instagram-feed-ade4270275.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-instagram-feed-cf720f57f4.jpg",
         "alt": "의료사회복지사와 · 통합돌봄 과제를 묻다 · 대구경북 의료사회복지사와 통합돌봄 과제 논의 · 대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-seminar-instagram-story-3d5065609d.jpg",
+        "file": "social/detail--daegu-seminar-instagram-story-a64cae1678.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-instagram-story-3d5065609d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-seminar-instagram-story-a64cae1678.jpg",
         "alt": "의료사회복지사와 · 통합돌봄 과제를 묻다 · 대구경북 의료사회복지사와 통합돌봄 과제 논의 · 대구경북 의료사회복지사 세미나에서 지역 통합돌봄 강의가 진행되는 모습"
       },
       "youtube": {
@@ -3478,35 +3589,35 @@
         "alt": "내일앤을 찾아서 · 직업재활 현장을 만나다 · 내일앤 보호작업장과 주간활동 공간 방문 · 내일앤 발달장애인 주간활동 공간을 방문한 관계자들"
       },
       "naver": {
-        "file": "social/detail--daegu-naeiln-visit-naver-7970c666d2.jpg",
+        "file": "social/detail--daegu-naeiln-visit-naver-b880d6920d.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-naver-7970c666d2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-naver-b880d6920d.jpg",
         "alt": "내일앤을 찾아서 · 직업재활 현장을 만나다 · 내일앤 보호작업장과 주간활동 공간 방문 · 내일앤 발달장애인 주간활동 공간을 방문한 관계자들"
       },
       "band": {
-        "file": "social/detail--daegu-naeiln-visit-band-d149635672.jpg",
+        "file": "social/detail--daegu-naeiln-visit-band-7b69c48e54.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-band-d149635672.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-band-7b69c48e54.jpg",
         "alt": "내일앤을 찾아서 · 직업재활 현장을 만나다 · 내일앤 보호작업장과 주간활동 공간 방문 · 내일앤 발달장애인 주간활동 공간을 방문한 관계자들"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-naeiln-visit-instagram-feed-ac563443ed.jpg",
+        "file": "social/detail--daegu-naeiln-visit-instagram-feed-b67b4533ca.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-instagram-feed-ac563443ed.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-instagram-feed-b67b4533ca.jpg",
         "alt": "내일앤을 찾아서 · 직업재활 현장을 만나다 · 내일앤 보호작업장과 주간활동 공간 방문 · 내일앤 발달장애인 주간활동 공간을 방문한 관계자들"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-naeiln-visit-instagram-story-88da8fe873.jpg",
+        "file": "social/detail--daegu-naeiln-visit-instagram-story-4114a5853e.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-instagram-story-88da8fe873.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-naeiln-visit-instagram-story-4114a5853e.jpg",
         "alt": "내일앤을 찾아서 · 직업재활 현장을 만나다 · 내일앤 보호작업장과 주간활동 공간 방문 · 내일앤 발달장애인 주간활동 공간을 방문한 관계자들"
       },
       "youtube": {
@@ -3575,35 +3686,35 @@
         "alt": "함께 가꾸는 텃밭 · 어르신의 일상을 잇다 · 복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문 · 복현어울림센터 어르신 텃밭 가꾸기 사업 설명 현장"
       },
       "naver": {
-        "file": "social/detail--daegu-garden-visit-naver-69161569f9.jpg",
+        "file": "social/detail--daegu-garden-visit-naver-a5b379f128.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-naver-69161569f9.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-naver-a5b379f128.jpg",
         "alt": "함께 가꾸는 텃밭 · 어르신의 일상을 잇다 · 복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문 · 복현어울림센터 어르신 텃밭 가꾸기 사업 설명 현장"
       },
       "band": {
-        "file": "social/detail--daegu-garden-visit-band-7d30d2eaad.jpg",
+        "file": "social/detail--daegu-garden-visit-band-dffe8433d0.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-band-7d30d2eaad.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-band-dffe8433d0.jpg",
         "alt": "함께 가꾸는 텃밭 · 어르신의 일상을 잇다 · 복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문 · 복현어울림센터 어르신 텃밭 가꾸기 사업 설명 현장"
       },
       "instagram-feed": {
-        "file": "social/detail--daegu-garden-visit-instagram-feed-0e90c0ff5e.jpg",
+        "file": "social/detail--daegu-garden-visit-instagram-feed-5a59f20a49.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-instagram-feed-0e90c0ff5e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-instagram-feed-5a59f20a49.jpg",
         "alt": "함께 가꾸는 텃밭 · 어르신의 일상을 잇다 · 복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문 · 복현어울림센터 어르신 텃밭 가꾸기 사업 설명 현장"
       },
       "instagram-story": {
-        "file": "social/detail--daegu-garden-visit-instagram-story-304a33fc47.jpg",
+        "file": "social/detail--daegu-garden-visit-instagram-story-e0a7858ac2.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-instagram-story-304a33fc47.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--daegu-garden-visit-instagram-story-e0a7858ac2.jpg",
         "alt": "함께 가꾸는 텃밭 · 어르신의 일상을 잇다 · 복현어울림센터에서 어르신 텃밭 가꾸기 사업 방문 · 복현어울림센터 어르신 텃밭 가꾸기 사업 설명 현장"
       },
       "youtube": {
@@ -3673,35 +3784,35 @@
         "alt": "위드 의료사랑방 · 함께하는 한 끼 · 청도 대천리에서 시작한 의료·돌봄 활동 · 의료사랑방 현장에서 어르신들이 식사하는 모습"
       },
       "naver": {
-        "file": "social/detail--n1-naver-d8d40ca55d.jpg",
+        "file": "social/detail--n1-naver-62423129c3.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-naver-d8d40ca55d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-naver-62423129c3.jpg",
         "alt": "위드 의료사랑방 · 함께하는 한 끼 · 청도 대천리에서 시작한 의료·돌봄 활동 · 의료사랑방 현장에서 어르신들이 식사하는 모습"
       },
       "band": {
-        "file": "social/detail--n1-band-de11730bc0.jpg",
+        "file": "social/detail--n1-band-a531db6f3b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-band-de11730bc0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-band-a531db6f3b.jpg",
         "alt": "위드 의료사랑방 · 함께하는 한 끼 · 청도 대천리에서 시작한 의료·돌봄 활동 · 의료사랑방 현장에서 어르신들이 식사하는 모습"
       },
       "instagram-feed": {
-        "file": "social/detail--n1-instagram-feed-428811cd5c.jpg",
+        "file": "social/detail--n1-instagram-feed-34a11ef7c4.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-instagram-feed-428811cd5c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-instagram-feed-34a11ef7c4.jpg",
         "alt": "위드 의료사랑방 · 함께하는 한 끼 · 청도 대천리에서 시작한 의료·돌봄 활동 · 의료사랑방 현장에서 어르신들이 식사하는 모습"
       },
       "instagram-story": {
-        "file": "social/detail--n1-instagram-story-263942ba2b.jpg",
+        "file": "social/detail--n1-instagram-story-afafc5dd74.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-instagram-story-263942ba2b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n1-instagram-story-afafc5dd74.jpg",
         "alt": "위드 의료사랑방 · 함께하는 한 끼 · 청도 대천리에서 시작한 의료·돌봄 활동 · 의료사랑방 현장에서 어르신들이 식사하는 모습"
       },
       "youtube": {
@@ -3727,6 +3838,14 @@
     "caseKind": "해당 활동 실제사진",
     "reference": false,
     "portraitFit": "contain",
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          0.85,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/with-33-1.jpg",
       "caption": "의료현장 실습에 참여한 의대생과 주민들",
@@ -3771,35 +3890,35 @@
         "alt": "위드와 의대생이 · 함께 배우는 방문진료 · 지역사회 의료를 만나는 현장 실습 · 의료현장 실습에 참여한 의대생과 주민들"
       },
       "naver": {
-        "file": "social/detail--n2-naver-bb42ac143c.jpg",
+        "file": "social/detail--n2-naver-b3232cc325.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-naver-bb42ac143c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-naver-b3232cc325.jpg",
         "alt": "위드와 의대생이 · 함께 배우는 방문진료 · 지역사회 의료를 만나는 현장 실습 · 의료현장 실습에 참여한 의대생과 주민들"
       },
       "band": {
-        "file": "social/detail--n2-band-d2bf816848.jpg",
+        "file": "social/detail--n2-band-981277bb20.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-band-d2bf816848.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-band-981277bb20.jpg",
         "alt": "위드와 의대생이 · 함께 배우는 방문진료 · 지역사회 의료를 만나는 현장 실습 · 의료현장 실습에 참여한 의대생과 주민들"
       },
       "instagram-feed": {
-        "file": "social/detail--n2-instagram-feed-43001c0534.jpg",
+        "file": "social/detail--n2-instagram-feed-9bebc2010a.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-instagram-feed-43001c0534.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-instagram-feed-9bebc2010a.jpg",
         "alt": "위드와 의대생이 · 함께 배우는 방문진료 · 지역사회 의료를 만나는 현장 실습 · 의료현장 실습에 참여한 의대생과 주민들"
       },
       "instagram-story": {
-        "file": "social/detail--n2-instagram-story-a6e0e7c37c.jpg",
+        "file": "social/detail--n2-instagram-story-15e500652c.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-instagram-story-a6e0e7c37c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n2-instagram-story-15e500652c.jpg",
         "alt": "위드와 의대생이 · 함께 배우는 방문진료 · 지역사회 의료를 만나는 현장 실습 · 의료현장 실습에 참여한 의대생과 주민들"
       },
       "youtube": {
@@ -3869,35 +3988,35 @@
         "alt": "모두행복센터의 · 일상을 돕는 가사지원 · 가정방문과 생활지원의 실제 기록 · 가사지원 후 정돈된 주방"
       },
       "naver": {
-        "file": "social/detail--n3-naver-88243e71a0.jpg",
+        "file": "social/detail--n3-naver-655596a281.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-naver-88243e71a0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-naver-655596a281.jpg",
         "alt": "모두행복센터의 · 일상을 돕는 가사지원 · 가정방문과 생활지원의 실제 기록 · 가사지원 후 정돈된 주방"
       },
       "band": {
-        "file": "social/detail--n3-band-952f3db63f.jpg",
+        "file": "social/detail--n3-band-3ac63d234b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-band-952f3db63f.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-band-3ac63d234b.jpg",
         "alt": "모두행복센터의 · 일상을 돕는 가사지원 · 가정방문과 생활지원의 실제 기록 · 가사지원 후 정돈된 주방"
       },
       "instagram-feed": {
-        "file": "social/detail--n3-instagram-feed-547670c6da.jpg",
+        "file": "social/detail--n3-instagram-feed-7bcf25894b.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-instagram-feed-547670c6da.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-instagram-feed-7bcf25894b.jpg",
         "alt": "모두행복센터의 · 일상을 돕는 가사지원 · 가정방문과 생활지원의 실제 기록 · 가사지원 후 정돈된 주방"
       },
       "instagram-story": {
-        "file": "social/detail--n3-instagram-story-944a5842aa.jpg",
+        "file": "social/detail--n3-instagram-story-d351735761.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-instagram-story-944a5842aa.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n3-instagram-story-d351735761.jpg",
         "alt": "모두행복센터의 · 일상을 돕는 가사지원 · 가정방문과 생활지원의 실제 기록 · 가사지원 후 정돈된 주방"
       },
       "youtube": {
@@ -3967,35 +4086,35 @@
         "alt": "대구돌봄의 · 이웃에게 전하는 한 끼 · 식사영양관리의 조리·포장·전달 기록 · 생선까스 식단 포장"
       },
       "naver": {
-        "file": "social/detail--n4-naver-092b0d0919.jpg",
+        "file": "social/detail--n4-naver-456d5ec67e.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-naver-092b0d0919.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-naver-456d5ec67e.jpg",
         "alt": "대구돌봄의 · 이웃에게 전하는 한 끼 · 식사영양관리의 조리·포장·전달 기록 · 생선까스 식단 포장"
       },
       "band": {
-        "file": "social/detail--n4-band-4f5e4f76be.jpg",
+        "file": "social/detail--n4-band-ce60b1eb96.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-band-4f5e4f76be.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-band-ce60b1eb96.jpg",
         "alt": "대구돌봄의 · 이웃에게 전하는 한 끼 · 식사영양관리의 조리·포장·전달 기록 · 생선까스 식단 포장"
       },
       "instagram-feed": {
-        "file": "social/detail--n4-instagram-feed-d7770e1a04.jpg",
+        "file": "social/detail--n4-instagram-feed-c32cd5e0c6.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-instagram-feed-d7770e1a04.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-instagram-feed-c32cd5e0c6.jpg",
         "alt": "대구돌봄의 · 이웃에게 전하는 한 끼 · 식사영양관리의 조리·포장·전달 기록 · 생선까스 식단 포장"
       },
       "instagram-story": {
-        "file": "social/detail--n4-instagram-story-95a81b0e53.jpg",
+        "file": "social/detail--n4-instagram-story-3d0eac4646.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-instagram-story-95a81b0e53.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n4-instagram-story-3d0eac4646.jpg",
         "alt": "대구돌봄의 · 이웃에게 전하는 한 끼 · 식사영양관리의 조리·포장·전달 기록 · 생선까스 식단 포장"
       },
       "youtube": {
@@ -4065,35 +4184,35 @@
         "alt": "위드와 어르신이 · 한 권에 담은 삶의 이야기 · 생애구술기록 출판기념회 · 생애구술기록 출판기념회 발표 현장"
       },
       "naver": {
-        "file": "social/detail--n5-naver-f285d87b5a.jpg",
+        "file": "social/detail--n5-naver-2e53169b21.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-naver-f285d87b5a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-naver-2e53169b21.jpg",
         "alt": "위드와 어르신이 · 한 권에 담은 삶의 이야기 · 생애구술기록 출판기념회 · 생애구술기록 출판기념회 발표 현장"
       },
       "band": {
-        "file": "social/detail--n5-band-7975a87816.jpg",
+        "file": "social/detail--n5-band-a3f6490042.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-band-7975a87816.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-band-a3f6490042.jpg",
         "alt": "위드와 어르신이 · 한 권에 담은 삶의 이야기 · 생애구술기록 출판기념회 · 생애구술기록 출판기념회 발표 현장"
       },
       "instagram-feed": {
-        "file": "social/detail--n5-instagram-feed-48ede4be20.jpg",
+        "file": "social/detail--n5-instagram-feed-db89975563.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-instagram-feed-48ede4be20.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-instagram-feed-db89975563.jpg",
         "alt": "위드와 어르신이 · 한 권에 담은 삶의 이야기 · 생애구술기록 출판기념회 · 생애구술기록 출판기념회 발표 현장"
       },
       "instagram-story": {
-        "file": "social/detail--n5-instagram-story-aa3f42485d.jpg",
+        "file": "social/detail--n5-instagram-story-6068b9f72f.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-instagram-story-aa3f42485d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n5-instagram-story-6068b9f72f.jpg",
         "alt": "위드와 어르신이 · 한 권에 담은 삶의 이야기 · 생애구술기록 출판기념회 · 생애구술기록 출판기념회 발표 현장"
       },
       "youtube": {
@@ -4163,35 +4282,35 @@
         "alt": "모두행복센터 · 병원 가는 길의 동행 · 진료 준비와 이동을 함께한 실제 사례 · 어르신의 병원 이동을 돕는 동행"
       },
       "naver": {
-        "file": "social/detail--n6-naver-31411087da.jpg",
+        "file": "social/detail--n6-naver-739839e958.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-naver-31411087da.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-naver-739839e958.jpg",
         "alt": "모두행복센터 · 병원 가는 길의 동행 · 진료 준비와 이동을 함께한 실제 사례 · 어르신의 병원 이동을 돕는 동행"
       },
       "band": {
-        "file": "social/detail--n6-band-e132b3c90a.jpg",
+        "file": "social/detail--n6-band-2d59b5b726.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-band-e132b3c90a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-band-2d59b5b726.jpg",
         "alt": "모두행복센터 · 병원 가는 길의 동행 · 진료 준비와 이동을 함께한 실제 사례 · 어르신의 병원 이동을 돕는 동행"
       },
       "instagram-feed": {
-        "file": "social/detail--n6-instagram-feed-f39df0afdf.jpg",
+        "file": "social/detail--n6-instagram-feed-2f41badb91.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-instagram-feed-f39df0afdf.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-instagram-feed-2f41badb91.jpg",
         "alt": "모두행복센터 · 병원 가는 길의 동행 · 진료 준비와 이동을 함께한 실제 사례 · 어르신의 병원 이동을 돕는 동행"
       },
       "instagram-story": {
-        "file": "social/detail--n6-instagram-story-71276ef103.jpg",
+        "file": "social/detail--n6-instagram-story-c79bbfc284.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-instagram-story-71276ef103.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n6-instagram-story-c79bbfc284.jpg",
         "alt": "모두행복센터 · 병원 가는 길의 동행 · 진료 준비와 이동을 함께한 실제 사례 · 어르신의 병원 이동을 돕는 동행"
       },
       "youtube": {
@@ -4261,35 +4380,35 @@
         "alt": "위드와 어르신의 · 가을 수목원 나들이 · 생애구술기록 어부바 사업의 하루 · 생애구술기록 어부바 사업 참가자들의 대구수목원 방문"
       },
       "naver": {
-        "file": "social/detail--n7-naver-da9ba6860b.jpg",
+        "file": "social/detail--n7-naver-dd9f524778.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-naver-da9ba6860b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-naver-dd9f524778.jpg",
         "alt": "위드와 어르신의 · 가을 수목원 나들이 · 생애구술기록 어부바 사업의 하루 · 생애구술기록 어부바 사업 참가자들의 대구수목원 방문"
       },
       "band": {
-        "file": "social/detail--n7-band-1f7fe49753.jpg",
+        "file": "social/detail--n7-band-3559fa75e0.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-band-1f7fe49753.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-band-3559fa75e0.jpg",
         "alt": "위드와 어르신의 · 가을 수목원 나들이 · 생애구술기록 어부바 사업의 하루 · 생애구술기록 어부바 사업 참가자들의 대구수목원 방문"
       },
       "instagram-feed": {
-        "file": "social/detail--n7-instagram-feed-294826a7e5.jpg",
+        "file": "social/detail--n7-instagram-feed-02ad08bc4a.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-instagram-feed-294826a7e5.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-instagram-feed-02ad08bc4a.jpg",
         "alt": "위드와 어르신의 · 가을 수목원 나들이 · 생애구술기록 어부바 사업의 하루 · 생애구술기록 어부바 사업 참가자들의 대구수목원 방문"
       },
       "instagram-story": {
-        "file": "social/detail--n7-instagram-story-6edd19defd.jpg",
+        "file": "social/detail--n7-instagram-story-987e02a720.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-instagram-story-6edd19defd.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n7-instagram-story-987e02a720.jpg",
         "alt": "위드와 어르신의 · 가을 수목원 나들이 · 생애구술기록 어부바 사업의 하루 · 생애구술기록 어부바 사업 참가자들의 대구수목원 방문"
       },
       "youtube": {
@@ -4359,35 +4478,35 @@
         "alt": "사회복지디자인연구소 · 아이들과 배우는 안전 · 구미YMCA와 함께한 찾아가는 안전교육 · 사회복지디자인연구소와 구미YMCA의 찾아가는 안전교육에서 강사가 설명하고 아동들이 듣는 실제 수업 모습."
       },
       "naver": {
-        "file": "social/detail--n8-naver-2b4820aa6c.jpg",
+        "file": "social/detail--n8-naver-038feb5885.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-naver-2b4820aa6c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-naver-038feb5885.jpg",
         "alt": "사회복지디자인연구소 · 아이들과 배우는 안전 · 구미YMCA와 함께한 찾아가는 안전교육 · 사회복지디자인연구소와 구미YMCA의 찾아가는 안전교육에서 강사가 설명하고 아동들이 듣는 실제 수업 모습."
       },
       "band": {
-        "file": "social/detail--n8-band-b0a0296d6c.jpg",
+        "file": "social/detail--n8-band-34d51dac7d.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-band-b0a0296d6c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-band-34d51dac7d.jpg",
         "alt": "사회복지디자인연구소 · 아이들과 배우는 안전 · 구미YMCA와 함께한 찾아가는 안전교육 · 사회복지디자인연구소와 구미YMCA의 찾아가는 안전교육에서 강사가 설명하고 아동들이 듣는 실제 수업 모습."
       },
       "instagram-feed": {
-        "file": "social/detail--n8-instagram-feed-fac6500fc1.jpg",
+        "file": "social/detail--n8-instagram-feed-dd15c27bc2.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-instagram-feed-fac6500fc1.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-instagram-feed-dd15c27bc2.jpg",
         "alt": "사회복지디자인연구소 · 아이들과 배우는 안전 · 구미YMCA와 함께한 찾아가는 안전교육 · 사회복지디자인연구소와 구미YMCA의 찾아가는 안전교육에서 강사가 설명하고 아동들이 듣는 실제 수업 모습."
       },
       "instagram-story": {
-        "file": "social/detail--n8-instagram-story-ca1470ee61.jpg",
+        "file": "social/detail--n8-instagram-story-74510cd790.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-instagram-story-ca1470ee61.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--n8-instagram-story-74510cd790.jpg",
         "alt": "사회복지디자인연구소 · 아이들과 배우는 안전 · 구미YMCA와 함께한 찾아가는 안전교육 · 사회복지디자인연구소와 구미YMCA의 찾아가는 안전교육에서 강사가 설명하고 아동들이 듣는 실제 수업 모습."
       },
       "youtube": {
@@ -4457,35 +4576,35 @@
         "alt": "통합돌봄 제도 · 한눈에 보기 · 보건복지부 공식 안내 · 260211 （사진1） 구로구 통합지원협의체 기념촬영"
       },
       "naver": {
-        "file": "social/detail--p1-naver-8744d69eff.jpg",
+        "file": "social/detail--p1-naver-d639214d1e.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-naver-8744d69eff.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-naver-d639214d1e.jpg",
         "alt": "통합돌봄 제도 · 한눈에 보기 · 보건복지부 공식 안내 · 260211 （사진1） 구로구 통합지원협의체 기념촬영"
       },
       "band": {
-        "file": "social/detail--p1-band-ed5898b6cf.jpg",
+        "file": "social/detail--p1-band-38d46ecc60.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-band-ed5898b6cf.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-band-38d46ecc60.jpg",
         "alt": "통합돌봄 제도 · 한눈에 보기 · 보건복지부 공식 안내 · 260211 （사진1） 구로구 통합지원협의체 기념촬영"
       },
       "instagram-feed": {
-        "file": "social/detail--p1-instagram-feed-690c7f187b.jpg",
+        "file": "social/detail--p1-instagram-feed-7be1868bce.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-instagram-feed-690c7f187b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-instagram-feed-7be1868bce.jpg",
         "alt": "통합돌봄 제도 · 한눈에 보기 · 보건복지부 공식 안내 · 260211 （사진1） 구로구 통합지원협의체 기념촬영"
       },
       "instagram-story": {
-        "file": "social/detail--p1-instagram-story-238455c882.jpg",
+        "file": "social/detail--p1-instagram-story-e831909e61.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-instagram-story-238455c882.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p1-instagram-story-e831909e61.jpg",
         "alt": "통합돌봄 제도 · 한눈에 보기 · 보건복지부 공식 안내 · 260211 （사진1） 구로구 통합지원협의체 기념촬영"
       },
       "youtube": {
@@ -4555,35 +4674,35 @@
         "alt": "대구의 돌봄 서비스 · 어디서 확인할까요? · 대구지역 통합돌봄 서비스 정보 · 230518 （사진2） AI·IoT 기반 어르신 건강관리（홍보부스 운영）"
       },
       "naver": {
-        "file": "social/detail--p2-naver-ead68abe30.jpg",
+        "file": "social/detail--p2-naver-e3679e2171.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-naver-ead68abe30.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-naver-e3679e2171.jpg",
         "alt": "대구의 돌봄 서비스 · 어디서 확인할까요? · 대구지역 통합돌봄 서비스 정보 · 230518 （사진2） AI·IoT 기반 어르신 건강관리（홍보부스 운영）"
       },
       "band": {
-        "file": "social/detail--p2-band-885fe7310b.jpg",
+        "file": "social/detail--p2-band-627b2cfbeb.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-band-885fe7310b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-band-627b2cfbeb.jpg",
         "alt": "대구의 돌봄 서비스 · 어디서 확인할까요? · 대구지역 통합돌봄 서비스 정보 · 230518 （사진2） AI·IoT 기반 어르신 건강관리（홍보부스 운영）"
       },
       "instagram-feed": {
-        "file": "social/detail--p2-instagram-feed-17bb682d7c.jpg",
+        "file": "social/detail--p2-instagram-feed-b0b73f12f3.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-instagram-feed-17bb682d7c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-instagram-feed-b0b73f12f3.jpg",
         "alt": "대구의 돌봄 서비스 · 어디서 확인할까요? · 대구지역 통합돌봄 서비스 정보 · 230518 （사진2） AI·IoT 기반 어르신 건강관리（홍보부스 운영）"
       },
       "instagram-story": {
-        "file": "social/detail--p2-instagram-story-16d206076d.jpg",
+        "file": "social/detail--p2-instagram-story-f5ed2932f8.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-instagram-story-16d206076d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p2-instagram-story-f5ed2932f8.jpg",
         "alt": "대구의 돌봄 서비스 · 어디서 확인할까요? · 대구지역 통합돌봄 서비스 정보 · 230518 （사진2） AI·IoT 기반 어르신 건강관리（홍보부스 운영）"
       },
       "youtube": {
@@ -4653,35 +4772,35 @@
         "alt": "정책부터 교육까지 · 공식 자료 모아보기 · 보건복지부 통합돌봄 자료 안내 · 250225 （사진1） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다"
       },
       "naver": {
-        "file": "social/detail--p3-naver-a2448869fa.jpg",
+        "file": "social/detail--p3-naver-5b0c7763f1.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-naver-a2448869fa.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-naver-5b0c7763f1.jpg",
         "alt": "정책부터 교육까지 · 공식 자료 모아보기 · 보건복지부 통합돌봄 자료 안내 · 250225 （사진1） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다"
       },
       "band": {
-        "file": "social/detail--p3-band-c9fa64d069.jpg",
+        "file": "social/detail--p3-band-2c11378dd5.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-band-c9fa64d069.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-band-2c11378dd5.jpg",
         "alt": "정책부터 교육까지 · 공식 자료 모아보기 · 보건복지부 통합돌봄 자료 안내 · 250225 （사진1） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다"
       },
       "instagram-feed": {
-        "file": "social/detail--p3-instagram-feed-04527bd5fe.jpg",
+        "file": "social/detail--p3-instagram-feed-bb9dc7e1b0.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-instagram-feed-04527bd5fe.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-instagram-feed-bb9dc7e1b0.jpg",
         "alt": "정책부터 교육까지 · 공식 자료 모아보기 · 보건복지부 통합돌봄 자료 안내 · 250225 （사진1） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다"
       },
       "instagram-story": {
-        "file": "social/detail--p3-instagram-story-388b0da7df.jpg",
+        "file": "social/detail--p3-instagram-story-668b4bd709.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-instagram-story-388b0da7df.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p3-instagram-story-668b4bd709.jpg",
         "alt": "정책부터 교육까지 · 공식 자료 모아보기 · 보건복지부 통합돌봄 자료 안내 · 250225 （사진1） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다"
       },
       "youtube": {
@@ -4707,6 +4826,14 @@
     "caseKind": "분야 참고 사례",
     "reference": true,
     "referenceLabel": "공식 정책 안내 · 다른 지역 참고사진",
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          0,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/guro189872-1.jpg",
       "caption": "230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）",
@@ -4751,35 +4878,35 @@
         "alt": "통합돌봄 신청 · 어디서 시작할까요? · 신청과 이용 절차 · 공식 안내 · 230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）"
       },
       "naver": {
-        "file": "social/detail--p4-naver-9d8810caa2.jpg",
+        "file": "social/detail--p4-naver-2fd45b45a2.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-naver-9d8810caa2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-naver-2fd45b45a2.jpg",
         "alt": "통합돌봄 신청 · 어디서 시작할까요? · 신청과 이용 절차 · 공식 안내 · 230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）"
       },
       "band": {
-        "file": "social/detail--p4-band-8cc2684473.jpg",
+        "file": "social/detail--p4-band-b81fb638d0.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-band-8cc2684473.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-band-b81fb638d0.jpg",
         "alt": "통합돌봄 신청 · 어디서 시작할까요? · 신청과 이용 절차 · 공식 안내 · 230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）"
       },
       "instagram-feed": {
-        "file": "social/detail--p4-instagram-feed-5c4b776aee.jpg",
+        "file": "social/detail--p4-instagram-feed-297bafa634.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-instagram-feed-5c4b776aee.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-instagram-feed-297bafa634.jpg",
         "alt": "통합돌봄 신청 · 어디서 시작할까요? · 신청과 이용 절차 · 공식 안내 · 230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）"
       },
       "instagram-story": {
-        "file": "social/detail--p4-instagram-story-ba05d1b06b.jpg",
+        "file": "social/detail--p4-instagram-story-4fa8b80068.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-instagram-story-ba05d1b06b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p4-instagram-story-4fa8b80068.jpg",
         "alt": "통합돌봄 신청 · 어디서 시작할까요? · 신청과 이용 절차 · 공식 안내 · 230518 （사진1） AI·IoT 기반 어르신 건강관리（사전 건강측정）"
       },
       "youtube": {
@@ -4849,35 +4976,35 @@
         "alt": "돌봄통합지원법 · 원문으로 확인하세요 · 국가법령정보센터 공식 법령 · 250225 （사진2） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다."
       },
       "naver": {
-        "file": "social/detail--p5-naver-dabb134eba.jpg",
+        "file": "social/detail--p5-naver-41f5945ed6.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-naver-dabb134eba.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-naver-41f5945ed6.jpg",
         "alt": "돌봄통합지원법 · 원문으로 확인하세요 · 국가법령정보센터 공식 법령 · 250225 （사진2） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다."
       },
       "band": {
-        "file": "social/detail--p5-band-41f9f65240.jpg",
+        "file": "social/detail--p5-band-e7575846a3.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-band-41f9f65240.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-band-e7575846a3.jpg",
         "alt": "돌봄통합지원법 · 원문으로 확인하세요 · 국가법령정보센터 공식 법령 · 250225 （사진2） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다."
       },
       "instagram-feed": {
-        "file": "social/detail--p5-instagram-feed-e5f5a866c2.jpg",
+        "file": "social/detail--p5-instagram-feed-753109359b.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-instagram-feed-e5f5a866c2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-instagram-feed-753109359b.jpg",
         "alt": "돌봄통합지원법 · 원문으로 확인하세요 · 국가법령정보센터 공식 법령 · 250225 （사진2） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다."
       },
       "instagram-story": {
-        "file": "social/detail--p5-instagram-story-6d8bd7553a.jpg",
+        "file": "social/detail--p5-instagram-story-f8711be3e5.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-instagram-story-6d8bd7553a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p5-instagram-story-f8711be3e5.jpg",
         "alt": "돌봄통합지원법 · 원문으로 확인하세요 · 국가법령정보센터 공식 법령 · 250225 （사진2） 경로당 어르신들이 노인 폐렴에 대한 교육을 듣고 있다."
       },
       "youtube": {
@@ -4947,35 +5074,35 @@
         "alt": "우리 지역 돌봄 정보 · 시·도별로 찾아보기 · 보건복지부 서비스 메뉴판 · 240603 （사진3） 지난해 개최된 구로구공익활동박람회 현장 모습2"
       },
       "naver": {
-        "file": "social/detail--p6-naver-0ee026e519.jpg",
+        "file": "social/detail--p6-naver-09a570570f.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-naver-0ee026e519.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-naver-09a570570f.jpg",
         "alt": "우리 지역 돌봄 정보 · 시·도별로 찾아보기 · 보건복지부 서비스 메뉴판 · 240603 （사진3） 지난해 개최된 구로구공익활동박람회 현장 모습2"
       },
       "band": {
-        "file": "social/detail--p6-band-43624be2ba.jpg",
+        "file": "social/detail--p6-band-0be7bd34b7.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-band-43624be2ba.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-band-0be7bd34b7.jpg",
         "alt": "우리 지역 돌봄 정보 · 시·도별로 찾아보기 · 보건복지부 서비스 메뉴판 · 240603 （사진3） 지난해 개최된 구로구공익활동박람회 현장 모습2"
       },
       "instagram-feed": {
-        "file": "social/detail--p6-instagram-feed-dd5541b847.jpg",
+        "file": "social/detail--p6-instagram-feed-6d7d5e2947.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-instagram-feed-dd5541b847.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-instagram-feed-6d7d5e2947.jpg",
         "alt": "우리 지역 돌봄 정보 · 시·도별로 찾아보기 · 보건복지부 서비스 메뉴판 · 240603 （사진3） 지난해 개최된 구로구공익활동박람회 현장 모습2"
       },
       "instagram-story": {
-        "file": "social/detail--p6-instagram-story-ce47f599c8.jpg",
+        "file": "social/detail--p6-instagram-story-5b2058fd9d.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-instagram-story-ce47f599c8.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--p6-instagram-story-5b2058fd9d.jpg",
         "alt": "우리 지역 돌봄 정보 · 시·도별로 찾아보기 · 보건복지부 서비스 메뉴판 · 240603 （사진3） 지난해 개최된 구로구공익활동박람회 현장 모습2"
       },
       "youtube": {
@@ -5045,35 +5172,35 @@
         "alt": "모두행복센터 · 돌봄 종사자 치매교육 · 2025년 종사자 교육의 실제 기록 · 치매전문교육에 참여한 돌봄 종사자"
       },
       "naver": {
-        "file": "social/detail--e1-naver-6c8792f997.jpg",
+        "file": "social/detail--e1-naver-b6c04997c6.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-naver-6c8792f997.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-naver-b6c04997c6.jpg",
         "alt": "모두행복센터 · 돌봄 종사자 치매교육 · 2025년 종사자 교육의 실제 기록 · 치매전문교육에 참여한 돌봄 종사자"
       },
       "band": {
-        "file": "social/detail--e1-band-3ee1ec8753.jpg",
+        "file": "social/detail--e1-band-ab974f48d8.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-band-3ee1ec8753.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-band-ab974f48d8.jpg",
         "alt": "모두행복센터 · 돌봄 종사자 치매교육 · 2025년 종사자 교육의 실제 기록 · 치매전문교육에 참여한 돌봄 종사자"
       },
       "instagram-feed": {
-        "file": "social/detail--e1-instagram-feed-9b7eab5e7b.jpg",
+        "file": "social/detail--e1-instagram-feed-dfedf7327f.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-instagram-feed-9b7eab5e7b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-instagram-feed-dfedf7327f.jpg",
         "alt": "모두행복센터 · 돌봄 종사자 치매교육 · 2025년 종사자 교육의 실제 기록 · 치매전문교육에 참여한 돌봄 종사자"
       },
       "instagram-story": {
-        "file": "social/detail--e1-instagram-story-8c03ce0f2d.jpg",
+        "file": "social/detail--e1-instagram-story-ee908c8dad.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-instagram-story-8c03ce0f2d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e1-instagram-story-ee908c8dad.jpg",
         "alt": "모두행복센터 · 돌봄 종사자 치매교육 · 2025년 종사자 교육의 실제 기록 · 치매전문교육에 참여한 돌봄 종사자"
       },
       "youtube": {
@@ -5143,35 +5270,35 @@
         "alt": "모두행복센터가 함께한 · 지역사회서비스의 날 · 2025년 12월 1일 · 지역의 돌봄을 돌아보다 · 대구지역사회서비스의 날 행사장"
       },
       "naver": {
-        "file": "social/detail--e2-naver-3916c03e97.jpg",
+        "file": "social/detail--e2-naver-ba591f8f92.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-naver-3916c03e97.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-naver-ba591f8f92.jpg",
         "alt": "모두행복센터가 함께한 · 지역사회서비스의 날 · 2025년 12월 1일 · 지역의 돌봄을 돌아보다 · 대구지역사회서비스의 날 행사장"
       },
       "band": {
-        "file": "social/detail--e2-band-8d3258fd30.jpg",
+        "file": "social/detail--e2-band-ba166b8bd9.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-band-8d3258fd30.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-band-ba166b8bd9.jpg",
         "alt": "모두행복센터가 함께한 · 지역사회서비스의 날 · 2025년 12월 1일 · 지역의 돌봄을 돌아보다 · 대구지역사회서비스의 날 행사장"
       },
       "instagram-feed": {
-        "file": "social/detail--e2-instagram-feed-145eae6c65.jpg",
+        "file": "social/detail--e2-instagram-feed-ff3bbaca4c.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-instagram-feed-145eae6c65.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-instagram-feed-ff3bbaca4c.jpg",
         "alt": "모두행복센터가 함께한 · 지역사회서비스의 날 · 2025년 12월 1일 · 지역의 돌봄을 돌아보다 · 대구지역사회서비스의 날 행사장"
       },
       "instagram-story": {
-        "file": "social/detail--e2-instagram-story-1e787d9e43.jpg",
+        "file": "social/detail--e2-instagram-story-534b39e441.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-instagram-story-1e787d9e43.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--e2-instagram-story-534b39e441.jpg",
         "alt": "모두행복센터가 함께한 · 지역사회서비스의 날 · 2025년 12월 1일 · 지역의 돌봄을 돌아보다 · 대구지역사회서비스의 날 행사장"
       },
       "youtube": {
@@ -5242,35 +5369,35 @@
         "alt": "회원사 기본정보 · 이 양식으로 정리하세요 · 기관정보 취합용 CSV 서식 · 같은 외부추천이사 교육의 강사와 참석자들. 사진 속 사람들은 대구돌봄 직원이나 돌봄 이용자 전체가 아니라 이 교육의 참석자들입니다."
       },
       "naver": {
-        "file": "social/detail--r1-naver-6819b71abb.jpg",
+        "file": "social/detail--r1-naver-3e4ed93f64.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-naver-6819b71abb.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-naver-3e4ed93f64.jpg",
         "alt": "회원사 기본정보 · 이 양식으로 정리하세요 · 기관정보 취합용 CSV 서식 · 같은 외부추천이사 교육의 강사와 참석자들. 사진 속 사람들은 대구돌봄 직원이나 돌봄 이용자 전체가 아니라 이 교육의 참석자들입니다."
       },
       "band": {
-        "file": "social/detail--r1-band-3b2662a4db.jpg",
+        "file": "social/detail--r1-band-4121230e12.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-band-3b2662a4db.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-band-4121230e12.jpg",
         "alt": "회원사 기본정보 · 이 양식으로 정리하세요 · 기관정보 취합용 CSV 서식 · 같은 외부추천이사 교육의 강사와 참석자들. 사진 속 사람들은 대구돌봄 직원이나 돌봄 이용자 전체가 아니라 이 교육의 참석자들입니다."
       },
       "instagram-feed": {
-        "file": "social/detail--r1-instagram-feed-9ec347a2bc.jpg",
+        "file": "social/detail--r1-instagram-feed-2385379e35.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-instagram-feed-9ec347a2bc.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-instagram-feed-2385379e35.jpg",
         "alt": "회원사 기본정보 · 이 양식으로 정리하세요 · 기관정보 취합용 CSV 서식 · 같은 외부추천이사 교육의 강사와 참석자들. 사진 속 사람들은 대구돌봄 직원이나 돌봄 이용자 전체가 아니라 이 교육의 참석자들입니다."
       },
       "instagram-story": {
-        "file": "social/detail--r1-instagram-story-594e45a6fb.jpg",
+        "file": "social/detail--r1-instagram-story-ceefd5d9cf.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-instagram-story-594e45a6fb.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r1-instagram-story-ceefd5d9cf.jpg",
         "alt": "회원사 기본정보 · 이 양식으로 정리하세요 · 기관정보 취합용 CSV 서식 · 같은 외부추천이사 교육의 강사와 참석자들. 사진 속 사람들은 대구돌봄 직원이나 돌봄 이용자 전체가 아니라 이 교육의 참석자들입니다."
       },
       "youtube": {
@@ -5297,6 +5424,14 @@
     "reference": true,
     "referenceLabel": "자료 안내 · 기관 교육활동 참고사진",
     "portraitFit": "contain",
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          0.75,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/release-with-30-6.jpg",
       "caption": "위드 정기총회 자료를 읽는 참석자들.",
@@ -5341,35 +5476,35 @@
         "alt": "우리 기관 활동소식 · 이렇게 작성하세요 · 사진과 이야기로 전하는 돌봄 현장 · 위드 정기총회 자료를 읽는 참석자들."
       },
       "naver": {
-        "file": "social/detail--r2-naver-e74b0399a9.jpg",
+        "file": "social/detail--r2-naver-6f4252d5c1.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-naver-e74b0399a9.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-naver-6f4252d5c1.jpg",
         "alt": "우리 기관 활동소식 · 이렇게 작성하세요 · 사진과 이야기로 전하는 돌봄 현장 · 위드 정기총회 자료를 읽는 참석자들."
       },
       "band": {
-        "file": "social/detail--r2-band-1e6e55bba0.jpg",
+        "file": "social/detail--r2-band-f116b2ba78.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-band-1e6e55bba0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-band-f116b2ba78.jpg",
         "alt": "우리 기관 활동소식 · 이렇게 작성하세요 · 사진과 이야기로 전하는 돌봄 현장 · 위드 정기총회 자료를 읽는 참석자들."
       },
       "instagram-feed": {
-        "file": "social/detail--r2-instagram-feed-3871035469.jpg",
+        "file": "social/detail--r2-instagram-feed-ca496eac28.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-instagram-feed-3871035469.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-instagram-feed-ca496eac28.jpg",
         "alt": "우리 기관 활동소식 · 이렇게 작성하세요 · 사진과 이야기로 전하는 돌봄 현장 · 위드 정기총회 자료를 읽는 참석자들."
       },
       "instagram-story": {
-        "file": "social/detail--r2-instagram-story-5ff6dd199a.jpg",
+        "file": "social/detail--r2-instagram-story-bdbb872f0e.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-instagram-story-5ff6dd199a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r2-instagram-story-bdbb872f0e.jpg",
         "alt": "우리 기관 활동소식 · 이렇게 작성하세요 · 사진과 이야기로 전하는 돌봄 현장 · 위드 정기총회 자료를 읽는 참석자들."
       },
       "youtube": {
@@ -5440,35 +5575,35 @@
         "alt": "보건복지부 통합돌봄 · 공식 자료실 안내 · 정책자료 · 교육자료 원문 확인 · 위드 건강강좌 발표를 듣는 강의실 전체 모습."
       },
       "naver": {
-        "file": "social/detail--r3-naver-4bb5ce5878.jpg",
+        "file": "social/detail--r3-naver-4b26a5df82.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-naver-4bb5ce5878.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-naver-4b26a5df82.jpg",
         "alt": "보건복지부 통합돌봄 · 공식 자료실 안내 · 정책자료 · 교육자료 원문 확인 · 위드 건강강좌 발표를 듣는 강의실 전체 모습."
       },
       "band": {
-        "file": "social/detail--r3-band-f987ff18b7.jpg",
+        "file": "social/detail--r3-band-89f310ba13.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-band-f987ff18b7.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-band-89f310ba13.jpg",
         "alt": "보건복지부 통합돌봄 · 공식 자료실 안내 · 정책자료 · 교육자료 원문 확인 · 위드 건강강좌 발표를 듣는 강의실 전체 모습."
       },
       "instagram-feed": {
-        "file": "social/detail--r3-instagram-feed-3ea6040714.jpg",
+        "file": "social/detail--r3-instagram-feed-2ce0b34cce.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-instagram-feed-3ea6040714.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-instagram-feed-2ce0b34cce.jpg",
         "alt": "보건복지부 통합돌봄 · 공식 자료실 안내 · 정책자료 · 교육자료 원문 확인 · 위드 건강강좌 발표를 듣는 강의실 전체 모습."
       },
       "instagram-story": {
-        "file": "social/detail--r3-instagram-story-d4ed5a2e9a.jpg",
+        "file": "social/detail--r3-instagram-story-aa7a4d0bc0.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-instagram-story-d4ed5a2e9a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/detail--r3-instagram-story-aa7a4d0bc0.jpg",
         "alt": "보건복지부 통합돌봄 · 공식 자료실 안내 · 정책자료 · 교육자료 원문 확인 · 위드 건강강좌 발표를 듣는 강의실 전체 모습."
       },
       "youtube": {
@@ -5537,35 +5672,35 @@
         "alt": "의료사랑방에서 · 어르신을 만나다 · 위드의료복지사회적협동조합 실제 현장 · 실내에서 의료사랑방 참가 어르신의 상태를 확인하는 활동"
       },
       "naver": {
-        "file": "social/gallery--m1-naver-1b89c826d4.jpg",
+        "file": "social/gallery--m1-naver-7a90b479aa.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-naver-1b89c826d4.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-naver-7a90b479aa.jpg",
         "alt": "의료사랑방에서 · 어르신을 만나다 · 위드의료복지사회적협동조합 실제 현장 · 실내에서 의료사랑방 참가 어르신의 상태를 확인하는 활동"
       },
       "band": {
-        "file": "social/gallery--m1-band-8e1e1a8c33.jpg",
+        "file": "social/gallery--m1-band-51f7b78f2e.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-band-8e1e1a8c33.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-band-51f7b78f2e.jpg",
         "alt": "의료사랑방에서 · 어르신을 만나다 · 위드의료복지사회적협동조합 실제 현장 · 실내에서 의료사랑방 참가 어르신의 상태를 확인하는 활동"
       },
       "instagram-feed": {
-        "file": "social/gallery--m1-instagram-feed-bed28e2f77.jpg",
+        "file": "social/gallery--m1-instagram-feed-399a06a38d.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-instagram-feed-bed28e2f77.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-instagram-feed-399a06a38d.jpg",
         "alt": "의료사랑방에서 · 어르신을 만나다 · 위드의료복지사회적협동조합 실제 현장 · 실내에서 의료사랑방 참가 어르신의 상태를 확인하는 활동"
       },
       "instagram-story": {
-        "file": "social/gallery--m1-instagram-story-8cc6f4b697.jpg",
+        "file": "social/gallery--m1-instagram-story-c796918b11.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-instagram-story-8cc6f4b697.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m1-instagram-story-c796918b11.jpg",
         "alt": "의료사랑방에서 · 어르신을 만나다 · 위드의료복지사회적협동조합 실제 현장 · 실내에서 의료사랑방 참가 어르신의 상태를 확인하는 활동"
       },
       "youtube": {
@@ -5590,6 +5725,20 @@
     "caseKind": "외부 지역 실제 활동",
     "reference": true,
     "referenceLabel": "다른 지역 참고 사례 · 서울 강남구청",
+    "channelLayouts": {
+      "instagram-feed": {
+        "focus": [
+          0.1,
+          0.4
+        ]
+      },
+      "instagram-story": {
+        "focus": [
+          0.1,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "gangnam-home-health.webp",
       "caption": "서울 강남구 방문건강관리 현장 · 방문 인력이 가정에서 이용자의 혈압을 확인하고 있습니다.",
@@ -5634,35 +5783,35 @@
         "alt": "서울 강남구 방문건강관리 · 실제 활동 사진 · 서울 강남구청 · 서울 강남구 방문건강관리 현장"
       },
       "naver": {
-        "file": "social/gallery--m2-naver-bd0255bd1e.jpg",
+        "file": "social/gallery--m2-naver-5dec7bebaa.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-naver-bd0255bd1e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-naver-5dec7bebaa.jpg",
         "alt": "서울 강남구 방문건강관리 · 실제 활동 사진 · 서울 강남구청 · 서울 강남구 방문건강관리 현장"
       },
       "band": {
-        "file": "social/gallery--m2-band-e4e1eae7c1.jpg",
+        "file": "social/gallery--m2-band-4ace78d5eb.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-band-e4e1eae7c1.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-band-4ace78d5eb.jpg",
         "alt": "서울 강남구 방문건강관리 · 실제 활동 사진 · 서울 강남구청 · 서울 강남구 방문건강관리 현장"
       },
       "instagram-feed": {
-        "file": "social/gallery--m2-instagram-feed-cd43e77fef.jpg",
+        "file": "social/gallery--m2-instagram-feed-def14ded0b.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-instagram-feed-cd43e77fef.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-instagram-feed-def14ded0b.jpg",
         "alt": "서울 강남구 방문건강관리 · 실제 활동 사진 · 서울 강남구청 · 서울 강남구 방문건강관리 현장"
       },
       "instagram-story": {
-        "file": "social/gallery--m2-instagram-story-25170178fc.jpg",
+        "file": "social/gallery--m2-instagram-story-9afef3191c.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-instagram-story-25170178fc.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m2-instagram-story-9afef3191c.jpg",
         "alt": "서울 강남구 방문건강관리 · 실제 활동 사진 · 서울 강남구청 · 서울 강남구 방문건강관리 현장"
       },
       "youtube": {
@@ -5731,35 +5880,35 @@
         "alt": "서울 구로구 생활환경 지원 · 서울 구로구청 · 가정 내 생활환경 지원"
       },
       "naver": {
-        "file": "social/gallery--m3-naver-b9c3288fc0.jpg",
+        "file": "social/gallery--m3-naver-dad79d0a98.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-naver-b9c3288fc0.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-naver-dad79d0a98.jpg",
         "alt": "서울 구로구 생활환경 지원 · 서울 구로구청 · 가정 내 생활환경 지원"
       },
       "band": {
-        "file": "social/gallery--m3-band-46d635beea.jpg",
+        "file": "social/gallery--m3-band-d79e06009f.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-band-46d635beea.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-band-d79e06009f.jpg",
         "alt": "서울 구로구 생활환경 지원 · 서울 구로구청 · 가정 내 생활환경 지원"
       },
       "instagram-feed": {
-        "file": "social/gallery--m3-instagram-feed-e3433dc39b.jpg",
+        "file": "social/gallery--m3-instagram-feed-64c1e3f28d.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-instagram-feed-e3433dc39b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-instagram-feed-64c1e3f28d.jpg",
         "alt": "서울 구로구 생활환경 지원 · 서울 구로구청 · 가정 내 생활환경 지원"
       },
       "instagram-story": {
-        "file": "social/gallery--m3-instagram-story-71d7393025.jpg",
+        "file": "social/gallery--m3-instagram-story-52181f1bfb.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-instagram-story-71d7393025.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m3-instagram-story-52181f1bfb.jpg",
         "alt": "서울 구로구 생활환경 지원 · 서울 구로구청 · 가정 내 생활환경 지원"
       },
       "youtube": {
@@ -5828,35 +5977,35 @@
         "alt": "서울 구로구 이웃 식사지원 · 서울 구로구청 · 이웃을 위한 식사지원"
       },
       "naver": {
-        "file": "social/gallery--m4-naver-5aad12244a.jpg",
+        "file": "social/gallery--m4-naver-3453e31110.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-naver-5aad12244a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-naver-3453e31110.jpg",
         "alt": "서울 구로구 이웃 식사지원 · 서울 구로구청 · 이웃을 위한 식사지원"
       },
       "band": {
-        "file": "social/gallery--m4-band-01b40fad68.jpg",
+        "file": "social/gallery--m4-band-bda6c7cd2f.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-band-01b40fad68.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-band-bda6c7cd2f.jpg",
         "alt": "서울 구로구 이웃 식사지원 · 서울 구로구청 · 이웃을 위한 식사지원"
       },
       "instagram-feed": {
-        "file": "social/gallery--m4-instagram-feed-ba40d80cb2.jpg",
+        "file": "social/gallery--m4-instagram-feed-2f129a0d99.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-instagram-feed-ba40d80cb2.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-instagram-feed-2f129a0d99.jpg",
         "alt": "서울 구로구 이웃 식사지원 · 서울 구로구청 · 이웃을 위한 식사지원"
       },
       "instagram-story": {
-        "file": "social/gallery--m4-instagram-story-d3b94989c8.jpg",
+        "file": "social/gallery--m4-instagram-story-f93376cfa2.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-instagram-story-d3b94989c8.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m4-instagram-story-f93376cfa2.jpg",
         "alt": "서울 구로구 이웃 식사지원 · 서울 구로구청 · 이웃을 위한 식사지원"
       },
       "youtube": {
@@ -5925,35 +6074,35 @@
         "alt": "서울 구로구 어르신 생활운동 · 서울 구로구청 · 어르신 생활운동"
       },
       "naver": {
-        "file": "social/gallery--m5-naver-02dc82d6ad.jpg",
+        "file": "social/gallery--m5-naver-74dd482f13.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-naver-02dc82d6ad.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-naver-74dd482f13.jpg",
         "alt": "서울 구로구 어르신 생활운동 · 서울 구로구청 · 어르신 생활운동"
       },
       "band": {
-        "file": "social/gallery--m5-band-86442a4b5e.jpg",
+        "file": "social/gallery--m5-band-6b226ba684.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-band-86442a4b5e.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-band-6b226ba684.jpg",
         "alt": "서울 구로구 어르신 생활운동 · 서울 구로구청 · 어르신 생활운동"
       },
       "instagram-feed": {
-        "file": "social/gallery--m5-instagram-feed-a02b4f16eb.jpg",
+        "file": "social/gallery--m5-instagram-feed-88e22a1d2f.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-instagram-feed-a02b4f16eb.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-instagram-feed-88e22a1d2f.jpg",
         "alt": "서울 구로구 어르신 생활운동 · 서울 구로구청 · 어르신 생활운동"
       },
       "instagram-story": {
-        "file": "social/gallery--m5-instagram-story-adea47972b.jpg",
+        "file": "social/gallery--m5-instagram-story-53f7abadc7.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-instagram-story-adea47972b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m5-instagram-story-53f7abadc7.jpg",
         "alt": "서울 구로구 어르신 생활운동 · 서울 구로구청 · 어르신 생활운동"
       },
       "youtube": {
@@ -5978,6 +6127,14 @@
     "credit": "위드의료복지사회적협동조합",
     "caseKind": "해당 활동 원본사진",
     "reference": false,
+    "channelLayouts": {
+      "instagram-story": {
+        "focus": [
+          1,
+          0.4
+        ]
+      }
+    },
     "background": {
       "file": "cases/with-33-4.jpg",
       "caption": "혈압 측정과 상담을 함께 진행하는 의료현장 실습",
@@ -6022,35 +6179,35 @@
         "alt": "혈압 측정과 상담 · 위드 의료현장 실습 · 위드의료복지사회적협동조합 실제 현장 · 혈압 측정과 상담을 함께 진행하는 의료현장 실습"
       },
       "naver": {
-        "file": "social/gallery--m6-naver-5f0a3827cb.jpg",
+        "file": "social/gallery--m6-naver-9ec330dccf.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-naver-5f0a3827cb.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-naver-9ec330dccf.jpg",
         "alt": "혈압 측정과 상담 · 위드 의료현장 실습 · 위드의료복지사회적협동조합 실제 현장 · 혈압 측정과 상담을 함께 진행하는 의료현장 실습"
       },
       "band": {
-        "file": "social/gallery--m6-band-71edfe40e5.jpg",
+        "file": "social/gallery--m6-band-01e26bb026.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-band-71edfe40e5.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-band-01e26bb026.jpg",
         "alt": "혈압 측정과 상담 · 위드 의료현장 실습 · 위드의료복지사회적협동조합 실제 현장 · 혈압 측정과 상담을 함께 진행하는 의료현장 실습"
       },
       "instagram-feed": {
-        "file": "social/gallery--m6-instagram-feed-80c839d758.jpg",
+        "file": "social/gallery--m6-instagram-feed-204c80944f.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-instagram-feed-80c839d758.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-instagram-feed-204c80944f.jpg",
         "alt": "혈압 측정과 상담 · 위드 의료현장 실습 · 위드의료복지사회적협동조합 실제 현장 · 혈압 측정과 상담을 함께 진행하는 의료현장 실습"
       },
       "instagram-story": {
-        "file": "social/gallery--m6-instagram-story-f51a8da28c.jpg",
+        "file": "social/gallery--m6-instagram-story-79cd86a1c4.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-instagram-story-f51a8da28c.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m6-instagram-story-79cd86a1c4.jpg",
         "alt": "혈압 측정과 상담 · 위드 의료현장 실습 · 위드의료복지사회적협동조합 실제 현장 · 혈압 측정과 상담을 함께 진행하는 의료현장 실습"
       },
       "youtube": {
@@ -6119,35 +6276,35 @@
         "alt": "울산 동구 어르신 스마트폰 교육 · 울산 동구 노동자지원센터 실제 교육 · 울산 동구 노동자지원센터의 어르신 스마트폰 활용법 수업. 어르신들이 탁자에 스마트폰을 놓고 강사의 설명을 듣고 있다."
       },
       "naver": {
-        "file": "social/gallery--m7-naver-9850581584.jpg",
+        "file": "social/gallery--m7-naver-06738ebe7b.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-naver-9850581584.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-naver-06738ebe7b.jpg",
         "alt": "울산 동구 어르신 스마트폰 교육 · 울산 동구 노동자지원센터 실제 교육 · 울산 동구 노동자지원센터의 어르신 스마트폰 활용법 수업. 어르신들이 탁자에 스마트폰을 놓고 강사의 설명을 듣고 있다."
       },
       "band": {
-        "file": "social/gallery--m7-band-3a641b7f97.jpg",
+        "file": "social/gallery--m7-band-18eaf91e7e.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-band-3a641b7f97.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-band-18eaf91e7e.jpg",
         "alt": "울산 동구 어르신 스마트폰 교육 · 울산 동구 노동자지원센터 실제 교육 · 울산 동구 노동자지원센터의 어르신 스마트폰 활용법 수업. 어르신들이 탁자에 스마트폰을 놓고 강사의 설명을 듣고 있다."
       },
       "instagram-feed": {
-        "file": "social/gallery--m7-instagram-feed-7828328f3b.jpg",
+        "file": "social/gallery--m7-instagram-feed-2a11e1c794.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-instagram-feed-7828328f3b.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-instagram-feed-2a11e1c794.jpg",
         "alt": "울산 동구 어르신 스마트폰 교육 · 울산 동구 노동자지원센터 실제 교육 · 울산 동구 노동자지원센터의 어르신 스마트폰 활용법 수업. 어르신들이 탁자에 스마트폰을 놓고 강사의 설명을 듣고 있다."
       },
       "instagram-story": {
-        "file": "social/gallery--m7-instagram-story-b646d3fc13.jpg",
+        "file": "social/gallery--m7-instagram-story-0a8b9d3cb5.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-instagram-story-b646d3fc13.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m7-instagram-story-0a8b9d3cb5.jpg",
         "alt": "울산 동구 어르신 스마트폰 교육 · 울산 동구 노동자지원센터 실제 교육 · 울산 동구 노동자지원센터의 어르신 스마트폰 활용법 수업. 어르신들이 탁자에 스마트폰을 놓고 강사의 설명을 듣고 있다."
       },
       "youtube": {
@@ -6216,35 +6373,35 @@
         "alt": "서울 구로구 행복한 농부 · 서울 구로구청 · 서울 구로구 치매안심센터 ‘행복한 농부’"
       },
       "naver": {
-        "file": "social/gallery--m8-naver-8b2d60b9ee.jpg",
+        "file": "social/gallery--m8-naver-7be121cee5.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-naver-8b2d60b9ee.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-naver-7be121cee5.jpg",
         "alt": "서울 구로구 행복한 농부 · 서울 구로구청 · 서울 구로구 치매안심센터 ‘행복한 농부’"
       },
       "band": {
-        "file": "social/gallery--m8-band-58a41e27f4.jpg",
+        "file": "social/gallery--m8-band-991a7cce30.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-band-58a41e27f4.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-band-991a7cce30.jpg",
         "alt": "서울 구로구 행복한 농부 · 서울 구로구청 · 서울 구로구 치매안심센터 ‘행복한 농부’"
       },
       "instagram-feed": {
-        "file": "social/gallery--m8-instagram-feed-931995b232.jpg",
+        "file": "social/gallery--m8-instagram-feed-d2837bcceb.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-instagram-feed-931995b232.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-instagram-feed-d2837bcceb.jpg",
         "alt": "서울 구로구 행복한 농부 · 서울 구로구청 · 서울 구로구 치매안심센터 ‘행복한 농부’"
       },
       "instagram-story": {
-        "file": "social/gallery--m8-instagram-story-b79a520896.jpg",
+        "file": "social/gallery--m8-instagram-story-74a34c95d3.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-instagram-story-b79a520896.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--m8-instagram-story-74a34c95d3.jpg",
         "alt": "서울 구로구 행복한 농부 · 서울 구로구청 · 서울 구로구 치매안심센터 ‘행복한 농부’"
       },
       "youtube": {
@@ -6313,35 +6470,35 @@
         "alt": "의료진과 어르신 · 가까이에서 나누는 상담 · 위드의료복지사회적협동조합 실제 현장 · 진료 안내 표지 앞에서 어르신과 상담하는 의료진"
       },
       "naver": {
-        "file": "social/gallery--sector-home-health-naver-8dbba3fea5.jpg",
+        "file": "social/gallery--sector-home-health-naver-ef08778171.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-naver-8dbba3fea5.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-naver-ef08778171.jpg",
         "alt": "의료진과 어르신 · 가까이에서 나누는 상담 · 위드의료복지사회적협동조합 실제 현장 · 진료 안내 표지 앞에서 어르신과 상담하는 의료진"
       },
       "band": {
-        "file": "social/gallery--sector-home-health-band-f2494c0a4a.jpg",
+        "file": "social/gallery--sector-home-health-band-4bfb5ccd67.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-band-f2494c0a4a.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-band-4bfb5ccd67.jpg",
         "alt": "의료진과 어르신 · 가까이에서 나누는 상담 · 위드의료복지사회적협동조합 실제 현장 · 진료 안내 표지 앞에서 어르신과 상담하는 의료진"
       },
       "instagram-feed": {
-        "file": "social/gallery--sector-home-health-instagram-feed-97fd144a9d.jpg",
+        "file": "social/gallery--sector-home-health-instagram-feed-02fa036013.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-instagram-feed-97fd144a9d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-instagram-feed-02fa036013.jpg",
         "alt": "의료진과 어르신 · 가까이에서 나누는 상담 · 위드의료복지사회적협동조합 실제 현장 · 진료 안내 표지 앞에서 어르신과 상담하는 의료진"
       },
       "instagram-story": {
-        "file": "social/gallery--sector-home-health-instagram-story-0aef923855.jpg",
+        "file": "social/gallery--sector-home-health-instagram-story-0670996507.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-instagram-story-0aef923855.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-home-health-instagram-story-0670996507.jpg",
         "alt": "의료진과 어르신 · 가까이에서 나누는 상담 · 위드의료복지사회적협동조합 실제 현장 · 진료 안내 표지 앞에서 어르신과 상담하는 의료진"
       },
       "youtube": {
@@ -6410,35 +6567,35 @@
         "alt": "김포 발달장애인 사진전 · 김포시 뉴스포털 · 발달장애인 문화활동"
       },
       "naver": {
-        "file": "social/gallery--sector-disability-activity-naver-832e641450.jpg",
+        "file": "social/gallery--sector-disability-activity-naver-6de75a1b82.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-naver-832e641450.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-naver-6de75a1b82.jpg",
         "alt": "김포 발달장애인 사진전 · 김포시 뉴스포털 · 발달장애인 문화활동"
       },
       "band": {
-        "file": "social/gallery--sector-disability-activity-band-e3f5af1e24.jpg",
+        "file": "social/gallery--sector-disability-activity-band-757fafcca9.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-band-e3f5af1e24.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-band-757fafcca9.jpg",
         "alt": "김포 발달장애인 사진전 · 김포시 뉴스포털 · 발달장애인 문화활동"
       },
       "instagram-feed": {
-        "file": "social/gallery--sector-disability-activity-instagram-feed-682ed5987f.jpg",
+        "file": "social/gallery--sector-disability-activity-instagram-feed-92c652c7e0.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-instagram-feed-682ed5987f.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-instagram-feed-92c652c7e0.jpg",
         "alt": "김포 발달장애인 사진전 · 김포시 뉴스포털 · 발달장애인 문화활동"
       },
       "instagram-story": {
-        "file": "social/gallery--sector-disability-activity-instagram-story-d2742ab622.jpg",
+        "file": "social/gallery--sector-disability-activity-instagram-story-2580324fe1.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-instagram-story-d2742ab622.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-disability-activity-instagram-story-2580324fe1.jpg",
         "alt": "김포 발달장애인 사진전 · 김포시 뉴스포털 · 발달장애인 문화활동"
       },
       "youtube": {
@@ -6507,35 +6664,35 @@
         "alt": "김포 마을 작은도서관 · 김포시 뉴스포털 · 마을 작은도서관"
       },
       "naver": {
-        "file": "social/gallery--sector-community-library-naver-5d29d2493d.jpg",
+        "file": "social/gallery--sector-community-library-naver-64e53662f9.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-naver-5d29d2493d.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-naver-64e53662f9.jpg",
         "alt": "김포 마을 작은도서관 · 김포시 뉴스포털 · 마을 작은도서관"
       },
       "band": {
-        "file": "social/gallery--sector-community-library-band-703911abf6.jpg",
+        "file": "social/gallery--sector-community-library-band-ba78de067d.jpg",
         "width": 1080,
         "height": 1080,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-band-703911abf6.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-band-ba78de067d.jpg",
         "alt": "김포 마을 작은도서관 · 김포시 뉴스포털 · 마을 작은도서관"
       },
       "instagram-feed": {
-        "file": "social/gallery--sector-community-library-instagram-feed-8962322aa6.jpg",
+        "file": "social/gallery--sector-community-library-instagram-feed-364d1e22d9.jpg",
         "width": 1080,
         "height": 1350,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-instagram-feed-8962322aa6.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-instagram-feed-364d1e22d9.jpg",
         "alt": "김포 마을 작은도서관 · 김포시 뉴스포털 · 마을 작은도서관"
       },
       "instagram-story": {
-        "file": "social/gallery--sector-community-library-instagram-story-0901aac306.jpg",
+        "file": "social/gallery--sector-community-library-instagram-story-e0acc634b7.jpg",
         "width": 1080,
         "height": 1920,
         "type": "image/jpeg",
-        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-instagram-story-0901aac306.jpg",
+        "url": "https://daegu-care.oconia.co.kr/media/social/gallery--sector-community-library-instagram-story-e0acc634b7.jpg",
         "alt": "김포 마을 작은도서관 · 김포시 뉴스포털 · 마을 작은도서관"
       },
       "youtube": {
