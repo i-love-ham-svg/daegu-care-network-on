@@ -3,7 +3,13 @@ const vm = require('node:vm');
 const path = require('node:path');
 
 module.exports = function runtime(extra = '', saved = {}) {
-  const node = {addEventListener(){},classList:{add(){},remove(){}},querySelector(){return node},querySelectorAll(){return []}};
+  const classes=new Set();
+  const node = {addEventListener(){},classList:{
+    add(...names){names.forEach(name=>classes.add(name));},
+    remove(...names){names.forEach(name=>classes.delete(name));},
+    contains(name){return classes.has(name);},
+    toggle(name,force){const enabled=force===undefined?!classes.has(name):Boolean(force);if(enabled)classes.add(name);else classes.delete(name);return enabled;}
+  },querySelector(){return node},querySelectorAll(){return []}};
   const document = {addEventListener(){},querySelector(){return node},querySelectorAll(){return []},documentElement:{dataset:{}}};
   const context = vm.createContext({document,window:{addEventListener(){},matchMedia(){return {matches:false,addEventListener(){}}}},
     location:{href:'https://daegu-care.oconia.co.kr/',pathname:'/',hash:''},history:{},navigator:{},

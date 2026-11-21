@@ -590,3 +590,13 @@ a.list-row,a.news-card{color:inherit}
 .case-photo-link,.case-photo-link img{display:block;width:100%;height:auto}
 .on-share-source{margin:-7px 0 16px;line-height:1.6}
 .detail-main .detail-meta a{text-decoration:underline;text-underline-offset:2px}
+
+/* Keep compact navigation and search usable after resizing or rotating. */
+@media(max-width:950px){
+  .nav.open{max-height:calc(100vh - 110px);max-height:calc(100dvh - 110px);overflow-y:auto;overscroll-behavior:contain}
+}
+@media(max-width:650px){
+  .searchbox input{font-size:16px}
+  .footer-links{flex-wrap:wrap;gap:12px 20px}
+  .footer-links a{white-space:nowrap}
+}

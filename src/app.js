@@ -2766,16 +2766,28 @@ function allMembers(){return [...organizations,...archivedOrganizations,...membe
 function items(type){return [...approved(type),...({news:[...documentedNews,...news],policy:policies,event:events,resource:resources}[type]||[])]}
 function findItem(id){return [...allMembers(),...items('news'),...items('policy'),...items('event'),...items('resource')].find(x=>x.id===id)}
 function toast(t){clearTimeout(toastTimer);$('#toast').textContent=t;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,3800)}
-const navs=[['about','네트워크 소개'],['members','회원사'],['news','활동소식'],['policy','정책정보'],['events','교육·행사'],['resources','자료실']];
+const navs=[['about','네트워크 소개'],['members','참여기관'],['news','활동소식'],['policy','정책정보'],['events','교육·행사'],['resources','자료실']];
 const contentRoutes = {news:'news',policy:'policy',event:'events',resource:'resources'};
 const contentLabels = {news:'활동소식',policy:'정책정보',event:'교육·행사',resource:'자료실'};
 
 function toggleMenu(open) {
-  $('.nav').classList.toggle('open',open);
+  const navigation=$('.nav');
+  navigation.classList.toggle('open',open);
   const button = $('[data-action=menu]');
   button.setAttribute('aria-expanded',String(open));
   button.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');
+  button.innerHTML=icon(open?'close':'menu');
+  if(open)navigation.querySelector('a[href]')?.focus({preventScroll:true});
 }
+const navigationViewport=window.matchMedia('(max-width:950px)');
+navigationViewport.addEventListener?.('change',()=>{
+  const returnFocus=navigationViewport.matches&&$('.nav').contains(document.activeElement);
+  toggleMenu(false);
+  if(returnFocus)$('[data-action=menu]').focus({preventScroll:true});
+});
+document.addEventListener('click',event=>{
+  if($('.nav').classList.contains('open')&&!event.target?.closest?.('.nav,[data-action=menu]'))toggleMenu(false);
+},true);
 function navigation() {
   const [route,id] = activeRoute.split('/');
   const area = route==='member'||route==='demo' ? 'members' :
@@ -3068,7 +3080,7 @@ function startHomeHero() {
   };
 }
 
-function home(){return `<section class="hero"><div class="wrap">${homeHero()}<form class="find-bar" id="home-search"><label for="home-q">통합검색</label><div class="searchbox"><input id="home-q" name="q" type="search" placeholder="기관명·돌봄 분야·자료 검색" aria-label="통합검색 키워드"><button aria-label="검색">${icon('search')}</button></div></form></div></section>${onGivingSummary()}<div class="wrap"><div class="shortcut-row">${[['members','building','회원사 찾기','분야별 전문성 한눈에'],['news','news','활동소식','회원사의 현장 이야기'],['policy','policy','정책정보','돌봄의 변화를 빠르게'],['resources','file','자료실','필요한 자료를 한곳에']].map(([r,i,t,d])=>`<a href="#/${r}" class="shortcut"><span class="shortcut-icon">${icon(i)}</span><span><strong>${t}</strong><small>${d}</small></span>${icon('arrow')}</a>`).join('')}</div></div><div class="section"><div class="wrap">${homeMembers()}</div></div>
+function home(){return `<section class="hero"><div class="wrap">${homeHero()}<form class="find-bar" id="home-search"><label for="home-q">통합검색</label><div class="searchbox"><input id="home-q" name="q" type="search" placeholder="기관명·돌봄 분야·자료 검색" aria-label="통합검색 키워드"><button aria-label="검색">${icon('search')}</button></div></form></div></section>${onGivingSummary()}<div class="wrap"><div class="shortcut-row">${[['members','building','참여기관 찾기','분야별 전문성 한눈에'],['news','news','활동소식','회원사의 현장 이야기'],['policy','policy','정책정보','돌봄의 변화를 빠르게'],['resources','file','자료실','필요한 자료를 한곳에']].map(([r,i,t,d])=>`<a href="#/${r}" class="shortcut"><span class="shortcut-icon">${icon(i)}</span><span><strong>${t}</strong><small>${d}</small></span>${icon('arrow')}</a>`).join('')}</div></div><div class="section"><div class="wrap">${homeMembers()}</div></div>
   <div class="section bg"><div class="wrap">${feedSection('home-news','대구 돌봄 활동소식',publishedNews(),newsCard,{kind:'news'})}</div></div>
   ${onNetworkGallery()}
   <div class="section"><div class="wrap split-grid">
@@ -3114,7 +3126,7 @@ function updateMemberResults(){
 }
 function membersPage(){
   const matches = matchingMembers();
-  return pageHead('회원사','',
+  return pageHead('참여기관','',
     `<div class="on-actions"><a class="btn" href="#/projects">돌봄사업</a><button class="btn" type="button" data-action="join">${icon('plus')} 회원사 등록</button></div>`)+
     `<div class="wrap page-content">
       ${participationNote()}${chips(directoryServices(),memberFilter,'member-service')}
